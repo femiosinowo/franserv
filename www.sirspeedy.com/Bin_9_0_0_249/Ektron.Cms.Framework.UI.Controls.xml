@@ -1,0 +1,802 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ektron.Cms.Framework.UI.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.MenuDisplayType">
+            <summary>
+            Enumeration of Menu types supported by AccessPoint server control.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.AccessPoint">
+            <summary>
+            Access point server control.  Used for accessing ediotr's menu for associated items like Content, Collections, and Folders.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.ObjectId">
+            <summary>
+            Gets or sets the Id of the objectthis AccessPoint is associated with.  This is directly related to the AccessMenu.DisplayType.  
+            If DisplayType is Content, ObjectId should be the Content ID the access point accesses.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.ContentType">
+            <summary>
+            Gets or sets the ContentType for the content associated with the control. This will determine what type of content can be added through the access point.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.DisplayType">
+            <summary>
+            Gets or sets the type of menu that is being displayed.  For example, COntent, Collection, or Folder.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.Title">
+            <summary>
+            Gets or sets the title of the object associated with the access point.  This title will be used for display purposes for certain menu types (i.e. content).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.AddText">
+            <summary>
+            Optional; sets the text to use in place of the default "Add HTML Content" message.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.DesignTime">
+            <summary>
+            Determines if the control is being rendered in VisualStudio.NET
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.FolderId">
+            <summary>
+            Gets or sets the Folder ID where new contnet will be saved when using the access point.  This is used when the DisplayType is Collection or Taxonomy and new conten tis added.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.AccessPoint.IsPresentationServer">
+            <summary>
+            Gets a flag indicating if the current server is a presentation server.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.EditorsMenu">
+            <summary>
+            Access point server control.  Used for accessing ediotr's menu for associated items like Content, Collections, and Folders.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.ObjectId">
+            <summary>
+            Gets or sets the Id of the objectthis AccessPoint is associated with.  This is directly related to the AccessMenu.DisplayType.  
+            If DisplayType is Content, ObjectId should be the Content ID the access point accesses.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.ContentType">
+            <summary>
+            Gets or sets the ContentType for the content associated with the control. This will determine what type of content can be added through the access point.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.DisplayType">
+            <summary>
+            Gets or sets the type of menu that is being displayed.  For example, COntent, Collection, or Folder.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.Title">
+            <summary>
+            Gets or sets the title of the object associated with the access point.  This title will be used for display purposes for certain menu types (i.e. content).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.AddText">
+            <summary>
+            Optional; sets the text to use in place of the default "Add HTML Content" message.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.DesignTime">
+            <summary>
+            Determines if the control is being rendered in VisualStudio.NET
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.FolderId">
+            <summary>
+            Gets or sets the Folder ID where new contnet will be saved when using the access point.  This is used when the DisplayType is Collection or Taxonomy and new conten tis added.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.EditorsMenu.IsPresentationServer">
+            <summary>
+            Gets a flag indicating if the current server is a presentation server.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaFilter`1.Field">
+            <summary>
+            Gets or sets the field to filter on.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaFilter`1.Operator">
+            <summary>
+            Gets or sets the operator to use for the filter.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaFilter`1.Value">
+            <summary>
+            The value to filter on.  The value should be the same data type as the corresponding property in the associated data class.
+            For example, if Filtering on ContentProperty.Id, the value should be a long because ContentData.Id is a long.
+            If using the CriteriaFilterOperator.In operator, the Value you should be an IEnumerable list of values.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.ContentTaxonomyFilter">
+            <summary>
+            Filter class for defining Taxonomy filters for Content.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.ContentCollectionFilter">
+            <summary>
+            Filter class for defining collection filters for Content.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.ContentMetadataFilter">
+            <summary>
+            Filter class for defining metadata filters for Content.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentMetadataFilter.TypeName">
+            <summary>
+            Gets or sets the name of the metadata field to filter on.  This or TypeId must be set.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentMetadataFilter.TypeId">
+            <summary>
+            Gets or sets the ID of the metadata field to filter on.  This or TypeName must be set.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentMetadataFilter.Operator">
+            <summary>
+            Gets or sets the operator to use for the filter.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentMetadataFilter.Value">
+            <summary>
+            The value to filter on.  The value should be the same data type as the corresponding property in the associated data class.
+            For example, if Filtering on ContentProperty.Id, the value should be a long because ContentData.Id is a long.
+            If using the CriteriaFilterOperator.In operator, the Value you should be an IEnumerable list of values.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.TreeFilter">
+            <summary>
+            Class representing filter options for Menu Trees.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.TreeFilter.Id">
+            <summary>
+            Gets or sets the Id of the tree you wish to retreive.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.TreeFilter.Depth">
+            <summary>
+            Gets or sets the depth of the tree you wish to retrieve.  0 will retrieve the entire tree.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.MenuModelSource">
+            <summary>
+            Model Source Control for Content.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2">
+            <summary>
+            BaseController
+            </summary>
+            <typeparam name="TC"></typeparam>
+            <typeparam name="TM"></typeparam>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Init"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.GetName(System.Reflection.ParameterInfo)">
+            <summary>
+            Gets the name.
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Load"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.observe_ModelChangedEvent(System.Object,Ektron.Cms.Framework.UI.MVC.ModelChangedArgs{`1})">
+            <summary>
+            Observes when the model changed event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="modelChangedArgs">The model changed args.</param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.Controller">
+            <summary>
+             Controller Instance
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.Properties">
+            <summary>
+            Gets or sets the properties.
+            </summary>
+            <value>
+            The properties.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.ControllerType">
+            <summary>
+             Property that allows developer to assign their own controller if they don't want to use injection via a container. 
+            </summary>
+        </member>
+        <member name="E:Ektron.Cms.Framework.UI.Controls.MVC.BaseController`2.ModelChangedEvent">
+            <summary>
+            Occurs when [model changed event].
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.ModelSourceBase`2.ModelSourceBase_ModelChangedEvent(System.Object,Ektron.Cms.Framework.UI.MVC.ModelChangedArgs{`1})">
+            <summary>
+            Listens for the ModelChanged Event and updates the current ModelSource.
+            </summary>
+            <param name="sender"></param>
+            <param name="modelChangedArgs"></param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ModelSourceBase`2.Pagers">
+            <summary>
+            Gets the list of pagers assigned to this ModelSourceControl.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ModelSourceBase`2.PageInfo">
+            <summary>
+            Gets the current PageInfo for the Source.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ModelSourceBase`2.ModelSource">
+            <summary>
+            Gets the Model for the Model Source control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ModelSourceBase`2.Paging">
+            <summary>
+            Gets the embedded Paging Control for the ModelSource control.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MenuModelSource.LoadData">
+            <summary>
+            Calls the COntroller to load the data base don the current model source control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MenuModelSource.TreeFilter">
+            <summary>
+            Gets the embedded Paging Control for the ModelSource control.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2">
+            <summary>
+             BaseView with type Controller and Model
+            </summary>
+            <typeparam name="TC"></typeparam>
+            <typeparam name="TM"></typeparam>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.CompositeView">
+            <summary>
+            Summary description for BasicSearch
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.CompositeView.DataItem">
+            <summary>
+            Gets the underlying data object to which the GridViewRow object is bound.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.LoadTemplate">
+            <summary>
+            Loads the template.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Init"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.Controller">
+            <summary>
+            Gets or sets the name of the controller that retrieves the data.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.ModelSourceID">
+            <summary>
+            Gets or sets the ID of the controller that retrieves the data.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.EktronTemplateName">
+            <summary>
+            Gets the default name of the template.
+            </summary>
+            <value>
+            The default name of the template.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.TemplateVirtualPath">
+            <summary>
+             Get TemplateVirtualPath
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseView`2.Model">
+            <summary>
+             Current Model
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.Core.ControllerRegistry">
+            <summary>
+            Controller Registry - registers the controller into the context for performance and sharing of object
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.ControllerRegistry.Key(System.String)">
+            <summary>
+            Abstraction of how to create the key based on the specified id.
+            </summary>
+            <param name="id">The id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.ControllerRegistry.Get``1(System.String)">
+            <summary>
+            Gets the specified Controller based on id
+            </summary>
+            <typeparam name="TM">The type of the M.</typeparam>
+            <param name="id">The id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.ControllerRegistry.Set``1(System.String,Ektron.Cms.Framework.UI.MVC.IController{``0})">
+            <summary>
+            Sets the controller by the specified id.
+            </summary>
+            <typeparam name="TM">The type of the M.</typeparam>
+            <param name="id">The id.</param>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.SingleView">
+            <summary>
+            Summary description for BasicSearch
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.SingleView.DataItem">
+            <summary>
+            Gets the underlying data object to which the GridViewRow object is bound.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.BaseView`2.Controller">
+            <summary>
+            Gets or sets the name of the controller that retrieves the data.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.BaseView`2.ControllerID">
+            <summary>
+            Gets or sets the ID of the controller that retrieves the data.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.Core.HttpContextFactory">
+            <summary>
+             Wrappers HttpContext.Current for testablility
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.HttpContextFactory.SetHttpContext(System.Web.HttpContextBase)">
+            <summary>
+             Sets the context
+            </summary>
+            <param name="httpContextBase"></param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.HttpContextFactory.ResetHttpContext">
+            <summary>
+             Resets the context
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Core.HttpContextFactory.GetHttpContext">
+            <summary>
+             Gets the current context
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.MVC.BaseTemplate`2">
+            <summary>
+            BaseTemplate
+            </summary>
+            <typeparam name="TC"></typeparam>
+            <typeparam name="TM"></typeparam>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.MVC.BaseTemplate`2.UpdateViewBag(System.Object)">
+            <summary>
+            Updates the view bag.
+            </summary>
+            <param name="viewBag">The view bag.</param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.MVC.BaseTemplate`2.ViewBag">
+            <summary>
+            Gets the view bag.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.CriteriaModelSourceBase`4.GetFilters">
+            <summary>
+            Returns list of ICriteriaFilter based upon declarative Filters defined in control.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.CriteriaModelSourceBase`4.LoadData">
+            <summary>
+            Calls the Controller to load the data based on the current model source control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaModelSourceBase`4.Filters">
+            <summary>
+            Gets the embedded Filter Controls for the ModelSource control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaModelSourceBase`4.OrderByField">
+            <summary>
+            Gets or Sets the OrderByField for the Model Source.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.CriteriaModelSourceBase`4.OrderByDirection">
+            <summary>
+            Gets or Sets the OrderBy Direction for the Model Source.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.ContentModelSource">
+            <summary>
+            Model Source Control for Content.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentModelSource.ContentFilters">
+            <summary>
+            Content Filter Controls for the ModelSource control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentModelSource.TaxonomyFilters">
+            <summary>
+            Taxonomy Filter Controls for the ModelSource control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentModelSource.CollectionFilters">
+            <summary>
+            CollectionFilter Controls for the ModelSource control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentModelSource.MetadataFilters">
+            <summary>
+            CollectionFilter Controls for the ModelSource control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ContentModelSource.ReturnMetadata">
+            <summary>
+            Boolean to return metadata for the ModelSource control.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.SortableSearchProperty">
+            <summary>
+            The SortableSearchProperty class describes an index field on which
+            a set of query results can be sorted.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.SearchProperty">
+            <summary>
+            The SearchProperty is a data structure identifying a
+            individual index field.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchProperty.Name">
+            <summary>
+            Gets or sets the name the specific index field
+            on which to sort a set of query results.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchProperty.DisplayName">
+            <summary>
+            Gets or sets the name the name displayed in the UI
+            represnting this property.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SortableSearchProperty.Direction">
+            <summary>
+            Gets or sets the value identifying the direction in
+            which query results should be sorted.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.RankSearchProperty">
+            <summary>
+            The RankSearchProperty identifies a rank field on which
+            to sort query results.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.RankSearchProperty.RankId">
+            <summary>
+            Gets or sets the ID for the rank profile that should be
+            applied when processing the relevance of query results.
+            (Not available in all search providers.)
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.AdvancedQueryText">
+            <summary>
+            Gets or sets the query text used by Search to query the index and to refine and narrow search parameters.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.EnableAutoSuggest">
+            <summary>
+            Gets or sets the feature which displays query completions/suggestions (based on the currently configured Search provider) in the Search control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.AutoSuggestMaxCount">
+            <summary>
+            Gets or sets the maximum count of query completions/suggestions displayed in the search control.
+            Note: This is the suggested maximum count of suggestions returned by the search engine. The actual number 
+            of suggestions received may vary based on the index and the Search provider.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.EnableAutoComplete">
+            <summary>
+            Gets or sets the feature which displays query completions/suggestions (based on the currently configured Search provider) in the Search control.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.AutoCompleteMaxCount">
+            <summary>
+            Gets or sets the maximum count of query completions/suggestions displayed in the search control.
+            Note: This is the suggested maximum count of suggestions returned by the search engine. The actual number 
+            of suggestions received may vary based on the index and the Search provider.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.SearchController.EnableQueryStatistics">
+            <summary>
+            Gets or sets the feature which logs query statistics (based on the Search provider).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.ProductSearchController.AdvancedQueryText">
+            <summary>
+            Gets or sets the query text used by Windows Search to query the index and to refine and narrow search parameters.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.XmlSearchInputView.XmlConfigId">
+            <summary>
+            Gets or sets the id of the Smart Form whose indexed fields will appear on the search screen.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.Views.ContentView">
+            <summary>
+            ContentView is the server control. 
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverterCLV.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            The GetStandardValues method returns the list of designs specified for the control.  It gets this list
+            by reading ControlDesigns.xml (which is located in the bin directory).  It also has to get the Ektron
+            namespace Uri and prefix from web.config.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverterCLV.ControlType">
+            <summary>
+            This property should be overridden in the inheriting control and the get should include the name of the control.
+            The Design property in the control class should specify the name of the inheriting class as it's TypeConverter.
+            Example, the Design property in the ContentListSummary Control has the following:
+            [TypeConverter(typeof(ContentListSummaryTypeConverter))] - and ContentListSummaryTypeConverter inherits from DesignTypeConverter
+            and overrides this property to return the string "ContentListSummary"
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverterCLV.SitePath">
+            <summary>
+            Returns the installation path of CMS400 as a Uri (e.g. file://C:/Inetpub/wwwroot/CMS400Demo/)
+            Note the trailing slash is present!
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            The GetStandardValues method returns the list of designs specified for the control.  It gets this list
+            by reading ControlDesigns.xml (which is located in the bin directory).  It also has to get the Ektron
+            namespace Uri and prefix from web.config.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverter.ControlType">
+            <summary>
+            This property should be overridden in the inheriting control and the get should include the name of the control.
+            The Design property in the control class should specify the name of the inheriting class as it's TypeConverter.
+            Example, the Design property in the ContentListSummary Control has the following:
+            [TypeConverter(typeof(ContentListSummaryTypeConverter))] - and ContentListSummaryTypeConverter inherits from DesignTypeConverter
+            and overrides this property to return the string "ContentListSummary"
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.DesignTypeConverter.SitePath">
+            <summary>
+            Returns the installation path of CMS400 as a Uri (e.g. file://C:/Inetpub/wwwroot/CMS400Demo/)
+            Note the trailing slash is present!
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.Views.ISmartFlexMenuControl">
+            <summary>
+            Summary description for ISmartFlexMenuControl
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeView"/> class.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnNodeCreated(Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs)">
+            <summary>
+            Raises the <see cref="F:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.NodeCreatedEvent"/> event.
+            </summary>
+            <param name="e">The <see cref="!:Ektron.Cms.Framework.UI.Controls.EktronUI.Widgets.TreeView.TreeViewEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnListTemplateCreated(Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs)">
+            <summary>
+            Raises the ListCreatedEventHandler event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnNodeDataBound(Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs)">
+            <summary>
+            Raises the <see cref="F:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.NodeDataBoundEvent"/> event.
+            </summary>
+            <param name="e">The <see cref="!:Ektron.Cms.Framework.UI.Controls.EktronUI.Widgets.TreeView.TreeViewEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnListDataBound(Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs)">
+            <summary>
+            Raises the <see cref="!:OnListDataBoundEvent"/> event.
+            </summary>
+            <param name="e">The <see cref="!:Ektron.Cms.Framework.UI.Controls.EktronUI.Widgets.TreeView.TreeViewEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.LateDataBound">
+            <summary>
+            Lates the data bound.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnInit(System.EventArgs)">
+            <summary>
+            Override the init-event; ensure Templates are set.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.OnLoad(System.EventArgs)">
+            <summary>
+            Handles the <see cref="E:System.Web.UI.Control.Load"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> object that contains event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.EnsureChildControls">
+            <summary>
+            Determines whether the server control contains child controls. If it does not, it creates child controls.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.CreateChildControls(System.Collections.IEnumerable,System.Boolean)">
+            <summary>
+            When overridden in an abstract class, creates the control hierarchy that is used to render the composite data-bound control based on the values from the specified data source.
+            </summary>
+            <param name="dataSource">An <see cref="T:System.Collections.IEnumerable"/> that contains the values to bind to the control.</param>
+            <param name="dataBinding">true to indicate called during data binding; otherwise, false.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.RenderBeginTag(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the HTML opening tag of the control to the specified writer. This method is used primarily by control developers.
+            </summary>
+            <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter"/> that represents the output stream to render HTML content on the client.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.RenderEndTag(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the HTML closing tag of the control into the specified writer. This method is used primarily by control developers.
+            </summary>
+            <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter"/> that represents the output stream to render HTML content on the client.</param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ModelTemplate">
+            <summary>
+            Override Base class property and Make internal Since this property is Never Used in Menu View. 
+            </summary>
+        </member>
+        <member name="E:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.NodeCreated">
+            <summary>
+            Occurs when [node created].
+            </summary>
+        </member>
+        <member name="E:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ListCreated">
+            <summary>
+            Occurs when [List created].
+            </summary>
+        </member>
+        <member name="E:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.NodeBound">
+            <summary>
+            Occurs when [node bound].
+            </summary>
+        </member>
+        <member name="E:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ListBound">
+            <summary>
+            Occurs when [List Template Bound]
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.Items">
+            <summary>
+            Gets or sets the items.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.MenuList">
+            <summary>
+            Gets or sets the items.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ParentNode">
+            <summary>
+            Gets or sets the ParentNode.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ItemTemplate">
+            <summary>
+             ItemTemplate
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ItemTemplatePath">
+            <summary>
+            Path and filename of the user control to load if the ItemTemplate is not specified declaratively.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.NestedView">
+            <summary>
+            Nested tree-views do not communicate with a controller; they use data supplied from parent / ancestor view.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ListTemplate">
+            <summary>
+            Gets or sets the list template.
+            </summary>
+            <value>
+            The list template.
+            </value>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewBase`2.ListTemplatePath">
+            <summary>
+            Path and filename of the user control to load if the ListTemplate is not specified declaratively.
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs">
+            <summary>
+            Arguments for a TreeNode
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs.#ctor(Ektron.Cms.Framework.UI.Tree.ITreeNode,System.Web.UI.Control,System.Object,System.Web.UI.WebControls.CommandEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs"/> class.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="control">The control.</param>
+            <param name="commandSource">The command source.</param>
+            <param name="originalArgs">The <see cref="T:System.Web.UI.WebControls.CommandEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs.#ctor(Ektron.Cms.Framework.UI.Tree.ITreeNode,System.Web.UI.Control)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs"/> class.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="control">The control.</param>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs.CommandSource">
+            <summary>
+            Gets the command source.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs.Item">
+            <summary>
+            Gets the item.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Framework.UI.Controls.Views.TreeViewEventArgs.InstantiatedControl">
+            <summary>
+             InstantiatedControl
+            </summary>
+        </member>
+    </members>
+</doc>

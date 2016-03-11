@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AssetManagement</name>
+    </assembly>
+    <members>
+        <member name="T:AssetManagement.AssetManagementService">
+            <summary>
+            AssetManagementService is the entry point for DMS. 
+            This provides complete functionality needed to manage documents.
+            This is the entry point for all CMS systems.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.#ctor">
+            <summary>
+            AssetManagementService initializes the component. 
+            Creates helper configmanager and initializes entry points.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Create(Ektron.ASM.AssetConfig.AssetMetaData,Ektron.ASM.AssetConfig.AssetStatus)">
+            <summary>
+            Web method for adding new assets in to the DMS
+            </summary>
+            <param name="assetMetaData"></param>
+            <param name="state"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Retrieve(System.String,Ektron.ASM.AssetConfig.InstanceType,System.String,System.String)">
+            <summary>
+            Web method to retrieve published assets for storage on CMS
+            </summary>
+            <param name="assetID"></param>
+            <param name="instanceType"></param>
+            <param name="param"></param>
+            <param name="destFileName"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Update(Ektron.ASM.AssetConfig.AssetMetaData,Ektron.ASM.AssetConfig.AssetStatus)">
+            <summary>
+            Web method to update an existing asset in the DMS 
+            </summary>
+            <param name="assetMetaData"></param>
+            <param name="state"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.CopyReplace(Ektron.ASM.AssetConfig.AssetMetaData,System.String,Ektron.ASM.AssetConfig.AssetStatus)">
+            <summary>
+            Web method to update an existing asset in the DMS 
+            </summary>
+            <param name="assetMetaData"></param>
+            <param name="state"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Delete(System.String)">
+            <summary>
+            Web method to delete an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.CheckOut(System.String)">
+            <summary>
+            Web method to CheckOut an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.UndoCheckOut(System.String)">
+            <summary>
+            Web method to undo checkout on an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetState(System.String,Ektron.ASM.AssetConfig.AssetStatus,System.Boolean)">
+            <summary>
+            Web method to change state on existing asset in DMS
+            No status available 
+            Document is checked-out
+            Document is checked-in
+            Document is published
+            Document is saved 
+            Document is deleted  
+            Document is waiting for go-live 
+            Document is pending approval
+            By default all assets start in no state
+            </summary>
+            <param name="assetID"></param>
+            <param name="state"></param>
+            <param name="isPrivate"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetMoveState(System.String,Ektron.ASM.AssetConfig.AssetStatus,System.Boolean,System.String)">
+            <summary>
+            Web method to change state on existing asset in DMS
+            No status available 
+            Document is checked-out
+            Document is checked-in
+            Document is published
+            Document is saved 
+            Document is deleted  
+            Document is waiting for go-live 
+            Document is pending approval
+            By default all assets start in no state
+            </summary>
+            <param name="assetID"></param>
+            <param name="state"></param>
+            <param name="isPrivate"></param>
+            <param name="originalFolderId"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Search(Ektron.ASM.AssetConfig.AssetSearchRequestData)">
+            <summary>
+            Web method to search assets in DMS system
+            </summary>
+            <param name="searchRequestData"></param>
+            <returns>Array of SearchData</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetMetaDataSupported(System.String,Ektron.ASM.AssetConfig.enMetaDataType)">
+            <summary>
+            Returns MetaData supported by each plugin
+            </summary>
+            <param name="assetType"></param>
+            <param name="metaType"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetHistory(System.String,Ektron.ASM.AssetConfig.HistoryType)">
+            <summary>
+            Web method to get history of assets in DMS system
+            </summary>
+            <param name="assetID"></param>
+            <param name="historyType"></param>
+            <returns>Array of HistoryData</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.PurgeHistory(System.String,Ektron.ASM.AssetConfig.PurgeHistoryType,System.String)">
+            <summary>
+            Web method to purge history of an existing asset in DMS
+            History of asset is also purged when asset is deleted
+            </summary>
+            <param name="assetID"></param>
+            <param name="purgeType"></param>
+            <param name="param"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetInfo(System.String)">
+            <summary>
+            Web method to get information of a existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <returns>AssetData</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetNewAssetHandle(System.String,System.String)">
+            <summary>
+            Web method to set a new handle in the case where one is moving an asset into
+            a folder where an asset already exists with the current name
+            </summary>
+            <param name="assetID"></param>
+            <param name="newHandle"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.Label(System.String,System.String)">
+            <summary>
+            Label an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <param name="inLabel"></param>
+            <returns>AssetData</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetEditUI(System.String,Ektron.ASM.AssetConfig.UIType)">
+            <summary>
+            Get snippet to edit an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <param name="uiType"></param>
+            <returns>Snippet</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetAddUI(Ektron.ASM.AssetConfig.UIType,System.String)">
+            <summary>
+            Get snippet to add a new asset to DMS
+            </summary>
+            <param name="uiType"></param>
+            <param name="assetType"></param>
+            <returns>Snippet</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetViewUI(System.String,Ektron.ASM.AssetConfig.InstanceType,System.String,Ektron.ASM.AssetConfig.UIType)">
+            <summary>
+            Get snippet to view an existing asset in DMS
+            </summary>
+            <param name="assetID"></param>
+            <param name="instanceType"></param>
+            <param name="param"></param>
+            <param name="uiType"></param>
+            <returns>Snippet</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetConfigData(Ektron.ASM.AssetConfig.AssetManagementConfig[])">
+            <summary>
+            Set configuration returns config
+            </summary>
+            <param name="assetConfigArray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.RequestIsLocal">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetDocumentMetaData(System.String,System.Collections.Hashtable)">
+            <summary>
+            Set document search metadata
+            </summary>
+            <param name="assetID"></param>
+            <param name="dataTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetConfigData">
+            <summary>
+            Get configuration returns config 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetForceReadConfigData(System.Boolean)">
+            <summary>
+            Reads configuration from config file 
+            </summary>
+            <param name="forceReadConfig">If true, force read from assetmanagement.config file</param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetUserDomain">
+            <summary>
+            RestoreAssets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.CreateMultiple(Ektron.ASM.AssetConfig.AssetMetaData[],Ektron.ASM.AssetConfig.AssetStatus,System.Boolean)">
+            <summary>
+            Web method for adding multiple new assets in to the DMS
+            </summary>
+            <param name="assetMetaDataArray"></param>
+            <param name="state"></param>
+            <param name="isPrivate"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.CopyMultiple(System.String[],Ektron.ASM.AssetConfig.AssetStatus)">
+            <param name="assetIDs"></param>
+            <param name="state"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SearchHistoryData(System.String,System.String)">
+            <summary>
+            SearchHistoryData returns history associated with asset
+            </summary>
+            <param name="searchText"></param>
+            <param name="assetID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.RestoreHistory(System.String,System.String)">
+            <summary>
+            RestoreHistory passed in assetVersion and assetID
+            </summary>
+            <param name="assetID"></param>
+            <param name="version"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.SetMultipleState(System.String[],Ektron.ASM.AssetConfig.AssetStatus)">
+            <summary>
+            Web method to change state on existing asset in DMS
+            No status available 
+            Document is checked-out
+            Document is checked-in
+            Document is published
+            Document is saved 
+            Document is deleted  
+            Document is waiting for go-live 
+            Document is pending approval
+            By default all assets start in no state
+            </summary>
+            <param name="assetIDArray"></param>
+            <param name="state"></param>
+            <returns>success/failure</returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetFileInformation(System.String)">
+            <summary>
+            Returns information about given File
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetMultipleViewUI(System.String[],Ektron.ASM.AssetConfig.InstanceType,System.String[],Ektron.ASM.AssetConfig.UIType)">
+            <summary>
+            GetMultipleViewUI returns multiple view snippets
+            </summary>
+            <param name="assetIDArray"></param>
+            <param name="instanceType"></param>
+            <param name="param"></param>
+            <param name="uiType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.UpdateAssetRevision(System.String,Ektron.ASM.AssetConfig.AssetStatus,System.Boolean)">
+            <summary>
+            UpdateAssetRevision updates version associated with Asset
+            </summary>
+            <param name="strAssetID"></param>
+            <param name="status"></param>
+            <param name="IsPrivate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetAllServerIDs">
+            <summary>
+            Get all server IDs associated with server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.ReIndexAllDocs(System.Int64)">
+            <summary>
+            ReIndexAllDocs indexes all content associated with XmlConfigID
+            </summary>
+            <param name="xmlConfigID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.StringToEnum(System.Type,System.String)">
+            <summary>
+            Returns an Enumeration Object from string
+            </summary>
+            <param name="t"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.AddMetadataType(MetadataServerData)">
+            <summary>
+            AddMetadataType add metadata type
+            </summary>
+            <param name="metaServerData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.UpdateMetadataType(UpdateMetaDataServerData)">
+            <summary>
+            UpdateMetadataType updates metadata associated with metadata type
+            </summary>
+            <param name="metaServerData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.RemoveMetadataType(RemoveMetaDataServerData)">
+            <summary>
+            RemoveMetadataType removes metadata type associated with metadat
+            </summary>
+            <param name="metaServerData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.UpdateMetaDataForFolder(FolderMetaData)">
+            <summary>
+            UpdateMetaDataForFolder updates metadata associated with the folder
+            </summary>
+            <param name="folMetaData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.UpdateMetaDataForFile(System.String,System.String)">
+            <summary>
+            UpdateMetaDataForFile - dummy function for backward compatibility
+            </summary>
+            <param name="assetID"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.GetAssetData(System.String)">
+            <summary>
+            Starts indexing service
+            </summary>
+        </member>
+        <member name="M:AssetManagement.AssetManagementService.VerifyClientIdentity(System.Web.HttpCookie)">
+            <summary>
+            
+            </summary>
+            <param name="cookie"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssetManagement.DmsPoll">
+            <summary>
+            Summary description for $codebehindclassname$
+            </summary>
+        </member>
+        <member name="T:AssetManagement.DownloadFile">
+            <summary>
+            Summary description for DownloadFile.
+            </summary>
+        </member>
+        <member name="F:AssetManagement.DownloadFile.assetID">
+            <summary>
+            Log4net used for logging information
+            </summary>
+        </member>
+        <member name="M:AssetManagement.DownloadFile.OnInit(System.EventArgs)">
+            <summary>
+            Initialize the component for webservice
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.DownloadFile.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.DownloadFile.Page_Error(System.Object,System.EventArgs)">
+            <summary>
+            Displays errors on the page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:AssetManagement.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="F:AssetManagement.Global.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AssetManagement.Global.#ctor">
+            <summary>
+            Global constructor
+            </summary>
+        </member>
+        <member name="M:AssetManagement.Global.Application_Start(System.Object,System.EventArgs)">
+            <summary>
+            Start application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Session_Start(System.Object,System.EventArgs)">
+            <summary>
+            Start session
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Application_BeginRequest(System.Object,System.EventArgs)">
+            <summary>
+            Begin application request
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Application_EndRequest(System.Object,System.EventArgs)">
+            <summary>
+            End application request
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            Authenication request
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Application_Error(System.Object,System.EventArgs)">
+            <summary>
+            Error in application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Session_End(System.Object,System.EventArgs)">
+            <summary>
+            End session
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.Application_End(System.Object,System.EventArgs)">
+            <summary>
+            End application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AssetManagement.Global.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AssetManagement.Properties.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.AssetID">
+            <summary>
+              Looks up a localized string similar to ID.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.CookieName">
+            <summary>
+              Looks up a localized string similar to ecm.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.IsHistory">
+            <summary>
+              Looks up a localized string similar to history.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.LoadBalanced">
+            <summary>
+              Looks up a localized string similar to You are running in load balanced environment your document will be available shortly.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.SiteID">
+            <summary>
+              Looks up a localized string similar to site_id.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.TransID">
+            <summary>
+              Looks up a localized string similar to TID.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.UnAuthorizedUser">
+            <summary>
+              Looks up a localized string similar to You donot have access to the requested resource only logged in users can access private resources.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.UniqueID">
+            <summary>
+              Looks up a localized string similar to unique_id.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.UserID">
+            <summary>
+              Looks up a localized string similar to user_id.
+            </summary>
+        </member>
+        <member name="P:AssetManagement.Properties.Resource.VersionID">
+            <summary>
+              Looks up a localized string similar to version.
+            </summary>
+        </member>
+        <member name="T:AssetManagement.Utilities">
+            <summary>
+            Summary description for Utilities.
+            </summary>
+        </member>
+        <member name="F:AssetManagement.Utilities._docManagement">
+            <summary>
+            Log4net used for logging information
+            </summary>
+        </member>
+        <member name="M:AssetManagement.Utilities.#ctor">
+            <summary>
+            Utilities default constructor
+            </summary>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckStringNotNull(System.String,System.String)">
+            <summary>
+            Checks if args passed in are null
+            </summary>
+            <param name="args"></param>
+            <param name="argName"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckStringNotNullEmpty(System.String,System.String)">
+            <summary>
+            Checks if string passed in is empty
+            </summary>
+            <param name="args"></param>
+            <param name="argName"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckIntNonNegative(System.Int32,System.String)">
+            <summary>
+            Checks if integer is negative
+            </summary>
+            <param name="args"></param>
+            <param name="argName"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckAssetManagementData(Ektron.ASM.AssetConfig.AssetMetaData)">
+            <summary>
+            Checks validity of Ektron.ASM.AssetConfig
+            </summary>
+            <param name="amData"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckAssetStatus(Ektron.ASM.AssetConfig.AssetStatus)">
+            <summary>
+            Checks validity of AssetStatus
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.CheckSearchMetaData(Ektron.ASM.AssetConfig.AssetSearchRequestData)">
+            <summary>
+            Checks validity of search meta data
+            </summary>
+            <param name="smData"></param>
+        </member>
+        <member name="M:AssetManagement.Utilities.ReturnNullOrData(System.Array)">
+            <summary>
+            Checks for empty or Null values and returns null in either case
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.Utilities.ReadConfiguration(System.String)">
+            <summary>
+            Initializes the system entry points used by all entry points in to the system
+            There are currently two entry points one is DownloadAsset.aspx the other is assetmanagement.asmx
+            As new entry points are added call should be made in to this code in constructor or initialize of entry
+            point class
+            </summary>
+        </member>
+        <member name="M:AssetManagement.Utilities.OnConfigurationChanged(System.Object,System.IO.FileSystemEventArgs)">
+            <devdoc>
+            Raises the ConfigurationChanged event.
+            </devdoc>
+        </member>
+        <member name="M:AssetManagement.Utilities.GetConfiguration">
+            <summary>
+            Returns AssetManagementConfig
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManagement.Utilities.WriteConfiguration(Ektron.ASM.AssetConfig.AssetManagementConfig[],System.String)">
+            <summary>
+            Writes AssetManagementConfig
+            </summary>
+            <param name="configDataArray"></param>
+            <param name="path"></param>
+        </member>
+    </members>
+</doc>

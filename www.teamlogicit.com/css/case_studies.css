@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.case_studies_wrapper{
+	background:#F5F5F5;
+	padding:25px 0;
+	position:relative;
+	height: 800px;
+}
+.case_studies_block{margin:0 auto;width:100%;text-align: center;}
+.case_studies_block ul{margin:0 0 20px;padding:0;list-style:none;}
+.case_studies_block ul li{display:inline-block;margin:0 0 20px;padding:0;}
+
+.case_studies_div{
+	background:#000000;
+	width:290px;
+	height:290px;
+	display:table;
+}
+.case_studies_1{background:url(../images/case_studies_1.jpg) no-repeat;}
+.case_studies_2{background:url(../images/case_studies_2.jpg) no-repeat;}
+.case_studies_3{background:url(../images/case_studies_3.jpg) no-repeat;}
+.case_studies_4{background:url(../images/case_studies_4.jpg) no-repeat;}
+.case_studies_5{background:url(../images/case_studies_5.jpg) no-repeat;}
+.case_studies_6{background:url(../images/case_studies_6.jpg) no-repeat;}
+.case_studies_7{background:url(../images/case_studies_7.jpg) no-repeat;}
+.case_studies_8{background:url(../images/case_studies_8.jpg) no-repeat;}
+
+.case_studies_content{
+	background:rgba(0,0,0,0.5);
+	color:#ffffff;
+	text-align:center;
+	width:100%;
+	height:290px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.case_studies_block ul li a:hover .case_studies_content{
+	background:rgba(0,0,0,0.8);
+	text-decoration:none;
+}
+
+.case_studies_content h3,
+.case_studies_content h4{margin:0;padding:0;text-transform:uppercase;font-weight:normal;}
+
+.case_studies_content h3{font-family: 'GothamBold', Arial, Helvetica, sans-serif;padding:0 40px;line-height:120%;}
+.case_studies_content h4{font-family: 'GothamBook', Arial, Helvetica, sans-serif;font-size:1.2em;}
+
+@media only screen and (min-width: 18.75em){
+	
+	
+}
+
+
+
+/*styles for 480px - 620px @ 16px!*/
+
+@media only screen and (min-width: 30em)  {
+	
+	.case_studies_block ul li{margin:0 0;}
+	
+	
+}
+
+@media screen and (min-width: 38.75em){
+	.case_studies_block ul li{margin:0 0;}
+	
+}
+
+
+/*styles for 800px and up @ 16px!*/
+
+@media screen and (min-width: 50em){
+	.case_studies_block ul li{margin:0 0;}
+	
+	
+}
+
+
+/*styles for 1100px and up @ 16px!*/
+
+@media screen and (min-width: 68.75em){
+	.case_studies_block ul li{margin:0 0;}
+	
+}
+
+
+
+@media screen and (min-width: 1200px){
+	.case_studies_block ul li{margin:0 0;}
+	
+}

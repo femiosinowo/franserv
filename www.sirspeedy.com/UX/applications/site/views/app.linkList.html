@@ -1,0 +1,18 @@
+﻿<ul data-bind="foreach: $data.Items" class="ux-app-siteApp-linkList">
+    <li>     
+        <!-- ko if:  Items !== null -->
+            <!-- ko if:  Items.length > 0 -->
+            <h4 data-bind="text: Name"></h4>
+            <div data-bind="template: {name: 'app.linkList', data: $data }"></div>
+            <!-- /ko -->
+            <!-- ko if:  Items.length === 0 -->
+                <!-- ko ifnot: Enabled -->
+                <span data-bind="text: Name, attr: {title: Name}"></span>
+                <!-- /ko -->
+                <!-- ko if:  Enabled -->
+                <a data-bind="text: Name, attr: {href: Href, title: Name, onclick: OnClick}"></a>
+                <!-- /ko -->
+            <!-- /ko -->
+        <!-- /ko -->
+    </li>
+</ul>

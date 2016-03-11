@@ -1,0 +1,10 @@
+﻿<ul id="DeviceOptions" class="jcarousel deviceOptions" data-bind="foreach:entries">
+    <li>
+        <input type="radio" data-bind="attr: {id: id(), value: value()}" name="deviceToPreview"/> 
+        <label data-bind="attr: {for: id(), title: value() }, click: $parent.loadDevice">
+            <span class="thumb" data-bind="style: { backgroundImage:'url(' + ThumbnailUrl() + ')' }" ></span>
+            <span class="manufacturer" data-bind="text:BrandName()"></span>
+            <span class="model" data-bind="text:Model()"></span>
+        </label>          
+    </li>
+</ul>

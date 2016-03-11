@@ -1,0 +1,191 @@
+﻿@charset "UTF-8";
+
+.ektron-ux div.ux-filterTree h3.filterHeader:first-of-type {
+    border-radius: 0px;
+}
+
+.ektron-ux div.ux-filterTree h3.filterHeader {
+    border-bottom: 1px solid rgb(167,167,167);
+}
+
+.ektron-ux div.ux-filterTree .ui-accordion-header.ui-state-default.ui-accordion-header-active.ui-state-active,
+.ektron-ux div.ux-filterTree .ui-accordion-header.ui-state-default.ui-accordion-header-active.ui-state-active + div.filterPanel {
+    border-bottom: 1px solid rgb(199,199,199);
+}
+
+.ektron-ux div.ux-filterTree div.filterPanel {
+    background-image: linear-gradient(to right, #A7A7A7, rgb(185,185,185) 12.5%);
+    padding: 0px;
+}
+
+    .ektron-ux div.ux-filterTree div.filterPanel div.breadcrumb {
+        background-image: linear-gradient(to right, #A7A7A7, rgb(150,150,150) 12.5%);
+        display: none;
+        margin-bottom: 1px;
+        padding: 9px 12.45% 13px;
+        position: relative;
+    }
+
+        .ektron-ux div.ux-filterTree div.filterPanel div.breadcrumb span.ux-button {
+            clear: none;
+            float: left;
+            margin: 0 21px 15px 0;
+            max-width: 6em;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .ektron-ux div.ux-filterTree div.filterPanel div.breadcrumb span[data-ux-icon] {
+            color: rgb(203,203,203);
+            float: left;
+            font-size: .7em;
+            height: 16px;
+            left: -7px;
+            margin: 0;
+            padding: 3px 0px;
+            position: relative;
+            text-align: center;
+            top: 3px;
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            width: 0;
+        }
+
+        .ektron-ux div.ux-filterTree div.filterPanel div.breadcrumb span:last-child {
+            clear: left;
+            display: block;
+            font-size: 1.25em;
+            font-weight: bold;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            -webkit-text-shadow: none;
+            text-shadow: none;
+            white-space: nowrap;
+        }
+
+    .ektron-ux div.ux-filterTree div.filterPanel ul,
+    .ektron-ux div.ux-filterTree div.filterPanel li {
+        width: 100%;
+    }
+
+        .ektron-ux div.ux-filterTree div.filterPanel li.filter {
+            background: #A7A7A7;
+            cursor: pointer;
+            margin-bottom: 1px;
+            min-height: 18px;
+            padding: 5px 0px;
+            position: relative;
+            text-indent: 12.45%; /* 32px / 257px */
+        }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter > * {
+                vertical-align: middle;
+            }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter input[type='checkbox'] {
+                display: none;
+            }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter label {
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVDhPlZHNcoIwFEbvs7W1UAtKB+ygRWrr8NM9DG7K0qeAtcu8ABt8sh6NU2c68tOzIIGc794kSFVV+/2+LMvvcSDXdS1Zls1ms7vRzOfzPM9lOp3en3kYDRFheBzCMIzL7MxkMhGGpzPUeO7AsiyeCGCaJlVOm7Rtm+Ox6ZduHMdBAEoQEQa+uq77OsRisUAjTxth4N33/bchVqsVGjIRoYDOhGH43oFe4omGTEQ8z1sul+v1erPZfPSCgIZMRGhKdyqx8NkLAhoykbGx7XZLNzS6nWJ6k2y9J0ZGr97oRjEt3eS32zWmr/Gy3sHfbvxHZlzR4NkQ0P4XA4RrtyRJgiDgfWQMmYgcDofdbhdFUZqmX0PEcVwUBRFRSjVN0/ZyPB4vs7ZFVkr9ACYclQo70T2XAAAAAElFTkSuQmCC);
+                background-repeat: no-repeat;
+                -webkit-box-shadow: 0px 1px rgb(195,195,195);
+                box-shadow: 0px 1px rgb(195,195,195);
+                display: inline-block;
+                height: 19px;
+                margin-right: 3.891050583657588%; /* 10px / 257px */
+                position: relative;
+                top: -1px;
+                width: 18px;
+            }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label .check,
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label .impliedCheck {
+                    color: rgb(236, 184, 53);
+                    display: none;
+                    font-size: 11px;
+                    position: absolute;
+                }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label .check {
+                    margin: 5px 4px;
+                }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label .impliedCheck {
+                    margin: 5px 4px;
+                }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label.selected .check {
+                    display: block;
+                }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label.childSelected .impliedCheck {
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVChTPU3tSsNAELxHEk2uTYP+KERFW21FROsHFFQU+rvQ1+kDtD97d8HEpjZ62lcoiv+827vkEdxrRRiG3Z3ZGdJ/bL+Prkp5U8p783FbyG75dmdkdzG+7D+0yPfk1M7Pi/zMzjtFfl3knfL1wry4y9ekTeD50GQNM22a7NjOTuyshTDZEUybkDUIJDvwVLdJZNJdk0Y23XNDEumkDsk2ARFAHGjHNYjDf1ZxYESNaE419zXzHHNfrXh9BOajvKkY7pU/n+M10LpBnF14im9p7oFAGWNWYP6PqJDPEVWi6mSGaVVsQZPiFDhdjikZ9A7yYYg1ilGN367IJcthOOjt/wIiDrtG/5lsUwAAAABJRU5ErkJggg==);
+                    background-repeat: no-repeat;
+                    display: block;
+                    height: 19px;
+                    width: 18px;
+                }
+
+                .ektron-ux div.ux-filterTree div.filterPanel li.filter label .accessibility {
+                    position: absolute;
+                    text-indent: -9999px;
+                }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter span.title {
+                color: #fff;
+                font-weight: bold;
+                overflow: hidden;
+                position: absolute;
+                text-indent: 0px;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                top: 4px;
+                white-space: nowrap;
+                width: 49.80544747081712%;
+            }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter span.count {
+                background: rgb(134, 134, 134);
+                border-radius: 8px;
+                color: rgb(182, 182, 182);
+                font-size: 11px;
+                height: 16px;
+                line-height: 16px;
+                padding: 0 5px;
+                position: absolute;
+                right: 12.45%; /* 32px / 257px */
+                top: 6px;
+                text-indent: 0px;
+                -webkit-text-shadow: none;
+                text-shadow: none;
+            }
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter .branchIndicator {
+                height: 16px;
+                position: absolute;
+                right: 2.723735408560311%; /* 7px / 257px */
+                text-indent: 0px;
+                top: 4px;
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                width: 16px;
+            }
+
+
+            .ektron-ux div.ux-filterTree div.filterPanel li.filter > ul {
+                display: none;
+                /*padding-left: 10px;*/
+            }

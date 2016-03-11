@@ -1,0 +1,255 @@
+/* CSS Document */
+/*
+ * We're Local (local) mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm We're Local (local) 
+ */
+.were_local_wrapper {
+	background: #ffffff url(../images/were_local_bkg.png) bottom left repeat-x;
+}
+
+.were_local {
+	min-height: 250px;
+}
+
+.were_local h2.headline {
+	color: #000000;
+}
+
+.were_local ul {
+	padding: 0;
+	list-style: none;
+	text-align: right;
+	display: table-row;
+}
+
+.were_local ul li {
+	display: table-cell;
+	vertical-align: bottom;
+	margin: 0;
+	width: 32px;
+	margin: 0 .5%;
+}
+
+/*we're local sections*/
+.were_local_section:first-child {
+	left:-1%!important;
+}
+
+.were_local .grid_10:last-child {
+	margin-right:0;
+}
+
+.were_local_section {
+	text-align:left;
+	color:#ffffff;
+	width:39.667%;
+	position:relative;
+	float:left;
+	margin:40px 0 10px;
+}
+
+.were_local_section img {
+	width:50%;
+	max-width:319px;
+}
+
+.were_local_section h3 {
+	text-transform:uppercase;
+	font-size:1.8em;
+	font-family:GothamBold, Arial, Helvetica, sans-serif;
+	line-height:110%;
+}
+
+.were_local_section p {
+	font-size:1.15em;
+	font-family:GothamBook, Arial, Helvetica, sans-serif;
+	padding:0;
+}
+
+.were_local_section p strong {
+	font-family:GothamBold, Arial, Helvetica, sans-serif;
+}
+
+.were_local .social_media {
+	display:table;
+	height:95px;
+}
+
+/*We're Local Divider*/
+.were_local .divider {
+	width:14.667%;
+	float:left;
+	display:inline;
+	position:relative;
+	font-size:12em;
+	color:#ffffff;
+	font-family:GothamBook, Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-indent:-9999px;
+	background:transparent url(../images/were_local_divider.png) center center no-repeat;
+}
+
+/*We're Local Contact Information*/
+ul.local_contact_info {
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align:left;
+}
+
+ul.local_contact_info li {
+	width: auto;
+	display: block;
+	font-family: GothamBook, Arial, Helvetica, sans-serif;
+	padding-bottom: 35px;
+	height: 32px;
+	padding-left: 40px;
+}
+
+ul.local_contact_info li.address {
+	background: url(../images/green_teamlogic_icon.png) no-repeat 0 -10%;
+}
+
+ul.local_contact_info li.telephone {
+	background: url(../images/green_phone_icon.png) no-repeat 0 -10%;
+}
+
+ul.local_contact_info li.email {
+	background: url(../images/green_email_icon.png) no-repeat 0 -10%;
+}
+
+ul.local_contact_info li a,ul.local_contact_info li a:visited {
+	cursor: pointer;
+	color: #fff;
+}
+
+ul.local_contact_info li a:hover {
+	text-decoration: underline;
+}
+
+/*Location wrapper*/
+.location_wrapper,#location_map,#location_map_black {
+	width: 100%;
+	height: 380px!important;
+}
+
+/*styles for 300 and up @ 16px!*/
+/* The max-width declaration below blocks this from ever working */
+@media all and max-width 640px {
+	.were_local_wrapper .grid_8,.were_local_wrapper .grid_7 {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+
+	.were_local_wrapper .push_9 {
+		left: 0;
+	}
+
+	.were_local ul li {
+		width: auto;
+		margin: 0;
+		padding:0 .5%!important;
+		vertical-align:middle!important;
+	}
+
+	.were_local ul.local_contact_info {
+		text-align: left;
+		padding-top: 25px;
+		border-top: 3px solid #ffffff;
+	}
+
+	.were_local .social_media ul li {
+		padding: 0 1.5%;
+	}
+
+	.were_local .social_media {
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.were_local_section {
+		float: none;
+		width: 100%;
+		margin: 15px 0 10px;
+	}
+
+	.were_local_section h3 {
+		font-size: 1.5em;
+	}
+
+	.location_wrapper,#location_map {
+		height: 280px!important;
+	}
+
+	.were_local .divider {
+		display: none;
+	}
+
+	
+}
+
+/*styles for 480px - 620px @ 16px!*/
+@media screen and min-width 641px and max-width959px {
+	.were_local ul li {
+		width: 32px;
+		margin: 0 .5%;
+	}
+
+	.were_local_section img {
+		width: 100%;
+	}
+
+	.were_local_section h3 {
+		font-size: 1.5em;
+	}
+}
+
+/*styles for 1100px and up @ 16px!*/
+@media screen and min-width 960px and max-width1079px {
+	.were_local ul li {
+		width: 32px;
+		margin: 0 .5%;
+	}
+
+	.were_local_section img {
+		width: 100%;
+	}
+
+	.were_local_section h3 {
+		font-size: 1.6em;
+	}
+}
+
+/*one with pixels too! */
+/* NOTE - if the user were to increase his browser font size to 20px (chrome: Large), the above (68.75em) media query will be incorrectly ignored!!!
+	Assuming 20px browser setting, we would expect to see this progression:
+			yellow > green > red > blue > NAVY > orange
+			
+	However, the orange never kicks in... which seems like a browser bug!
+	Here's the math (assuming 20px browser setting):
+	1200/20 = 60em     <     68.75em
+*/
+@media screen and min-width 1080px{
+	.were_local ul li {
+		width:32px;
+		margin:0 .5%;
+	}
+
+	.were_local ul.local_contact_info li {
+		width:auto;
+		display:block;
+		text-align:left;
+	}
+
+	.were_local_section img {
+		width:100%;
+	}
+
+	.were_local_section h3 {
+		font-size:2em;
+	}
+
+	.were_local_section p {
+		padding:0;
+	}
+}

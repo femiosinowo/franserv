@@ -1,0 +1,69 @@
+﻿@charset "UTF-8";
+
+@-moz-keyframes glow {
+    0% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@-webkit-keyframes glow {
+    0% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+
+div.ux-dashboard-throbber .glowanimation {
+    -moz-animation: 0.75s ease-in-out 0s alternate none infinite glow;
+    -o-animation: 0.75s ease-in-out 0s alternate none infinite glow;
+    -webkit-animation: 0.75s ease-in-out 0s alternate none infinite glow;
+    animation: 0.75s ease-in-out 0s alternate none infinite glow;
+    -moz-transform-origin: center center 0;
+    -ms-transform-origin: center center 0;
+    -o-transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
+    transform-origin: center center 0;
+}
+
+div.ux-dashboard-throbber .messageContainer {
+    display: block;
+    padding-top: 5%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 50;
+}
+
+    div.ux-dashboard-throbber .messageContainer .message {
+        background: rgba(0,0,0,.7);
+        border-radius: 4px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 50px 75px;
+    }
+
+div.ux-dashboard-throbber .messageBackground {
+    background: rgba(255,255,255,.9);
+    height: 100%;
+    position: fixed;
+    width: 95.3%;
+    z-index: 47;
+}

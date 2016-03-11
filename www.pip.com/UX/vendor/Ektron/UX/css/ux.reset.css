@@ -1,0 +1,52 @@
+﻿@charset "UTF-8";
+/* UX Reset
+----------------------------------*/
+/*ignore jslint start*/
+.ektron-ux-reset div, .ektron-ux-reset span, .ektron-ux-reset applet, .ektron-ux-reset object, .ektron-ux-reset iframe, .ektron-ux-reset h1, .ektron-ux-reset h2, .ektron-ux-reset h3, .ektron-ux-reset h4, .ektron-ux-reset h5, .ektron-ux-reset h6, .ektron-ux-reset p, .ektron-ux-reset blockquote, .ektron-ux-reset pre, .ektron-ux-reset a, .ektron-ux-reset abbr, .ektron-ux-reset acronym, .ektron-ux-reset address, .ektron-ux-reset big, .ektron-ux-reset cite, .ektron-ux-reset code, .ektron-ux-reset del, .ektron-ux-reset dfn, .ektron-ux-reset em, .ektron-ux-reset img, .ektron-ux-reset ins, .ektron-ux-reset kbd, .ektron-ux-reset q, .ektron-ux-reset s, .ektron-ux-reset samp, .ektron-ux-reset small, .ektron-ux-reset strike, .ektron-ux-reset strong, .ektron-ux-reset sub, .ektron-ux-reset sup, .ektron-ux-reset tt, .ektron-ux-reset var, .ektron-ux-reset b, .ektron-ux-reset u, .ektron-ux-reset i, .ektron-ux-reset center, .ektron-ux-reset dl, .ektron-ux-reset dt, .ektron-ux-reset dd, .ektron-ux-reset ol, .ektron-ux-reset ul, .ektron-ux-reset li, .ektron-ux-reset fieldset, .ektron-ux-reset form, .ektron-ux-reset label, .ektron-ux-reset legend, .ektron-ux-reset table, .ektron-ux-reset caption, .ektron-ux-reset tbody, .ektron-ux-reset tfoot, .ektron-ux-reset thead, .ektron-ux-reset tr, .ektron-ux-reset th, .ektron-ux-reset td, .ektron-ux-reset article, .ektron-ux-reset aside, .ektron-ux-reset canvas, .ektron-ux-reset details, .ektron-ux-reset embed, .ektron-ux-reset figure, .ektron-ux-reset figcaption, .ektron-ux-reset footer, .ektron-ux-reset header, .ektron-ux-reset hgroup, .ektron-ux-reset menu, .ektron-ux-reset nav, .ektron-ux-reset output, .ektron-ux-reset ruby, .ektron-ux-reset section, .ektron-ux-reset summary, .ektron-ux-reset time, .ektron-ux-reset mark, .ektron-ux-reset audio, .ektron-ux-reset video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	-webkit-text-shadow: none;
+	text-shadow: none;
+	text-indent: 0;
+	vertical-align: baseline;
+	line-height: 1.5;
+	background: transparent;
+	opacity: 1;
+	position: static;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+    text-align: left;
+}
+.ektron-ux-reset input {
+    font: inherit;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+/* HTML5 display-role reset for older browsers */
+.ektron-ux-reset article, .ektron-ux-reset aside, .ektron-ux-reset details, .ektron-ux-reset figcaption, .ektron-ux-reset figure, .ektron-ux-reset footer, .ektron-ux-reset header, .ektron-ux-reset hgroup, .ektron-ux-reset menu, .ektron-ux-reset nav, .ektron-ux-reset section {
+	display: block;
+}
+/*ignore jslint end*/
+.ektron-ux-reset ol, .ektron-ux-reset ul {
+	list-style: none;
+}
+.ektron-ux-reset blockquote, .ektron-ux-reset q {
+	/*ignore jslint start*/
+	quotes: none; 
+	/*ignore jslint end*/
+}
+blockquote:before, .ektron-ux-reset blockquote:after, .ektron-ux-reset q:before, .ektron-ux-reset q:after {
+	content: '';
+}
+.ektron-ux-reset table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ektron-ux-reset form{
+    height: auto;
+}

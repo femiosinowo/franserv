@@ -1,0 +1,712 @@
+
+/* ==========================================================================
+   About Us National
+   ========================================================================== */
+
+/* menu title blocks*/
+#company-info .menu-title-block h2#menu-company-info,
+#mgmt-team .menu-title-block h2#menu-mgmt-team,
+#partners .menu-title-block h2#menu-partners,
+#history .menu-title-block h2#menu-history,
+#news .menu-title-block h2#menu-news,
+#media .menu-title-block h2#menu-media{
+	display:block;
+}
+#company_info_content{
+	float:left;
+	display:block;
+}
+.main_about_us .headline-block{
+	background:#F5F5F5;
+}
+
+
+/*sub menu */
+#company-info .menu-items-block .company-info-link a,
+#mgmt-team .menu-items-block .mgmt-team-link a,
+#partners .menu-items-block .partners-link a,
+#history .menu-items-block .history-link a,
+#news .menu-items-block .news-link a,
+#media .menu-items-block .media-link a{
+	color:#015FA5;
+}
+
+/* ==========================================================================
+   About Us - Company Info National
+   ========================================================================== */
+#company_info_content .content-block > div{
+    margin:30px 0;
+}
+
+.video_wrapper{
+    height: 0;
+    margin-top: 20px;
+    padding-bottom: 52.55%;
+    padding-top: 25px;
+    position: relative;
+}
+
+.video_wrapper iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 47.5em){
+	
+}
+
+@media screen and (min-width: 47.563em) and (max-width:55em){
+	#company_info_content .content-block > div{width:92%;padding:0 4%;}
+	#company_info_content .content-block > div.omega{margin-top:0;}
+	
+}
+@media screen and (min-width: 55.063em) and (max-width:65em){
+	#company_info_content .content-block > div{width:92%;padding:0 4%;}
+	#company_info_content .content-block > div.omega{margin-top:0;}
+	
+	
+}
+
+/* ==========================================================================
+   About Us - Management Team National
+   ========================================================================== */
+.mgmt_team_content_wrapper{background:#f5f5f5 !important;}
+.mgmt_team_content_wrapper .content-block{background:#ffffff;}
+
+.mgmt_team_content .headline-block{
+	/*margin-top:-0.3% !important;*/
+}
+
+/*mgmt team content*/
+#mgmt_team_main{width:100% !important;margin:0 !important;}
+
+#mgmt_team_main .cs_container{
+	width:33.03%;
+	margin:0 0.3% 0.3% 0;
+	
+}
+#mgmt_team_main .cs_container a{
+	
+	display:block;
+}
+#mgmt_team_main .cs_container a,
+#mgmt_team_main .cs_container a:hover,
+#mgmt_team_main .cs_container a:visited{
+	text-decoration:none;
+}
+#mgmt_team_main,
+.mgmt_profile_wrapper {
+    margin: 0 !important;
+	padding:0 !important;
+    width: 100% !important;
+}
+#mgmt_team_main .cs_container img{
+    width: 100%;
+}
+#mgmt_team_main .cs_image_content_wrapper{
+	display:none;
+}
+#mgmt_team_main .cs_container .cs_image:hover .cs_image_content_wrapper,
+#mgmt_team_main .cs_container .cs_image:focus .cs_image_content_wrapper{
+	display:block;
+}
+#mgmt_team_main .cs_image_content_wrapper {
+	position: absolute;
+
+	width: 100%;
+	height: auto;
+
+	left: 0;
+	bottom: 0;
+
+	background-color: rgba(255,144,0,.8);
+	padding: 0;
+	margin:0;
+
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+
+/* ==========================================================================
+   About Us - Management Team Details National
+   ========================================================================== */
+
+#mgmt_team_main > .cs_container:hover .cs_image_content_wrapper {
+	display:block;
+}
+#mgmt_team_main .cs_image_content{
+	padding:5%;
+	display:block;
+	
+}
+#mgmt_team_main .cs_image_content h3,
+#mgmt_team_main .cs_image_content p{
+	color:#ffffff;
+	margin:0;
+	padding:0;
+}
+#mgmt_team_main .cs_image_content h3{
+	font-size:30px;
+	text-transform:uppercase;
+}
+#mgmt_team_main .cs_image_content p{
+	font-size:18px;
+}
+#mgmt_team_main .active.cs_container:after{
+	content:" ";
+	background:url("../images/arrow_open_white.png") no-repeat;
+	width:52px;
+	height:16px;
+	position:absolute;
+	bottom:0;
+	left:44%;
+	z-index:1000;
+	display:block;
+}
+#mgmt_team_main .cs_container .profile_detail {
+    display: none;
+}
+#mgmt_team_main .mgmt_profile_detail_wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 0 0 0.5%;
+    width: 100%;
+}
+#mgmt_team_main .cs_container:hover .cs_image .cs_image_content_wrapper{display:block;}
+
+/*profile text*/
+.profile_text_inner{padding-top:50px;}
+.profile_text_inner h3{
+	color:#ff9000;
+	text-transform:uppercase;
+	font-weight:400;
+	font-size:40px;
+	margin-bottom:0;
+}
+.profile_text_inner blockquote{
+	font-size:16px;
+	font-weight:700;
+	text-transform:uppercase;
+	line-height:170%;
+	padding:25px 0;
+}
+.profile_text_inner blockquote:before{
+	vertical-align:2px;
+}
+.profile_text_inner p{
+	font-size:16px;
+	font-weight:400;
+	margin-top:0;
+	margin-bottom:50px;
+	line-height:160%;
+}
+
+/*detail close*/
+#details_container, .mgmt_profile_detail_wrapper, .profile_detail {
+    display: none;
+}
+#mgmt_team_main .mgmt_profile_detail_wrapper .close_button {
+    background: url("../images/close_x_black.png") no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    width: 35px;
+    z-index: 1000;
+}
+@media screen and (max-width: 30em){
+	
+	#mgmt_team_main .cs_image_content_wrapper{height:auto;/*display:block;*/}
+	
+	#mgmt_team_main .cs_container.active:hover .cs_image_content_wrapper,
+	#mgmt_team_main .cs_container:hover .cs_image_content_wrapper,
+	#mgmt_team_main .cs_container.active a:hover .cs_image_content_wrapper{display:none;}
+	
+	#mgmt_team_main .cs_container.active .cs_image_content_wrapper{left:-9999px;}
+	
+	#mgmt_team_main .cs_image_content h3{font-size:18px;}
+	#mgmt_team_main .cs_image_content p{font-size:14px;}
+	.profile_text_inner h3{font-size:30px;line-height: normal;}
+	
+	#mgmt_team_main .cs_container .profile_detail {
+    display: none;
+	float:left;
+	width:96%;
+	padding:0 2%;
+    }
+	#mgmt_team_main .cs_container .profile_text:before{
+		content:" ";
+		background:url("../images/arrow_open_white.png") no-repeat;
+		width:52px;
+		height:16px;
+		position:absolute;
+		top:-16px;
+		left:44%;
+		z-index:1000;
+		display:block;
+	}
+	
+	#mgmt_team_main .active.cs_container .cs_image:hover .cs_image_content_wrapper{display:none;}
+
+}
+@media screen and (min-width: 30.063em){
+#mgmt_team_main .cs_container .profile_detail {
+    display: none !important;
+}
+
+}
+@media screen and (min-width: 30em) and (max-width:45em){
+	#mgmt_team_main .cs_image_content_wrapper{height:auto;}
+	#mgmt_team_main .cs_image_content h3{font-size:16px;}
+	#mgmt_team_main .cs_image_content p{font-size:12px;}
+	.profile_text_inner h3{font-size:30px;line-height: normal;}
+}
+@media screen and (min-width: 45.063em) and (max-width:55em){
+	#mgmt_team_main .cs_image_content_wrapper{height:auto;}
+	#mgmt_team_main .cs_image_content h3{font-size:18px;}
+	#mgmt_team_main .cs_image_content p{font-size:14px;}
+	.profile_text_inner h3{font-size:30px;line-height: normal;}
+}
+@media screen and (min-width: 55.063em) and (max-width:78.125em){
+	#mgmt_team_main .cs_image_content_wrapper{height:auto;}
+	#mgmt_team_main .cs_image_content h3{font-size:18px;}
+	#mgmt_team_main .cs_image_content p{font-size:14px;}
+	
+	.profile_text_inner h3{font-size:30px;line-height: normal;}
+}
+
+
+/* ==========================================================================
+   About Us - Partners National
+   ========================================================================== */
+#partners_content .headline-block{
+	background:#ffffff;
+}
+/*partners container*/
+#partners_container,
+.partner_logo_wrapper{
+	margin:0 !important;
+	padding:0 !important;
+	width:100% !important;
+}
+
+#partners_container .grid_6 {
+    width: 24.625%;
+}
+#partners_container .partner_logo {
+    background-color: #F5F5F5;
+    /*height: 180px;*/
+    margin:0 0.5% 0.5% 0;
+}
+#partners_container .partner_logo.active:after{
+	content:" ";
+	background:url("../images/arrow_open_white.png") no-repeat;
+	width:52px;
+	height:16px;
+	position:absolute;
+	bottom:0;
+	left:42%;
+	
+	display:block;
+}
+
+#partners_container .partner_logo.omega{
+	margin-right:0;
+}
+
+#partners_container .partner_logo a {
+    display: block;
+    margin: 15% auto;
+    outline: 0 none;
+    text-align: center;
+}
+.partner_logo .partner_detail {
+    display: none;
+	background:#ffffff;
+	float:left;
+	padding-bottom:20px;
+}
+.partner_logo .partner_detail:before{
+	content:"";
+	background:url("../images/arrow_open_white.png") no-repeat;
+	width:52px;
+	height:16px;
+	position:relative;
+	top:-16px;
+	left:42%;
+	
+	display:block;
+}
+
+#details_container, .partners_detail_wrapper, .partner_detail {
+    display: none;
+}
+#partners_container .partner_logo img {
+    max-width: 225px;
+    width: 100%;
+}
+.lt-ie9 #partners_container .partner_logo img {
+    width: auto;
+}
+
+/*active partners detail*/
+#partners_container .partners_detail_wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float:left;
+    margin: 0 0 0.5%;
+    width: 100%;
+}
+
+
+#partners_container .partners_detail_wrapper .close_button,
+#partners_container .partner_logo a.close_button {
+    background: url("../images/close_x_black.png") no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    width: 35px;
+    z-index: 1;
+	margin:0;
+}
+#partners_container .partner_logo a.close_button{
+   top:315px;	
+	
+}
+#partners_container .partners_detail_wrapper .detail_content {
+    margin: 4% 0;
+}
+#partners_container .partner_detail .partner_logo_large img {
+    margin-top: 25px;
+    max-width: 100%;
+}
+#partners_container .partner_text h3 {
+    color: #494949;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 0;
+	text-transform:uppercase;
+}
+#partners_container .cta-button-wrap span {
+	text-transform:lowercase;
+	font-size: 18px;
+}
+
+
+@media screen and (max-width: 30em){
+   #partners_container .partner_logo{border-bottom: 5px solid #FFFFFF;}
+   #partners_container .partner_text{width:96% !important;padding:0 2% !important;}
+   
+   #partners_container .partner_logo.active:after{display:none !important;}
+   
+   #partners_container .partner_logo a.cta-button-text{margin:0 auto;}
+}
+/*@media screen and (min-width: 30.063em){*/
+@media screen and (min-width: 40.063em){
+	
+	.partner_logo .partner_detail,
+	#partners_container .partner_logo.active > a:after{
+		display: none !important;
+	  }
+}
+
+@media screen and (max-width: 40em){
+	#partners_container .partner_logo{width:100%;margin-bottom:1%;}
+	
+}
+@media screen and (max-width: 65.625em){
+	#partners_container .partner_logo img {
+    max-width: 225px;
+    width: 90%;
+	}
+	#partners_container .partner_logo.active:after{
+		background-size:80% auto;
+		bottom:-8px;
+	}
+}
+@media screen and (min-width:50em) and (max-width:80.500em){
+	#partners_container .partner_logo img{width:90%;}
+}
+
+@media screen and (min-width: 40.063em) and (max-width:95em){
+.lt-ie9 #partners_container .partner_logo img {
+    width: 80%;
+}
+}
+/* ==========================================================================
+   About Us - News National
+   ========================================================================== */
+   
+/*News - left column*/
+#news_content .headline-block{
+	background:#ffffff;
+	
+}
+
+/*News - right column*/
+#news_content .grid_18 .grid_24{
+	margin:0 !important;
+	padding: 0 !important;
+	width:100% !important;
+}
+#news_content .grid_18 .grid_24 .grid_22{
+	margin:0 0 0.3% 0;
+	width:91.667%;
+	padding-bottom:35px;
+}
+
+.news_article{
+	background:#F5F5F5;
+}
+.news_article h4.news_date{
+	text-transform:uppercase;
+	font-size:18px;
+	color:#000000;
+}
+.news_article h4{
+	font-size:25px;
+	margin:40px 0 10px;
+}
+.news_article h3{
+	font-size:42px;
+	font-weight:300;
+	line-height:120%;
+	margin:0 0 28px;
+}
+.news_article h3 a{
+	color:#000000;
+}
+.news_article p{
+	font-size:16px;
+	line-height:160%;
+}
+.news_links{
+	float:left;
+	display:block;
+}
+.news_links .cta-button-wrap{
+	font-size:18px;
+	padding:16px 20px;
+	margin-right:16px;
+}
+
+.news_details .news_img {
+    float: right;
+    margin-left: 8%;
+	width:100%;
+	max-width:380px;
+	
+}
+
+
+
+/*News detail*/
+.news_details .grid_8.news_image{
+    float:right;
+}
+.news_details .grid_16{
+	margin-left:0;
+}
+ul.news-direction-nav{
+	display:block;
+	width:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul.news-direction-nav li{
+	width:49.75%;
+	margin:0;
+	padding:0;
+	display:block;
+	float:left;
+	background:#EBEBEB;
+	
+}
+ul.news-direction-nav li:first-child{
+	margin-right:0.5%;
+}
+ul.news-direction-nav li a{
+	padding:24px 10%;
+	display:block;
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:18px;
+	color:#000000;
+	text-align:left;
+}
+ul.news-direction-nav li a > span{
+	position:relative;
+	top:15px;
+	float:left;
+	
+}
+ul.news-direction-nav li a.news-next{
+	text-align:right;
+}
+ul.news-direction-nav li a.news-next > span{
+	float:right;
+}
+ul.news-direction-nav li:hover{
+	background:#ff9000;
+}
+ul.news-direction-nav li a:hover{
+	text-decoration:none;
+	color:#ffffff;
+}
+ul.news-direction-nav li a .news-next-article{
+	color:#ffffff;
+	text-transform:capitalize;
+	font-weight:400;
+	 width: 65%;
+	 display:inline-block;
+	 position:relative;
+	 opacity:0;
+	 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+}
+
+ul.news-direction-nav li a.news-prev .news-next-article{
+	margin-left:5%;
+	 padding-left:4%;
+	 border-left:1px solid #ffffff;
+	 
+}
+ul.news-direction-nav li a.news-next .news-next-article{
+	 margin-right:5%;
+	 padding-right:4%;
+	 border-right:1px solid #ffffff;
+}
+ul.news-direction-nav li a:hover .news-next-article{
+	color:#ffffff;
+	opacity:1;
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+
+
+.about_bottom_wrapper{
+	background:#FF9000;
+	display:block;
+	padding:20px 4.167%;
+	
+}
+.about_bottom_wrapper p{
+	width: 64.667%;
+	color:#ffffff;
+}
+@media screen and (max-width:599px){
+    ul.news-direction-nav li a.news-prev .news-next-article,
+	ul.news-direction-nav li a.news-next .news-next-article{display:none;}
+	
+	#news_content .grid_18 .grid_24 .grid_22{padding:0 2% !important;margin:0 !important;width:96% !important;border-bottom:3px solid #ffffff;}
+	#news_content .grid_18 .grid_24 .grid_22:first-child{border-top:3px solid #ffffff;}
+	.news_article h4{margin-top:20px;}
+	.news_article h3 {font-size: 30px;}
+	.news_links {}
+	
+	.news_details .grid_8.news_image,
+	.news_details .grid_8.news_image img{float:left;margin:0;width:100%;}
+}
+@media screen and (max-width:600px){
+	.news_details .news_img,
+	.news_article p{float:left;margin:0 0 20px;}
+	#news_content .grid_18 .grid_24 .grid_22 .news_details{display: block;
+	float: left;padding-bottom:20px !important;width:100%;}
+	
+}
+@media screen and (max-width:55em){
+	#news_content .headline-block{width: 100% !important;padding:0;margin:0;}
+	.news_details .grid_16,
+	.news_details .grid_8{width:100%;margin:0;}
+   .about_bottom_wrapper p{width:100%;}
+   
+   ul.news-direction-nav li a.news-prev .news-next-article,
+   ul.news-direction-nav li a.news-next .news-next-article{margin:0;width:95%;}
+   ul.news-direction-nav li a > span{display:block;float:none !important;}
+   
+   .news_details .grid_8.news_image{float:left;}
+}
+/*1511*/
+@media screen and (max-width:76.563em){
+   ul.news-direction-nav li a > span{display:block;}
+   ul.news-direction-nav li a .news-next-article{width:100%;margin:5% 0 0 !important;}
+
+}
+@media screen and (min-width: 47.563em) and (max-width: 70.563em) {
+	.news_article h3{font-size:35px;}
+	.news_details .news_img{/*float:left;*/margin-left:2%;}
+	
+}
+/* ==========================================================================
+   About Us - In the Media National
+   ========================================================================== */
+#media_content .headline-block{
+	background:#ffffff;
+}
+/*media container*/
+#media_container{
+	margin:0 !important;
+	padding:0 !important;
+	width:100% !important;
+}
+
+.media_article_wrapper{
+	background:#F5F5F5;
+	margin-bottom: 2%;
+	margin-right:2%;
+	display:block;
+	float:left;
+	padding: 2% 0 8%;
+	width:98%;
+}
+.media_article_wrapper .media_article {
+    padding: 10px 20px;
+	
+}
+
+/*mosaic plugin styles*/
+.mosaicflow__column { float:left; }
+.mosaicflow__item img { display:block; width:100%; height:auto; }
+
+.media_article .logo_wrapper{
+	text-align:center;
+	padding:14% 0 18%;
+}
+.media_article h3 {
+    color: #000000;
+    font-size: 25px;
+    line-height: 110%;
+    margin: 10px 0 40px;
+	font-weight:300;
+}
+.media_article p.source {
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+    font-weight:700;
+	line-height: 120%;
+    text-transform: uppercase;
+}
+.media_article .cta-button-wrap{
+	line-height:12px;
+}
+
+
+@media screen and (max-width:54.938em){
+    .media_article_wrapper{margin-right:1%;margin-left:1%;}
+
+}

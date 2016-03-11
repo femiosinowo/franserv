@@ -1,0 +1,33 @@
+﻿@charset "UTF-8";
+
+.ektron-ux .ux-app .ektronloggermessages{
+    min-height:50px;
+    width:100%;
+    margin: 5px auto;
+    border-radius: 5px;
+    line-height: 1.5em;
+    text-align:center;
+    vertical-align:middle;
+
+}
+
+.ektron-ux .ux-app .ektronloggermessages.ektronuxerror{
+    background: none repeat scroll 0 0 #FBE3E4;
+    border:2px solid #FBC2C4;
+    padding:0.5em;
+    color:#8A1F11;
+}
+
+.ektron-ux .ux-app .ektronloggermessages.ektronuxsuccess{
+    background: none repeat scroll 0 0 #E6EFC2;
+    border:2px solid #C6D880;
+    padding:0.5em;
+    color:#264409;
+}
+
+.ektron-ux .ux-app .ektronloggermessages.ektronuxinfo{
+    background: none repeat scroll 0 0 #D5EDF8;
+    border:2px solid #92CAE4;
+    padding:0.5em;
+    color:#205791;
+}

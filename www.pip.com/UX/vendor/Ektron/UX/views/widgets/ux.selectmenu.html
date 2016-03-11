@@ -1,0 +1,3 @@
+﻿<select data-bind="foreach: contents, value: selectedValue, uxSelectMenu: options" class="ux-selectMenu">
+    <option data-bind="html: ($data.text) ? text : value,  disable: (true === $data.disabled), value: value" />
+</select>

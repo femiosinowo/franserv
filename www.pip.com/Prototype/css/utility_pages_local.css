@@ -1,0 +1,171 @@
+/* CSS Document */
+
+/********************************** CONTACT US ***********************************/
+/*********************************************************************************/
+.contact_us_content_wrapper {
+  background: url("../images/contact_bg.jpg") no-repeat center 65% !important;
+  min-height: 500px;
+  padding: 40px 0;
+   background-size: cover !important;
+}
+
+.contact_col {
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+  margin: 0 0 20px 0;
+  padding: 2% 3% 0;
+  display:block;
+	float:left;
+	width:94%;
+}
+
+.contact_col h2 {
+  margin-top:0;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  padding:0;
+  text-transform: uppercase;
+}
+.contact_location_img{
+	margin-bottom:20px;
+}
+form#contact_form {
+	padding:0;
+	display:block;
+	float:left;
+}
+form#contact_form input,
+form#contact_form textarea {
+    width: 96%;
+	margin-bottom:20px;
+}
+
+form#contact_form textarea {
+	min-height: 189px;
+}
+form#contact_form input[type="submit"] {
+  border:3px solid #000000;
+  width:auto;
+  text-transform:uppercase;
+  font-weight:700;
+  
+}
+/*contact info*/
+.contact_location_info hr{
+	margin:15px 0;
+	color:#000000;
+}
+#contact_social_icons ul{
+	display:block;
+	float:left;
+	margin-top:0;
+}
+
+@media screen and (max-width: 30em) {
+	#contact_us .grid_13,
+	#contact_us .grid_9{width:90%;padding:0 5%;margin:0;}
+	
+	.contact_col h2{font-size:30px;}
+}
+
+@media screen and (min-width: 30.063em) and (max-width:47.5em) {
+	#contact_us .grid_13,
+	#contact_us .grid_9{width:90%;padding:0 5%;margin:0;}
+}
+@media screen and (min-width: 47.563em) and (max-width:55em) {
+	#contact_us .grid_13,
+	#contact_us .grid_9{width:90%;padding:0 5%;margin:0;}
+}
+@media screen and (min-width: 55.063em) {
+	#contact_col_2 .contact_col {
+    padding: 2.9% 4.5% 0;
+    }
+}
+
+/********************************** SHOP *****************************************/
+/*********************************************************************************/
+#shop_content .headline-block{
+	background:#333333;
+	color:#ffffff;
+}
+#shop .shop_content {
+} 
+#shop .shop_category_wrapper {
+  background: #F5F5F5;
+  margin:0 0.3% 0.3% 0;
+  width:29.033%;
+  padding:0 2%;
+}
+#shop .shop_category{
+	text-align:center;
+	padding-bottom:5%;
+}
+#shop .shop_category h3 {
+  font-weight:300;
+  color: #000000;
+  font-size: 32px;
+  line-height: 70px;
+  padding: 5% 6%;
+  text-align: center;
+  text-transform: uppercase;
+  margin:0;
+}
+#shop .shop_category h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;      
+}
+#shop .shop_category .shop_img {
+  margin: 0 auto;
+  text-align: center;
+  max-height: 170px;
+}
+#shop .shop_category p {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 35px;
+  line-height: 18px;
+}
+#shop .shop_category a.cta-button-text {
+  margin: 0 auto;
+  text-align:center;
+}
+
+#shop .shop_category a.cta-button-text .cta-button-wrap{
+	float:none;
+	width:30%;
+	max-width:150px;
+}
+
+@media screen and (max-width:21.250em){
+	
+}
+@media screen and (max-width:30em){
+	#shop .shop_category_wrapper{margin-bottom:1% !important;}
+}
+
+@media screen and (min-width:30.063em) and (max-width: 47.5em) {
+	#shop .shop_category_wrapper{width:98%;margin-bottom:0.5%;}
+	
+	
+}
+@media screen and (min-width:47.563em) and (max-width: 54.313em) {
+	#shop .shop_category h3 {
+       font-size: 20px;
+	}
+	
+}
+@media screen and (min-width:54.375em) and (max-width: 63.063em) {
+	#shop .shop_category h3 {
+       font-size: 24px;
+	}
+	
+}
+@media screen and (min-width:63.125em) and (max-width: 73.063em) {
+	#shop .shop_category h3 {
+       font-size: 28px;
+	}
+	
+}
+

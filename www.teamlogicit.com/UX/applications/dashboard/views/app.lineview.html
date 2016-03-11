@@ -1,0 +1,56 @@
+﻿<script id="ux-app-dashboard-result-view-line" type="text/html">
+    <ul data-bind="foreach: { data: results, afterRender: infiniteScroll }" class="ux-result-line">
+        <li>
+            <div class="ux-result ux-clearfix">
+                <div class="ux-line-view-wrapper">
+                    <ul>
+                        <li>
+                            <span class="ux-line-view-icon-wrapper" data-bind="template: { name: 'image', data: $data }"></span>
+                        </li>
+                        <li>
+                            <h3 data-bind="text: title"></h3>
+                        </li>
+                        <li>
+                            <span data-bind="label: { namespace: 'filterTree', prefix: 'language', label: language }"></span>
+                        </li>
+                        <li>
+                            <span data-bind="text: $parent.labels()['Status_' + status]"></span>
+                        </li>
+                        <li>
+                            <span data-bind="text: lastModified"></span>
+                        </li>
+                        <li>
+                            <div class="ux-item-context-menu" data-bind="template: { name: 'ux-app-dashboard-view-context-menu-line', data: menuItems }">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</script>
+
+<!-- context menu -->
+<script id="ux-app-dashboard-view-context-menu-line" type="text/html">
+    <ul>
+        <li data-bind="attr: { class: $data[0].cssClass }">
+            <a data-bind="attr: { onclick: $data[0].menuOnClick, href: $data[0].menuHref, target: '_blank' }">
+                <span data-bind="text: $root.labels().Preview"></span>
+            </a>
+        </li>
+        <li data-bind="attr: { class: $data[$data.length - 1].cssClass }">
+            <a data-bind="attr: { onclick: $data[$data.length - 1].menuOnClick, href: $data[$data.length - 1].menuHref }">
+                <span data-bind="text: $root.labels().More"></span><span class="ux-context-menu-more-arrow"></span>
+            </a>
+            <ul class="ux-app-context-menu-more">
+                <!-- ko foreach: $ektron($data).filter(function (index) { return index >= 1 && index != $data.length - 1 }) -->
+                <li data-bind="attr: { class: cssClass }">
+                    <a data-bind="attr: { onclick: menuOnClick, href: menuHref, target: '_blank' }">
+                        <span data-bind="text: menuTitle"></span>
+                    </a>
+                </li>
+                <!-- /ko -->
+            </ul>
+        </li>
+    </ul>
+</script>

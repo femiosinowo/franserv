@@ -1,0 +1,23 @@
+﻿.st_sharethis_custom{
+	background: url("/images/doc-share-white.png") no-repeat scroll left top transparent;
+	padding:0px 100px 100px 0;
+}
+
+.st_email{
+	background: url("/images/doc-email-white.png") no-repeat scroll left top transparent;
+	padding:0px 15px 50px 0;
+}
+
+.st_sharethis_custom_gray{
+	background: url("/images/doc-share-gray.png") no-repeat scroll left top transparent;
+	padding:0px 100px 100px 0;
+}
+
+.st_email_gray{
+	background: url("/images/doc-email-gray.png") no-repeat scroll left top transparent;
+	padding:0px 38px 50px 0;
+}
+
+span.chicklets.email {
+    visibility:  hidden;
+}

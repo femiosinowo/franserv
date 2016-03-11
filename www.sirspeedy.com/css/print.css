@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* Print Styles */
+
+/*------------------------------ SHARED STYLES --------------------------*/
+* {
+    color: #000000;    
+    background-color: #fff;
+    -webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+    box-shadow:none !important;
+	text-shadow:none;
+	font-family: Times New Roman, Times, Arial, sans-serif !important;
+}
+h2 {
+  font-size: 13pt;
+  padding-top: 20px;
+}
+h3 {
+  font-size: 12pt;
+  padding-top: 20px;
+}	
+p {
+    font-size: 12pt;
+    line-height: 18pt !important;
+}	
+a, a:visited {
+	text-decoration: underline;
+	color: #000000;
+}
+a:after {
+    content: " [ "attr(href)" ]";
+}
+.container_24 {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.bx-wrapper img, .bx-clone, .bx-controls {
+  display: none;
+}
+.bx-wrapper {
+  margin: 0 !important;
+}
+.bx-viewport {
+  height: 100% !important;
+  overflow: visible !important;
+  position: static !important;
+}
+.bx-viewport > ul {
+  transform:  translate3d(0, 0, 0) !important;
+  padding: 0;
+  margin: 0;
+}
+.bx-viewport li {
+  float: none !important;
+  line-height: 1;
+  list-style: disc !important;
+  padding: 0 0 5px;
+  width: 100% !important;
+}	
+.bx-viewport a, .bx-viewport a:visited {
+  display: block !important; /*add display to make <a> align with bullet */
+  text-decoration: none;
+  color: #000;
+}
+.email_print_share, .cta-button-wrap.back-button {
+	display:none;	
+}
+.video_wrapper, iframe {
+  display: none;
+}
+.cta-button-wrap {
+	text-align: left;
+	display: inline;
+	font-weight: bold;
+}
+
+/*------------------------------ ALL - HEADER & FOOTER STYLES  --------------------------*/
+.main-navigation {
+  border-bottom: 1px solid #ccc;
+}
+.main-navigation .logo:after {
+  content: " ";
+}
+.utility_nav_wrapper, .minimenu-wrap, .desktop-nav, .mobile-nav, .main-navigation h1, .main_rotator_wrapper, .sub_navigation {
+  display: none;
+}
+	
+#footer_section_1, #footer_section_2, #footer_section_3, #footer-partner-icons {
+  display: none;
+}	
+#footer_section_4 {
+  float: none !important;
+  width: 100% !important;
+}
+.footer_lower_wrapper {
+  border-top: 1px solid #ccc	;
+  margin: 35px 0;
+}	
+
+.footer_links .subpages {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_links .subpages li {
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0 5px;
+}
+.subpage_tagline span {
+  display: block;
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+#footer_upper_content img {
+  display: none;
+}
+#footer_upper_content .gray-divider {
+  border: none;
+}
+
+/*------------------------------ HOME - NATIONAL --------------------------*/
+.maps-inner a {
+	display:block;
+}
+.our_portfolio_studies .slider-wrapper {
+  display: none;
+}
+
+.location-name {
+  display: inline;
+}
+.post-date {
+  display: block;
+}
+
+/*------------------------------ HOME - LOCAL --------------------------*/
+
+
+/*------------------------------ PRODUCTS & SERVICES - INDEX --------------------------*/
+.products_services_top_page_slider_wrapper, .products_category_top_page_slider_wrapper  {
+  display: none;
+}
+.product-detail-text h3 img {
+  display: none;
+}
+.product-detail-wrapper {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 30px;
+}
+.product-detail-wrapper .quote {
+  font-style: italic;
+}
+.intro_icon_wrapper, .product-detail-slider img, .product-detail-slider .hide-caption, .flex-direction-nav {
+  display: none;
+}
+.product-detail-slider .slides, .products_category_inner_slider .slides {
+  width: 100% !important;
+}
+.product-detail-slider li, .products_category_inner_slider li {
+  float: none !important;
+}
+
+/*--- PRODUCTS & SERVICES - CATEGORY INDEX ----*/
+
+.products_category_img_wrapper img, .products_category_inner_slider .slides img, #product_sub_links img {
+  display: none;
+}
+#product_sub_links p {
+  display: inline;
+}
+/*------------------------------ PRODUCTS & SERVICES - CATEGORY INDEX --------------------------*/
+
+/*------------------------------ PRODUCTS & SERVICES - SUB CATEGORY PAGE --------------------------*/
+
+/*------------------------------ ABOUT US - COMPANY INFO (NATIONAL) --------------------------*/
+
+/*------------------------------ ABOUT US - ABOUT SIR SPEEDY (LOCAL) --------------------------*/
+
+/*------------------------------ ABOUT US - MANAGEMENT --------------------------*/
+#mgmt_team_main {
+  display: none;
+}
+#mgmt_team_slider {
+	display:block !important;
+}
+#mgmt_team_slider li{ 
+	display:block !important;
+	width: 100% !important;
+	position: static !important;
+}
+#mgmt_team_slider img {
+  display: block !important;
+  float: left;
+  margin: 20px;
+  width: 110px;
+}
+#mgmt_team_slider h2 span {
+  display: block;
+  font-size: 12pt;
+}
+/*------------------------------ ABOUT US - WHY WE ARE DIFFERENT (LOCAL) --------------------------*/
+
+
+/*------------------------------ ABOUT US - COMPANY INFO --------------------------*/
+
+
+/*------------------------------ ABOUT US - PARTNERS --------------------------*/
+
+/*------------------------------ ABOUT US - NEWS (INDEX & ) --------------------------*/
+
+/*------------------------------ ABOUT US - NEWS (DETAIL) --------------------------*/
+
+/*------------------------------ ABOUT US - IN THE MEDIA --------------------------*/
+
+
+/*------------------------------ PORTFOLIO (LOCAL) --------------------------*/
+
+/*------------------------------ INSIGHTS - CASE STUDIES (INDEX) --------------------------*/
+
+/*------------------------------ INSIGHTS - CASE STUDIES (SCRIBD PAGE) --------------------------*/
+
+/*------------------------------ INSIGHTS - BREIFS & WHITEPAERS (INDEX) --------------------------*/
+
+/*------------------------------ INSIGHTS - BREIFS & WHITEPAERS (DETAIL) --------------------------*/
+
+/*------------------------------ JOIN OUR TEAM - INDEX  --------------------------*/
+
+/*------------------------------ JOIN OUR TEAM - PROFILES  --------------------------*/
+
+/*------------------------------ JOIN OUR TEAM - JOB SEARCH (LIST)  --------------------------*/
+
+/*------------------------------ JOIN OUR TEAM - JOB SEARCH (DETAILS)  --------------------------*/
+
+
+

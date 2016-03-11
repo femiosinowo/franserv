@@ -1,0 +1,23 @@
+﻿<!-- ko ifnot: $data.isNested -->
+<div class="breadcrumb">
+</div>
+<!-- /ko -->
+<ul data-bind="attr: ($data.isNested ? {} : { class: 'drilldownSelectList' }), foreach: $data.data, drilldownSelectList: { }">
+    <li class="filter">
+        <input type="hidden" name="type" data-bind="value: type" />
+        <input type="hidden" name="value" data-bind="value: value" />
+        <input type="checkbox" data-bind="attr: { 'data-filter': ko.toJSON($data) }, event: { change: $parent.onSelect }, checked: selected || childSelected" />
+        <label data-bind="attr: { class: (selected ? 'selected' : (childSelected ? 'childSelected' : 'unselected')) }, for: 'prev'">
+            <span class="check" data-ux-icon="&#xe00e;" />
+            <span class="impliedCheck" />
+            <span class="accessibility" data-bind="label: { namespace: 'drilldownSelectList', label: (selected ? 'selected' : (childSelected ? 'childSelected' : 'unselected')) }" />
+        </label>
+        <span class="title" data-bind="label: { prefix: type, label: title, namespace: 'filterTree' }" />
+        <span class="count" data-bind="text: count" />
+        <!-- ko if: $data.items && $data.items.length > 0 -->
+        <span class="branchIndicator" data-ux-icon="&#xe00f;"></span>
+        <!-- ko template: { name: 'drilldownSelectList', data: { data: items, onSelect: $parent.onSelect, isNested: true } } -->
+        <!-- /ko -->
+        <!-- /ko -->
+    </li>
+</ul>

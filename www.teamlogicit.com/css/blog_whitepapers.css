@@ -1,0 +1,140 @@
+
+.blog_whitepapers{
+	background:transparent;
+	position:relative;
+	margin-top:-290px;
+	height:290px;
+}
+
+.blog_whitepapers_wrapper{
+	margin: 0 auto; 
+	padding: 0;
+
+	max-width: 1797px;
+	width:100%;
+}
+
+.blog_whitepapers h2.headline{
+	color:#ffffff;
+	font-size:2em;
+}
+
+/*
+ * Blog mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Blog 
+ */
+.blog{
+	color:#ffffff;
+}
+.blog ul{
+	list-style:none;
+	margin:30px 0 0;
+	padding:0 10px;
+	
+}
+.blog ul li{
+	margin:0;
+	padding:10px 0;
+}
+.blog ul li a{color:#ffffff;}
+
+.blog ul li span.blog_date{
+	text-transform:uppercase;
+	font-size:1.2em;
+	font-family:'GothamBold', Arial, Helvetica, sans-serif;
+	display:block;
+}
+.blog ul li span.blog_title{
+	font-size:1.5em;
+	font-family:'GothamBook', Arial, Helvetica, sans-serif;
+	display:block;
+	line-height:110%;
+}
+
+
+/*
+ * Whitepapers mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Whitepapers 
+ */
+.whitepapers_block {
+	background:#ffffff;
+	display:block;
+	padding:15px;
+	margin-bottom:25px;
+	float:left;
+	width:90%;
+}
+
+.whitepapers_block h3{
+	font-family:'NewJuneFine', Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	font-size: 2em;
+    line-height: 120%;
+}
+
+.whitepapers_block .floatLeft{
+	width:60%;
+	margin-top:10px;
+}
+
+.whitepapers_block ul{margin:25px 0 0;padding:0;list-style:none;}
+.whitepapers_block ul li{margin:0;padding:0;display:inline-block;}
+.whitepapers_block ul li:first-child{width:100%;margin-bottom:5px;}
+
+.whitepapers_block ul li a{background:url(../images/whitepapers_sprite.png) no-repeat;display:block;width:42px;height:42px;}
+.whitepapers_block ul li a.print_icon{background-position:0 0;text-indent:-9999px;}
+.whitepapers_block ul li a.email_icon{background-position:-42px 0;text-indent:-9999px;}
+.whitepapers_block ul li a.share_icon{background-position:-84px 0;width:88px;text-indent:-9999px;}
+
+.whitepapers_block ul li a.read_more{
+	background-image:none;
+	background-color:#018754;
+	padding:11px 10px;
+	vertical-align:top;
+	color:#ffffff;
+	text-transform:uppercase;
+	width:auto;
+	height:auto;
+	display:inline-block;
+	margin-right:20px;
+	font-family:'GothamBold', Arial, Helvetica, sans-serif;
+}
+.whitepapers_block ul li a.read_more:hover{
+	text-decoration:none;
+	background:#007547;
+}
+
+
+@media all and (max-width: 640px) {
+	.blog_whitepapers_wrapper,.blog_whitepapers_wrapper.local{height:auto;}
+	.blog_whitepapers .container_24 .grid_12{width:98%;}
+	
+	
+	
+}
+
+
+
+/*styles for 800px and up @ 16px!*/
+
+@media screen and (min-width: 641px) and (max-width:959px) {
+	.blog_whitepapers .container_24 .grid_12{width:48%;}
+	
+	
+}
+
+
+/*styles for 1100px and up @ 16px!*/
+
+@media screen and (min-width: 960px) and (max-width:1079px) {
+	.blog_whitepapers .container_24 .grid_12{width:48%;}
+	
+}
+@media screen and (min-width: 1080px){
+	.blog_whitepapers .container_24 .grid_12{width:48%;}
+	/*blog*/
+	.blog ul{padding:0;}
+	
+	/*whitepapers*/
+	.whitepapers_block .floatLeft{width:70%;}
+	.whitepapers_block ul li:first-child{width:auto;margin-bottom:0;}
+}

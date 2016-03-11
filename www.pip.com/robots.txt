@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /workarea/
+Disallow: /widgets/
+Sitemap: http://www.pip.com/sitemap.xml

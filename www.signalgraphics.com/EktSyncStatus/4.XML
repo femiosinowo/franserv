@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncStatusInfoList>
+  <SyncStatusInfo StatusCode="SyncPreInitialization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.3952484-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.4108787-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.426511-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitializing">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.426511-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="PreSyncValidation">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.4733976-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitialized">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.5046473-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="ServerIndexUpdateStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:54.7390305-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="ServerIndexUpdateCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:55.5515554-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:55.5515554-08:00</DateCreated>
+    <StatusMessage>dbUp|100|Sync Start Time: 11/4/2014 11:59:56 AM\nSync End Time: 11/4/2014 12:07:25 PM\nScope:ektron\nUpload Changes Applied: 185518\nUpload Changes Failed: 0\nUpload Changes Total: 185518
+</StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:56.2390841-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:56.2390841-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseProgress">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T11:59:56.8953442-08:00</DateCreated>
+    <StatusMessage>Direction=Upload,CompletedWork=100,TotalWork=100,CompletedWorkPercentage=100</StatusMessage>
+    <StatusType>ProgressIndicator</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.2869818-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.302492-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.302492-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncAssetsStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.3181094-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.3181094-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.3337591-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.3649862-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:32.3649862-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:34.7400945-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.8818824-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 0, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.9756289-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.9912463-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncAssetsEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.9912463-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncUploadedFilesStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.9912463-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:36.9912463-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:37.0068714-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:37.0537482-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:37.0537482-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:39.4615735-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6269505-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 0, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6425761-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6582053-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncUploadedFilesEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6582053-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncUploadedImagesStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6582053-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6582053-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.6738335-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.7207016-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:41.7207016-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:44.7364607-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="DownloadingFiles">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:44.8770769-08:00</DateCreated>
+    <StatusMessage>2 files will be downloaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="UploadingFiles">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:44.9239589-08:00</DateCreated>
+    <StatusMessage>2 files will be uploaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="UploadingFileAttributes">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:07:48.0652592-08:00</DateCreated>
+    <StatusMessage>2 file attributes will be uploaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.3002327-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 59, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.3314711-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.3471003-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncUploadedImagesEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.3471003-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncPrivateAssetsStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.362728-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.362728-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.362728-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.4096043-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:00.4096043-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:02.6284492-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.7535342-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 0, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.7847777-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8004187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncPrivateAssetsEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8004187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncAssetLibraryStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8004187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8004187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8160408-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8472817-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:04.8629032-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:07.0036323-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.4111871-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 2, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.4268112-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.4424209-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncAssetLibraryEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.4424209-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SkippingForcedLBSyncDuringEsync">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.4580455-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.6611765-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.6924467-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-04T12:08:13.7080662-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+</SyncStatusInfoList>

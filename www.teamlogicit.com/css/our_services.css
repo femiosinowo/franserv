@@ -1,0 +1,153 @@
+/* CSS Document */
+
+/*
+ * Our Services (both) mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Our Services (both) 
+ */
+ 
+.our_services_wrapper{
+	background:#008752;
+}
+.our_services_wrapper.local{
+	background:#ffffff;
+	position:relative;
+}
+.our_services{
+	padding-top:30px;	
+}
+.our_services h2.headline{
+	color:#ffffff;
+}
+.our_services_wrapper.local .our_services h2.headline{
+	color:#000000;
+}
+.our_services ul{
+	padding:0 0 60px;
+	margin:0 auto;
+	list-style:none;
+	text-align:center;
+}
+
+.our_services ul li{
+	display:inline-block;
+	margin:0;
+	width:30%;
+	margin:0 1.5%;
+}
+
+/*service sections*/
+.service_section{
+	text-align:center;
+	color:#ffffff;
+}
+.our_services_wrapper.local .service_section{
+	text-align:center;
+	color:#202327;
+}
+.service_section img{
+	width:50%;
+	max-width:319px;
+}
+.our_services_wrapper.local .service_section img{
+	width:50%;
+	max-width:207px;
+}
+
+.service_section h3{
+	text-transform:uppercase;
+	font-size:1.8em;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+	line-height: 110%;
+	margin-top:30px;
+	letter-spacing:2px;
+	font-weight:normal;
+}
+.service_section p{
+	font-size:1.15em;
+	font-family: 'GothamBook', Arial, Helvetica, sans-serif;
+	padding:0 10px;
+	
+	margin: 0 auto;
+    text-align: center;
+    width: 85%;
+}
+
+
+
+/*styles for 300 and up @ 16px!*/
+/* The max-width declaration below blocks this from ever working */
+
+@media all and (max-width: 640px) {
+	.our_services ul li,.our_services.local ul li{
+		width:auto;
+		margin:0;
+		display:block!important;
+	}
+	
+	.service_section h3{
+		font-size: 1.5em;
+	}
+}
+
+/*styles for 480px - 620px @ 16px!*/
+
+
+@media screen and (min-width: 641px) and (max-width:959px) {
+	
+	.our_services ul li{
+		width:40%;
+		margin:0 4%;
+	}
+	.service_section img{
+		width:100%;
+	}
+	.service_section h3{
+		font-size: 1.25em;
+	}
+	.service_section h3 span {display:block;}
+
+}
+
+/*styles for 1100px and up @ 16px!*/
+
+@media screen and (min-width: 960px) and (max-width:1079px) {
+	
+	.our_services ul li{
+		width:30%;
+		margin:0 1.5%;
+	}
+	.service_section img{
+		width:100%;
+	}
+	.service_section h3{
+		font-size:1.6em;
+	}
+}
+
+
+/*one with pixels too! */
+/* NOTE - if the user were to increase his browser font size to 20px (chrome: Large), 
+			the above (68.75em) media query will be incorrectly ignored!!!
+			
+			Assuming 20px browser setting, we would expect to see this progression:
+			yellow > green > red > blue > NAVY > orange
+			
+			However, the orange never kicks in... which seems like a browser bug!
+			Here's the math (assuming 20px browser setting):
+			1200/20 = 60em     <     68.75em
+*/
+@media screen and (min-width: 1080px){
+	
+	.our_services ul li{
+		width:30%;
+		margin:0 1.5%;
+	}
+	.service_section img{
+		width:100%;
+	}
+	.service_section h3{
+		font-size:2em;
+	}
+	.service_section p{
+		padding:0;
+	}
+}

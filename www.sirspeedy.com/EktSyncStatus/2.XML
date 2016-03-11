@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncStatusInfoList>
+  <SyncStatusInfo StatusCode="SyncPreInitialization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.0820584-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.0976848-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.0976848-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitializing">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.1133051-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="PreSyncValidation">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.1133051-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitialized">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.1133051-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:00.5039588-07:00</DateCreated>
+    <StatusMessage>dbUp|50|
+Current State: Ready</StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:01.2227456-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:01.238371-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseProgress">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T06:35:03.2072259-07:00</DateCreated>
+    <StatusMessage>Direction=Upload,CompletedWork=50,TotalWork=100,CompletedWorkPercentage=50</StatusMessage>
+    <StatusType>ProgressIndicator</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.4979304-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyExecutionError">
+    <ErrorMessage>There was no endpoint listening at http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5448088-07:00</DateCreated>
+    <StatusMessage>Error executing strategy 'OnAfterDatabaseSyncRunErrorFromPeer' remotely.</StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5448088-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5448088-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyExecutionError">
+    <ErrorMessage>There was no endpoint listening at http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5448088-07:00</DateCreated>
+    <StatusMessage>Error executing strategy 'OnAfterDatabaseSyncRunCompleteFromPeer' remotely.</StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5604133-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDatabaseFailed">
+    <ErrorMessage>The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5604133-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncFailed">
+    <ErrorMessage>The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.5760456-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.859778-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyExecutionError">
+    <ErrorMessage>There was no endpoint listening at http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.8910236-07:00</DateCreated>
+    <StatusMessage>Error executing strategy 'OnAfterESyncRunErrorFromPeer' remotely.</StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.8910236-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.8910236-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyExecutionError">
+    <ErrorMessage>There was no endpoint listening at http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.</ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.9066564-07:00</DateCreated>
+    <StatusMessage>Error executing strategy 'OnAfterESyncRunCompleteFromPeer' remotely.</StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.9066564-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-10-24T12:16:34.9066564-07:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+</SyncStatusInfoList>

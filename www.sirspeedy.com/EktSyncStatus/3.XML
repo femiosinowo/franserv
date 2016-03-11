@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncStatusInfoList>
+  <SyncStatusInfo StatusCode="SyncPreInitialization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.0857281-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1013593-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1326044-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitializing">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1326044-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitializationFailed">
+    <ErrorMessage>Site Details not found for site: 'server=pmgdb03.pmg.local;database=EktronSirSpeedyProd1;Integrated Security=FALSE;user=dataman;pwd=3ktr0n@dm1nmAn;', service url: 'http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc', sitePath: 'C:\inetpub\franserv\www.sirspeedy.com'. This can happen when (1) The server name is resolving to the wrong IP address OR (2) The EWS is NOT running OR (3) The site is no longer present on the server. ESync if initiated will not continue in this state.</ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1482285-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncFailed">
+    <ErrorMessage>Site Details not found for site: 'server=pmgdb03.pmg.local;database=EktronSirSpeedyProd1;Integrated Security=FALSE;user=dataman;pwd=3ktr0n@dm1nmAn;', service url: 'http://pmgws08:8732/Ektron.Sync.SyncServices/SiteCommunicationService2.svc', sitePath: 'C:\inetpub\franserv\www.sirspeedy.com'. This can happen when (1) The server name is resolving to the wrong IP address OR (2) The EWS is NOT running OR (3) The site is no longer present on the server. ESync if initiated will not continue in this state.</ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1482285-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Error</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1638598-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1638598-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1638598-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1951187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2014-11-07T11:35:00.1951187-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+</SyncStatusInfoList>

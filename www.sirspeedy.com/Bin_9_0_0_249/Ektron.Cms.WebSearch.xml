@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ektron.Cms.WebSearch</name>
+    </assembly>
+    <members>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_columns">
+            <summary>
+            The Columns property contains the list of case-insensitive column names used in formatting the query result set.
+            This property gives a list of column names, each separated by commas. 
+            The column names can be enclosed in quotation marks if they contain characters other than alphabetic and numeric characters. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_query">
+            <summary>
+            The Query property is the query string, also known as the restriction or query restriction(where clause).
+            The combination of words or phrases or properties to search for that determines the documents to be returned in a search For Web clients, the query string variable in URLs associated with this property is qu. 
+            The Dialect property defines the version of query language contained in the Query property. The LocaleID determines the language components (English (US), Japanese, French, and any one of the other supported languages) to use to break the query string into words, to remove noise words, and to create the appropriate stemming variations of the words in the query string. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_catalogName">
+            <summary>
+            The Catalog property is the catalog name on a local computer; for example, Web or System.
+            String. The catalog name can be the name of a directory on the local computer. 
+            You can specify more than one catalog name by separating each name with a comma. 
+            The catalog name uses URL-like syntax in the following format. 
+            query://hostname/indexname 
+            The hostname is the name of the computer where the catalog can be found. The indexname gives the catalog name on that computer. 
+            The hostname defaults to the local computer if not supplied. The indexname defaults to the default catalog on the computer if not supplied. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_ciFlags">
+            <summary>
+            "DEEP" | "SHALLOW". 
+            "DEEP" indicates to Indexing Service that it needs to use the directory given in CiScope 
+            and recursively search through all directories within it. 
+            "SHALLOW" means search only the directory specified in CiScope. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_maxResults">
+            <summary>
+            The MaxRecords property defines the maximum number of records (rows) to use in the query result set, which is an ADO Rowset object. 
+            This property limits the number of records in the Rowset object the Indexing Service OLE DB provider retrieves from its data source object, 
+            which is the group of indexes defined by the current catalog. 
+            The default setting of zero requests all records. MaxRecords is read/write when the recordset is closed and read-only when it is open.
+            By default we set this to 10
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_currentPage">
+            <summary>
+            Page for which you want results for
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_allowEnumeration">
+            <summary>
+            The AllowEnumeration property indicates whether the query engine can use enumeration queries to resolve the result set. 
+            This property is used when resolving a query for properties that involve recursively searching directories for property information. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_defineColumn">
+            <summary>
+            The DefineColumn method defines a new friendly name for a column to be included in queries. 
+            By defining an alias for an existing property, you create a shorthand term to refer to it. 
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_dialect">
+            <summary>
+            The Dialect property specifies the dialect of the Indexing Service Query Language being used in the Query property for this query.
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_firstRows">
+            <summary>
+            The FirstRows property specifies the number of records (rows) returned in the query result set. 
+            The result set is an ADO Rowset object. 
+            The first FirstRows rows found are returned unsorted. 
+            Because the results are not sorted, you should only specify the value of this property for fast query result turnaround.
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_groupBy">
+            <summary>
+            The GroupBy property groups search results by value within a column. 
+            For example, searches could group, in the result table, all documents written by one author. 
+            Ex: objQuery.GroupBy = "[unique] DocAuthor"
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_languageId">
+             <summary>
+             The LocaleID property is the unique locale identifier (LCID) that specifies a language identifier to use for this query. 
+             Convert between language identifiers (strings) and LCIDs (constants) by using the ISOToLocaleID and LocaleIDToISO methods on the utility object. 
+             The value is a Microsoft Win32® LCID. This locale identifies the language to use to perform a query on existing indexes. 
+            For Web clients requesting an Active Server Pages (ASP), browsers send an HTTP header — HTTPm_ACCEPTm_LANGUAGE — that specifies the locale to use in a query. This can be overridden with this LocaleID property. The U.S. English locale is 1033 (equivalent to the language code "en-us").
+             </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_optimizeFor">
+             <summary>
+             The OptimizeFor property controls whether queries are optimized for better performance or for a greater number of hits. 
+             String. This string has the following syntax: 
+            "performance" | "recall" [, "hitcount" | "nohitcount" ] 
+            where the parts are defined as follows: 
+            "performance" | "recall" 
+            Default is "recall". If "performance", Indexing Service first collects the maximum number of hits and then eliminates hits that don't meet the scope or security requirements. 
+            Note   Optimizing for performance may result in less than the expected number of hits for queries in which scope checks or security checks remove hits.
+            If "recall", Indexing Service trims the result set as it finds the hits of matches that don't meet the scope or security requirements. 
+            "hitcount" | "nohitcount" 
+            Defaults to "nohitcount". It controls whether or not to request the Hitcount property, which represents the total number of hits matching the query, from the ADO query property collection. This property is a custom property supported by the OLE DB provider, accessed through the query object property set. 
+            The "hitcount" and "nohitcount" options are not implemented for Indexing Service in Windows 2000 or Microsoft Windows XP. It is used exclusively in the implementation of Indexing Service for Microsoft Site Server. 
+             If you choose the performance option, scope and security trimming are deferred until after the maximum number of hits is collected. If the option is set to recall, the result set trimming occurs while executing the query. The default is to optimize for recall.
+             </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.CiQuery.m_sortBy">
+            <summary>
+            The SortBy property indicates how to sort the result set of a query, by listing column names and sorting order. 
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.WebSearch.TokenType">
+            <summary>
+            Specifies the type of a token in an expression.
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.InvalidCharacter">
+            <summary>
+            Invalid character
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.NoToken">
+            <summary>
+            No token found
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Or">
+            <summary>
+            Or token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.And">
+            <summary>
+            And token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Not">
+            <summary>
+            Not token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Near">
+            <summary>
+            Near token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Word">
+            <summary>
+            Word token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Any">
+            <summary>
+            Any token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Anonymous">
+            <summary>
+            Anonymous token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.LeftParenthesis">
+            <summary>
+            Left Paren token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.RightParenthesis">
+            <summary>
+            Right paren token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.QuotedString">
+            <summary>
+            Quoted string token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Property">
+            <summary>
+            Property string token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.RegularExpression">
+            <summary>
+            Regular Expression
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Stem">
+            <summary>
+            Stem search
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.Weight">
+            <summary>
+            Weighted Search
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.AndNot">
+            <summary>
+            AndNot token
+            </summary>
+        </member>
+        <member name="F:Ektron.Cms.WebSearch.TokenType.EndOfFile">
+            <summary>
+            EOF token
+            </summary>
+        </member>
+        <member name="T:Ektron.Cms.WebSearch.LexicalAnalyzer">
+            <summary>
+            Represents a lexical analyzer for boolean expressions.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.LexicalAnalyzer.#ctor(System.String)">
+            <summary>
+            The expression to analyze.
+            </summary>
+            <param name="expression">A boolean expression.</param>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.LexicalAnalyzer.MoveNext">
+            <summary>
+            Gets the type of the next token.
+            </summary>
+            <returns>A <see cref="T:Ektron.Cms.WebSearch.TokenType"/> value.</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.LexicalAnalyzer.Current">
+            <summary>
+            Gets the string value of the current token.
+            </summary>
+            <returns>The value of the current</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.LexicalAnalyzer.PreviousMatch">
+            <summary>
+            Gets the previous match of the regular expression.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.LexicalAnalyzer.PrevPrevMatch">
+            <summary>
+            Gets the previous match of the regular expression.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.LexicalAnalyzer.CurrentMatch">
+            <summary>
+            Gets the current match of the regular expression.
+            </summary>
+            <value>A <see cref="T:System.Text.RegularExpressions.Match"/></value>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.#cctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeContentSearchProperties">
+            <summary>
+            Initializes the values of the ContentSearchMapping dictionary.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeMapSearchMapping">
+            <summary>
+            Initializes the values of the MapSearchMapping dictionary.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeGroupSearchMapping">
+            <summary>
+            Initializes the values of the GroupSearchMapping dictionary.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeUserSearchMapping">
+            <summary>
+            Initializes the values of the UserSearchMapping dictionary.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeOrderMappings">
+            <summary>
+            Initializes the values of the OrderMappings dictionary.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.PropertyMappings.InitializeProductSearchMapping">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.OrderMap">
+            <summary>
+            Gets the WebSearchOrder to PropertyExpression mapping dictionary.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.UserSearchPropertyMap">
+            <summary>
+            Gets the user search property mapping table.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.UserSearchProperties">
+            <summary>
+            Gets all mapped property expressions for user search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.ContentSearchPropertyMap">
+            <summary>
+            Gets the content search property mapping table.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.ContentSearchProperties">
+            <summary>
+            Gets all mapped property expressions for content search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.GroupSearchPropertyMap">
+            <summary>
+            Gets the group search property mapping table.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.GroupSearchProperties">
+            <summary>
+            Gets all mapped property expressions for group search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.MapSearchPropertyMap">
+            <summary>
+            Gets the map search property mapping table.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.MapSearchProperties">
+            <summary>
+            Gets all mapped property expressions for map search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.ProductSearchPropertyMap">
+            <summary>
+            Gets the product search property mapping table.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.ProductSearchProperties">
+            <summary>
+            Gets all mapped property expressions for product search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.Search.Compatibility.PropertyMappings.CommunitySearchProperties">
+            <summary>
+            Gets all mapped property expressions for community search.
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.Convert(Ektron.Cms.WebSearch.SearchData.ProviderSearchData)">
+            <summary>
+            Converts a ProviderSearchData instance to a corresponding
+            AdvancedSearchCriteria instance.
+            </summary>
+            <param name="request">Request to convert</param>
+            <returns>Converted SearchServerRequestData instance</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.Convert(Ektron.Cms.WebSearch.SearchData.ProviderSearchData,Ektron.Cms.Search.Expressions.Expression)">
+            <summary>
+            Converts a ProviderSearchData instance to a corresponding
+            AdvancedSearchCriteria instance.
+            </summary>
+            <param name="request">Request to convert</param>
+            <param name="advancedPropertyQueries">Other Property queries to add to AdvancedSearchCriteria.Expressiontree (use by websearch Advanced UI)</param>
+            <returns>Converted SearchServerRequestData instance</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetIntegratedSearchScopeExpression(System.Collections.Generic.List{Ektron.Cms.Search.Expressions.ScopeExpression})">
+            <summary>
+            Queries with integrated search require us to manually prepare the scope. This
+            method converts the specified list of ScopeExpressions to the appropriate
+            query which would be appended to such a search.
+            </summary>
+            <param name="scopes">Collection of ScopeExpressions</param>
+            <returns>Integrated search scope expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetPagingInfo(System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Gets a PagingInfo object populated according to the specified
+            request settings.
+            </summary>
+            <returns>PagingInfo object</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetPermission(System.Int64)">
+            <summary>
+            Gets the permission object for the specified user. If 'userId' is less
+            than 1, an administrator permission object is returned.
+            </summary>
+            <param name="userId">User ID</param>
+            <returns>Permission object for specified user</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetOrderData(Ektron.Cms.WebSearch.SearchData.WebSearchOrder,Ektron.Cms.WebSearch.SearchData.WebSearchOrderByDirection)">
+            <summary>
+            Gets an OrderData collection representing the specified order parameters.
+            </summary>
+            <param name="field">Order field</param>
+            <param name="direction">Order direction</param>
+            <returns>Collection of OrderData</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetOrderData(System.String,Ektron.Cms.WebSearch.SearchData.WebSearchOrderByDirection)">
+            <summary>
+            
+            </summary>
+            <param name="customOrder"></param>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetReturnProperties(Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            
+            </summary>
+            <param name="searchType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetExpressionTree(Ektron.Cms.WebSearch.SearchData.SearchRequestData,Ektron.Cms.Search.KeywordSearchCriteria)">
+            <summary>
+            Convert SearchText, FolderId, LanguageId, SearchForType and Taxonomy Categories to an Expression
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetExpressionTree(Ektron.Cms.WebSearch.SearchData.ProviderSearchData,Ektron.Cms.Search.KeywordSearchCriteria)">
+            <summary>
+            Convert SearchText, FolderId, LanguageId, SearchForType and Taxonomy Categories to an Expression
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetFolderRestriction(System.Int64,System.String,System.Boolean)">
+            <summary>
+            Builds a property expression to restrict a query based on the
+            specified input. Null is returned if there is no restriction
+            necessary.
+            </summary>
+            <param name="folderId">Folder ID</param>
+            <param name="multipleFolders">Semicolon delimitted list of folder IDs</param>
+            <param name="recursive">Indicates if the folder restriction is recursive</param>
+            <returns>Folder restriction expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetContentTypeRestriction(Ektron.Cms.WebSearch.SearchDocumentType)">
+            <summary>
+            Builds a property expression to restrict a query based on the
+            specified input. Null is returned if there is no restriction
+            necessary.
+            </summary>
+            <param name="documentType">Type of content</param>        
+            <returns>Content type restriction expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetTaxonomyRestriction(System.String,Ektron.Cms.WebSearch.SearchData.TaxonomyOperator)">
+            <summary>
+            Builds a property expression to restrict a query based on the
+            specified input. Null is returned if there is no restriction
+            necessary.
+            </summary>
+            <param name="documentType">Type of content</param>        
+            <returns>Taxonomy restriction expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetLanguageRestriction(System.Int64)">
+            <summary>
+            Builds a property expression to restrict a query based on the
+            specified input. Null is returned if there is no restriction
+            necessary.
+            </summary>
+            <param name="languageId">Language ID</param>        
+            <returns>Language restriction expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetCommunityTypeRestriction">
+            <summary>
+            Gets an expression restricting the query to only community types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetFriendsRestriction(System.Int64)">
+            <summary>
+            Gets an expression restricting the query to only friends of currently logged in user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.SetSearchText(System.String,Ektron.Cms.Search.KeywordSearchCriteria,Ektron.Cms.WebSearch.SearchData.WebSearchType)">
+            <summary>
+            Gets an expression for the specified search text.
+            </summary>
+            <param name="phrase">Search text</param>
+            <param name="isTagSearch">Flag indicating if this is a tag search or not</param>
+            <returns>Expression for the search text</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.SetSearchText(System.String,Ektron.Cms.Search.KeywordSearchCriteria)">
+            <summary>
+            Gets an expression for the specified search text.
+            </summary>
+            <param name="phrase">Search text</param>
+            <param name="isTagSearch">Flag indicating if this is a tag search or not</param>
+            <returns>Expression for the search text</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetTagRestriction(System.String)">
+            <summary>
+            Gets an expression for the specified search text.
+            </summary>
+            <param name="phrase">Search text</param>
+            <param name="isTagSearch">Flag indicating if this is a tag search or not</param>
+            <returns>Expression for the search text</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.UpdateMetadataValue(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Updates metadata values to their appropriate data
+            types.
+            </summary>
+            <param name="metaData">Metadata to update</param>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an expression corresponding to the specified metadata object.
+            </summary>
+            <param name="metadata">Metadata to convert to an expression</param>
+            <returns>Metadata expression</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetEqualsExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an "equals" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetGreaterThanExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an "greater than" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetGreaterThanOrEqualsExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an "greater than or equal to" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetLessThanExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an "less than" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetLessThanOrEqualsExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets an "less than or equal to" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetNotEqualsExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets a "not equal to" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetRangeExpression(Ektron.Cms.WebSearch.SearchData.MetaData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets a "range" expression for the specified metadata.
+            </summary>
+            <param name="metadata">Metadata from which to create an expression</param>
+            <returns>Expression corresponding to the metadata</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetColumnList(Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Gets the list of index search columns for the specified
+            search type.
+            </summary>
+            <param name="searchType">Type of search</param>
+            <returns>List of index search columns</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetXmlFieldData(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="smartform_title"></param>
+            <param name="package_xslt"></param>
+            <param name="xmlColID"></param>
+            <param name="database"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetXmlFieldData(System.Collections.Generic.List{Ektron.Cms.Search.Compatibility.XmlFieldData},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="database"></param>
+            <param name="xmlColID"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetXmlFieldData(System.Int64,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="database"></param>
+            <param name="xmlColID"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetSmartFormPropertyType(System.String,System.Int64)">
+            <summary>
+            Returns the corresponding managed property name for the specified
+            xpath value.
+            </summary>
+            <remarks>
+            This will result in a look-up of smartforms in the system to determine
+            the datatype associated with this xpath value.
+            </remarks>
+            <param name="xpath">XPath value</param>
+            <returns>Managed property name</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetIndexSearchProperties(Ektron.Cms.WebSearch.SearchData.IndexSearchRequestData)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="retval"></param>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.MakeXsltTransform(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="package_xslt"></param>
+            <param name="xsltName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.MakeDataTable(Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Generates an index search compatible data table for results.
+            </summary>
+            <param name="searchType">Type of search</param>
+            <returns>Index search results table</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.ConvertSuggestResultsDataTable(System.Collections.Generic.List{Ektron.Cms.Search.SuggestedResultData})">
+            <summary>
+            Converts the specified DataTable to a legacy suggested results DataTable.
+            </summary>
+            <param name="suggestedResultsDataTable">DataTable to convert</param>
+            <returns>Legacy suggested results DataTable</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.GetSearchServerProperty(System.String,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Converts a WebSearch column name into its corresponding Microsoft Search Server Property
+            .
+            </summary>
+            <param name="columnName">Microsoft Search Server DataTable column name</param>
+            <returns>WebSearch column name</returns>
+        </member>
+        <member name="M:Ektron.Cms.Search.Compatibility.SearchConverter.ConvertDataTable(Ektron.Cms.Search.SearchResponseData,Ektron.Cms.WebSearch.SearchData.SearchForType)">
+            <summary>
+            Converts a DataTable from Microsoft Search Server into a format CMS WebSearch recognizes.
+            </summary>
+            <param name="searchServerDataTable">Microsoft Search Server DataTable</param>
+            <returns>CMS WebSearch DataTable</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.XPath">
+            <summary>
+            XPATH to search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.Value">
+            <summary>
+            Value of the index field to search.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.RangeValue">
+            <summary>
+            The second value used in range type search (between).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.DataType">
+            <summary>
+            The datatype of the indexed field from the smart form (Boolean, Date, Multiselection,Number,Selection,String).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.SearchType">
+            <summary>
+            The search type (GreaterThan, LessThan, EqualTo,Between,ExactPhrase,Contains, True,False).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchFieldData.FriendlyName">
+            <summary>
+            Friendly name of the XPATH.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.SearchText">
+            <summary>
+            Text to search for
+            Defaults to blank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.MaxResults">
+            <summary>
+            Maximum number of results to be returned when paging is not enabled.
+            Defaults to 250
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.FolderID">
+            <summary>
+            FolderID from which search starts.
+            Default is folder 0 (root).
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.Recursive">
+            <summary>
+            True if search should include all children of specified folder.
+            By default, search is recursive.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.OrderBy">
+            <summary>
+            Order search results by specified column
+            Defaults to Rank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.CustomOrderBy">
+            <summary>
+            Order search results by a custom property
+            Defaults to empty string
+            /// </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.OrderDirection">
+            <summary>
+            Order by ascending or descending 
+            Default Descending
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.SearchType">
+            <summary>
+            Type of search to perform 
+            Defaults to and 
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.PlainSearchText">
+            <summary>
+            Text to search for
+            Defaults to blank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.Weights">
+            <summary>
+            Used for weighted word search 
+            This is specific to IndexService
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.CurrentPage">
+            <summary>
+            Used for paging through the results
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.LanguageID">
+            <summary>
+            Language of content to search for
+            Defaults to 1033 English
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.PageSize">
+            <summary>
+            Defaults to providerPageSize
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.UserId">
+            <summary>
+            User ID on which to filter private documents
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.EnablePaging">
+            <summary>
+            True if you want search results to be paged.
+            By default, paging is enabled and page size is set to 10.
+            To modify page size, edit provider settings in web.config.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestBase.ProviderName">
+            <summary>
+            Index Service provider to use
+            Defaults to Dialect2 provider
+            You can change this in Web.config
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchRequestData.XmlConfigID">
+            <summary>
+            The smart form config Id to search
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchRequestData.IndexSearchOperator">
+            <summary>
+            Determines operator between multiple search conditions.
+            false => searches are AND-ed
+            true  => searches are OR-ed
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.IndexSearchRequestData.IndexSearchText">
+             <summary>
+            This property is used for intermediate search text processesing.
+            Please do not set this property as it will always be overwritten.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.CustomDirs">
+            <summary>
+            Text to search for
+            Defaults to blank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.MultipleFolders">
+            <summary>
+            Text to search for
+            Defaults to blank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.IncludeSuggestedResults">
+            <summary>
+            Include best bets in search results
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.SearchSynonyms">
+            <summary>
+            Include best bets in search results
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.FriendsOnly">
+            <summary>
+            Default true. When false, prevents users with private profiles from being returned in the search results.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.SearchReturnType">
+            <summary>
+            Defaults to HTML
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.SearchFor">
+            <summary>
+            Type of documents to search for
+            Default all documents are searched
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.Category">
+            <summary>
+            Taxanomy category you want to search on
+            Defaults to blank
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchData.SearchRequestData.GroupBy">
+            <summary>
+            Only Dialect provider supports this
+            GroupBy column name
+            Note ranking is altered if you do group by
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.MSIndex.MSIndexDialectQuery.#ctor(Ektron.Cms.WebSearch.SearchData.ProviderSearchData)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.MSIndex.MSIndexDialectQuery.#ctor(Ektron.Cms.WebSearch.SearchData.SearchRequestData)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.Query.GetCommand">
+            <summary>
+            Makes the base search string 
+            </summary>
+            <param name="text"></param>
+            <param name="metadata"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.MSIndexQuery.#ctor(Ektron.Cms.WebSearch.SearchData.ProviderSearchData,System.Web.HttpContext)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.MSIndexQuery.#ctor(Ektron.Cms.WebSearch.SearchData.SearchRequestData,System.Web.HttpContext)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.Typed.Current">
+            <summary>
+            Gets the string value of the current token.
+            </summary>
+            <returns>The value of the current</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.Typed.CurrentMatch">
+            <summary>
+            Gets the current match of the regular expression.
+            </summary>
+            <value>A <see cref="T:System.Text.RegularExpressions.Match"/></value>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.Weighted.MoveNext">
+            <summary>
+            Gets the type of the next token.
+            </summary>
+            <returns>A <see cref="T:Ektron.Cms.WebSearch.TokenType"/> value.</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.Weighted.Current">
+            <summary>
+            Gets the string value of the current token.
+            </summary>
+            <returns>The value of the current</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.Weighted.PreviousMatch">
+            <summary>
+            Gets the previous match of the regular expression.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.Weighted.CurrentMatch">
+            <summary>
+            Gets the current match of the regular expression.
+            </summary>
+            <value>A <see cref="T:System.Text.RegularExpressions.Match"/></value>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.SearchQueryTypes.CiWeighted.MoveNext">
+            <summary>
+            Gets the type of the next token.
+            </summary>
+            <returns>A <see cref="T:Ektron.Cms.WebSearch.TokenType"/> value.</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.CiWeighted.Current">
+            <summary>
+            Gets the string value of the current token.
+            </summary>
+            <returns>The value of the current</returns>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.CiWeighted.PreviousMatch">
+            <summary>
+            Gets the previous match of the regular expression.
+            </summary>
+        </member>
+        <member name="P:Ektron.Cms.WebSearch.SearchQueryTypes.CiWeighted.CurrentMatch">
+            <summary>
+            Gets the current match of the regular expression.
+            </summary>
+            <value>A <see cref="T:System.Text.RegularExpressions.Match"/></value>
+        </member>
+        <member name="M:Ektron.Cms.WebSearch.Utils.StringToEnum(System.Type,System.String)">
+            <summary>
+            Returns an Enumeration Object from string
+            </summary>
+            <param name="t"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

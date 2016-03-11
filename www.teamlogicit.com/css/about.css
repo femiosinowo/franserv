@@ -1,0 +1,169 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul, .faqindex_content_wrapper ul, .faqdetail_content_wrapper ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li, .faqindex_content_wrapper ul li, .faqdetail_content_wrapper ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/*------------------- FAQ -------------------------*/
+/* line 5, ../sass/about.scss */
+.faqindex_content_wrapper {
+  background: #202326;
+  color: #ffffff;
+  font-size: 16px;
+  /*ul {
+  	padding-left: 15px;
+  	*/
+}
+/* line 15, ../sass/about.scss */
+.faqindex_content_wrapper li {
+  font-size: 18px;
+}
+
+/* line 21, ../sass/about.scss */
+.faq_content {
+  padding-bottom: 50px;
+}
+/* line 24, ../sass/about.scss */
+.faq_content .question {
+  padding-left: 35px;
+  font-size: 18px;
+}
+/* line 28, ../sass/about.scss */
+.faq_content .question:hover {
+  cursor: pointer;
+}
+/* line 32, ../sass/about.scss */
+.faq_content .question:before {
+  background: #FFFFFF;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #202326;
+  content: "?";
+  display: block;
+  font-weight: 700;
+  height: 25px;
+  left: 40px;
+  text-align: center;
+  width: 25px;
+  behavior: url(/js/PIE.htc);
+  position: absolute;
+  z-index: 0;
+}
+/* line 51, ../sass/about.scss */
+.faq_content .question.active:before {
+  content: " ";
+}
+/* line 54, ../sass/about.scss */
+.faq_content .question p {
+  font-size: 22px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+/* line 60, ../sass/about.scss */
+.faq_content .answer_wrapper {
+  background: #313437;
+  line-height: 28px;
+  display: none;
+}
+/* line 65, ../sass/about.scss */
+.faq_content .answer {
+  padding-left: 35px;
+}
+/* line 68, ../sass/about.scss */
+.faq_content .answer p {
+  font-size: 18px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/* line 74, ../sass/about.scss */
+.faq_topics_wrapper {
+  background: #FFFFFF;
+  color: #202327;
+}
+/* line 78, ../sass/about.scss */
+.faq_topics_wrapper h2.headline {
+  padding: 50px 0;
+}
+/* line 82, ../sass/about.scss */
+.faq_topics_wrapper h3 {
+  text-transform: uppercase;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* line 90, ../sass/about.scss */
+.faq_topic_icon {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 95, ../sass/about.scss */
+.faq_topic {
+  margin-bottom: 125px;
+}
+
+/* line 99, ../sass/about.scss */
+.faqdetail_content_wrapper {
+  min-height: 500px;
+  background: #ffffff;
+}
+/* line 103, ../sass/about.scss */
+.faqdetail_content_wrapper h2.headline {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+/* line 109, ../sass/about.scss */
+.faqdetail_content_wrapper p, .faqdetail_content_wrapper li {
+  font-size: 18px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+/* line 116, ../sass/about.scss */
+.faqdetail_content_wrapper .faq_topic_icon {
+  max-width: 113px;
+  max-height: 113px;
+  margin-top: 27px;
+}
+/* line 122, ../sass/about.scss */
+.faqdetail_content_wrapper .breadcrumb {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 2;
+  text-transform: uppercase;
+}
+/* line 129, ../sass/about.scss */
+.faqdetail_content_wrapper .breadcrumb a {
+  padding: 0 10px 0 0;
+}
+/* line 133, ../sass/about.scss */
+.faqdetail_content_wrapper .breadcrumb span {
+  padding: 0 0 0 10px;
+}
+
+/* line 139, ../sass/about.scss */
+.all_questions_wrapper {
+  border-top: 1px solid #EFEFEF;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+
+/* line 145, ../sass/about.scss */
+.all_questions_content h3 {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+/* line 153, ../sass/about.scss */
+.all_questions_content li {
+  font-size: 18px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}

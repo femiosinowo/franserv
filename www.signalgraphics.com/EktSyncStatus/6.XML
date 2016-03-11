@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncStatusInfoList>
+  <SyncStatusInfo StatusCode="SyncPreInitialization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3491468-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3491468-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3647734-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitializing">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3647734-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="PreSyncValidation">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3647734-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncInitialized">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3804329-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="ServerIndexUpdateStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.3960339-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="ServerIndexUpdateCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.4585523-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncTemplatesStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.4741523-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.4741523-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.4741523-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingLocalFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.5054035-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncDetectingRemoteFileChanges">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:48.5054035-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncRunningFileSynchronization">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:55.943221-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="DownloadingFiles">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:56.0369742-08:00</DateCreated>
+    <StatusMessage>2 files will be downloaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="UploadingFiles">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:56.0525962-08:00</DateCreated>
+    <StatusMessage>2 files will be uploaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="UploadingFileAttributes">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:18:56.0682162-08:00</DateCreated>
+    <StatusMessage>2 file attributes will be uploaded in the current batch.</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="RemoteFileSyncSessionStatistics">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.1602752-08:00</DateCreated>
+    <StatusMessage>Total Changes Applied: 3, Total Changes Failed: 0</StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.1759172-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.1915218-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncTemplatesEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.1915218-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingStarted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.3009011-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="StrategyProcessingCompleted">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.3165242-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>Information</StatusType>
+  </SyncStatusInfo>
+  <SyncStatusInfo StatusCode="SyncEnded">
+    <ErrorMessage></ErrorMessage>
+    <DateCreated>2015-01-21T19:19:16.3165242-08:00</DateCreated>
+    <StatusMessage></StatusMessage>
+    <StatusType>NotableAction</StatusType>
+  </SyncStatusInfo>
+</SyncStatusInfoList>

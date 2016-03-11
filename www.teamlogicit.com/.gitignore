@@ -1,0 +1,6 @@
+Workarea
+web.config
+Global.asax
+bin
+bin/*
+Workarea/*

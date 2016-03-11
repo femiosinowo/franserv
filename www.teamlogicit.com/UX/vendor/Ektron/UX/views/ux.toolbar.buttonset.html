@@ -1,0 +1,9 @@
+﻿<div data-bind="css: getClass(), foreach: buttons, visible: isVisible">
+    <!-- ko if: $parent.type() === 'radio' || $parent.type() === 'checkbox' -->
+    <input data-bind="value: value, attr: { id: id, name: $parent.id, type: $parent.type }, disable: disabled, checked: $parent.val, click: fire, visible: isVisible" />
+    <!-- /ko -->
+    <!-- ko if: $parent.type() === 'button' -->
+    <input type="button" data-bind="disable: disabled, attr: { id: id }, click: fire, visible: isVisible" />
+    <!-- /ko -->
+    <label data-bind="text: options.text, attr: { for: id }, visible: isVisible"></label>   
+</div>

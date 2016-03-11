@@ -1,0 +1,11 @@
+﻿<a data-bind="click: toggleLauncher" class="launcherButton" href="#launcherOpen">
+    <span class="logo"></span>
+</a>
+<ul data-bind="foreach: apps">
+    <li>
+        <a href="#" data-bind="click: load, event: { click: $parent.toggleLauncher }, attr: { 'data-ektron-path': iconUrl() }, attr: {'title' : name() }">
+            <span class="applicationIcon" data-bind="attr: { 'data-ektron-path': iconUrl() }"></span>
+            <span class="applicationName" data-bind="text: name()"></span>
+        </a>
+    </li>  
+</ul>

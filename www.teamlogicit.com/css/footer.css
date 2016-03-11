@@ -1,0 +1,142 @@
+/* CSS Document */
+
+.footer_wrapper {
+	background: url(../images/footer_bg.png) repeat-x left bottom #202326;
+	display: block;
+	min-height: 350px;
+	margin: 0 auto;
+	padding: 30px 2% 50px;
+	float: left;
+	width: 96%;
+}
+
+.footer_col {
+	display: inline-block;
+	vertical-align: top;
+	width: 27%;
+}
+
+.footer_col ul {
+	margin: 0 0 23px;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #9d9d9d;
+	padding-top: 23px;
+}
+
+.footer_col ul:first-child {
+	border-top: none;
+}
+
+.footer_col_1,
+.footer_col_2 {
+	margin-right: 4%;
+	width: 45%;
+}
+
+html.ie8 .footer_col_1,
+html.ie8 .footer_col_2 {
+	margin-right: 4%;
+	width: 30%;
+}
+
+.footer_col ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.footer_col > ul > li:first-child {
+	padding-bottom: 17px;
+}
+
+.footer_col_3 > ul > li:first-child {
+	padding-bottom: 0;
+	color: #8bc73f;
+	text-transform: uppercase;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+}
+
+.footer_col ul li a, .footer_col .CopyRightText {
+	color: #9d9d9d;
+	font-family: 'GothamBook', Arial, Helvetica, sans-serif;
+}
+
+.footer_col ul li:first-child a {
+	color: #8bc73f;
+	text-transform: uppercase;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+}
+
+/*footer social media*/
+ul.footer_social_media {
+	border-top: none;
+	border-bottom: 1px solid #9d9d9d;
+	padding-bottom: 23px;
+}
+
+ul.footer_social_media li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+ul.footer_social_media li a {
+	display: block;
+	width: 26px;
+	height: 26px;
+}
+
+a.footer_location {
+	background: #0095da;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+	padding: 20px 18px;
+	display: inline-block;
+}
+
+a.footer_location:hover {
+	text-decoration: none;
+	background: #0283be;
+}
+
+@media all and (max-width: 640px) {
+	.footer_col_3{width:97%;}
+	
+	ul.footer_social_media li{margin:0 1.25%;}
+	
+}
+
+@media screen and (min-width: 641px) and (max-width:959px) {
+	.footer_col_3{width:97%;}
+	
+}
+
+@media screen and (min-width: 960px) and (max-width:1120px) {
+	ul.footer_social_media li{
+		width:20%;
+		margin-bottom:20px;
+	}
+	
+}
+
+@media screen and (min-width: 960px) and (max-width:1279px) {
+	.footer_col{width:27%;margin-left:2%;}
+	.footer_col_3{width:30%;}
+	.fotter_col_3 ul{margin-bottom:40px;}
+	
+	
+	html.ie8 .footer_col_3{width:30%;}
+}
+
+@media screen and (min-width: 1280px){
+	.footer_wrapper{
+	  width:100%;
+	  padding:30px 0 50px;	
+	}
+	.footer_col{width:27%;}
+	.footer_col_3{width:35%;}
+	.footer_col_3 ul{margin-bottom:40px;}
+	
+	html.ie8 .footer_col_3{width:30%;}
+	
+}

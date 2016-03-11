@@ -1,0 +1,11 @@
+﻿<root>
+  <companyName>Duplo</companyName>
+  <tagline>Digitial Output Specialist</tagline>
+  <teaser>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh.</teaser>
+  <image>
+    <img src="/uploadedImages/SirSpeedy/Content/About_Us/Partners/duplo.png" alt="Duplo" title="Duplo" />
+  </image>
+  <url>
+    <a href="http://www.duplousa.com/">http://www.duplousa.com/</a>
+  </url>
+</root>

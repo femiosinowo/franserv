@@ -1,0 +1,606 @@
+﻿/*styles added by developer*/
+
+/*home page slider*/
+.Green {background: none repeat scroll 0 0 #018754 !important;}
+.LimeGreen {background: none repeat scroll 0 0 #2cb474 !important;}
+.YellowGreen {background: none repeat scroll 0 0 #b3d236 !important;}
+.LawnGreen {background: none repeat scroll 0 0 #8bc83f !important;}
+
+.statement-text
+{
+    min-height:110px;
+}
+.national .service_section h3, .manageITOurApproach .service_section h3, .Managed-it-child h3{
+    color:white;
+}
+/*find_location*/
+.grid_24_locator
+{
+    width:100%;
+    margin-top:30px;
+}
+.grid_24_locator .search
+{
+    height: 50px;
+    margin-top: 16px;
+}
+.find_location_page
+{
+    height:142px;
+}
+.find_location_page .sub_navigation .grid_24 div {
+    height: 42px;   
+}
+.grid_24_locator .suffix_1 {
+    padding-right: 3.167%;
+}
+#searchLocWaitImg
+{
+    display: block;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-top: 20px;
+    width: 40px;
+}
+.findLoc_see_all_locations {
+    border-left: 1px solid #d1d1d1;
+    box-shadow: -1px 0 0 0 #fefefe;
+    padding-left: 3.167% !important;
+    margin-top:15px;
+    margin-left:0px;
+}
+.all_locations_btn
+{
+    border: medium none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px 0 30px;    
+    text-transform: uppercase;
+    width: 202px;
+    height: 40px;
+    background: none repeat scroll 0 0 #008752;
+    display: inline-block;
+}
+#find_location_results {
+    background-color: #ffffff;
+    left: 10.333%;
+    margin: 6% 0 0;
+    max-height: 488px;
+    top: 30.333%;
+    overflow: auto;
+    position: absolute;
+    width: 360px;
+    z-index: 1000;
+}
+#find_location_results h3 {
+    background: none repeat scroll 0 0 #008752;
+    border-bottom: 1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    /*color: #6d6e70;*/
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 20px 12px 13px 20px;
+    /*text-shadow: 0 1px rgba(255, 255, 255, 0.67);*/
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#find_location_results p {
+    border-bottom: 1px solid #c8c8c8;
+    color: #6d6e70;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    min-height: 50px;
+    padding: 12px 0 30px;
+}
+#find_location_results p:hover a{
+    color:#ffffff;
+}
+#find_location_results p:hover {
+    background: none repeat scroll 0 0 #008752;
+}
+#find_location_results p span {
+    display: block;
+    float: left;
+    padding-left: 20px;
+}
+span.markerImage {
+    background-image: url("/images/google-marker-black-pin.png");
+    float: right !important;
+    height: 48px;
+    margin-right: 24px;
+    padding: 0 !important;
+    position: relative;
+    width: 38px;
+}
+span.markerText {
+    color: #ffffff;
+    margin: 0 !important;
+    padding: 7px 0 0 !important;
+    position: absolute;
+    text-align: center;
+    width: 36px;
+}
+.grid_24_all_locations
+{
+    margin-top:20px;
+}
+.grid_24_all_locations h2.headline {
+    font-size: 3em;
+    margin-top:10px;
+}
+/*footer_lower*/
+.googleLangTranslator
+{
+    float:right;
+    margin:10px;
+}
+/*header_footer*/
+.project_info_national
+{
+    overflow-y:auto;
+}
+.project_info_national .small_text
+ {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 0 20px;
+    text-align: center;
+    margin-top:0px !important;
+}
+.errorMessage
+{
+    display:block;
+    color:red;
+    font-size: 10px;
+}
+/*home_local*/
+.case_studies_content
+{
+    width:290px;
+}
+.service_section_national a
+{
+    color:white;
+}
+
+.national .briefs_whitepapers_Img {
+    height: 375px !important;
+    max-height: 375px;
+}
+.why_different .video_wrapper
+{
+    width:100%;
+    height:340px;
+}
+.why_different .video_wrapper iframe {
+    height: 100%;
+    left: 0;    
+    top: 0;
+    width: 612px;
+}
+.why_different .video_section
+{
+    padding-top:5%;
+}
+.why_different .statement-text p {
+    color: #656565;
+    font-family: Arial;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 25px 0 20px;
+    transition: all 0.5s ease 0s;
+    width: 70%;
+}
+.why_different .statement-text p {
+    color: #6d6e70;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 25px 0;
+    text-align: center;
+}
+.why_different .statement-text span {
+    color: #df1b23;
+}
+.social_share .stButton
+{
+    display:none !important;
+}
+/*join_our_team*/
+#personal_info span.required {   
+    margin-right: 2% !important;   
+}
+/*join_team*/
+h2.red{
+    color:red;
+}
+#find_job_wrapper {
+    background: url("/images/bg-join-us-gray.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    margin: 30px auto 60px;
+    min-height: 220px;
+    text-align: center;
+    font-size:2em;
+}
+#find_job h2 {
+    font-size: 50px;
+    margin-top:0px;  
+    margin-bottom: 15px;  
+}
+#find_job h2, #find_job p {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+}
+#find_job a.cta-button-text{
+    border: medium none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 30px 0 30px;    
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+    background: none repeat scroll 0 0 #008752;
+    display: inline-block;
+}
+.statement-text p{
+    margin-top:15px;
+}
+/*local_section*/
+#contact_form .contactUsBtn {
+    height: 45px;
+}
+
+.whitePaperDetail img {
+    width: auto !important;
+}
+
+.form input.btnCustomSearch {
+    background: url("/images/search_magnify.png") no-repeat scroll right center TRANSPARENT !important;
+    border: 0 none !important;
+    cursor: pointer;
+    float: right;
+    height: 27px !important;
+    outline: medium none;
+    overflow: visible;
+    padding: 0 !important;
+    position: absolute;
+    right: 3%;
+    top: 10px;
+    margin-top: 15px !important;
+    width: 45px !important;
+}
+/*#job_search_form .key_word input, #job_search_form .location input {    
+    width: 96.5%;
+}*/
+/*your_locations*/
+#location_info_wrapper, #location_info_wrapper:after
+{
+    z-index:150;
+    position:absolute;
+}
+/*faqs detail*/
+.faqdetail_content li
+{
+    height: auto !important;
+}
+/*careers*/
+.job_search .square_button {
+    color: #ffffff;
+    font-family: "GothamBold",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 54px;    
+    text-transform: uppercase; 
+    padding: 0px;
+}
+
+.pagination .square_button {
+    padding: 0 10px !important;
+}
+.pagination span.square_button
+{
+    display:none !important;
+}
+
+.job_search .pagination .page_number
+{
+    font-family: 'NewJuneFine',Arial,Helvetica,sans-serif;
+    font-size: 23px;  
+    background: none repeat scroll 0 0 transparent;
+    border: 13px solid transparent;
+    border-radius: 33px;
+    color: #000;
+    text-decoration: none;
+    width: 33px;  
+}
+.job_search .pagination .current
+{
+    background: none repeat scroll 0 0 #008752;
+    border: 13px solid #008752;
+    border-radius: 33px;
+    color: #fff;
+    margin-right: 13px;
+    width: 33px;
+}
+.job_search .pagination .page_number:hover {
+  background: #008752;
+  color: #fff;
+  width: 33px;
+  border-radius: 33px;
+  border: 13px solid #008752;
+  text-decoration: none;
+}
+.job_search .pagination #dataPager1
+{
+    text-align: center;
+     display: block;
+}
+/*apply to job*/
+.job_app_wrapper .ajax__fileupload
+{
+    height: 156px;
+    margin-left: 38px;
+    margin-top: 5px;   
+    width: 90%;
+}
+.job_app_wrapper .upload_overlay
+{
+ margin-top:25px !important;
+}
+/*project expert*/
+.key_strategies_block ol {
+    counter-reset: numList;
+    display: block;
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 0 0 0 72px;
+}
+.key_strategies_block ol span.left, .key_strategies_block ol .experts .square_button span.left, .experts .square_button .key_strategies_block ol span.left {
+    display: block;
+    float: left;
+    width: 44%;
+}
+.key_strategies_block ol span.right, .key_strategies_block ol .experts .square_button span.right, .experts .square_button .key_strategies_block ol span.right {
+    display: block;
+    float: right;
+    width: 44%;
+}
+.key_strategies_block ol li {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    position: relative;
+}
+.key_strategies_block ol li:before {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 999px;
+    color: #fff;
+    content: "0" counter(numList, decimal);
+    counter-increment: numList;
+    float: left;
+    font: bold 24px/63px 'NewJuneFine',Arial,Helvetica,sans-serif;
+    height: 63px;
+    left: -72px;
+    position: absolute;
+    text-align: center;
+    width: 63px;
+}
+/*find locator*/
+#all_locations .transformSelect
+{
+    margin-top:0px;
+}
+.find_location_form .allLocationBtn{
+    width: 30%;
+    padding-left: 0;
+}
+#searchLocWaitImg
+{
+    padding-top:12px;
+}
+.find_location_page_infobox
+{
+    width:190px;
+}
+.national .find_location_form_wrapper #find_location_submit.square_button, .find_location_page_infobox {
+    background: none repeat scroll 0 0 #ffffff !important;     
+}
+.national .find_location_form_wrapper #find_location_submit.square_button {
+    border: 2px solid black;    
+}
+ul.contact_info
+{
+    padding-left:10px !important;
+    list-style:none outside none !important;
+}
+ul.contact_info li
+{
+    margin:0px 0px 0px 15px  !important;
+    list-style:none outside none !important;
+}
+/*ul.contact_info li.telephone {
+    background: url("/images/black_phone_icon.png") no-repeat scroll 0 -5% rgba(0, 0, 0, 0);
+}
+ul.contact_info li.telephone {
+    background: url("/images/black_phone_icon.png") no-repeat scroll 0 -5% rgba(0, 0, 0, 0);
+}*/
+.find_location_page_infobox .bottom-divider {
+    border-bottom: 0px solid #dcdcdc;   
+}
+.contact_info_location
+{
+    margin-bottom:0px;
+}
+.contact_info_location img{
+    width:140px;
+}
+/*share email*/
+.st_email .stButton
+{
+    display:none !important;
+}
+
+/*submit buttons*/
+
+.square_button, .form input[type="button"] {
+    background: none repeat scroll 0 0 #008752;
+    display: inline-block;
+    height: auto;
+    padding: 0;
+}
+
+.form input[type="button"] {
+    border: medium none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 30px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.form .square_button input {
+    color: #ffffff;
+    font-family: "GothamBold",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 54px;
+    padding:  5px 22px;
+    text-transform: uppercase;
+    margin:0px;   
+}
+.form .square_button input:hover {
+    text-decoration: none;
+}
+.form .location_submit input:hover {
+    background: none repeat scroll 0 0 #00643d !important;
+}
+/*Subscribe form*/
+#form_subscribe .subscribe_zip input
+{
+    width:82%;
+}
+/*page banners*/
+.main_header_text .caption
+{
+  margin-left: 5%;
+  width:95%; 
+  display: block;
+}
+.main_header_text .caption p
+{
+    width: 375px !important;
+    max-width: 91% !important;
+}
+/*managed IT services child*/
+.Managed-it-child .sectionTitle p {
+    color: #fff;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 65px;
+}
+.Managed-it-supplementIT-wrapper {
+    background-image: url('/images/manage_it_child_arrow.png');
+    background-position: 30% -6px;
+    background-repeat: no-repeat;
+}
+.Managed-it-outsourcedIT-wrapper {
+    background-image: url('/images/manage_it_child_arrow.png');
+    background-position: 68% -6px;
+    background-repeat: no-repeat;
+}
+/*solution detail page case studies slider*/
+.bxslider li
+{
+    height:290px !important;
+}
+/*project expert index*/
+.current_projects h2.headline {
+    font-size: 4.2em;
+    padding: 0;
+}
+/*project expert detail*/
+.expert_detail_wrapper .bx-viewport li {
+    height: auto !important;
+}
+/*management team*/
+.profile_text_inner .social_media ul li:first-child {
+    padding: 0px !important;
+}
+/*home page*/
+.homepage ul li, .our_services ul li
+{
+    font-size:13px !important;
+}
+/*slider*/
+.slider-wrapper li {
+    list-style: none outside none;
+}
+.local_contact_info .address
+{
+    width: 80%;      
+}
+/*site map heading*/
+ul.sitemap
+{
+    text-transform:uppercase !important;
+}
+/*local site let's connect*/
+.lets_connect_content .right p {    
+    color: #000000 !important;
+}
+/*no banner styles*/
+.nobanner
+{
+    margin-bottom:6%;
+}
+/*about us*/
+.aboutLocalCenter
+{
+    margin-left: 50px;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 18px;    
+}
+.aboutLocalCenter p{
+    margin-left: 0px !important;
+}
+/*management team*/
+.profile_text_inner .social_media li
+{
+    float:left;
+    width:50px;
+    margin-left:5px;
+}
+.profileBio{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-family: "Source Sans Pro",sans-serif;
+}
+/*locator*/
+
+@media screen and (max-width: 50em) {
+  #find_location_results {
+        top: 45.333%;
+        left: 5.333%;
+    }
+  .form .square_button input
+{ font-size:14px; } 
+}
+@media screen and (min-width: 50.063em) and (max-width: 70.5em) {
+  #find_location_results {
+        top: 40.333%;
+        left: 5.333%;
+    }
+  .form .square_button input
+{ font-size:14px; } 
+}

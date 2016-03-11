@@ -1,0 +1,16 @@
+﻿p, li, div 	
+	{
+	font-size:10.0pt;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+div.ektron-aloha p { margin:0 0 1.5em;}
+div.ektron-aloha a { text-decoration:underline; color: #0000FF;}
+div.ektron-aloha figure
+{
+    margin: 0;
+    padding:0;
+}
+div.ektron-aloha figure img
+{
+    max-width: 100%;
+}

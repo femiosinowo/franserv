@@ -1,0 +1,134 @@
+/* products_services partition */
+
+.products_services_wrapper{}
+	
+.products_services .headline-content {}
+
+/*slider*/
+
+
+.products_services .bx-wrapper .bx-viewport {
+	/*min-height: 220px !important;*/
+	/*left:-5px;*/
+	left:0;
+	margin-right:0.3%;
+	width:99.7% !important;
+}
+
+.products_services .bx-wrapper .bx-prev {
+  /*left:-5px;*/
+  left:0;
+}
+
+.products_services .slider-wrapper li {
+  text-align: center;
+  /*border-left:5px solid #ffffff;*/
+  border:none;
+}
+.products_services .slider-wrapper li:first-child{
+	border-left:none;
+}
+
+.products_services .slider-wrapper li a img {
+  
+}
+
+.products_services li a h3 {
+  font-size: 14px;
+  margin-top:25px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight:normal;
+}
+.products_services li a span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 0 15px;
+}
+
+.products_services .container_24 .grid_24  {
+    margin: 0;
+    width: 100%;
+  }
+
+.products_services .img-wrap {
+  position: relative;
+  
+}
+
+.products_services .img-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(26, 158, 255);
+  background: rgba(26, 158, 255, 0.9);
+  
+  color: #fff;
+  text-align:center;
+
+  visibility: hidden;
+  opacity: 0;
+  
+  padding:18%;
+  
+  width:63%;
+  max-width:378px;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+.lt-ie9 .products_services .img-desc {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#901a9eff,endColorstr=#901a9eff); 
+  zoom: 1;
+}
+.products_services .img-wrap:hover .img-desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.products_services .img-desc h3{
+	text-transform:uppercase;
+	margin-bottom:10px;
+	margin-top:25px;
+	font-size:30px;
+	font-weight:800;
+	line-height:100%;
+}
+
+.products_services .img-desc p{
+	color:#ffffff;
+	margin:0;
+	font-size:18px;
+}
+
+/*to 676px*/
+@media screen and (max-width: 49.938em){
+	/*.products_services .img-desc{padding:10%;}*/
+	.products_services .bx-wrapper .bx-viewport {
+		left:-3px;
+		width:98% !important;
+	}
+	
+
+}
+/*677px to 979px*/
+@media screen and (min-width: 42.313em) and (max-width: 61.188em) {
+ 	
+	
+}
+/*980px   to 1289px*/
+@media screen and (min-width: 61.25em) and (max-width: 80.563em){
+	
+	
+}
+
+/*1290px*/
+@media screen and (min-width: 80.625em){
+	
+	
+}

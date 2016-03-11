@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<%@ Register TagPrefix="cms" Namespace="Ektron.Cms.Controls" Assembly="Ektron.Cms.Controls" %>
+<%@ Register Src="~/UserControls/Header.ascx" TagPrefix="ux" TagName="Header" %>
+<%@ Register Src="~/UserControls/FooterNav.ascx" TagPrefix="ux" TagName="FooterNav" %>
+<%@ Register Src="~/UserControls/SubscribeLocal.ascx" TagPrefix="ux" TagName="Subscribe" %>
+<%@ Register Src="~/UserControls/RequestConsultationLocal.ascx" TagPrefix="ux" TagName="RequestConsultation" %>
+
+<!DOCTYPE html >
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!--[if !IE]><html xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<head runat="server">
+    <cms:MetaData ID="uxMetaDataTitles" runat="server" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+        <!-- javascript libs -->
+        <!--commenting out the Jquery lib because Ektron is also adding it dynamically and the version is 1.10.1-->
+        <%--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>--%>
+        <script type="text/javascript">
+            var $ = jQuery.noConflict();
+        </script>        
+        <script type="text/javascript"> var switchTo5x = true;</script>
+        <script type="text/javascript"> stLight.options({ publisher: "03fe0834-b813-499d-8bef-d97bc9e1757a", doNotHash: false, doNotCopy: false, hashAddressBar: false, onhover: false });</script>
+    <!--[if IE]>   
+   <style type="text/css">
+
+   .case_studies_content{ 
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+       zoom: 1;
+    } 
+	.case_studies_block ul li a:hover{text-decoration:none;}
+	.case_studies_block ul li a:hover .case_studies_content{
+	    background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+       zoom: 1;
+	   
+    }
+
+    </style>
+<![endif]-->
+    <asp:ContentPlaceHolder ID="cphMainHead" runat="server" />
+</head>
+<body runat="server">
+    <form id="form1" runat="server" novalidate>
+        <%--<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
+        <AjaxToolkit:ToolkitScriptManager ID="scriptMngr" runat="server" />
+        <asp:ContentPlaceHolder ID="cphMainPBPageHost" runat="server" />
+        <!-- CSS & JS reference start here -->
+        <ektronUI:Css ID="resetCSS" runat="server" Path="/css/reset.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="textCSS" runat="server" Path="/css/text.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="fontsCSS" runat="server" Path="/css/fonts.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="CSS960" runat="server" Path="/css/960_grid.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="masterCSS" runat="server" Path="/css/master.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="common_stylesCSS" runat="server" Path="/css/common_styles.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="fancy_formCSS" runat="server" Path="/css/fancy_form.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="fontsAwesomeCSS" runat="server" Path="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="font_awesome_IE7CSS" runat="server" Path="/css/font-awesome-ie7.css" BrowserTarget="IE7" Aggregate="True" />
+        <ektronUI:Css ID="flexsliderCss" runat="server" Path="/css/flexslider.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="headerCSS" runat="server" Path="/css/header.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="our_servicesCSS" runat="server" Path="/css/our_services.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="aboutCSS" runat="server" Path="/css/about.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="find_locationCSS" runat="server" Path="/css/find_location.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="case_studiesCss" runat="server" Path="/css/case_studies.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="why_workCss" runat="server" Path="/css/why_work.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="local_why_workCss" runat="server" Path="/css/local_why_work.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="blog_whitepapersCSS" runat="server" Path="/css/blog_whitepapers.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="join_teamCSS" runat="server" Path="/css/join_team.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="lets_connectCss" runat="server" Path="/css/lets_connect.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="bxsliderCss" runat="server" Path="/css/bxslider.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="newsCss" runat="server" Path="/css/news.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="in_the_mediaCSS" runat="server" Path="/css/in_the_media.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="mgmt_teamCss" runat="server" Path="/css/mgmt_team.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="partnersCss" runat="server" Path="/css/partners.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="case_studies_sectionCss" runat="server" Path="/css/case_studies_section.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="local_sectionCss" runat="server" Path="/css/local_section.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="home_localCss" runat="server" Path="/css/home_local.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="footerCss" runat="server" Path="/css/footer.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="Css6" runat="server" Path="/css/partners.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="smk_accordionCss" runat="server" Path="/css/smk-accordion.css" BrowserTarget="All" Aggregate="True" />
+        <ektronUI:Css ID="IE8Css" runat="server" Path="/css/IE8.css" BrowserTarget="IE8" Aggregate="True" />
+        <ektronUI:Css ID="TeamLogicIT" runat="server" Path="/css/teamLogicIT.css" BrowserTarget="All" Aggregate="True" />
+
+        <%--<ektronUI:JavaScript runat="server" Path="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" Aggregate="True" />--%>
+        <ektronUI:JavaScript runat="server" Path="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.dataTables.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/css3-mediaqueries.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/modernizr.custom.91293.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.imageScroll.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.lightbox_me.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/smk-accordion.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.mosaicflow.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.fancyform.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.columnizer.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/ui.tabs.closable.min.js" Aggregate="True" />
+        <!-- HTML5 shim for IE backwards compatibility -->
+        <!--[if lt IE 9]>
+        <ektronUI:JavaScript runat="server" Path="http://html5shim.googlecode.com/svn/trunk/html5.js" Aggregate="True" />
+        <![endif]-->
+        <ektronUI:JavaScript runat="server" Path="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGF1KG6WSbJVdZ9TN66U3EMNA9wYIalFc&sensor=true" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/infobox.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/my-location.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.flexslider.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.bxslider.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/pinned.jQuery.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/jquery.columnizer.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/placeholders.min.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="http://w.sharethis.com/button/buttons.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/scripts.js" Aggregate="True" />
+        <ektronUI:JavaScript runat="server" Path="/js/teamLogicJS.js" Aggregate="True" />
+        <!-- CSS & JS reference End here -->
+        <div class="site_container" id="siteContainer" runat="server">
+            <!-- mmm Header mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Header mmm -->
+            <div class="header_wrapper clearfix">
+                <ux:Header ID="header" runat="server" />
+                <!--top header-->
+
+                <asp:Panel runat="server" ID="ConsultationPanel1" Visible="False">
+                    <asp:HyperLink class="consultation_flag" runat="server" id="consultationLink" visible="False" NavigateUrl="/"></asp:HyperLink>
+                    
+                </asp:Panel>
+                <asp:ContentPlaceHolder ID="cphHeaderContent" runat="server" />
+            </div>
+            <!--header wrapper-->
+            <div class="clear"></div>
+            <asp:ContentPlaceHolder ID="cphMainContent" runat="server" />
+            <ux:FooterNav ID="uxFooterNav1" runat="server" />
+        </div>
+        <input type="hidden" id="hddnCenterId" runat="server" class="hddnCenterId" value="" /> 
+        <input type="hidden" id="hddnContactNumber" runat="server" class="hddnContactNumber" value="" /> 
+        <ux:Subscribe ID="uxSubscribe" runat="server" Visible="false" />    
+        <ux:RequestConsultation Id="uxRequestConsultation"  runat="server" Visible="false"/>  
+    </form>
+    <asp:ContentPlaceHolder ID="cphBodyScripts" runat="server" />
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-127459-12");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    </script>
+    <!-- /Google Analytics -->
+    <asp:Literal runat="server" ID="ScriptLiteral1" Visible="false">
+        <script type="text/javascript">
+            (function () {
+                window._pa = window._pa || {};
+                // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+                // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+                // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+                var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+                pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/55a0456a4493d474e5000012.js";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+            })();
+</script>
+    </asp:Literal>
+</body>
+</html>

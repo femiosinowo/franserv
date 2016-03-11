@@ -1,0 +1,72 @@
+/* CSS Document */
+.lets_connect_local{
+	background:transparent;
+	position:relative;
+	margin-top:-570px;
+	height: 570px;
+}
+.lets_connect_wrapper{
+	
+	height:650px;
+	margin: 0 auto; 
+	padding: 0;
+
+	max-width: 1797px;
+	width:100%;
+	
+	position: relative; 
+}
+
+.lets_connect_content{
+	float:left;
+   display:block;	
+   width:100%;
+   margin-top:50px;
+   position:relative;
+   top:0;
+}
+
+html.ie8 .lets_connect_content h2,
+html.ie8 .lets_connect_content p {
+	background:transparent url(../images/ie8-transparent-bkg.png) top left;
+}
+.lets_connect_content span.green{
+	color:#8BC83F;	
+}
+.lets_connect_content p{
+	background: rgba(0,0,0,.8);
+	color:#ffffff;
+	font-size:2em;
+	padding:10px;
+	font-family:'NewJuneFine', Arial, Helvetica, sans-serif;
+	line-height:110%;
+	margin:3px 0 58px;
+	width: 49%;
+}
+.lets_connect_content a{
+	background:#018754;
+	color:#ffffff;
+	padding:15px 28px;
+	font-size:1.5em;
+	display:inline-block;
+	text-transform:uppercase;
+	font-family:'GothamBold', Arial, Helvetica, sans-serif;
+}
+.lets_connect_content a:hover{
+	text-decoration:none;
+	background:#00643d;
+}
+
+/*@media screen and (min-width: 38.75em){
+	.lets_connect_content{
+		width:70%;
+		top:100px;
+	}
+	
+}
+@media screen and (min-width: 1200px){
+	.lets_connect_content{
+		width:50%;
+	}
+	
+}*/

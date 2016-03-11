@@ -1,0 +1,215 @@
+
+/* ==========================================================================
+   About Us Local
+   ========================================================================== */
+
+/* menu title blocks*/
+.about-us-local .menu-title-block h2#menu-about-pip,
+#why-different .menu-title-block h2#menu-why-different,
+#testimonials .menu-title-block h2#menu-testimonials{
+	display:block;
+}
+
+
+/*sub menu */
+.about-us-local .menu-items-block .about-local-link a,
+#why-different .menu-items-block .why-different-link a,
+#testimonials .menu-items-block .testimonials-link a,
+#local-news .menu-items-block .local-news-link a
+#local-media .menu-items-block .local-media-link a{
+	color:#015FA5;
+}
+
+@media screen and (min-width:65.125em) and (max-width:72.813em){
+   #why-different .menu-title-block h2#menu-why-different{font-size:20px;}
+}
+@media screen and (min-width:78.375em) and (max-width:95em){
+   #why-different .menu-title-block h2#menu-why-different{font-size:24px;}
+}
+
+/* ==========================================================================
+   About Us Local - About Pip
+   ========================================================================== */
+.local_about_us .headline-block {
+    background: none repeat scroll 0 0 #F5F5F5;
+}
+#about_pip_content .content-block > div {
+    margin: 30px 0;
+}
+@media screen and (max-width:47.5em){
+	#about_pip_content .content-block > div {
+    margin: 0;
+    }
+	
+	.about-us-local .container_24 .grid_18.content-block > div{
+		margin-top:0;
+		padding:1% 3.5% !important;
+		
+	}
+}
+   
+/* ==========================================================================
+   About Us Local - Testimonials
+   ========================================================================== */
+.testimonial_wrapper{
+    margin:0 0 0.3% 0;
+	width:100% !important;
+	background:#F5F5F5;
+}
+.testimonial .logo_wrapper {
+    height: 100%;
+    text-align: center;
+	width:27.55%;
+	padding: 4% 0 0;
+	margin-right:0.3%;
+	float:left;
+	display:table;
+	
+}
+.testimonial .logo_wrapper .logo_content{
+	vertical-align:middle;
+	display:table-cell;
+}
+.testimonial .logo_wrapper .logo_content img{
+	width:50%;
+}
+.testimonial.source_logo .testimonial-text {
+    width:72.15%;
+    padding: 20px 0;
+	float:left;
+	display:block;
+}
+
+.testimonial .testimonial-text blockquote{
+	width:90%;
+	font-size:40px;
+}
+.testimonial .testimonial-text .testimonial_source{
+    text-transform:uppercase;
+	font-weight:800;
+	font-size:18px;
+	color:#000000;
+	margin-left:30px;	
+}
+
+@media screen and (max-width: 30em) {
+	.testimonial .logo_wrapper,
+	.testimonial .testimonial-text{width:100% !important;}
+	.testimonial .testimonial-text blockquote{font-size:25px;}
+}
+
+@media screen and (min-width: 30.063em) and (max-width:47.5em) {
+	.testimonial .logo_wrapper,
+	.testimonial .testimonial-text{width:96% !important;padding-left:4% !important;}
+	.testimonial .testimonial-text blockquote{font-size:25px;}
+	
+}
+@media screen and (min-width: 47.563em) and (max-width:55em) {
+	.testimonial .testimonial-text blockquote{font-size:30px;}
+	.testimonial .logo_wrapper .logo_content img{width:70%;}
+}
+@media screen and (min-width: 55.063em) and (max-width:70em) {
+	.testimonial .logo_wrapper .logo_content img{width:70%;}
+	
+}
+
+
+/* ==========================================================================
+   About Us Local - Why Different
+   ========================================================================== */
+#why_different_content .content-block .video_wrapper{margin-bottom:5px;}
+
+#why_different_content .content-block .images_wrapper{list-style:none;margin:0 0 20px 0;width:100%;display:block;float:left;}
+#why_different_content .content-block .images_wrapper li{width:49.5%;float:left;display:block;margin:0;}
+#why_different_content .content-block .images_wrapper li:first-child{margin-right:1%;}
+#why_different_content .content-block .images_wrapper li img{width:100%;}
+
+@media screen and (min-width: 108.125em) {
+#why_different_content .int-headline-block.tagline-block{
+	bottom:0;
+	position:absolute;
+}
+}
+   
+   /*our team*/
+#our_team_content .headline-block{
+	background:#f5f5f5;
+}
+
+#our_team_main{width:100% !important;margin:0 !important;}
+
+#our_team_main .cs_container{
+	width:33.03%;
+	margin:0 0.3% 0.3% 0;
+	background:#F5F5F5;
+}
+
+#our_team_main,
+.mgmt_profile_wrapper {
+    margin: 0 !important;
+	padding:0 !important;
+    width: 100% !important;
+}
+#our_team_main .cs_container img{
+    width: 100%;
+}
+#our_team_main .cs_image_content_wrapper{
+	display:none;
+}
+#our_team_main .cs_container .cs_image:hover .cs_image_content_wrapper{
+	display:block;
+}
+#our_team_main .cs_image_content_wrapper {
+	position: absolute;
+
+	width: 100%;
+	height: auto;
+
+	left: 0;
+	bottom: 0;
+
+	background-color: rgba(255,144,0,.8);
+	padding: 20px 0;
+	margin:0;
+    color:#ffffff;
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+#our_team_main .no_photo{
+	
+}
+#our_team_main .no_photo .cs_image_content_wrapper {
+	background:transparent;
+    display: block;
+	color:#000000;
+}
+#our_team_main .cs_image_content_wrapper .cs_image_content{
+    padding:0 5%;	
+}
+#our_team_main .cs_image_content_wrapper h3{
+	margin:0 0;
+	font-size:22px;
+	text-transform:uppercase;
+	font-weight:800;
+	line-height:100%;
+}
+#our_team_main .cs_image_content_wrapper h3 span{
+	display:block;
+	font-size:15px;
+	text-transform:none;
+	font-weight:400;
+}
+#our_team_main .cs_image_content_wrapper ul,
+#our_team_main .cs_image_content_wrapper ul li{
+	list-style:none;
+	margin:0;
+}
+@media screen and (min-width:30.063em) and (max-width:65em){
+   .cs_image_content ul{display:none;}
+   #our_team_main .cs_image_content_wrapper h3{font-size:16px;}
+   #our_team_main .cs_image_content_wrapper h3 span{font-size:12px;}
+}
+

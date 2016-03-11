@@ -1,0 +1,11 @@
+﻿<div data-bind="template: { name: 'uxToolbarSwitchTemplate', data: $data, afterRender: afterRender}"></div>
+<script id="uxToolbarSwitchTemplate" type="text/html"><div data-bind="css: getClass(), attr: { title: options.title() }, visible: isVisible">
+    <input type="checkbox" data-bind="checked: checked, disabled: disabled, attr: {id: id, name: id, value: options.onLabel}" />
+    <div class="ux-switch-inner">
+        <label data-bind="attr: {title: options.onLabel ? options.onLabel : 'on', for: id}"><span data-bind="text: options.onLabel ? options.onLabel : 'on'"></span></label>
+        <label class="ux-switch-slider" data-bind="attr: {for: id}">
+            <span class="ux-switchHandle"><span data-ux-icon="&#xe008;"></span></span>
+        </label>
+        <label data-bind="attr: {title: options.offLabel ? options.offLabel : 'off', for: id}"><span data-bind="text: options.offLabel ? options.offLabel : 'off'"></span></label>
+    </div>
+</div></script>

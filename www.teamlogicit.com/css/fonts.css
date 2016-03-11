@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/*Fonts CSS
+
+-Gotham
+-New June
+-SourceSans
+*/
+
+/*Gotham Book*/
+@font-face {
+    font-family: 'GothamBook';
+    src: url('/css/fonts/gotham-book.eot');
+    src: url('/css/fonts/gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/gotham-book.woff') format('woff'),
+         url('/css/fonts/gotham-book.ttf') format('truetype'),
+         url('/css/fonts/gotham-book.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Gotham Bold*/
+@font-face {
+    font-family: 'GothamBold';
+    src: url('/css/fonts/gotham-bold.eot');
+    src: url('/css/fonts/gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/gotham-bold.woff') format('woff'),
+         url('/css/fonts/gotham-bold.ttf') format('truetype'),
+         url('/css/fonts/gotham-bold.svg#GothamBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*New June Regular*/
+@font-face {
+    font-family: 'NewJuneFine';
+    src: url('/css/fonts/newjune-fine-webfont.eot');
+    src: url('/css/fonts/newjune-fine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/newjune-fine-webfont.woff') format('woff'),
+         url('/css/fonts/newjune-fine-webfont.ttf') format('truetype'),
+         url('/css/fonts/newjune-fine-webfont.svg#newjunefineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*New June Fine*/
+@font-face {
+    font-family: 'NewJuneRegular';
+    src: url('/css/fonts/newjune-fine-webfont.eot');
+    src: url('/css/fonts/newjune-fine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/newjune-fine-webfont.woff') format('woff'),
+         url('/css/fonts/newjune-fine-webfont.ttf') format('truetype'),
+         url('/css/fonts/newjune-fine-webfont.svg#newjunefineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Source Sans Pro Regular*/
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/css/fonts/sourcesanspro-regular-webfont.eot');
+    src: url('/css/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('/css/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('/css/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Source Sans Pro Bold*/
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('/css/fonts/sourcesanspro-bold-webfont.eot');
+    src: url('/css/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('/css/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('/css/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

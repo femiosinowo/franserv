@@ -1,0 +1,237 @@
+/* marketing.css */
+
+.marketing_wrapper{
+	border-top: 5px solid #FFFFFF;
+	background:#ffffff;
+}
+.marketing{
+	
+}
+/*RIGHT COL*/
+.marketing .headline-content-outer{
+	padding:4% 0 4% 0 /*9.8%*/;
+	width:100%;
+}
+
+.marketing .grid_3{
+	background:#FF9000;
+	width:20.55% !important;
+	min-height:inherit !important;
+	margin:0;
+	padding:0.5% 2.5%;
+	
+	float:right;
+	display:block;
+	
+	color:#ffffff;
+}
+.marketing .grid_3 .int-headline-block{
+   padding:0 !important;	
+   width:100% !important;
+}
+
+.marketing .grid_3 h2{
+	background:url(../images/marketing_blog_logo.png) no-repeat;
+	background-size:auto;
+	text-indent:-9999px;
+	
+	height:50px;
+	display:block;
+	margin: 10px 0 30px;
+}
+/*marketing tango logo*/
+@media screen and (max-width: 23.125em){
+    .marketing .grid_3 h2{background-size:90% auto;}
+}
+@media screen and (min-width: 47.563em) and (max-width: 55em)   {
+	.marketing .grid_3 h2{background-size:190px auto;height:40px;}
+}
+@media screen and (min-width: 55.063em) and (max-width: 64.313em){
+	.marketing .grid_3 h2{background-size:190px auto;height:40px;}
+}
+@media screen and (min-width: 64.375em) and (max-width: 82.563em) {
+	.marketing .grid_3 h2{background-size:210px auto;height:47px;}
+}
+@media screen and (min-width: 82.625em) and (max-width: 92em) {
+	.marketing .grid_3 h2{background-size:260px auto;}
+}
+
+.marketing .grid_3 ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.marketing .grid_3 ul li{
+	margin:30px 0 0 0;
+	}
+.marketing .grid_3 ul li:first-child{
+	margin-top:0;
+}
+
+.marketing .grid_3 .cta-button-wrap{
+	width:auto;
+	margin-top:5px;
+	padding:10px 15px;
+	font-size:12px;
+}
+.marketing .grid_3 a.cta-button-text{
+	font-size:12px;
+}
+
+/*LEFT COL*/
+.marketing .grid_21{
+	background:#EFEFEF;
+	width: 74.15%;
+	height:100%;
+  	margin: 0 0.30% 0 0;
+	padding:0.5% 0;
+  	float:left;
+  	display:block;
+	overflow:hidden;
+	
+}
+
+.marketing .item-marketing{
+	width:38%;
+	display:block;
+	float:left;
+	padding:2% 6%;
+	
+}
+.marketing .sml-date {
+    color: #000000;
+    font-family: 'Raleway',Arial, Helvetica,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+	font-weight:700;
+}
+.marketing  .sml-date,
+.marketing .title {
+    clear: both;
+    display: block;
+}
+.marketing a.title {
+    color: #ffffff;
+    display: block;
+    font-family: 'Raleway',Arial,sans-serif;
+	font-weight:400;
+    font-size: 16px;
+}	
+	
+
+.marketing .item-image{
+	float:left;
+	max-height:180px;
+}
+.marketing .item-image img{
+	width:100%;
+}
+.marketing .item-desc{
+	float:right;
+	width:58%;
+	height:130px;
+    position: relative;
+	margin-top: -5px;
+}
+.marketing .item-desc h3 {
+  font-size: 18px;
+  font-family: 'Raleway',Arial, Helvetica, sans-serif;
+  font-weight:400;
+  line-height: 110%;
+  margin: 0;
+  padding: 0;
+}
+.marketing .item-desc .cta-button-wrap{
+	width:auto;
+	padding:10px;
+	position:absolute;
+	bottom:0;
+	line-height:12px;
+}
+.marketing .item-desc .cta-button-wrap .cta-button-text{
+	font-size:12px;
+}
+
+
+
+
+@media screen and (max-width: 47.5em) {
+
+    .marketing .grid_3,
+	.marketing .grid_21{width:100% !important;margin:0 !important;padding:0 !important;}
+    .marketing .headline-content-outer{padding-top:8%;padding-bottom:10%;}
+	
+    .marketing .item-marketing{width:100%;padding:5% 0;}
+	/*.marketing .item-marketing:first-child{padding-top:10%;}*/
+	.marketing .item-image{width:28%;padding-left: 9%;}
+	.marketing .item-desc{width:48%;padding-right:9%;height:auto;}
+	.marketing .item-desc .cta-button-wrap{position:relative;margin-top:10px;}
+
+}
+
+@media screen and (min-width: 47.563em) and (max-width: 55em)   {
+	#home.national .marketing .grid_21,
+	#home.local .marketing .grid_21,
+	.marketing .grid_21{width:59.15%;padding-left:5%;}
+	#home.national .marketing .headline-block.grid_3,
+	#home.local .marketing .headline-block.grid_3,
+	.marketing .headline-block.grid_3{width:30.25% !important;padding:0.5% 2.5% !important;}
+	.marketing .headline-content-inner{padding-left:0;}
+	
+	.marketing .item-marketing{width:100%;padding:3% 0;}
+	.marketing .item-image{width: 30%;}
+	.marketing .item-desc{width: 66%;height:auto;padding: 0;}
+	.marketing .item-desc .cta-button-wrap{position:relative;margin-top:10px;}
+	
+}
+
+@media screen and (min-width: 55.063em) and (max-width: 62.5em) {
+	#home.national .marketing .grid_21,
+	#home.local .marketing .grid_21,
+	.marketing .grid_21{width:64.15% !important;padding:0.5% 0 0.5% 5% !important;}
+	
+	#home.national .marketing .grid_3,
+	#home.local .marketing .grid_3,
+	.marketing .grid_3{width:25.55% !important;padding:0.5% 2.5% !important;margin:0 !important;}
+	
+	.marketing .headline-content-inner{padding-left:0;padding-right:0;width:100%;}
+	.marketing .item-marketing{width:50%;padding:3% 0;}
+	.marketing .item-image{padding-left:0;width: 40%;}
+}
+
+@media screen and (min-width: 62.563em) and (max-width:82.563em){
+	#home.national .marketing .grid_3,
+	#home.local .marketing .grid_3,
+	.marketing .grid_3{width:20.55% !important;padding-left:2.5% !important;padding-right:2.5%;}
+	.marketing .headline-content-outer{width:100%;}
+	/*.headline-content-inner{padding-left:2.5%;width:97.5%;}*/
+	/*.marketing .item-marketing{padding:3% 0 3% 5%;width:45%;}*/
+	/*.marketing .item-marketing{width:50%;padding:3% 0;}*/
+	.marketing .item-marketing{
+	padding: 2% 3% 2% 6%;
+    width: 41%;
+	}
+	.marketing .item-image{padding-left:0;width: 40%;}
+	
+	.marketing .item-desc{width: 54%;height:auto;padding: 0;}
+	.marketing .item-desc .cta-button-wrap{position:relative;margin-top:10px;}
+	
+}
+
+@media screen and (min-width: 68.75em){
+   #home.national .marketing .grid_21,
+	#home.local .marketing .grid_21,
+	.marketing .grid_21{max-height:355px;}
+}
+
+@media screen and (min-width: 82.625em) and (max-width: 100.813em) {
+	#home.national .marketing .grid_3,
+	#home.local .marketing .grid_3,
+	.marketing .grid_3{padding: 0.5% 2.5%;width: 20.55%  !important;}
+	
+	/*.marketing .item-marketing {
+    padding: 2% 0 2% 6%;
+    width: 44%;
+	}*/
+	.marketing .item-image{padding-left:0;width: 40%;}
+}

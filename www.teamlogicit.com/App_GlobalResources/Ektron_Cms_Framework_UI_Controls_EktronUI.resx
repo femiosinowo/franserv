@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aloha_Plugins_Library_buttonTitle" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="Aloha_Plugins_Library_ModalTitle" xml:space="preserve">
+    <value>CMS400 Library</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_panelTitle" xml:space="preserve">
+    <value>Source Viewer</value>
+  </data>
+  <data name="Aloha_Plugins_Translate_buttonTitle" xml:space="preserve">
+    <value>Translate Content</value>
+  </data>
+  <data name="Aloha_Plugins_Translate_ModalTitle" xml:space="preserve">
+    <value>Ektron CMS400 Translation</value>
+  </data>
+  <data name="Aloha_Plugins_Cancel_buttonTitle" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Aloha_Tabs_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Aloha_Tabs_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackPublish_buttonTitle" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackUndoCheckout_buttonTitle" xml:space="preserve">
+    <value>Undo Check Out</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackApprove_buttonTitle" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackArchive_buttonTitle" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackCheckIn_buttonTitle" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackDecline_buttonTitle" xml:space="preserve">
+    <value>Decline</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackDelete_buttonTitle" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackRestorePreviousVersion_buttonTitle" xml:space="preserve">
+    <value>Restore Previous Version</value>
+  </data>
+  <data name="Aloha_Plugins_Save_buttonTitle" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackSchedule_buttonTitle" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Aloha_Plugins_PostbackSubmitForApproval_buttonTitle" xml:space="preserve">
+    <value>Submit For Approval</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_buttonTitle" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_HTML5Label" xml:space="preserve">
+    <value>HTML5</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_panelTitle" xml:space="preserve">
+    <value>Content Validator</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_XHTMLLabel" xml:space="preserve">
+    <value>XHTML</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_ModalDescription" xml:space="preserve">
+    <value>Select a guideline to validate.</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_ModalTitle" xml:space="preserve">
+    <value>Content Validator</value>
+  </data>
+  <data name="Aloha_Plugins_Template_buttonTitle" xml:space="preserve">
+    <value>Insert Template</value>
+  </data>
+  <data name="Aloha_Plugins_Template_ModalTitle" xml:space="preserve">
+    <value>Insert Template</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_buttonTitle" xml:space="preserve">
+    <value>Insert Embedded Media</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_errorMessage1" xml:space="preserve">
+    <value>Your site is not configured to contain this type of content. Your CMS administrator can configure this type of content for your site.</value>
+  </data>
+  <data name="Aloha_Plugins_Validator_AccessLabel" xml:space="preserve">
+    <value>Accessibility (Section 508 Guildline)</value>
+  </data>
+  <data name="Aloha_Tabs_Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="Aloha_Plugins_OnbeforeUnloadMessage" xml:space="preserve">
+    <value>The content is currently checked out and your content is not yet saved.  Are you sure you wish to continue?</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_buttonTitle" xml:space="preserve">
+    <value>View Source</value>
+  </data>
+  <data name="Aloha_Plugins_Inspector_ImageEdit_buttonTitle" xml:space="preserve">
+    <value>Image Editing</value>
+  </data>
+  <data name="Aloha_Plugins_Inspector_ImageEdit_ModalTitle" xml:space="preserve">
+    <value>Image Editing</value>
+  </data>
+  <data name="Aloha_Plugins_Link_buttonTitle_addlinkTooltip" xml:space="preserve">
+    <value>Insert Link</value>
+  </data>
+  <data name="Aloha_Plugins_Link_defaultText" xml:space="preserve">
+    <value>New Link</value>
+  </data>
+  <data name="Aloha_Plugins_Link_removelinkTooltip" xml:space="preserve">
+    <value>Remove Link</value>
+  </data>
+  <data name="Aloha_Plugins_Link_tabTitle" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetBlank" xml:space="preserve">
+    <value>New Window (_blank)</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetDescription" xml:space="preserve">
+    <value>Please specify how this link should open.</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetFramename" xml:space="preserve">
+    <value>Window Frame (please provide window frame name)</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetLegend" xml:space="preserve">
+    <value>Link Window</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetParent" xml:space="preserve">
+    <value>Parent Window (_parent)</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetSelf" xml:space="preserve">
+    <value>Same Window (_self)</value>
+  </data>
+  <data name="Aloha_Plugins_Link_targetTop" xml:space="preserve">
+    <value>Browser Window (_top)</value>
+  </data>
+  <data name="Aloha_Plugins_Link_titleLegend" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_findAndReplace" xml:space="preserve">
+    <value>Find &amp;amp; Replace</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_findNextButton" xml:space="preserve">
+    <value>Find Next</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_replaceAllButton" xml:space="preserve">
+    <value>Replace All</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_replaceButton" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_findLabel" xml:space="preserve">
+    <value>Find:</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_replaceLabel" xml:space="preserve">
+    <value>Replace:</value>
+  </data>
+  <data name="Aloha_Plugins_SourceViewer_noActiveEditable" xml:space="preserve">
+    <value>No active editable detected. Please select an editable area to view its source.</value>
+  </data>
+  <data name="Aloha_Plugins_Link_bookmarkLabel" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="Aloha_Plugins_Link_bookmarkNameLabel" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="Aloha_Plugins_Link_existingBookmarkLabel" xml:space="preserve">
+    <value>Existing Bookmarks:</value>
+  </data>
+  <data name="Aloha_Plugins_Link_linkLabel" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Aloha_Plugins_Link_typeLabel" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="Aloha_Plugins_Link_bookmarkOption" xml:space="preserve">
+    <value>Existing Bookmark</value>
+  </data>
+  <data name="Aloha_Plugins_Link_orNew" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="Aloha_Plugins_Link_urlLabel" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="Aloha_Plugins_Link_urlOption" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Aloha_Plugins_Link_bookmarkDefaultText" xml:space="preserve">
+    <value>NewBookmark</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_instructionMessage" xml:space="preserve">
+    <value>Paste the code snippet from the source Web site in the box to embed the item into your content.</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_canceltext" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_embedtext" xml:space="preserve">
+    <value>Embed</value>
+  </data>
+  <data name="Aloha_Plugins_Link_buttonTitle_addbookmarkTooltip" xml:space="preserve">
+    <value>Add Bookmark</value>
+  </data>
+  <data name="Aloha_Plugins_Embed_errorMessage2" xml:space="preserve">
+    <value>Details: The editor currently does not allow for {TagToken} to be placed in content. If you need {TagToken} for your content, add it to the Allow list in the AlohaEktron configuration file.</value>
+  </data>
+  <data name="Aloha_Plugins_Template_noText" xml:space="preserve">
+    <value>Content templates are not currently available in this folder.</value>
+  </data>
+  <data name="Aloha_Plugins_ImageInsert_buttonTitle" xml:space="preserve">
+    <value>Select Image</value>
+  </data>
+  <data name="Aloha_Plugins_ResponsiveImage_noText" xml:space="preserve">
+    <value>Images are not currently available in this folder.</value>
+  </data>
+  <data name="Aloha_Plugins_General_closeLabel" xml:space="preserve">
+    <value>Close</value>
+  </data>
+</root>

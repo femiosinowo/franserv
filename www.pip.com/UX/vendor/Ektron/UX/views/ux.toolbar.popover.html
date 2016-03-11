@@ -1,0 +1,8 @@
+﻿<span data-bind="css: getClass, visible: isVisible">
+    <input type="checkbox" data-bind="click: fire, attr : {id: id, name: id}, checked: dropbox.visible" />
+    <label data-bind="attr: {title: options.title(), for: id}">
+        <span class="icon" data-bind="style: {backgroundImage: getIcon}, visible: (options.icon().length > 0)"></span>
+        <span class="buttonText" data-bind="text: options.text(), visible: (options.text().length > 0)" ></span>
+    </label>
+    <span data-bind="visible: dropbox.visible(), css: 'dropbox_' + id + ' dropbox'"></span>
+</span>

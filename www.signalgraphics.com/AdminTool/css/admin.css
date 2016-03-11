@@ -1,0 +1,269 @@
+﻿html, body {
+    background-color: #FFFFFF;
+    font-family: Helvetica,Verdana,Arial,Microsoft Sans Serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+h3 {
+    color: #CD0100;
+}
+td {
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 10px;
+}
+p {
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 10px;
+}
+input {
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 10px;
+}
+select {
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 12px;
+}
+li {
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 10px;
+}
+img {
+    border: 0 none;
+}
+.alert {
+    color: #E32E3D;
+    font-size: 12px;
+    font-weight: bold;
+}
+.drilldown {
+    color: #E32E3D;
+    font-size: 12px;
+    font-weight: bold;
+}
+.big {
+    font-size: 12px;
+    font-weight: bold;
+}
+.bgyellow {
+    background-color: #F0DC7D;
+}
+.bglightyellow {
+    background-color: #F5F0D8;
+}
+A.aNav {
+    color: #EDEDED;
+    font-size: 10px;
+    text-decoration: none;
+}
+A.aNav:hover {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-decoration: underline;
+}
+A.aNavHot {
+    color: #F0DC7D;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+A.aNavHot:hover {
+    color: #F0DC7D;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.smMenu {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+}
+#admin-body {
+    margin: 0;
+    min-width: 760px;
+    padding: 0;
+}
+#header {
+    position: relative;
+    vertical-align: middle;
+}
+#brand {
+    float: left;
+    margin-left: 25px;
+}
+#brand img {
+    margin: 10px 0;
+}
+#brandTitle {
+    color: #666666;
+    display: block;
+    float: left;
+    font-weight: bold;
+    left: 225px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 17%;
+}
+#headerBottom {
+    background: url("/admintool/images/bg_headerBottom.gif") repeat-x scroll left top rgba(0, 0, 0, 0);
+    height: 18px;
+}
+#wrapper {
+    background-color: #3F3F3F;
+    padding: 15px 25px;
+    text-align: left;
+}
+#breadcrumbs {
+    color: #C2C2C2;
+    font-family: helvetica,verdana,arial,helvetica,san-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+#breadcrumbs a {
+    color: #C2C2C2;
+    text-decoration: none;
+}
+#breadcrumbs .CS_LinkBar_CurrentItem {
+    font-weight: bold;
+}
+#wrapper1 {
+    background: url("/admintool/images/bg_wrapper1.gif") repeat-y scroll left top #EDEDED;
+}
+#content {
+    background-color: #EDEDED;
+    margin-left: 221px;
+    padding: 25px;
+}
+#leftNav {
+    background-color: #6A6A6A;
+    float: left;
+    font-family: verdana,arial,helvetica,san-serif;
+    font-size: 10px;
+    width: 220px;
+}
+#leftNav .CS_Element_Textblock {
+    color: #FE9901;
+    font-weight: bold;
+}
+#leftNav li {
+    list-style-image: url("/admintool/images/nav_arrow.gif");
+    margin: 5px 0 5px -10px;
+}
+#footer {
+    background: url("/admintool/images/bg_footerTop.gif") repeat-x scroll left top rgba(0, 0, 0, 0);
+    height: 18px;
+}
+.CS_Element_DataSheet {
+    overflow: auto;
+    width: 100%;
+}
+.CS_DataSheet_Table {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+}
+.CS_DataSheet_Table .CS_DataSheet_Header_Row th {
+    background-color: #999999;
+    color: #EDEDED;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 10px 0;
+}
+.CS_DataSheet_Table .CS_DataSheet_Data_Row_Alternate {
+    background-color: #E9E9E9;
+}
+.CS_DataSheet_Table .CS_DataSheet_Summary_Row {
+    background-color: #DAD8D8;
+}
+.hasLayout {
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+.login{
+    left: 450px;
+    position: absolute;
+    top: 40px;
+}
+p.note{
+    font-size:14px;
+}
+.errorMessage
+{
+    color:red;
+    font-size:10px;
+}
+.successMessage
+{
+    color:green;  
+    font-size:10px;  
+}
+.addClassError
+{
+   border-color:red;
+}
+.pnlProductsServices
+{
+    width:800px !important;
+    min-height:500px;
+}
+.pnlProductsServices .dragSection table 
+{
+    width: 390px !important;
+    float:left;
+    overflow:hidden;
+}
+.table1, .table2
+{
+    float:left;
+}
+.table2
+{
+    margin-left:10px;
+}
+.drag {
+    width:132px !important;
+}
+.btnProductServices, .savePSSubCategory
+{
+    margin:25px;
+}
+.aloha-editable
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    min-height: 80px;
+    overflow-y:scroll;
+    margin: 10px;
+    width: 500px;
+}
+.ajax__html_editor_extender_texteditor{
+     background: none repeat scroll 0 0 #FFFFFF;
+}
+.psButtons
+{
+    width:600px;
+}
+
+.centerData td,.centerData th
+{
+    padding:2px;
+}
+td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+ word-break: break-all;
+ width: 15%;
+}
+/******  Hiding the Font options from editor*********/
+.backcolorclass,.forecolorclass,.fontnameclass,.fontsizeclass{
+    display: none !important;
+}
+

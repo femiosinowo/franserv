@@ -1,0 +1,440 @@
+﻿<MenuDataResult>
+  - <Info>
+    <ControlMenuId>7</ControlMenuId>
+    <CssFileName />
+    <XslFileName />
+    <WrappingClassName />
+    <ControlId>mainNav</ControlId>
+    <ControlIdHash>efc45b070</ControlIdHash>
+    <MasterControlIdHash />
+    <GroupId />
+    <AppPath>/WorkArea/</AppPath>
+    <SitePath>/</SitePath>
+    <ButtonNoScriptLink>http://local.teamlogicit.com/briefs_whitepapers.aspx?id=463&ekfxmen_noscript=1&ekfxmensel=</ButtonNoScriptLink>
+    <AjaxEnabled>false</AjaxEnabled>
+    <MenuFragment>false</MenuFragment>
+    <AutoCollapseBranches>true</AutoCollapseBranches>
+    <StartCollapsed>true</StartCollapsed>
+    <EnableSmartOpen>true</EnableSmartOpen>
+    <EnableMouseOverPopUp>false</EnableMouseOverPopUp>
+    <IsSlaveControl>false</IsSlaveControl>
+    <StartLevel>1</StartLevel>
+    <MenuDepth>2</MenuDepth>
+    <SelectLevel>1</SelectLevel>
+    <SelectMenuIdString>efc45b070_7_10</SelectMenuIdString>
+    <SelectItemIdString />
+    <SlaveStartLevelIds />
+    <DefaultMenuIdString />
+    <SWRevision>8.0.0.073</SWRevision>
+    <CacheInterval>3600</CacheInterval>
+    <UseCssHardLink>true</UseCssHardLink>
+    <UseJavascriptHardLink>false</UseJavascriptHardLink>
+  </Info>
+  - <Item>
+    - <Item>
+      <ItemId>8</ItemId>
+      <ItemType>Submenu</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>Managed IT Services</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_8_8</ItemIdString>
+      - <Menu>
+        <MenuId>8</MenuId>
+        <Title>Managed IT Services</Title>
+        <Template />
+        <Type>content</Type>
+        <Link>/managed-it-services/</Link>
+        <ParentId>7</ParentId>
+        <AncestorId>7</AncestorId>
+        <FolderId>0</FolderId>
+        <Description>Products-Services</Description>
+        <Image />
+        <ImageOverride>false</ImageOverride>
+        <MenuIdString>efc45b070_7_8</MenuIdString>
+        <MenuSelected>false</MenuSelected>
+        <MenuLevel>1</MenuLevel>
+        <ChildMenuSelected>false</ChildMenuSelected>
+        <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+      </Menu>
+    </Item>
+    - <Item>
+      <ItemId>44</ItemId>
+      <ItemType>Submenu</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>IT Solutions</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_44_44</ItemIdString>
+      - <Menu>
+        <MenuId>44</MenuId>
+        <Title>IT Solutions</Title>
+        <Template />
+        <Type>content</Type>
+        <Link>/it-solutions/</Link>
+        <ParentId>7</ParentId>
+        <AncestorId>7</AncestorId>
+        <FolderId>0</FolderId>
+        <Description>subnav itsolutions</Description>
+        <Image />
+        <ImageOverride>false</ImageOverride>
+        <MenuIdString>efc45b070_7_44</MenuIdString>
+        <MenuSelected>false</MenuSelected>
+        <MenuLevel>1</MenuLevel>
+        <ChildMenuSelected>false</ChildMenuSelected>
+        <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+      </Menu>
+    </Item>
+    - <Item>
+      <ItemId>9</ItemId>
+      <ItemType>Submenu</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>Consulting & Projects</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_9_9</ItemIdString>
+      - <Menu>
+        <MenuId>9</MenuId>
+        <Title>Consulting & Projects</Title>
+        <Template />
+        <Type>content</Type>
+        <Link>/consulting-projects/</Link>
+        <ParentId>7</ParentId>
+        <AncestorId>7</AncestorId>
+        <FolderId>0</FolderId>
+        <Description />
+        <Image />
+        <ImageOverride>false</ImageOverride>
+        <MenuIdString>efc45b070_7_9</MenuIdString>
+        <MenuSelected>false</MenuSelected>
+        <MenuLevel>1</MenuLevel>
+        <ChildMenuSelected>false</ChildMenuSelected>
+        <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+      </Menu>
+    </Item>
+    - <Item>
+      <ItemId>10</ItemId>
+      <ItemType>Submenu</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>Resources</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_10_10</ItemIdString>
+      - <Menu>
+        <MenuId>10</MenuId>
+        <Title>Resources</Title>
+        <Template />
+        <Type>content</Type>
+        <Link>/briefs-whitepapers/</Link>
+        <ParentId>7</ParentId>
+        <AncestorId>7</AncestorId>
+        <FolderId>0</FolderId>
+        <Description>subnav</Description>
+        <Image />
+        <ImageOverride>false</ImageOverride>
+        <MenuIdString>efc45b070_7_10</MenuIdString>
+        <MenuSelected>true</MenuSelected>
+        <MenuLevel>1</MenuLevel>
+        <ChildMenuSelected>false</ChildMenuSelected>
+        <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+        - <Item>
+          <ItemId>59</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>Briefs & Whitepapers</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_59_59</ItemIdString>
+          - <Menu>
+            <MenuId>59</MenuId>
+            <Title>Briefs & Whitepapers</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/briefs-whitepapers/</Link>
+            <ParentId>10</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description />
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_59</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>60</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>Case Studies</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_60_60</ItemIdString>
+          - <Menu>
+            <MenuId>60</MenuId>
+            <Title>Case Studies</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/case-studies/</Link>
+            <ParentId>10</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description />
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_60</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+      </Menu>
+    </Item>
+    - <Item>
+      <ItemId>11</ItemId>
+      <ItemType>Submenu</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>About</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_11_11</ItemIdString>
+      - <Menu>
+        <MenuId>11</MenuId>
+        <Title>About</Title>
+        <Template />
+        <Type>content</Type>
+        <Link>/Company-Info/</Link>
+        <ParentId>7</ParentId>
+        <AncestorId>7</AncestorId>
+        <FolderId>0</FolderId>
+        <Description>hidden subnav aboutus</Description>
+        <Image />
+        <ImageOverride>false</ImageOverride>
+        <MenuIdString>efc45b070_7_11</MenuIdString>
+        <MenuSelected>false</MenuSelected>
+        <MenuLevel>1</MenuLevel>
+        <ChildMenuSelected>false</ChildMenuSelected>
+        <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+        - <Item>
+          <ItemId>46</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>About Us</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_46_46</ItemIdString>
+          - <Menu>
+            <MenuId>46</MenuId>
+            <Title>About Us</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/Company-Info/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>aboutus about-national-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_46</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>47</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>Management Team</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_47_47</ItemIdString>
+          - <Menu>
+            <MenuId>47</MenuId>
+            <Title>Management Team</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/management-team/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>mgmt-team-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_47</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>61</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>Partners</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_61_61</ItemIdString>
+          - <Menu>
+            <MenuId>61</MenuId>
+            <Title>Partners</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/partners/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>partners-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_61</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>62</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>News</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_62_62</ItemIdString>
+          - <Menu>
+            <MenuId>62</MenuId>
+            <Title>News</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/News/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>news-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_62</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>63</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>In The Media</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_63_63</ItemIdString>
+          - <Menu>
+            <MenuId>63</MenuId>
+            <Title>In The Media</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/In-The-media/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>media-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_63</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+        - <Item>
+          <ItemId>64</ItemId>
+          <ItemType>Submenu</ItemType>
+          <ItemSubType>0</ItemSubType>
+          <ItemTitle>Careers</ItemTitle>
+          <ItemDescription />
+          <ItemImage />
+          <ItemImageOverride>false</ItemImageOverride>
+          <ItemSelected>false</ItemSelected>
+          <ItemLevel>2</ItemLevel>
+          <ItemIdString>efc45b070_7_64_64</ItemIdString>
+          - <Menu>
+            <MenuId>64</MenuId>
+            <Title>Careers</Title>
+            <Template />
+            <Type>content</Type>
+            <Link>/Careers/</Link>
+            <ParentId>11</ParentId>
+            <AncestorId>7</AncestorId>
+            <FolderId>0</FolderId>
+            <Description>careers-nav-link</Description>
+            <Image />
+            <ImageOverride>false</ImageOverride>
+            <MenuIdString>efc45b070_7_64</MenuIdString>
+            <MenuSelected>false</MenuSelected>
+            <MenuLevel>2</MenuLevel>
+            <ChildMenuSelected>false</ChildMenuSelected>
+            <ChildMenuSelRelDepth>0</ChildMenuSelRelDepth>
+          </Menu>
+        </Item>
+      </Menu>
+    </Item>
+    - <Item>
+      <ItemId>116</ItemId>
+      <ItemType>ExternalLink</ItemType>
+      <ItemSubType>0</ItemSubType>
+      <ItemTitle>Blog</ItemTitle>
+      <ItemDescription />
+      <ItemImage />
+      <ItemImageOverride>false</ItemImageOverride>
+      <ItemSelected>false</ItemSelected>
+      <ItemLevel>1</ItemLevel>
+      <ItemIdString>efc45b070_7_64_116</ItemIdString>
+      <ItemLink>http://www.itinflections.com/</ItemLink>
+      <ItemQuickLink>http://www.itinflections.com/</ItemQuickLink>
+      <ItemTarget>2</ItemTarget>
+    </Item>
+  </Item>
+</MenuDataResult>

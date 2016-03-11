@@ -1,0 +1,26 @@
+﻿<ul data-bind="foreach: results" class="xd-result-grid search-result">
+        <li>
+            <div class="xd-result">
+                <img data-bind="attr:{src: image}" class="xd-content-icon" />
+                <div class="ux-title-summary-grid">
+                    <h1 data-bind="text: title"></h1>
+                    <p data-bind="text: summary"></p>
+                    <div class="xd-margin">
+                        <strong data-bind="text: $parent.labels().LastModified"></strong>: <span data-bind="text: lastmodified"></span>
+                    </div>
+                    <div>
+                        <strong data-bind="text: $parent.labels().LastEditor"></strong>: <span data-bind="text: lasteditor"></span>
+                    </div>
+                    <div class="xd-margin">
+                        <strong data-bind="text: $parent.labels().Status"></strong>: <span data-bind="text: status"></span>
+                    </div>
+
+                    <div><strong data-bind="text: $parent.labels().Template"></strong>: <span data-bind="text: template"></span></div>
+                    <div class="xd-margin">
+                    </div>
+                    <strong data-bind="text: $parent.labels().Language"></strong>: <span data-bind="text: language"></span>
+                </div>
+            </div>
+        </li>
+
+    </ul>

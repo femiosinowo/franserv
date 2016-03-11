@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>StubApp Tests</title>
+    <link href="../../../vendor/qunit/css/qunit.css" rel="stylesheet" />
+</head>
+<body>
+    <fieldset>
+        <legend>Test Selection</legend>
+        
+        <select id="uxTests" onchange="location = window.location.pathname + '?test=' + this.value;">
+            <option selected="selected">Please select a test</option>
+            <option>app</option>
+            <option>AppViewModel</option>
+            <option>ko.for</option>
+            <option>ko.label</option>
+            <option>Query</option>
+            <option>queryDataSource</option>
+            <option>queryService</option>
+            <option>widgets/filterTree</option>
+            <option>widgets/filterTreeView</option>
+            <option>widgets/filterTree.drilldownSelectList</option>
+            <option>widgets/throbber</option>
+        </select>
+    </fieldset>
+
+    <div id="qunit"></div>
+
+    <script type="text/javascript" src="setup.js"></script>
+    <script type="text/javascript" src="../../../vendor/qunit/js/qunit.js"></script>
+
+    <script>
+        var request = (location.search.match(/test=([\w\./]+)/) || [null, null])[1],
+            script = document.createElement('script'),
+            tests = document.createElement('script');
+
+        if (test !== null) {
+            script.setAttribute('src', '../js/' + request + '.js');
+            tests.setAttribute('src', request + '.tests.js');
+
+            document.body.appendChild(script);
+            document.body.appendChild(tests);
+        }
+    </script>
+</body>
+</html>

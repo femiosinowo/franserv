@@ -1,0 +1,147 @@
+﻿using Ektron.Cms;
+using Ektron.Cms.Framework.Content;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml;
+using TeamLogic.CMS;
+using Ektron.Cms.Instrumentation;
+
+public partial class UserControls_HomePageProductsServices : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            DataTable DTPSSliderSource = GetPSContent();
+            UxProdAndServicesSlider.DataSource = DTPSSliderSource;
+            UxProdAndServicesSlider.DataBind();
+        }
+    }
+
+    private DataTable GetPSContent()
+    {
+        DataTable DTSource = new DataTable();
+        DataTable sortedDT = new DataTable();
+        XmlDocument contentXML = new XmlDocument();
+        int counter = 0;
+
+        DTSource.Columns.Add("title");
+        DTSource.Columns.Add("subtitle");
+        DTSource.Columns.Add("imageSliderSRC");
+        DTSource.Columns.Add("url");
+        DTSource.Columns.Add("content");
+        DTSource.Columns.Add("teaser");
+        DTSource.Columns.Add("tagline");
+        DTSource.Columns.Add("hrefText");
+        DTSource.Columns.Add("counter");
+
+        var contents = SiteDataManager.GetProductAndServices();
+        if (contents != null && contents.Count > 0)
+        {
+            foreach (Ektron.Cms.ContentData contentData in contents)
+            {
+                try
+                {
+                    contentXML.LoadXml(contentData.Html);
+                    XmlNodeList xnList = contentXML.SelectNodes("/root");
+
+                    string title = xnList[0]["title"].InnerXml;
+                    string subtitle = xnList[0]["subtitle"].InnerXml;
+                    string content = xnList[0]["content"].InnerXml;
+                    string teaser = xnList[0]["teaser"].InnerXml;
+                    string tagline = xnList[0]["tagline"].InnerXml;
+
+                    string hrefText = "/product-services-category/?sid=" + contentData.Id;
+
+
+                    string xml = contentXML.SelectSingleNode("/root/imageSlider").InnerXml;
+                    string imgSliderSRC = Regex.Match(xml, "<img.+?src=[\"'](.+?)[\"'].+?>", RegexOptions.IgnoreCase).Groups[1].Value;
+                    string url = Regex.Match(xml, "<a.+?href=[\"'](.+?)[\"'].+?>", RegexOptions.IgnoreCase).Groups[1].Value; //not sure about this
+                    counter++;
+
+                    DTSource.Rows.Add(title, subtitle, imgSliderSRC, url, content, teaser, tagline, hrefText,counter);
+
+                    DataView DVPSMMSort = DTSource.DefaultView;
+
+                    DVPSMMSort.Sort = "title asc";
+
+                    sortedDT = DVPSMMSort.ToTable();
+                }
+                catch (Exception ex)
+                {
+                    Log.WriteError(ex);
+                }
+            }
+        }
+        return sortedDT;
+    }
+
+    private DataTable GetPSSliderContent()
+    {
+        DataTable DTSource = new DataTable();
+        DataTable sortedDT = new DataTable();
+        long folderID = 115; //your folder id here mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+        XmlDocument contentXML = new XmlDocument();
+        long SmartFormXMLConfig = 7; //your smartform xml config mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+        int counter = 0;
+
+        DTSource.Columns.Add("title");
+        DTSource.Columns.Add("subtitle");
+        DTSource.Columns.Add("imageSliderSRC");
+        DTSource.Columns.Add("url");
+        DTSource.Columns.Add("content");
+        DTSource.Columns.Add("teaser");
+        DTSource.Columns.Add("tagline");
+        DTSource.Columns.Add("counter");
+
+        //get all contents in the specified folder
+        Ektron.Cms.API.Content.Content cAPI = new Ektron.Cms.API.Content.Content();
+        Ektron.Cms.ContentData[] contents = cAPI.GetChildContent(folderID);
+
+        foreach (Ektron.Cms.ContentData contentData in contents)
+        {
+
+            ContentManager contentManager = new ContentManager();
+            ContentData cData = new ContentData();
+            Boolean returnMetadata = false;
+
+            cData = contentManager.GetItem(Convert.ToInt64(contentData.Id), returnMetadata);
+            //check what kind of content it is
+            if (cData.XmlConfiguration.Id == SmartFormXMLConfig) //This is slider smartform
+            {
+                contentXML.LoadXml(cData.Html);
+
+                XmlNodeList xnList = contentXML.SelectNodes("/root");
+
+                string title = xnList[0]["title"].InnerXml;
+                string subtitle = xnList[0]["subtitle"].InnerXml;
+                string content = xnList[0]["content"].InnerXml;
+                string teaser = xnList[0]["teaser"].InnerXml;
+                string tagline = xnList[0]["tagline"].InnerXml;
+
+
+                string xml = contentXML.SelectSingleNode("/root/imageSlider").InnerXml;
+                string imgSliderSRC = Regex.Match(xml, "<img.+?src=[\"'](.+?)[\"'].+?>", RegexOptions.IgnoreCase).Groups[1].Value;
+                string url = Regex.Match(xml, "<a.+?href=[\"'](.+?)[\"'].+?>", RegexOptions.IgnoreCase).Groups[1].Value; //not sure about this
+                counter++;
+
+                DTSource.Rows.Add(title, subtitle, imgSliderSRC, url, content, teaser, tagline, counter);
+
+                DataView DVPSMMSort = DTSource.DefaultView;
+
+                DVPSMMSort.Sort = "counter asc";
+
+                sortedDT = DVPSMMSort.ToTable();
+            }
+        }
+
+        return sortedDT;
+    }
+
+}

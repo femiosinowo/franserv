@@ -1,0 +1,280 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/* line 16, ../sass/partials/_shared.scss */
+h1.headline:before, h2.headline:before {
+  content: " /";
+}
+
+/* line 3, ../sass/master.scss */
+body {
+  /*background: #f5f5f6;*/
+  background: #ffffff;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 300px;
+  min-height: 800px;
+  height: 100%;
+}
+
+/* line 12, ../sass/master.scss */
+h1.headline {
+  font-family: "NewJuneFine", Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 25px;
+  text-transform: lowercase;
+}
+
+/* line 24, ../sass/master.scss */
+h2.headline {
+  text-align:left;
+  text-transform: lowercase;
+  font-family: "NewJuneFine", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 25px;
+  padding: 0 10px;
+}
+/* line 32, ../sass/master.scss */
+h2.headline:before {
+  padding-right: 15px;
+}
+/* line 37, ../sass/master.scss */
+h2.headline .gray {
+  color: #6d6e70;
+}
+
+/* line 41, ../sass/master.scss */
+a ,
+a:visited
+{ color: #333; outline: 0 none; text-decoration:none; } 
+
+/* line 45, ../sass/master.scss */
+a:link {
+  text-decoration: none;
+}
+
+/* line 48, ../sass/master.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+a[href^=tel] { 
+    color: inherit; 
+    text-decoration: none; 
+    background:transparent;
+} 
+
+p, ul, ol{ 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 18px; 
+}  
+
+h2, h3, h4, h5, h6{ 
+    font-family:"GothamBold",Arial,Helvetica,sans-serif; 
+}
+
+@media screen and (max-width: 40em) {
+  /* line 53, ../sass/master.scss */
+  h2.headline {
+    line-height: normal;
+  }
+
+  /* line 54, ../sass/master.scss */
+  h2.headline:before {
+    padding-right: 0;
+  }
+}
+/*
+ * A better looking default horizontal rule
+ */
+/* line 62, ../sass/master.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 79, ../sass/master.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 87, ../sass/master.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 97, ../sass/master.scss */
+textarea {
+  resize: vertical;
+}
+
+/*Floats*/
+/* line 102, ../sass/master.scss */
+.floatLeft {
+  float: left;
+}
+
+/* line 103, ../sass/master.scss */
+.floatRight {
+  float: right;
+}
+
+/* line 104, ../sass/master.scss */
+.floatNone {
+  float: none;
+}
+
+/*
+ * Logo (both) mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Logo (both) 
+ */
+/* line 111, ../sass/master.scss */
+#logo {
+  display: inline-block;
+  float: left;
+}
+
+/*
+ * Main Nav (both) mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Main Nav (both) 
+ */
+/* line 120, ../sass/master.scss */
+.main_nav_wrapper {
+  background: #f5f5f6;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 127, ../sass/master.scss */
+.main_nav {
+  background: transparent;
+  height: 85px;
+}
+
+/* line 131, ../sass/master.scss */
+.main_nav .logo {
+  display: block;
+  float: left;
+}
+
+/* line 139, ../sass/master.scss */
+.main-navigation-wrap {
+  border-bottom: 1px solid #dfdfdf;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #e1e1e1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #e1e1e1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #e1e1e1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #e1e1e1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #e1e1e1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 );
+  /* IE6-9 */
+}
+
+/*styles for 300 and up @ 16px!*/
+/* The max-width declaration below blocks this from ever working */
+@media all and (max-width: 640px) {
+  /* line 160, ../sass/master.scss */
+  .container_24 .push_9 {
+    left: 22.5%;
+  }
+
+  /* line 163, ../sass/master.scss */
+  .were_local ul li {
+    vertical-align: middle !important;
+    padding: 0 .5%;
+  }
+
+  /* line 168, ../sass/master.scss */
+  .were_local h2.headline {
+    font-size: 2em;
+  }
+}
+/*styles for 480px - 620px @ 16px!*/
+/*one with pixels too! */
+/* NOTE - if the user were to increase his browser font size to 20px (chrome: Large), 
+			the above (68.75em) media query will be incorrectly ignored!!!
+			
+			Assuming 20px browser setting, we would expect to see this progression:
+			yellow > green > red > blue > NAVY > orange
+			
+			However, the orange never kicks in... which seems like a browser bug!
+			Here's the math (assuming 20px browser setting):
+			1200/20 = 60em     <     68.75em
+*/
+@media screen and (min-width: 1080px) {
+  /* line 204, ../sass/master.scss */
+  .container_24 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* line 208, ../sass/master.scss */
+  .top_header .container_24 {
+    max-width: 100%;
+  }
+
+  /* line 210, ../sass/master.scss */
+  h2.headline {
+    font-size: 5em;
+    padding: 0;
+  }
+}
+/* line 214, ../sass/master.scss */
+.ie8 .container_24 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+	a.consultation_flag , a.consultation_flag_mobile
+{ display:block; background-color: #0095DA; position:fixed; top:125px; right: 8%; padding: 10px 15px 14px 15px; min-width: 210px; z-index:200; text-align:center; font-family: 'GothamBook',Arial,Helvetica,sans-serif; color: #ffffff; font-size: 1.35em; } 
+
+@media screen and (min-width: 960px) {
+#mobile_consultation
+{display:none;}
+
+}
+@media screen and (max-width: 959px) {
+a.consultation_flag , a.consultation_flag_mobile
+{display:none;}
+
+#mobile_consultation
+{display:block;}
+
+}

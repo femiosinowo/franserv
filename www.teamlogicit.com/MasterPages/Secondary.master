@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Main.master" AutoEventWireup="true" CodeFile="Secondary.master.cs" Inherits="MasterPages_Secondary" %>
+<%@ Register TagPrefix="cms" Namespace="Ektron.Cms.Controls" Assembly="Ektron.Cms.Controls" %>
+<%@ Register Src="~/UserControls/PageBanner.ascx" TagPrefix="ux" TagName="Banner" %>
+<%@ MasterType virtualpath="main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphMainHead" Runat="Server">
+    <asp:ContentPlaceHolder ID="MainHeaderPlaceHolder" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMainPBPageHost" Runat="Server">
+    <asp:ContentPlaceHolder ID="MainPBPageHostPlaceHolder" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphHeaderContent" Runat="Server">
+    <ux:Banner ID="uxPageBanner" runat="server" />
+    <asp:ContentPlaceHolder ID="BannerContentPlaceHolder" runat="server" /> 
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphMainContent" Runat="Server">
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+</asp:Content>
+

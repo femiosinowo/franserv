@@ -1,0 +1,160 @@
+
+/*parallax wrapper*/
+.local_about {
+	background:transparent;
+	position:relative;
+	margin-top:-400px;
+	margin-bottom: 38px;
+}
+
+/*our story section*/
+
+.our_story {
+	background: #fff;
+}
+
+.our_story p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.our_story_content .container_24 .push_1 {
+	left:3.5%;
+}
+
+/*testimonial section*/
+#large_testimonial_slider {
+	margin:25px 0;
+}
+
+#large_testimonial_slider .bx-viewport {
+	border: 1px solid #e2e2e2!important;
+	padding: 0 0 30px!important ;
+}
+
+#large_testimonial_slider li.testimonial-quote {
+	padding:0 30px;
+}
+#large_testimonial_slider .testimonial-quote h3 {
+	font-size:26px;
+	margin-top:0!important;
+	line-height: 26px;
+	padding-top:3%!important;
+}
+li.testimonial-quote {
+	box-sizing: border-box;
+}
+
+/*location section*/
+
+.title_about {
+	font-size: 20px;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+}
+
+ul.local_contact_info.about li {
+	padding-bottom: 15px;
+	font-size: 16px;
+}
+
+.were_local_section.about p {
+	font-size: 16px;
+}
+
+/*our team section*/
+.grid_block_container {
+	float: left;
+	width: 100%;
+	margin: 20px 0 120px 0;
+}
+
+.grid_block_container ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+.meet_team_div:nth-child(1,5) {
+	margin-left: 0;
+}
+
+.meet_team_div {
+	position: relative;
+	float: left;
+	width: 275px;
+	height: 275px;
+	margin: 0 0 5px 5px;
+	font-family: 'GothamBook', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	cursor:pointer;
+}
+
+.meet_team_div img {
+	width:275px;
+	height:275px;
+}
+
+.meet_team_div .caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/trans-black-50.png);
+	width: 100%;
+	height: 100%;
+}
+.meet_team_div .caption_content {
+	display: none;
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding:0 20px;
+}
+.meet_team_div .caption h3, .meet_team_div .caption ul {
+	color: #fff;
+}
+.meet_team_div .caption ul, .meet_team_div .caption ul li {
+	margin:0;
+	padding:0;
+}
+.meet_team_div .caption ul li.telephone {
+	background: transparent url(../images/small_white_phone_icon.png) left center no-repeat;
+	padding-left:15px;
+}
+.meet_team_div .caption ul li.mobile {
+	background: transparent url(../images/small_white_mobile_icon.png) left center no-repeat;
+	padding-left:15px;
+}
+.meet_team_div .caption ul li.email {
+	background: transparent url(../images/small_white_email_icon.png) left center no-repeat;
+	padding-left:15px;
+}
+.meet_team_div .caption h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+.meet_team_div .caption h3 span {
+	text-transform: capitalize;
+	font-size: 12px;
+	line-height: 12px;
+}
+.meet_team_div a {
+	color: #fff;
+}
+
+#our_team_tabs a.square_button {
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#meet_team_1_details {
+	display:none;
+	background:#f5f5f5;
+	width:100%;
+}

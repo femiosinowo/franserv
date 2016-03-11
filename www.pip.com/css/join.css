@@ -1,0 +1,883 @@
+
+/* ==========================================================================
+   Join Our Team National
+   ========================================================================== */
+
+/* menu title blocks*/
+#job-pip .menu-title-block h2#menu-job-pip,
+#job-profiles .menu-title-block h2#menu-job-profiles,
+#job-search .menu-title-block h2#menu-job-search{
+	display:block;
+}
+
+/*sub menu */
+#job-pip .menu-items-block .job-pip-link a,
+#job-profiles .menu-items-block .job-profiles-link a,
+#job-search .menu-items-block .job-search-link a{
+	color:#015FA5;
+}
+
+/* ==========================================================================
+   Join Our Team - Jobs at PIP
+   ========================================================================== */
+   #join_our_team_content .content-block > div{
+	   padding-top:50px;
+   }
+   
+  #join_our_team_content .content-text h4{
+	 font-size:25px;	
+	 margin-bottom:0;
+  }
+  #job-pip .tagline-block{
+	 
+  }
+  
+  @media screen and (max-width:55em) {
+	  #job-pip .tagline-block{position:relative;}
+	  
+  }
+
+/* ==========================================================================
+   Join Our Team - Jobs at PIP - Find a Job Section
+   ========================================================================== */
+   #job_search_section{border-top:5px solid #ffffff;}
+   #job_search_section .headline-block{
+	   background:#1084DB;
+   }
+   #job_search_section h2.headline{
+	   margin-bottom:0;
+   }
+   #job_search_section .content-block{
+	   background:url(../images/job_search_section_bg.jpg) no-repeat;
+	   background-size:cover;
+	   
+	   
+   }
+   #job_search_section .content-block p{
+	   display:table;
+	   vertical-align:middle;
+	   text-align:center;
+	   color:#ffffff;
+	   padding:8% 0;
+	   margin:0 auto;
+	   font-size:25px;
+	   width:100%;
+   }
+   #job_search_section .cta-button-text{
+	   float:none;
+	   display:inline-block;
+	   margin-left:10px;   
+   }
+   
+   
+   
+    @media screen and (max-width:43.125em) {
+	   #job_search_section .cta-button-text{margin-top:30px;margin-left:0;}
+	   #job_search_section .content-block p{line-height:normal;}
+	   #job_search_section .content-block p span{display:block;}
+   }
+   
+   @media screen and (min-width:55.063em) and (max-width:67.5em) {
+	   #job_search_section .cta-button-text{margin-top:30px;margin-left:0;}
+   }
+   
+   
+/* ==========================================================================
+   Join Our Team - Jobs at PIP - Job Profiles Section
+   ========================================================================== */
+#job_profiles_section{border-top:5px solid #ffffff;}
+#job_profiles_section .headline-block{
+   background:#333333;
+}
+#job_profiles_section .job_profile_wrapper{
+   margin:0 0.3% 4% 0;   
+   padding:0;
+   width:33.033%;
+}
+#job_profiles_section .job_profile_wrapper .profile_img{
+   max-height:375px;
+   overflow:hidden;
+}
+#job_profiles_section .job_profile_wrapper .profile_img img{
+   width:100%;
+}
+#job_profiles_section .job_profile_wrapper .profile_text{
+   width:80%;
+   margin:40px auto 0;
+   display:block
+}
+#job_profiles_section .job_profile_wrapper .profile_text h4{
+   text-transform:uppercase;
+   font-size:18px;
+   margin-bottom:0;
+}
+#job_profiles_section .job_profile_wrapper .profile_text p{
+   margin-top:0;
+   font-weight:500;
+   line-height:170%;
+}
+#job_profiles_section .job_profile_wrapper .profile_text .cta-button-wrap span{
+	font-size:13px;
+}
+ @media screen and (max-width:47.5em) {
+	  #job_profiles_section .job_profile_wrapper .profile_img img{width:auto;}
+	  #job_profiles_section .job_profile_wrapper .profile_text{width:100%;}
+  }
+
+
+
+/* ==========================================================================
+   Join Our Team - Job Profiles
+   ========================================================================== */
+#job-profiles .headline-search{display:none !important;}
+#job-profiles .headline-other{display:block !important;}
+
+/*tabs*/
+#job_profiles_content #profile_tabs {
+	padding: 0% !important;
+    width: 100% !important;
+}
+#profile_tabs ul.resp-tabs-list{
+	margin:0;
+   list-style:none;
+   width:100%;
+   float:left;
+}
+#profile_tabs ul.resp-tabs-list li{
+	margin:0 0 0 0.3%;
+	padding:3.5% 1.5% !important;
+   background:#EFEFEF;
+   width:16.76%;
+   
+   text-align:center;
+   text-transform:uppercase;
+   font-size:20px;
+   font-weight:600;
+   color:#333333;
+}
+#profile_tabs ul.resp-tabs-list li:first-child{
+	margin-left:0;
+}
+#profile_tabs ul.resp-tabs-list li.resp-tab-item.resp-tab-active,
+#profile_tabs ul.resp-tabs-list li.resp-tab-item:hover{
+	background:#ff9000;
+	color:#ffffff;
+}
+
+/*Content*/
+.profile_tabs_content .grid_24{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.profile_tabs_content h2{
+	font-size:56px;
+	font-weight:300;
+	margin:0;
+}
+.profile_tabs_content p.tagline_inner{
+	font-weight:600;
+	font-size:24px;
+	line-height:130%;
+}
+.profile_tabs_content .grid_13 img{
+	float:right;
+	max-width:100%;
+}
+
+@media screen and (min-width: 30.063em) and (max-width:55em){
+    #profile_tabs ul.resp-tabs-list li{
+		font-size:18px;
+	}
+	#profile_tabs ul.resp-tabs-list li#customer-tab, #profile_tabs ul.resp-tabs-list li#graphic-tab{
+		padding: 3% 1.5% !important;
+		line-height: 100%;
+	}
+
+}
+@media screen and (min-width: 55.063em) and (max-width:68.75em){
+    #profile_tabs ul.resp-tabs-list li{
+		font-size:18px;
+	}
+	#profile_tabs ul.resp-tabs-list li#customer-tab, #profile_tabs ul.resp-tabs-list li#graphic-tab{
+		padding: 2.8% 1.5% !important;
+		line-height: 100%;
+	}
+	.profile_tabs_content h2{font-size:42px;line-height:normal;}
+	.profile_tabs_content p.tagline_inner{font-size:20px;}
+
+}
+@media screen and (min-width:55.063em) and (max-width:65em){
+  .profile_tabs_content .grid_24 > div{width:92%;margin:0;padding:0 4%;}
+}
+
+@media screen and (min-width: 68.813em) and (max-width:86.625em){
+    #profile_tabs ul.resp-tabs-list li#customer-tab,
+	#profile_tabs ul.resp-tabs-list li#graphic-tab{
+		line-height: 100%;
+    padding: 3% 1.5% !important;
+	}
+	.profile_tabs_content h2{font-size:46px;line-height:normal;}
+
+}
+@media screen and (min-width: 86.688em) and (max-width:102.813em){
+    #profile_tabs ul.resp-tabs-list li#customer-tab{
+		line-height: 100%;
+       padding: 3% 1.5% !important;
+	}
+	.profile_tabs_content h2{font-size:48px;line-height:normal;}
+
+}
+
+@media screen and (max-width: 48em){
+	.profile_tabs_content .grid_24 .grid_11,
+	.profile_tabs_content .grid_24 .grid_13{
+		width:98%;
+	}
+	.profile_tabs_content .grid_13 img{float:left;}
+}
+
+/*Bottom content*/
+
+#job_profiles_tagline .headline-block,
+#job_profiles_tagline .tagline-block{
+	background:#1084DB !important;
+}
+#job_profiles_tagline .content-block{
+	overflow: hidden;
+}
+#job_profiles_tagline .image-container{
+	margin:0 0.3% 0 0;
+	padding:0 !important;
+	width:49.7% !important;
+	float: left;
+    overflow: hidden;
+	/*height:100%;*/
+}
+
+#job_profiles_tagline .image-container img{
+	/*left: -280px;
+    position: relative;*/
+    width: 100%;
+	max-width:none;
+}
+
+
+/*Profile images / tagline section media queries*/
+@media screen and (max-width: 30em){
+	#job_profiles_tagline .image-container{width:100% !important;margin:0 !important;}
+}
+@media screen and (max-width: 55em){
+	#job_profiles_tagline .image-container.omega{margin:0;float:right;}
+	#job_profiles_tagline .content-block{display:none;}
+}
+@media screen and (min-width: 30.063em) and (max-width:55em){
+	#job_profiles_tagline .image-container img{position:relative;left:-140px;}
+}
+@media screen and (min-width: 55.063em) and (max-width:80.25em){
+	#job_profiles_tagline .image-container img{position:relative;left:-100px;}
+}
+@media screen and (min-width:30.063em) and (max-width: 95.625em){
+    #job_profiles_tagline .image-container img{width:auto;height:100%;}
+}
+@media screen and (min-width: 106.875em){
+    #job_profiles_tagline .content-block{max-height:250px;}
+
+}
+
+
+/* ==========================================================================
+   Join Our Team - Job Search
+   ========================================================================== */
+#job-search .headline-search{display:block !important;}
+#job-search .headline-other{display:none !important;}
+
+#job_search_content h2.headline{
+	margin-bottom:0;
+}
+#job_search_content .content-block{
+	background:#F5F5F5;
+}
+/*Search form*/
+#job_search_form {
+	padding-top:6%;
+	margin:0 auto;
+	text-align:center;
+}
+#job_search_form fieldset{
+	display:inline-block;
+}
+#job_search_form fieldset#searchbox{
+	width:60%;
+}
+.lt-ie9 #job_search_form fieldset#searchbox input{
+	background: url("../images/job-search-icon.png") no-repeat scroll 96% center #ffffff;
+    border: medium none;
+    color: #494949;
+    float: right;
+    font-weight: 300;
+    margin: 0;
+    padding: 12px 5px 12px 14px;
+    width: 44%;
+}
+#job_search_form input[type="search"]{
+	background: url("../images/job-search-icon.png") no-repeat scroll 96% center #FFFFFF;
+    border: medium none;
+    color: #494949;
+    font-weight: 300;
+    margin: 0 0;
+    padding:12px 5px 12px 14px;
+    width: 44%;
+	float:right;
+}
+#job_search_form input[type="search"]:first-child{
+	float:left;
+}
+.lt-ie9 #job_search_form fieldset#searchbox input:first-child{
+ float:left;
+}
+
+#job_search_form fieldset#job_search_type{
+	position: relative;
+    text-align: left;
+    top: -15px;
+    width: 30%;
+}
+
+#job_search_type ul,
+#job_search_type ul li{
+	margin:0;
+	list-style:none;
+	display:inline-block;
+}
+#job_search_type label{
+	margin:0;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:600;
+}
+#job_search_type input[type="radio"]{
+	margin-left: 20px;
+    margin-right: 5px;
+    top: 5px;
+	display:none;
+}
+#job_search_type input[type="radio"]:checked + label:before {
+    background: none repeat scroll 0 0 #FF9101;
+    border: 1px solid #E66102;
+    color: #E66102;
+    content: "•";
+    font-size: 39px;
+    line-height: 0.5;
+    text-align: center;
+}
+#job_search_type label:before {
+    background: none repeat scroll 0 0 #efefef;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 20px;
+	border:1px solid #cccccc;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+}
+#job_search_type label {
+    background: transparent;
+   
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 4px;
+    padding: 0 0 0 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.lt-ie9 #job_search_type input[type="radio"]{display:block;}
+
+.lt-ie9 #job_search_type input[type="radio"]:checked + label:before {
+   display: none;
+   border:none;
+   content:"";
+}
+.lt-ie9 #job_search_type label:before {
+    display: none;
+}
+.lt-ie9 #job_search_type label {
+    padding:0;
+	margin:0;
+}
+
+/*search results*/
+.job_search_results table{
+	width:100%;
+	margin:0;33
+}
+.job_search_results table thead{
+	height:80px;
+}
+.job_search_results table thead th{
+	text-align:left;
+	font-weight:800;
+	text-transform:uppercase;
+	color:#000000;
+}
+.job_search_results table thead th h3{
+	font-weight:800;
+}
+.job_search_results table thead th.active h3{
+	color:#ff9000;
+}
+.job_search_results table thead th h3 span{
+    background:url(../images/orange-arrow-down.png) no-repeat;
+	width:25px;
+	height:15px;
+	display:inline-block;
+}
+.job_search_results table thead th:first-child,
+.job_search_results table td:first-child{
+	padding-left:4.5%;
+}
+.job_search_results table tbody{
+	background:#f5f5f5;
+}
+.job_search_results table tbody tr{
+	border-bottom:3px solid #ffffff;
+}
+.job_search_results tr:hover,
+.job_search_results tr:hover a{
+	background:#ff9000;
+	color:#ffffff;
+}
+.job_search_results thead tr:hover,
+.job_search_results thead tr:hover a{
+	background:transparent;
+}
+.job_search_results table td{
+	padding:1% 0;
+	font-size:18px;
+}
+.job_search_results table td:first-child{
+	font-size:20px;
+}
+
+#job_results_footer{
+	background:#ff9000;
+	color:#ffffff;
+	display: block;
+    float: left;
+    width: 91%;
+	padding:2% 4.5%;
+}
+#job_results_footer .table_pager{
+	text-align:center;
+	padding:4px 0;
+}
+#job_results_footer .table_pager ul{width:100%;margin:7px 0 0;list-style:none;}
+
+#job_results_footer .table_pager ul li{
+	margin:0 10px;
+	display:inline-block;
+}
+#job_results_footer .table_pager ul li.active a{
+	border:3px solid #ffffff;
+}
+#job_results_footer .table_pager ul li a{
+	color:#ffffff;
+	border:3px solid #ff9000;
+	padding:5px 10px;
+}
+#job_results_footer .table_pager ul li a:hover{
+	text-decoration:none;
+	border:3px solid #ffffff;
+	background:#1A9eff;
+}
+@media screen and (max-width: 39.063em){
+/*job search form*/
+form#job_search_form{padding-top:0;}
+#job_search_form fieldset#searchbox{width:90%;}
+
+
+/*job search results table*/
+.job_search_results table{float:left;}
+
+.job_search_results table,
+.job_search_results thead,
+.job_search_results tbody,
+.job_search_results th,
+.job_search_results td,
+.job_search_results tr {
+    display: block;
+	box-shadow:none;
+}
+.job_search_results table thead{height:5px;}
+
+.job_search_results table thead tr {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+	
+}
+
+.job_search_results table tr {
+   /* border: 1px solid #CCCCCC;*/
+}
+.job_search_results table td,
+.job_search_results table th {
+  padding: 10px 0px;
+
+}
+.job_search_results table td {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+	border:none;
+    padding-left: 40% !important;
+	padding-right:5%;
+    position: relative;
+}
+
+.job_search_results table td:before {
+    left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    white-space: nowrap;
+    width: 45%;
+}
+.job_search_results table td:nth-of-type(1):before {
+    content: "Position";
+}
+.job_search_results table td:nth-of-type(2):before {
+    content: "Job Field";
+}
+.job_search_results table td:nth-of-type(3):before {
+    content: "Location";
+}
+.job_search_results table td:nth-of-type(4):before {
+    content: "Posted";
+}
+
+#job_search_form input[type="search"]{width:96%;margin:10px auto 0;float:left;}
+
+#job_search_type ul{margin:0 auto;float:none;}
+#job_search_type ul li{float:left;}
+
+#job_results_footer .grid_18{display:none;}
+#job_results_footer #prev_btn{width:30% !important;float:left;display:inline-block;clear:none !important;}
+#job_results_footer #prev_btn span span{display:none;}
+#job_results_footer #next_btn{width:25% !important;float:right;display:inline-block;clear:none !important;}
+#job_results_footer #next_btn .cta-button-wrap{float:right;}
+}
+@media screen and (min-width: 39.125em) and (max-width:92.188em){
+	
+}
+
+@media screen and (max-width: 26.250em){
+	
+	form#job_search_form{width:100%;text-align:center;margin:0 auto;}
+   
+   .job_search .table_hf #searchbox input{width:39%;margin:0 10px;}
+   
+   #job_search_form fieldset#job_search_type{margin-left:0;padding:20px 2% 0;float:none;top:0;text-align:center;width:96%;}
+   #job_search_form #job_search_type label{margin:0 15px 20px;}
+   .job_search_results table td,
+   .job_search_results table td:first-child{font-size:16px;}
+}
+@media screen and (max-width: 30em){
+	#job_search_table_footer .grid_18{display:none;}
+	#job_search_table_footer{padding:15px 0 0 !important;width: 100% !important;}
+	#job_search_table_footer .grid_3{width:47% !important;clear:none !important;}
+	#job_search_table_footer .grid_18{width:70% !important;clear:none !important;}
+	
+	
+}
+/*421px*/
+@media screen and (min-width: 26.313em) and (max-width:47.500em) {
+	/*headlineblock*/
+	#job_search_content .grid_6.headline-block{max-height:150px !important;}
+	
+	form#job_search_form{width:100%;text-align:center;margin:0 auto;}
+	
+   #job_search_form fieldset#searchbox,
+   #job_search_form fieldset#job_search_type{width:90%;text-align:center;top:0;}
+   
+   .job_search .table_hf #searchbox input{width:39%;margin:0 10px;}
+   
+   #job_search_form fieldset#job_search_type{margin-left:0;padding:20px 2% 0;float:none;top:0;text-align:center;width:96%;}
+   #job_search_form #job_search_type label{margin:0 15px 20px;}
+   
+   .job_search_results table thead th:first-child, .job_search_results thead th{padding:1% 2%;}
+   .job_search_results table thead th h3{font-size:18px;}
+   .job_search_results table td,
+   .job_search_results table td:first-child{font-size:16px;padding:1% 2%;}
+   
+   #job_results_footer {padding:2% 1.5%; width: 97%;}
+   #job_results_footer #prev_btn,
+   #job_results_footer #next_btn{width:auto;margin:0;}
+   #job_results_footer #next_btn{float:right;}
+   #job_results_footer #prev_btn span span{display:none;}
+}
+@media screen and (min-width: 47.563em) and (max-width:66.563em){
+   form#job_search_form{width:70%;padding-bottom:4%;padding-top:0;}
+   #job_search_form fieldset#searchbox,
+   #job_search_form fieldset#job_search_type{width:100%;text-align:center;top:0;margin-top:20px;}
+   
+   .job_search .table_hf #searchbox input{width:39%;}
+   
+   #job_search_form fieldset#job_search_type{margin-left:0;margin-top:20px;}
+   
+   .job_search_results table thead th:first-child, .job_search_results thead th{padding:1% 2%;}
+   .job_search_results table thead th h3{font-size:18px;}
+   
+   .job_search_results table td,
+   .job_search_results table td:first-child{font-size:16px;padding:1% 2%;}
+   
+}
+/*1066px*/
+@media screen and (min-width: 66.625em) and (max-width:92.188em){
+   form#job_search_form{width:80%;padding-top:4%;}
+   #job_search_form fieldset#searchbox,
+   #job_search_form fieldset#job_search_type{width:100%;text-align:center;top:0;margin-top:20px;}
+   
+   .job_search .table_hf #searchbox input{width:40%;}
+   
+}
+@media screen and (max-width:87.5em){
+   #job_search_type input[type="radio"]{margin-left: 10px;}
+}
+/*1183px*/
+@media screen and (min-width: 73.938em){
+   form#job_search_form{width:100%;}
+   #job_search_form fieldset#searchbox{width:60%;margin-right:1%;}
+   .job_search .table_hf #searchbox input{width:42%;}
+   
+}
+
+
+/*900px - Prev and Next buttons just turn to arrows*/
+@media screen and (max-width: 56.250em){
+   #job_search_table_footer .cta-button-wrap {text-indent: -9999em;width: 45px;padding:0;}
+   #job_search_table_footer #next_btn .cta-button-wrap{background-position:85% 9px;float:right;}
+   #job_search_table_footer .cta-button-text {padding:5px 2px 3px;}
+}
+
+/* ==========================================================================
+   Join Our Team - Job Search - Job Description
+   ========================================================================== */
+.job_header {
+    background:#F1F1F1;
+	margin:0;
+	padding: 3% 2% 3% 4.5%;
+	width:93.5% !important;
+}
+.job_back_btn{
+	display:block;
+	float:right;
+}
+.job_back_btn a{
+	border:3px solid #000000;
+	padding:10px 15px;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:600;
+}
+.job_header h2{
+	margin-bottom:0;
+	font-size:50px;
+}
+.job_header h3{
+	margin-top:0;
+	font-size:25px;
+	font-weight:300;
+}
+.job_header h3 span{
+	margin:0 10px;
+}
+.job_header h3 span:first-child{
+	margin-left:0;
+}
+.job_details .description_details{
+	padding-left:3%;
+	width:61%;
+	margin-top:30px;
+}
+/*Description*/
+
+h3.job_description_title{
+    text-transform:uppercase;
+	font-weight:800;
+	margin-bottom:0;
+}
+.description_details ul{
+	margin-top:0;
+}
+.description_details ul li{
+	margin-bottom:0;
+}
+.description_details p{
+    margin-top:0;
+	width:100%;
+	line-height:140%;	
+}
+
+/*sidebar*/
+.description_details .cta-button-wrap{
+	margin-bottom:50px;
+}
+.description_sidebar{
+	margin-top:60px;
+}
+.description_sidebar img{
+   	max-width:100%;
+}
+.description_sidebar hr{
+	border-color:#000000;
+	margin:50px 0;
+}
+.description_sidebar p{
+	margin-top:0;
+	margin-bottom:30px;
+	word-wrap: break-word;
+}
+@media screen and (max-width: 55em){
+	.job_header,
+	.job_details{width:96% !important;margin:0;padding:2% !important;}
+	
+	.job_header .job_back_btn{position:relative;top:10px;}
+	.job_header .headline-block-icon-black{margin-top:30px;}
+	
+	.job_details .description_details,
+	.job_details .description_sidebar{width:100%;margin:0;padding:0;}
+	.job_header h2{font-size:40px;margin-top:20px;}
+	.job_header h3{font-size:20px;}
+	.job_details .description_details p{width:100%;}
+}
+
+@media screen and (min-width: 90em){
+	
+}
+
+/* ==========================================================================
+   Join Our Team - Job Search - Job Description - Job Application
+   ========================================================================== */
+#job_application_content .job_details .grid_18{width:70%;padding-left:3%;}
+#job_application_form hr{
+	border-color:#000000;
+	width:94%;
+	text-align:left;
+}
+#job_application_form h3{
+	text-transform:uppercase;
+	font-weight:800;
+}
+#job_application_form > div > h3 span{
+	font-weight:400;
+	margin-left:10px;
+}
+#job_application_form input[type="submit"]{
+	border:3px solid #3F3F3F;
+	font-weight:700;
+	font-size:16px;
+	text-transform:uppercase;
+	margin:50px 0;
+}
+
+/*personal info*/
+#personal_info_pageform{
+	display:block;
+	float:left;
+	margin-bottom:40px;
+	margin-top:20px;
+}
+#personal_info_pageform > ul{
+    list-style:none;
+	margin:0;	
+	width:97.5%;
+	display:block;
+	float:left;
+}
+#personal_info_pageform > ul > li{
+	margin:0 0 0 3%;
+	width:47.25%;
+	display:block;
+	float:left;
+}
+#personal_info_pageform > ul > li:first-child {
+    margin-left: 0;
+}
+#personal_info_pageform ul li span{
+	color:#000000;
+}
+
+#personal_info_pageform .personal_info_two_col input{
+	margin-bottom: 20px;
+    margin-right: 3%;
+    width: 90%;
+}
+
+#personal_info_pageform .personal_info_two_col ul.transformSelect > li{
+	width:94.5%;
+	margin-right:3%;
+}
+#personal_info_pageform .personal_info_two_col ul.transformSelect span{
+	background-position:98% 50%;
+	padding-left:1%;
+}
+#personal_info_pageform .personal_info_two_col ul.transformSelect ul.transformSelectDropdown{
+	margin-left:-8px;
+}
+
+/*upload resume*/
+.upload_resume{
+	display: block;
+    float: left;
+    width: 94%;
+	margin-bottom:40px;
+}
+.upload_resume #drag_drop_file{
+	background:#F1F1F1;
+	display: block;
+}
+.upload_resume .drag_drop_placeholder{
+	position:relative;
+	margin:0;
+	padding:3% 10%;
+}
+
+/*cover note*/
+#cover_note_content{
+   width:90%;
+   background:#f1f1f1;
+   height:170px;
+   float:none;	
+}
+
+@media screen and (max-width: 55em){
+   #job_application_form > div,
+   #job_application_form hr{width:100%;}
+	
+   #personal_info_pageform > ul > li{width:100%;margin:0;}
+   #personal_info_pageform .personal_info_two_col input,
+   #personal_info_pageform .personal_info_two_col ul.transformSelect > li{margin-right:3%;margin-bottom:20px;}
+   
+   #personal_info_pageform .personal_info_two_col ul.transformSelect ul.transformSelectDropdown{
+	   margin-left:-4px;
+	   max-height:200px !important;
+   }
+   
+   #cover_note_content{width:96%;}
+}

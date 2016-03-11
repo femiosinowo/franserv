@@ -1,0 +1,288 @@
+<div class="ux-app ux-app-dashboard ux-clearfix">
+    <div id="topics">
+        <div id="toggle">
+            <ul data-bind="foreach: { data: $root.queries, afterRender: deferredTabifyTopics }" class="ux-topics-wrapper">
+                <li data-bind="css: 'ux-topic-' + title.replace(/\s+/g, '').toLowerCase()">
+                    <a href="#emptyPanel" data-bind="click: $root.executeTopic, label: { prefix: 'PredefinedTopic', label: title }, attr: { title: title, index: $index }" />
+                </li>
+            </ul>
+        </div>
+        <div id="emptyPanel"></div>
+        <!--<div data-bind="visible: $root.isSlideRequired">
+            <div class="topic-prev" data-bind="click: $root.previousTab"></div>
+            <div class="topic-next" data-bind="click: $root.nextTab"></div>
+        </div>-->
+    </div>
+
+    <span data-bind="text: labels().Loading, throbber: { visible: loading, background: loadingRefinement }"></span>
+    <div class="ux-container-fluid">
+        <div class="ux-row-fluid">
+            <div class="overlayControls">
+                <a data-bind="click: close, attr: { title: labels().Close }" data-ux-icon="&#xe00d;" class="closeButton"></a>
+            </div>
+        </div>
+        <div class="ux-row-fluid">
+            <form class="search" data-bind="submit: newQuery">
+                <label class="accessibility" for="search" data-bind="text: labels().Search"></label>
+                <input id="search" type="text" data-bind="value: queryTextInput" />
+                <input type="hidden" data-bind="value: queryText" />
+                <button class="ux-button ux-button-primary" data-ux-icon="&#xe006;" data-bind="click: newQuery, attr: { title: labels().Search }"></button>
+            </form>
+        </div>
+        <!-- ko if: response().activeFilters && response().activeFilters.length > 0 -->
+        <div class="ux-row-fluid selected-facet-items" data-bind="template: { name: 'ux-app-dashboard-result-view-selected-facet-items' }"></div>
+        <!-- /ko -->
+        <div data-bind="text: labels().NoResults, visible: results().length == 0 && !loading()" class="error">
+        </div>
+        <div class="error" data-bind="visible: error, text: error"></div>
+        <div class="ux-row-fluid scroll-panel">
+            <div class="span3 facet-lists" data-bind="visible: results().length > 0 && response().filters && response().filters.length > 0">
+                <!-- ko template: { name: 'ux-app-dashboard-result-view-facets-list' } -->
+                <!-- /ko -->
+            </div>
+            <div class="span9 search-results" data-bind="css: { 'search-results-searchserver': response().filters && response().filters.length == 0 }">
+                <div data-bind="if: results().length > 0" class="results">
+                    <div class="ux-toolbar ux-result-bar">
+                        <h4 data-bind="text: $root.labels().Results"></h4>
+                        <span class="ux-toolbar-divider"></span>
+                        <span data-bind="text: (response().totalRecords != 1 ? labels().ResultsMessagePlural : labels().ResultsMessage).replace('{0}', results().length).replace('{1}', response().totalRecords)"></span>
+                        <div>
+                            <div class="ux-view-mode">
+                                <label class="accessibility" data-bind="for: 'select.ux-selectMenu', text: labels().View"></label>
+                                <span id="viewModeSelect" data-bind="template: { name: 'ux-selectmenu', data: viewmodeSettings, afterRender: redrawViewModeButton }"></span>
+                            </div>
+                            <span class="ux-toolbar-divider"></span>
+                            <div class="ux-sortby-options">
+                                <label class="accessibility" data-bind="for: 'select.ux-selectMenu', text: labels().SortBy"></label>
+                                <span data-bind="template: { name: 'ux-selectmenu', data: sortSettings }"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ux-result-list-outerWrapper">
+                        <div class="ux-result-list-wrapper" data-bind="template: { name: getviewmode }"></div>
+                    </div>
+                    <div class="ux-throbber-wrapper">
+                        <span data-bind="text: labels().Loading, throbber: { visible: atLastPageLoading }"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function infiniteScroll() {
+            var scrollPanel = $ektron('div.ux-app-dashboard div.scroll-panel');
+
+            // Window Height - Scroll Panel top - 30px mirror of gutter from above ux-app-dashboard
+            var resizeHeight = $(window).height() - scrollPanel.offset().top - 30;
+
+            scrollPanel.height(resizeHeight);
+        }
+
+        $ektron(window).on('resize.dashboard', function () {
+            infiniteScroll();
+        });
+    </script>
+
+    <!-- selected facet items -->
+    <script id="ux-app-dashboard-result-view-selected-facet-items" type="text/html">
+        <div data-bind="if: response">
+            <ul data-bind="foreach: response().activeFilters">
+                <li>
+                    <label data-bind="for: 'next'">
+                        <span data-bind="label: { label: title, prefix: type, namespace: 'drilldownSelectList' }" class="text"></span>
+                        <span data-ux-icon="&#xe00d;" />
+                    </label>
+                    <button data-bind="click: $root.publishFilterSelection"></button>
+                </li>
+            </ul>
+        </div>
+    </script>
+
+    <!-- facets list -->
+    <script id="ux-app-dashboard-result-view-facets-list" type="text/html">
+        <div class="ux-toolbar">
+            <h4 data-bind="text: $root.labels().Filters"></h4>
+        </div>
+        <!-- ko template: { name: 'filterTree', data: { filters: response().filters, expandedFilters: expandedFilters, onSelect: publishFilterSelection, options: {} } } -->
+        <!-- /ko -->
+    </script>
+
+    <!-- grid view -->
+    <script id="ux-app-dashboard-result-view-grid" type="text/html">
+        <ul data-bind="foreach: { data: results, afterRender: infiniteScroll }" class="ux-result-grid">
+            <li>
+                <div class="ux-result ux-clearfix">
+                    <span class="ux-grid-view-icon-wrapper" data-bind="template: { name: 'image', data: $data }"></span>
+                    <div class="ux-grid-view-wrapper">
+                        <h3 data-bind="text: title"></h3>
+                        <div class="ux-summary" data-bind="html: summary"></div>
+                        <div>
+                            <dl style="margin-bottom: 1em;">
+                                <dt class="ux-clearfix">
+                                    <span data-bind="text: $parent.labels().LastModified"></span>:
+                                </dt>
+                                <dd>
+                                    <span data-bind="text: lastModified"></span>
+                                </dd>
+                                <dt class="ux-clearfix">
+                                    <span data-bind="text: $parent.labels().LastEditor"></span>:
+                                </dt>
+                                <dd>
+                                    <span data-bind="text: lastEditor"></span>
+                                </dd>
+                            </dl>
+                            <dl style="margin-bottom: 1em;">
+                                <dt data-bind="visible: status">
+                                    <span data-bind="text: $parent.labels().Status"></span>:
+                                </dt>
+                                <dd data-bind="visible: status">
+                                    <span data-bind="text: $parent.labels()['Status_' + status]"></span>
+                                </dd>
+                                <dt data-bind="visible: template">
+                                    <span data-bind="text: $parent.labels().Template"></span>:
+                                </dt>
+                                <dd data-bind="visible: template">
+                                    <span data-bind="text: template"></span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span data-bind="text: $parent.labels().Language"></span>:
+                                </dt>
+                                <dd>
+                                    <span data-bind="label: { namespace: 'filterTree', prefix: 'language', label: language }"></span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="ux-item-context-menu">
+                    <ul data-bind="template: { name: 'ux-app-dashboard-view-context-menu', foreach: $ektron(menuItems).filter(function (index) { return index < menuItems.length - 1; }) }">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </script>
+
+    <!-- context menu -->
+    <script id="ux-app-dashboard-view-context-menu" type="text/html">
+        <li>
+            <a data-bind="attr: { onclick: menuOnClick, href: menuHref, class: cssClass, target: '_blank' }">
+                <span data-bind="text: menuTitle"></span>
+            </a>
+        </li>
+    </script>
+
+    <!-- image -->
+    <script id="image" type="text/html">
+        <!-- ko if: hasImage -->
+        <span class="ux-image-wrapper">
+            <img data-bind="attr: { src: imageSrc, title: title, alt: title }" class="ux-content-icon" />
+        </span>
+        <!-- /ko -->
+        <!-- ko ifnot: hasImage -->
+        <span class="ux-content-icon" data-bind="template: { name: $root.getIconTemplate }"></span>
+        <!-- /ko -->
+    </script>
+
+    <!-- icons -->
+    <script id="ux-icon-type1" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype1' }" data-ux-icon="&#xe019;"></span>
+    </script>
+
+    <script id="ux-icon-type2" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype2' }" data-ux-icon="&#xe01e;"></span>
+    </script>
+
+    <script id="ux-icon-type3" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype3' }" data-ux-icon="&#xe019;"></span>
+    </script>
+
+    <script id="ux-icon-type4" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype4' }" data-ux-icon="&#xe01e;"></span>
+    </script>
+
+    <script id="ux-icon-type7" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype7' }" data-ux-icon="&#xe022;"></span>
+    </script>
+
+    <script id="ux-icon-type8" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype8' }" data-ux-icon="&#xe019;"></span>
+    </script>
+
+    <script id="ux-icon-type9" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9' }" data-ux-icon="&#xe01d;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_vsd" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_vsd' }" data-ux-icon="&#xe02f;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_ppt" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_ppt' }" data-ux-icon="&#xe02c;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_doc" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_doc' }" data-ux-icon="&#xe030;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_xls" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_xls' }" data-ux-icon="&#xe02a;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_mpp" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_mpp' }" data-ux-icon="&#xe02d;"></span>
+    </script>
+
+    <script id="ux-icon-type9_0_pub" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype9_pub' }" data-ux-icon="&#xe02e;"></span>
+    </script>
+
+    <script id="ux-icon-type12" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype12' }" data-ux-icon="&#xe01f;"></span>
+    </script>
+
+    <script id="ux-icon-type101" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101' }" data-ux-icon="&#xe020;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_vsd" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_vsd' }" data-ux-icon="&#xe02f;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_ppt" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_ppt' }" data-ux-icon="&#xe02c;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_doc" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_doc' }" data-ux-icon="&#xe030;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_xls" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_xls' }" data-ux-icon="&#xe02a;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_mpp" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_mpp' }" data-ux-icon="&#xe02d;"></span>
+    </script>
+
+    <script id="ux-icon-type101_0_pub" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype101_pub' }" data-ux-icon="&#xe02e;"></span>
+    </script>
+
+    <script id="ux-icon-type102" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype102' }" data-ux-icon="&#xe018;"></span>
+    </script>
+
+    <script id="ux-icon-type104" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype104' }" data-ux-icon="&#xe01f;"></span>
+    </script>
+
+    <script id="ux-icon-type106" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype106' }" data-ux-icon="&#xe022;"></span>
+    </script>
+
+    <script id="ux-icon-type1_2" type="text/html">
+        <span data-bind="label: { attr: 'title', namespace: 'filterTree', label: 'contenttype1_2' }" data-ux-icon="&#xe027;"></span>
+    </script>
+</div>

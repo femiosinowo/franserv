@@ -1,0 +1,593 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets
+*********************************/
+/* line 21, ../sass/flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 24, ../sass/flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 29, ../sass/flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 30, ../sass/flexslider.scss */
+.flexslider .slides > li {
+  margin: 0;
+  padding: 0;
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides > li:first-child {
+  display: block;
+  -webkit-backface-visibility: visible;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 31, ../sass/flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 32, ../sass/flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 35, ../sass/flexslider.scss */
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 36, ../sass/flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 37, ../sass/flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 42, ../sass/flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 46, ../sass/flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  line-height: 0;
+  position: absolute;
+  zoom: 1;
+}
+
+/* line 47, ../sass/flexslider.scss */
+.flex-viewport {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 48, ../sass/flexslider.scss */
+.loading .flex-viewport {
+  max-height: 900px;
+}
+
+/* line 49, ../sass/flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 50, ../sass/flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* line 53, ../sass/flexslider.scss */
+.slider figure {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Direction Nav */
+/* line 60, ../sass/flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+  display: none;
+}
+
+/* line 61, ../sass/flexslider.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 62, ../sass/flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 63, ../sass/flexslider.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 64, ../sass/flexslider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 65, ../sass/flexslider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 66, ../sass/flexslider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 67, ../sass/flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 68, ../sass/flexslider.scss */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+}
+
+/* line 69, ../sass/flexslider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+/* Pause/Play */
+/* line 72, ../sass/flexslider.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 73, ../sass/flexslider.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 74, ../sass/flexslider.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 75, ../sass/flexslider.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+/* Control Nav */
+/* line 78, ../sass/flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+/* line 79, ../sass/flexslider.scss */
+.flex-control-nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 80, ../sass/flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 81, ../sass/flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 82, ../sass/flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 84, ../sass/flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 85, ../sass/flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 86, ../sass/flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 87, ../sass/flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 88, ../sass/flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/*Custom Controls*/
+/* line 91, ../sass/flexslider.scss */
+.flex-custom-control-nav-row {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  margin: 0 0;
+  padding: 0;
+}
+
+/* line 101, ../sass/flexslider.scss */
+.flex-custom-control-nav {
+  list-style: none;
+  width: 100%;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  bottom: auto;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+  position: static !important;
+  text-align: center;
+}
+
+/* line 114, ../sass/flexslider.scss */
+.flex-custom-control-nav li {
+  display : block;
+  float:left;
+  width: 15%;
+  height: 14px;
+  margin:  0 0.333%;
+  padding: 0 0 0 1%;
+  position: relative;
+}
+
+/* line 122, ../sass/flexslider.scss */
+.flex-custom-control-nav li a {
+  background: none repeat scroll 0 0 #535353;
+  bottom: 0;
+  color: #FFFFFF;
+  font-family: 'GothamBold',sans-serif;
+  font-size: 14px;
+  height: 0px;
+  left: 0;
+  padding: 15px 0 0;
+  position: absolute;
+  right: 0;
+  text-indent: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+/* line 139, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_0 {
+  padding: 0;
+}
+
+/* line 140, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_0 a {
+  background: #8BC83F;
+}
+
+/* line 141, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_1 a {
+  background: #018754;
+}
+
+/* line 142, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_2 a {
+  background: #2CB474;
+}
+
+/* line 143, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_3 a {
+  background: #B3D236;
+}
+
+/* line 144, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_4 a {
+  background: #018754;
+}
+
+/* line 145, ../sass/flexslider.scss */
+.flex-custom-control-nav li.control_nav_5 a {
+  background: #8BC83F;
+}
+
+/* line 147, ../sass/flexslider.scss */
+.flex-custom-control-nav li a span {
+  width: 80%;
+  display: none;
+  text-align: center;
+  line-height: 120%;
+  margin: 0 auto;
+}
+
+/* line 149, ../sass/flexslider.scss */
+.flex-custom-control-nav li a.flex-active {
+  height: 42px;
+}
+
+/* line 150, ../sass/flexslider.scss */
+.flex-custom-control-nav li a.flex-active span {
+  display: block;
+}
+
+/* line 151, ../sass/flexslider.scss */
+.flex-custom-control-nav li a.flex-active:hover {
+  text-decoration: none;
+}
+
+/*Flex Caption*/
+/* line 156, ../sass/flexslider.scss */
+.flex-caption {
+  /*margin-top: -537px;*/
+  top: 210px;
+  left: 30px;
+  height: auto;
+  position: absolute;
+  background: transparent;
+  margin-left: 0;
+}
+
+html.ie8 .flex-caption {
+	top:200px;
+}
+/* line 166, ../sass/flexslider.scss */
+.flexslider.local figure {
+  position: relative;
+}
+
+/* line 170, ../sass/flexslider.scss */
+.flex-caption h2 {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left repeat;
+  color: #ffffff;
+  margin: 0 0 3px;
+  padding: 10px;
+  width: auto;
+  font-size: 4em;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+
+/* line 183, ../sass/flexslider.scss */
+html.ie8 .flex-caption h2,
+html.ie9 .flex-caption h2 {
+  line-height: 1em;
+}
+
+/* line 188, ../sass/flexslider.scss */
+html.ie8 .flex-caption h2,
+html.ie8 .flex-caption p {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left;
+}
+
+/*.flex-caption.local h2{width:%;}*/
+/* line 193, ../sass/flexslider.scss */
+.flex-caption span.green {
+  color: #8BC83F;
+}
+
+/* line 196, ../sass/flexslider.scss */
+.flex-caption p {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 2em;
+  padding: 10px;
+  font-family: 'NewJuneFine', Arial, Helvetica, sans-serif;
+  line-height: 110%;
+  margin: 3px 0 58px;
+}
+
+/* line 205, ../sass/flexslider.scss */
+.local .flex-caption p {
+  width: 445px;
+}
+
+@media all and (max-width: 640px) {
+  /* line 212, ../sass/flexslider.scss */
+  .flex-custom-control-nav li {
+    width: 15%;   
+  }
+
+  /* line 213, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active {
+    height: 22px;
+  }
+
+  /* line 214, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active span {
+    display: none;
+  }
+
+  /* line 216, ../sass/flexslider.scss */
+  .flex-caption {
+    top: 10%;
+    left: 6px;
+    width: 64%;
+  }
+
+  /* line 218, ../sass/flexslider.scss */
+  .flex-caption h2 {
+    font-size: 18px;
+  }
+
+  /* line 220, ../sass/flexslider.scss */
+  .flex-caption p {
+    font-size: 16px;
+  }
+
+  /* line 221, ../sass/flexslider.scss */
+  .local .flex-caption p {
+    width: auto;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 760px) {
+  /* line 224, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active {
+    height: 68px;
+  }
+
+  /* line 225, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active span {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 860px) {
+  /* line 229, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active {
+    height: 68px;
+  }
+
+  /* line 230, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active span {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 861px) and (max-width: 1080px) {
+  /* line 234, ../sass/flexslider.scss */
+  .flex-custom-control-nav li a.flex-active {
+    height: 68px;
+  }
+}
+@media screen and (max-width: 860px) {
+  /* line 238, ../sass/flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 239, ../sass/flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}

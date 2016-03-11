@@ -1,0 +1,36 @@
+﻿<div class="ux-app-site">
+    <div class="mobilePreview">
+        <div class="overlayControls">
+            <a href="#" data-bind="click: mobilePreviewClose" title="Close" class="closeButton">Close</a>
+        </div>
+
+        <div class="orientationControls" data-bind="style: { display: device.HasLandscape() ? 'block' : 'none' }">
+            <input type="radio" id="portrait" name="orientation" value="portrait" data-bind="checked: device.orientation" />
+            <label for="portrait" data-bind="click: positionMobileDevice"><span title="Portrait"></span></label>
+            <input type="radio" id="landscape" name="orientation" value="landscape" data-bind="checked: device.orientation" />
+            <label for="landscape" data-bind="click: positionMobileDevice"><span title="Landscape"></span></label>
+        </div>
+
+        <div data-bind="css: ('simulator ' + device.orientation())">
+            <div class="deviceWrapper">
+                <img data-bind="attr: { src: device.ImageUrl, width: device.DeviceWidth, height: device.DeviceHeight, alt: device.Model }" />
+                <div class="iframePlaceholder" data-bind="style: { top: device.OffsetHeight, left: device.OffsetWidth, height: device.ScreenHeight }"></div>
+                <div id="mobilePreviewIframeWrapper" data-bind="style: { top: device.iframe.top(), left: device.iframe.left(), width: device.iframe.width(), height: device.iframe.height() }" class="ux-niceScroll">
+                    <iframe id="mobilePreviewIframe" class="loading" src="about:blank" data-bind="style: { width: device.iframe.width(), height: device.iframe.height() }, event: { load: resizeMobilePreviewIframeContents}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentEditing">
+        <div data-bind="template: { name: 'ux-dialog', data: content.contentDialog }" class="ux-siteApp-contentDialogTemplateBinder"></div>
+        <!-- ko:if pageBuilder.isPageBuilderPage -->
+        <div data-bind="template: { name: 'ux-dialog', data: pageBuilder.panel.dialog }" class="ux-siteApp-pageBuilderDialogTemplateBinder"></div>
+        <!-- /ko -->
+    </div>
+    <script>
+        if ('undefined' !== typeof(Sys) && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(Ektron.UX.apps.siteApp.beginPostBackHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(Ektron.UX.apps.siteApp.endPostBackHandler);
+        }
+    </script>
+</div>

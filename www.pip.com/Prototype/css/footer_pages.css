@@ -1,0 +1,30 @@
+/* Footer Pages */
+
+/*headline block*/
+.national_footer_page .headline-block{
+	background:#F5F5F5;
+}
+.national_footer_page .headline-content-inner{
+	width:90%;
+}
+
+/*content block*/
+.footer_content h3{
+	font-size:28px;
+	font-weight:600;
+	margin-top:40px;
+}
+
+.footer_content h4{
+	font-weight:800;
+	color:#000000;
+	margin-bottom:0;
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+.terms_conditions_content{
+	margin:0;
+	width:100%;
+	
+}

@@ -1,0 +1,597 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================================================
+   About Us - Management Team National
+   ========================================================================== */
+/* line 6, ../sass/mgmt_team.scss */
+.mgmt_team_content_wrapper {
+  background: #f5f5f5 !important;
+}
+
+/* line 7, ../sass/mgmt_team.scss */
+.mgmt_team_content_wrapper .content-block {
+  background: #ffffff;
+}
+
+/* line 9, ../sass/mgmt_team.scss */
+.mgmt_team_content .headline-block {
+  /*margin-top:-0.3% !important;*/
+}
+
+/*mgmt team content*/
+/* line 14, ../sass/mgmt_team.scss */
+#mgmt_team_main {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* line 16, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container {
+  width: 32.667%;
+  margin: 0 0% 1% 1%;
+}
+
+/* line 21, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container.alpha {
+  margin-left: 0;
+}
+
+/* line 24, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container a {
+  display: block;
+}
+
+/* line 30, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container a,
+#mgmt_team_main .cs_container a:hover,
+#mgmt_team_main .cs_container a:visited {
+  text-decoration: none;
+}
+
+/* line 34, ../sass/mgmt_team.scss */
+#mgmt_team_main,
+.mgmt_profile_wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+/* line 39, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container img {
+  width: 100%;
+}
+
+/* line 42, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content_wrapper {
+  display: none;
+}
+
+/* line 46, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container .cs_image:hover .cs_image_content_wrapper,
+#mgmt_team_main .cs_container .cs_image:focus .cs_image_content_wrapper {
+  display: block;
+}
+
+/* line 49, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 350ms;
+  -moz-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+/* line 68, ../sass/mgmt_team.scss */
+.ie8 #mgmt_team_main .cs_image_content_wrapper {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000');
+  /* IE */
+}
+
+/* ==========================================================================
+   About Us - Management Team Details National
+   ========================================================================== */
+/* line 77, ../sass/mgmt_team.scss */
+#mgmt_team_main > .cs_container:hover .cs_image_content_wrapper {
+  display: block;
+}
+
+/* line 80, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content {
+  padding: 40% 5% 5%;
+  display: block;
+}
+
+/* line 86, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content h3,
+#mgmt_team_main .cs_image_content p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 92, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* line 98, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content p {
+  font-size: 18px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* line 103, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content ul {
+  padding: 0;
+  margin: 10px 0 0;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+/* line 109, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content ul li {
+  margin: 0;
+  padding: 0 0 0 15px;
+  color: #ffffff;
+  display: block;
+  font-size: 16px;
+}
+/* line 116, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content ul li.mt_phone {
+  background: url(../images/white_phone_icon.png) no-repeat left center;
+}
+/* line 120, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content ul li.mt_mobile {
+  background: url(../images/white_mobile_icon.png) no-repeat left center;
+}
+/* line 123, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content ul li.mt_email {
+  background: url(../images/white_email_icon.png) no-repeat left center;
+}
+
+/* line 127, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_image_content span {
+  background: #018754;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+}
+
+/* line 139, ../sass/mgmt_team.scss */
+#mgmt_team_main .active.cs_container:after {
+  content: " ";
+  background: url("../images/grey_arrow_up.png") no-repeat;
+  width: 90px;
+  height: 27px;
+  position: absolute;
+  bottom: -52px;
+  left: 34%;
+  display: block;
+}
+
+/* line 149, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container .profile_detail {
+  display: none;
+}
+
+/* line 152, ../sass/mgmt_team.scss */
+#mgmt_team_main .mgmt_profile_detail_wrapper {
+  background: none repeat scroll 0 0 #f5f5f5;
+  float: left;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* line 158, ../sass/mgmt_team.scss */
+#mgmt_team_main .cs_container:hover .cs_image .cs_image_content_wrapper {
+  display: block;
+}
+
+/* line 160, ../sass/mgmt_team.scss */
+#mgmt_team_main .mgmt_profile_detail_wrapper .profile_detail_content {
+  margin: 4.75% 0 2%;
+}
+
+/*profile text*/
+/* line 165, ../sass/mgmt_team.scss */
+.profile_text_inner h3 {
+  color: #000000;
+  font-family: "NewJuneRegular", "NewJuneFine", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* line 175, ../sass/mgmt_team.scss */
+.profile_text_inner h4 {
+  text-transform: uppercase;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* line 181, ../sass/mgmt_team.scss */
+.profile_text_inner h2.headline {
+  font-size: 26px;
+  line-height: normal;
+  margin: 50px 0;
+}
+
+/* line 186, ../sass/mgmt_team.scss */
+.profile_text_inner h2.headline:before {
+  padding-right: 0;
+}
+
+/* line 189, ../sass/mgmt_team.scss */
+.profile_text_inner blockquote {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 170%;
+  padding: 25px 0;
+}
+
+/* line 196, ../sass/mgmt_team.scss */
+.profile_text_inner blockquote:before {
+  vertical-align: 2px;
+}
+
+/* line 199, ../sass/mgmt_team.scss */
+.profile_text_inner p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 160%;
+}
+
+/* line 206, ../sass/mgmt_team.scss */
+.profile_text_inner ul {
+  padding: 0;
+  margin: 10px 0 0;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+/* line 212, ../sass/mgmt_team.scss */
+.profile_text_inner ul li {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #000000;
+  display: block;
+  font-size: 16px;
+}
+/* line 219, ../sass/mgmt_team.scss */
+.profile_text_inner ul li.mt_phone {
+  background: url(../images/black_mt_phone_icon.png) no-repeat left center;
+}
+/* line 223, ../sass/mgmt_team.scss */
+.profile_text_inner ul li.mt_mobile {
+  background: url(../images/black_mt_mobile_icon.png) no-repeat left center;
+}
+/* line 226, ../sass/mgmt_team.scss */
+.profile_text_inner ul li.mt_email {
+  background: url(../images/black_mt_email_icon.png) no-repeat left center;
+}
+
+/*detail close*/
+/* line 232, ../sass/mgmt_team.scss */
+#details_container, .mgmt_profile_detail_wrapper, .profile_detail {
+  display: none;
+}
+
+/* line 235, ../sass/mgmt_team.scss */
+#mgmt_team_main .mgmt_profile_detail_wrapper .close_button {
+  background: none repeat scroll 0 0 #008752;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 25px;
+  font-family: "NewJuneFine", Arial, Helvetica, sans-serif;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right: 4px;
+  text-align: center;
+  top: 15px;
+  width: 40px;
+  behavior: url(/js/PIE.htc);
+  z-index: 1;
+}
+
+/* line 258, ../sass/mgmt_team.scss */
+#mgmt_team_main .mgmt_profile_detail_wrapper .close_button:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 30em) {
+  /*#mgmt_team_main .cs_image_content_wrapper{display:block;}*/
+  /* line 266, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container,
+  #mgmt_team_main .cs_container.alpha {
+    margin: 0 1% 1%;
+    width: 98% !important;
+  }
+
+  /* line 268, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content span {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  /* line 273, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container.active:hover .cs_image_content_wrapper,
+  #mgmt_team_main .cs_container:hover .cs_image_content_wrapper,
+  #mgmt_team_main .cs_container.active a:hover .cs_image_content_wrapper {
+    display: none;
+  }
+
+  /* line 275, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container.active .cs_image_content_wrapper {
+    left: -9999px;
+  }
+
+  /* line 277, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content h3 {
+    font-size: 18px;
+  }
+
+  /* line 278, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content p {
+    font-size: 14px;
+  }
+
+  /* line 279, ../sass/mgmt_team.scss */
+  .profile_text_inner h3 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  /* line 281, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container .profile_detail {
+    display: none;
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 286, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container .profile_text:before {
+    content: " ";
+    background: url("../images/arrow_open_white.png") no-repeat;
+    width: 52px;
+    height: 16px;
+    position: absolute;
+    top: -16px;
+    left: 44%;
+    z-index: 1000;
+    display: block;
+  }
+
+  /* line 297, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container .profile_text {
+    padding: 0;
+  }
+
+  /* line 298, ../sass/mgmt_team.scss */
+  .profile_text_inner h2.headline {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* line 299, ../sass/mgmt_team.scss */
+  .profile_text_inner p {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  /* line 300, ../sass/mgmt_team.scss */
+  .profile_text_inner ul {
+    margin-bottom: 20px;
+  }
+
+  /* line 302, ../sass/mgmt_team.scss */
+  #mgmt_team_main .active.cs_container .cs_image:hover .cs_image_content_wrapper {
+    display: none;
+  }
+}
+@media screen and (min-width: 30.063em) {
+  /* line 306, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_container .profile_detail {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 45em) {
+  /* line 313, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content h3 {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+
+  /* line 314, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content p {
+    font-size: 12px;
+  }
+
+  /* line 315, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content ul {
+    display: none;
+  }
+
+  /* line 316, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content span {
+    padding: 5% 7%;
+    font-size: 13px;
+  }
+
+  /*details*/
+  /* line 320, ../sass/mgmt_team.scss */
+  .profile_text,
+  .profile_text .grid_12 {
+    padding: 0 2% !important;
+    width: 96% !important;
+    margin: 0 !important;
+  }
+
+  /* line 321, ../sass/mgmt_team.scss */
+  .profile_text_inner h3 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  /* line 322, ../sass/mgmt_team.scss */
+  .profile_text_inner h2.headline {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* line 323, ../sass/mgmt_team.scss */
+  .profile_text_inner p {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  /* line 324, ../sass/mgmt_team.scss */
+  .profile_text_inner ul {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 45.063em) and (max-width: 55em) {
+  /* line 329, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content {
+    padding-top: 20%;
+  }
+
+  /* line 330, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content h3 {
+    font-size: 18px;
+  }
+
+  /* line 332, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content p,
+  #mgmt_team_main .cs_image_content ul li {
+    font-size: 14px;
+  }
+
+  /* line 333, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content span {
+    padding: 5% 7%;
+    font-size: 13px;
+  }
+
+  /*details*/
+  /* line 337, ../sass/mgmt_team.scss */
+  .profile_text {
+    padding: 0 2% !important;
+    width: 96% !important;
+    margin: 40px 0 0 !important;
+  }
+
+  /* line 338, ../sass/mgmt_team.scss */
+  .profile_text_inner h3 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  /* line 339, ../sass/mgmt_team.scss */
+  .profile_text_inner h2.headline {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* line 340, ../sass/mgmt_team.scss */
+  .profile_text_inner p {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  /* line 341, ../sass/mgmt_team.scss */
+  .profile_text_inner ul {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 55.063em) and (max-width: 78.125em) {
+  /* line 345, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content {
+    padding-top: 30%;
+  }
+
+  /* line 346, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content h3 {
+    font-size: 18px;
+  }
+
+  /* line 347, ../sass/mgmt_team.scss */
+  #mgmt_team_main .cs_image_content p {
+    font-size: 14px;
+  }
+
+  /*details*/
+  /* line 350, ../sass/mgmt_team.scss */
+  .profile_text {
+    padding: 0 2% !important;
+    width: 96% !important;
+    margin: 40px 0 0 !important;
+  }
+
+  /* line 351, ../sass/mgmt_team.scss */
+  .profile_text_inner h3 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  /* line 352, ../sass/mgmt_team.scss */
+  .profile_text_inner h2.headline {
+    font-size: 23px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* line 353, ../sass/mgmt_team.scss */
+  .profile_text_inner p {
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 20px;
+  }
+
+  /* line 354, ../sass/mgmt_team.scss */
+  .profile_text_inner ul {
+    margin-bottom: 20px;
+  }
+}

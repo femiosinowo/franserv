@@ -1,0 +1,10 @@
+﻿<div class="ux-filterTree ui-accordion ui-widget ui-helper-reset" data-bind="foreach: $data.filters, filterTree: $data.options">
+    <h3 data-bind="attr: { class: 'filterHeader ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all' + ($parent.expandedFilters()[filterType] && $parent.expandedFilters()[filterType].expanded ? ' expanded ui-accordion-header-active ui-state-active' : '') }">
+        <span data-bind="attr: { class: 'ui-accordion-header-icon ui-icon' + ($parent.expandedFilters()[filterType] && $parent.expandedFilters()[filterType].expanded ? ' ui-icon-triangle-1-s' : ' ui-icon-triangle-1-e') }"></span>
+        <span data-bind="label: { label: filterType, namespace: 'filterTree' }" />
+    </h3>
+    <div class="filterPanel ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" data-bind="visible: ($parent.expandedFilters()[filterType] && $parent.expandedFilters()[filterType].expanded)">
+        <!-- ko template: { name: view, data: { data: items, state: $parent.expandedFilters(), onSelect: $parent.onSelect } } -->
+        <!-- /ko -->
+    </div>
+</div>

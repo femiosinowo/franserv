@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ektron.Cms.Library
+</name>
+</assembly>
+<members>
+<member name="M:Ektron.Cms.Library.EkLibrary.GetLibrarySettings(System.Int64)">
+	<summary>
+ Loads the library settings.
+ </summary>
+	<param name="Id">The folder's ID</param>
+	<returns>Ektron.Cms.LibraryConfigData</returns>
+	<example>
+ An example of using this function can be found in the 
+ Workarea source code file: <p/>
+		<c>CMS400Example\\Workarea\\library.aspx.vb</c>.
+ </example>
+	<remarks>Login required to perform this operation.</remarks>
+</member>
+</members>
+</doc>

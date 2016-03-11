@@ -1,0 +1,160 @@
+.multivariate-section {
+    background: #ffffff !important;
+    color: #666666;
+}
+
+.multivariate-section .item-number
+{
+	font-size: medium;
+	text-align: left;
+	margin: 0 auto;
+    white-space:nowrap;
+    width:5em;
+	float: left;
+}
+
+.multivariate-section .slider-container
+{
+	padding: 10px;
+	text-align: center;
+}
+
+.multivariate-section .slider-container .slider
+{
+	margin-right: 2.5em;
+	margin-top: 4px;
+	margin-left: 6em;
+}
+
+.multivariate-section .slider-container .add-variant
+{
+	float: right;
+	font-weight: bold;
+	border: 1px solid white;
+	width: 20px;
+	line-height: 20px;
+	background-color: #5C8EB3;
+	color: White;
+	display: block;
+}
+
+.multivariate-section .slider-container .add-variant:hover
+{
+	border: 1px solid #5C8EB3;
+	background-color: White;
+	color: #5C8EB3;
+	cursor: pointer;
+}
+
+.multivariate-section .add-variant-btn
+{
+	display: none;
+}
+
+.multivariate-section .column
+{
+	padding-bottom: 50px;
+}
+
+/* Fixes for the pagehost styles - they're messing up the Multivariate Sections */
+
+div.PBColumn div.widget > div
+{
+    margin: 0 0 4px !important;
+}
+
+div.PBViewing ul.columnwidgetlist > li
+{
+	width: 99% !important;
+}
+
+div.PBViewing div.widget div.header
+{
+	display: block !important;
+}
+
+div.PBColumn ul.columnwidgetlist li.header {
+    width: 99% !important;
+    padding-top: 4px !important;
+}
+
+/* Awesomizer Styles */
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section {
+    margin: 40px .5em .5em .5em;
+    padding: 0 .5em .5em;
+}
+
+.pageBuilderEditMode.ux-app-siteApp-designMode div[data-ux-pagebuilder='Widget'] .multivariate-section {
+    position:relative;
+    z-index:999;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section div.global-configuration {
+    display: block;
+    margin-top:2em;
+}
+div[data-ux-pagebuilder='Widget'] .multivariate-section div.condition-configuration {
+    clear:both;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section ul.columnwidgetlist {
+    clear:both;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section div.global-configuration > a {
+    margin-bottom: 10px;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"] {
+    float: none;
+    margin: 0 1em;
+    box-sizing: border-box;
+    min-height: 32px;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"] .columnHeader > h3,
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"]:hover > h3,
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"].selected .columnHeader > h3 {
+    display: block;
+    opacity: 1;
+    background-color:#7e7e7e;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"],
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"]:hover,
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"]:hover [data-ux-pagebuilder-widget-data]:not(.selected):after {
+    /*outline: rgba(230, 174, 78, 0.25) solid 4px;*/
+    outline: #7e7e7e solid 4px;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section:hover [data-ux-pagebuilder-dropzone-data*="\"IsDropZoneEditable\":true"] [data-ux-pagebuilder="Column"] {
+    outline: solid 4px #7e7e7e;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder-dropzone-data*="\"IsDropZoneEditable\":true"].darken [data-ux-pagebuilder="Column"] {
+    outline: solid 4px #2b2b2b;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode [data-ux-pagebuilder-dropzone-data*="\"IsDropZoneEditable\":true"] [data-ux-pagebuilder="Column"] .ux-app-siteApp-columnHeader
+
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"].selected {
+    min-height: 64px;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"] > ul.targetContentColumnSelected {
+    display: block;
+    min-height: 32px;
+}
+
+div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"] > ul {
+    display: block;
+    min-height: 32px;
+}
+
+.ux-app-siteApp-contentMode div[data-ux-pagebuilder='Widget'] .multivariate-section div.global-configuration,
+.ux-app-siteApp-contentMode div[data-ux-pagebuilder='Widget'] .multivariate-section [data-ux-pagebuilder="Column"] .columnHeader > h3.ux-app-siteApp-columnHeader,
+.ux-app-siteApp-contentMode div[data-ux-pagebuilder='Widget'] .multivariate-section .condition-configuration {
+    display: none;
+}

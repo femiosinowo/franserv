@@ -1,0 +1,193 @@
+/*
+	transformSelect CSS
+*/
+.transformSelect
+{
+	clear	: both;
+	width	: 200px;
+	border: 3px solid #000;
+    padding:0;
+	margin-top:14px;
+    width: 95.5%;
+	background:#ffffff;
+}
+.transformSelect li
+{
+	position: relative;
+	list-style: none;
+	margin:0;
+	padding:0 15px;
+}
+.transformSelect span, .transformSelect input[type=text] {
+	background: #ffffff no-repeat url(../images/arrow-form.png) right center;
+    
+	font-family:'Source Sans Pro', Arial, Helvetica, sans-serif;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    margin: 0;
+   padding: 15px 0;
+    top: 0;
+    line-height: 19px;
+	font-size:14px;
+}
+.transformSelect li.open span, .transformSelect li.open input[type=text]
+{
+}
+.transformSelect input[type=text]
+{
+	width: 188px;
+}
+.transformSelect ul
+{
+	position: absolute;
+	border: 3px solid #000;
+	border-top: 0;
+	width: 95.15%;
+}
+.transformSelect ul span
+{
+	border: 0;
+	background: #ffffff;
+}
+.transformSelect ul span:hover
+{
+}
+	.transformSelect ul li
+	{
+		height: auto;
+	}
+		.transformSelect li.group ul
+		{
+			position: static;
+			border: 1px solid #dddddd;
+			border-right: 0;
+			border-left: 0;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.transformSelect li.group span
+		{
+			font-style: italic;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+			background: #F7F7F7;
+		}
+		.transformSelect li.group > span
+		{
+			background: #eeeeee;
+			border-top: 1px solid #dddddd;
+		}
+		.transformSelect li.group  ul span
+		{
+			text-indent	: 10px;
+			font-style: normal;
+		}
+		.transformSelect ul li.group ul span:hover
+		{
+			background: #dddddd;
+		}
+		.transformSelect input[type=checkbox]
+		{
+			position: relative;
+			top: 2px;
+			margin: 0 5px 0 0;
+			cursor: pointer;
+		}
+
+ul.transformSelectDropdown{
+	margin-top:3px;
+	margin-bottom:0;
+	margin-left:-18px;
+	
+    max-height: 200px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    width: 100%;
+	
+}
+ul.transformSelectDropdown li{
+	padding:0;
+}
+ul.transformSelectDropdown li span{
+	padding:10px 15px;
+}
+ul.transformSelectDropdown li span:hover{
+	color:#008752;
+}
+/* Radio */
+.trans-element-radio
+{
+	display: inline-block;
+	*display: block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.trans-element-radio.checked
+{
+	background: no-repeat url(../img/chk_on.png) center center;
+}
+.trans-element-radio.unchecked
+{
+	background: no-repeat url(../img/chk_off.png) center center;
+}
+.image img, .trans-element-radio, .trans-element-checkbox, #tristate img
+{
+	padding: 5px;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	vertical-align: middle;
+	margin: 0 0 5px;
+}
+/* Checkbox */
+.trans-element-checkbox
+{
+	display: inline-block;
+	*display: block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.trans-element-checkbox.checked
+{
+	background: no-repeat url(../img/chk_on.png) center center;
+}
+.trans-element-checkbox.unchecked
+{
+	background: no-repeat url(../img/chk_off.png) center center;
+}
+/* Page CSS */
+
+#changelog
+{
+	display	: none;
+}
+#tristate li
+{
+	margin: 0;
+	list-style: none;
+}
+#tristate li ul
+{
+	background: repeat-y url(../img/treeview_ul.gif) 11px 2px;
+}
+#tristate li ul li
+{
+	padding: 0 0 0 28px;
+	background: no-repeat url(../img/treeview.gif) 11px 0;
+}
+.row
+{
+	clear	: both;
+	overflow	: hidden;	
+}
+.clear
+{
+	clear: both;
+}

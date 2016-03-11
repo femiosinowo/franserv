@@ -1,0 +1,349 @@
+.sub_navigation_wrapper.find_location_page {
+  margin-bottom: 0;
+}
+.find_location_page.subpage_tagline_wrapper {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 149px;
+    position: relative;
+}
+.find_location_page .subpage_tagline h2 {
+    display: block;
+    margin-top: 57px;
+    text-align: left;
+}
+.find_location_usa.subpage_tagline_wrapper {
+    background-image: url("/images/header-img-find-location-north-america.png");
+}
+.find_location_page .sub_navigation_wrapper {
+    background-color: #EFEFEF;
+    background-image: linear-gradient(to top, rgba(225, 225, 225, 0.82), rgba(255, 255, 255, 0.82));
+    min-height: 95px;
+}
+.find_location_page .sub_navigation .grid_24 {
+    height: 42px;
+    top: 32px;
+}
+.find_location_page .sub_navigation .grid_24 div {
+    height: 42px;
+}
+.find_location_page .sub_navigation ul {
+    display: block;
+    margin: 0;
+}
+.findLoc_see_all_locations {
+    border-left: 1px solid #D1D1D1;
+    box-shadow: -1px 0 0 0 #FEFEFE;
+}
+.find_location_page .sub_navigation ul li {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: left;
+}
+.find_location_page .sub_navigation ul li:hover {
+    background: none repeat scroll 0 0 #F5F5F6;
+    box-shadow: none;
+    margin-top: 0;
+}
+.find_location_page ul.transformSelect {
+	visibility: visible !important;
+}
+.find_location_page .sub_navigation input, .find_location_page ul.transformSelect li {
+    width: 98%;
+}
+.find_location_page .sub_navigation .cta-button-wrap {
+    background-color: #999999;
+    height: 38px;
+    width: 100%;
+}
+.find_location_page .sub_navigation .cta-button-wrap a.cta-button-text {
+    text-transform: uppercase;
+}
+.find_location_map_wrapper {
+    min-height: 592px;
+}
+.locations_list_subheader_wrapper {
+    background: url("/images/top_header_bg.jpg") repeat scroll 0 0 #111111;
+    min-height: 107px;
+}
+.locations_list_subheader h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.79px;
+    text-shadow: 1px 1px #000000;
+    text-transform: uppercase;
+}
+.locations_list_content_wrapper {
+    background: none repeat scroll 0 0 #F5F5F6;
+    min-height: 300px;
+}
+.locations_list_content h4 {
+    font-family: futurand-bold,montserrat,arial;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.locations_list_content .location_list {
+    margin-top: 0;
+    padding: 0;
+}
+.locations_list_content .location_list li {
+    font-family: montserrat,arial,helvetica;
+    line-height: 20px;
+    list-style: none outside none;
+    margin-left: 0;
+    padding-bottom: 4px;
+}
+.locations_list_content .location_list li span {
+    color: #DF1B23;
+}
+#locations_columns {
+    margin: 40px 0 65px;
+}
+
+#choose_country .transformSelect li {
+  width: 98% !important;
+}
+#choose_country .transformSelect li span {
+  font-size: 12px;
+}
+@media only screen and (max-width: 450px) { 
+	/*.grid_5.findLoc_see_all_locations, .find_location_page_btn {
+		clear: none !important;
+		width: 45%;
+		float: left !important;
+	}*/
+}
+@media only screen and (max-width: 760px) {
+    .find_location_map_wrapper {
+        display:block;
+	}
+}
+
+@media only screen and (max-width:700px) {
+    .locations_list_subheader .grid_8 {
+        width: 75% !important;
+		 margin-left: 0 !important;
+    }
+}
+
+
+@media only screen and (max-width: 995px) {
+    .findLoc_see_all_locations .cta-button-text, #find_location_page_submit {
+        font-size: 12px
+    }
+	.findLoc_see_all_locations {
+	  padding-left: 10px !important;
+	  width: 25% !important;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+    .findLoc_see_all_locations .cta-button-text, #find_location_page_submit {
+        font-size: 10px;
+    }
+ 
+    .sub_navigation_wrapper.find_location_page {
+        min-height: 250px;
+    }    
+	.findLocationSearchForm .grid_6.suffix_1 {
+	  
+		padding: 0 !important;    
+		margin-bottom: 20px !important;
+		clear:both;
+		float:none;
+	}
+	
+/*	.find_location_page .sub_navigation .divider_left {
+		border-left: none;
+	}
+*/	
+	.find_location_page_btn, .findLoc_see_all_locations {
+		/*width: 30% !important;*/
+		margin-top: 10px;
+		border: none !important;
+	}
+	
+	.find_location_page .sub_navigation input{
+		width: 85%  !important;
+	}
+	
+	.grid_5.findLoc_see_all_locations, .find_location_page_btn {
+		clear: none !important;
+		width: 43% !important;
+		float: left !important;
+		padding-left: 0 !important;
+	}
+
+
+}
+@media only screen and (min-width: 651px) and (max-width: 995px) {
+    .findLoc_see_all_locations .cta-button-text, #find_location_page_submit {
+        font-size: 12px;
+    }
+
+    .findLoc_see_all_locations {
+        padding-left: 2% !important;
+        width: 25% !important;
+    }
+
+    .findLocationSearchForm .grid_6 {
+        padding-right: 2% !important;
+    }
+
+    .find_location_page ul.transformSelect li {
+        margin: 0 !important;
+    }
+}
+
+/*************Custom css added by site developer**************/
+
+#find_location_map_ajaxImg{
+    position: absolute;
+    right: 600px; 
+    top: 20px;
+}
+#searchLocationWaitImg{
+    margin-top:35px;
+}
+.requiredField{
+    border: 1px solid red !important;
+}
+span.error, .error
+{
+    color:red;
+    margin: 0 10px 10px 20px;
+}
+.ajax__fileupload
+{
+    border: 0px none !important;
+
+}
+#searchLocWaitImg
+{
+    padding-right: 0px !important;
+    width: 38px !important;
+}
+.find_location_page_btn
+{
+    padding-right: 1.167% !important;
+}
+.findLoc_see_all_locations
+{
+    padding-left: 3.167% !important;
+}
+#find_location_results
+{
+    background-color: #FFFFFF;   
+    position: absolute;   
+    left: 10.333%;
+    /*width: 20.333%;*/
+	width: 360px;
+    z-index: 1000;  
+    max-height: 488px;
+    margin: 60px 0 0;
+    overflow: auto; 
+}
+#find_location_results h3{
+    border-top: 1px solid #C8C8C8;
+    color: #6D6E70;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-bottom: 1px solid #C8C8C8;
+    padding: 20px 12px 13px 20px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.67);
+    text-transform: uppercase;
+    margin:0px;
+}
+#find_location_results p {
+  border-bottom: 1px solid #C8C8C8;
+  color: #6D6E70;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  min-height: 50px;
+  padding: 12px 0 30px;
+}
+#find_location_results p:hover {
+	background-color: #dddddd;
+	background: -webkit-linear-gradient(90deg, #e1e1e1 0%, #ffffff 49%, #e1e1e1 100%);
+	background: -moz-linear-gradient(90deg, #e1e1e1 0%, #ffffff 49%, #e1e1e1 100%);
+	background: -o-linear-gradient(90deg, #e1e1e1 0%, #ffffff 49%, #e1e1e1 100%);
+	background: -ms-linear-gradient(90deg, #e1e1e1 0%, #ffffff 49%, #e1e1e1 100%);
+	background: linear-gradient(0deg, #e1e1e1 0%, #ffffff 49%, #e1e1e1 100%);
+	cursor: pointer;
+}
+#find_location_results input{    
+    margin-bottom: 0;
+    margin-right: 20px;
+     margin-left: 20px;
+    float: left;
+}
+#find_location_results p span {
+    display: block;
+    float: left;
+    padding-left: 20px;
+}
+#map-locations-no-results p, p.noBorder 
+{
+    border-bottom: none !important;
+}
+span.markerImage {
+  background-image: url("/images/google-marker-purple-pin.png");
+  float: right !important;
+  height: 38px;
+  margin-right: 24px;
+  padding: 0 !important;
+  position: relative;
+  width: 29px;
+}
+span.markerText {
+  color: #FFFFFF;
+  margin: 0 !important;
+  padding: 7px 0 0 !important;
+  position: absolute;
+  text-align: center;
+  width: 28px;
+}
+.find_location_page_infobox
+{
+    background: rgba(255, 255, 255, 0.95);
+    width: 310px !important;
+}
+.find_location_page_infobox > img {
+  left: 18px;
+  top: -15px;
+}
+.find_location_page_infobox ul.contact_info li {
+	background: url("../images/sprite-contact-icons-gold.png") no-repeat 0 0 transparent;
+	height: 31px;
+	padding: 7px 0 7px 50px;
+	line-height: 1;
+}
+.find_location_page_infobox ul.contact_info {
+  padding-left: 23px;
+  padding-top: 10px;
+  width: 83%;
+}
+.find_location_page_infobox ul.contact_info li.contact-icon-location {
+  background-position: 0 4px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.find_location_page_infobox ul.contact_info li.contact-icon-phone {
+  background-position: 0 -48px;
+}
+.find_location_page_infobox ul.contact_info li.contact-icon-fax {
+  background-position: 0 -94px;
+}
+.find_location_page_infobox ul.contact_info li.contact-icon-email {
+  background-position: 0 -139px;
+}
+p.contact_info_location
+{
+    padding-left:30px;
+}

@@ -1,0 +1,4098 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/* line 20, ../sass/partials/_shared.scss */
+.job_app_wrapper {
+  padding: 40px 0;
+}
+
+/* line 3, ../sass/local_section.scss */
+.local_slider {
+  background: transparent;
+  position: relative;
+  display: block;
+  overflow: hidden;  
+  height: 650px;
+}
+
+@media screen and (max-width:30em){
+	.local_slider{height:260px;}
+	.national .flexslider .slides img,
+	.local .flexslider .slides img{width:120%;}
+	.local_slider .flex-caption{top:40px !important;}
+
+}
+
+@media screen and (min-width:30.063em) and (max-width:40em){
+	.local_slider {height:280px;}
+	.national .flexslider .slides img,
+	.local .flexslider .slides img{width:110%;}
+	.local_slider .flex-caption{top:40px !important;}
+}
+
+@media screen and (min-width:40.063em) and (max-width:46em){
+	.local_slider {height:350px;}
+	
+	.local_slider .flex-caption{top:40px !important;}
+}
+
+@media screen and (min-width:46.063em) and (max-width:51.25em){
+	.local_slider {height:410px;}
+	.local_slider .flex-caption{top:60px !important;}
+}
+
+@media screen and (min-width:51.313em) and (max-width:60em){
+	.local_slider {height:460px;}
+	.local_slider .flex-caption{top:60px !important;}
+}
+
+@media screen and (min-width:60.063em) and (max-width:62.438em){
+	.local_slider {height:510px;}
+	.local_slider .flex-caption{top:160px !important;}
+}
+
+@media screen and (min-width:62.5em) and (max-width:72.625em){
+	.local_slider {height:560px;}
+	.local_slider .flex-caption{top:160px !important;}
+}
+
+/*MANAGED IT SERVICES
+*************************************/
+/****** Slider (Flexslider) ****************************/
+/* line 60, ../sass/local_section.scss */
+.flexslider.local {
+  background: transparent;
+}
+
+/* line 64, ../sass/local_section.scss */
+.managedit {
+  background: transparent;
+  /*position: relative;
+  height:570px!important;
+  margin-top: -570px;*/
+}
+/* line 70, ../sass/local_section.scss */
+.managedit.main_header_text {
+  max-width: 100% !important;
+}
+/* line 74, ../sass/local_section.scss */
+.managedit .caption {
+  float: left;
+  margin-left: 2%;
+  width: 56%;
+}
+
+/* line 81, ../sass/local_section.scss */
+.managedit .flexslider {
+  background: transparent;
+}
+
+/* line 84, ../sass/local_section.scss */
+.layered_image {
+  float: right;
+  position: relative;
+  top: -5px;
+  width: 40%;
+  margin-right: 2%;
+}
+/* line 91, ../sass/local_section.scss */
+.layered_image img {
+  width: 95%;
+}
+
+/* line 96, ../sass/local_section.scss */
+.managedit .caption p {
+  max-width: 52% !important;
+}
+
+/* line 100, ../sass/local_section.scss */
+.caption.it_services p {
+  max-width: 55%;
+}
+
+/* line 104, ../sass/local_section.scss */
+.slide.local {
+  background: transparent;
+  position: relative;
+  /*height:670px!important;*/
+  margin-top: -670px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 113, ../sass/local_section.scss */
+  .managedit .caption {
+    width: 90%;
+  }
+
+  /* line 114, ../sass/local_section.scss */
+  .managedit .layered_image {
+    top: 0;
+    width: 58%;
+    margin: 0 21% 20px;
+    float: left;
+  }
+
+  /* line 115, ../sass/local_section.scss */
+  .managedit .caption p {
+    max-width: 92% !important;
+  }
+
+  /* line 117, ../sass/local_section.scss */
+  .caption.it_services p {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 29.963em) {
+  /* line 121, ../sass/local_section.scss */
+  .managedit .layered_image {
+    top: 0;
+    width: 80%;
+    margin: 0 10% 20px;
+    float: left;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 59.963em) {
+  /*#main .main_header_text{top:18%;}*/
+  /* line 126, ../sass/local_section.scss */
+  .managedit .caption h2 {
+    font-size: 40px;
+  }
+
+  /* line 127, ../sass/local_section.scss */
+  .layered_image {
+    top: 0;
+  }
+
+  /* line 129, ../sass/local_section.scss */
+  .managedit .caption p {
+    max-width: 82% !important;
+  }
+}
+@media screen and (min-width: 60em) and (max-width: 80em) {
+  /* line 134, ../sass/local_section.scss */
+  #main .main_header_text {
+    top: 28%;
+  }
+
+  /* line 135, ../sass/local_section.scss */
+  #main .main_header_text .caption h2 {
+    font-size: 40px;
+  }
+
+  /* line 136, ../sass/local_section.scss */
+  .managedit .caption {
+    width: 50%;
+  }
+
+  /* line 137, ../sass/local_section.scss */
+  .managedit .caption p {
+    max-width: 82% !important;
+  }
+
+  /* line 138, ../sass/local_section.scss */
+  .managedit .caption h2 {
+    font-size: 40px;
+  }
+
+  /* line 139, ../sass/local_section.scss */
+  .layered_image {
+    top: 0;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 80.063em) and (max-width: 90em) {
+  /* line 143, ../sass/local_section.scss */
+  #main .main_header_text {
+    top: 28%;
+  }
+
+  /* line 144, ../sass/local_section.scss */
+  .managedit .caption {
+    width: 50%;
+  }
+
+  /* line 145, ../sass/local_section.scss */
+  .managedit .caption p {
+    max-width: 62% !important;
+  }
+
+  /* line 146, ../sass/local_section.scss */
+  .managedit .caption h2 {
+    font-size: 45px;
+  }
+
+  /* line 147, ../sass/local_section.scss */
+  .layered_image {
+    top: 0;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 47.5em) and (max-width: 65em) {
+  /* line 151, ../sass/local_section.scss */
+  .local .flex-caption {
+    left: 20px !important;
+    width: 50%;
+    top: 160px;
+  }
+}
+/****** Slider (Testimonials) ****************************/
+/* line 158, ../sass/local_section.scss */
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: 0 0 0 white !important;
+  -webkit-box-shadow: 0 0 0 white !important;
+  box-shadow: 0 0 0 white !important;
+  /*height:auto !important;*/
+}
+
+/* line 164, ../sass/local_section.scss */
+#small_testimonial_slider .bx-wrapper {
+  max-width: 100% !important;
+}
+
+/* line 165, ../sass/local_section.scss */
+#small_testimonial_slider .bx-wrapper .bx-viewport {
+  /*height:150px !important;*/
+}
+
+/* line 168, ../sass/local_section.scss */
+#small_testimonial_slider .slider-wrapper li {
+  width: 100%;
+}
+
+/* line 170, ../sass/local_section.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #8bc73f !important;
+}
+
+/* line 173, ../sass/local_section.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #e6e5e5 !important;
+}
+
+@media screen and (max-width: 40em) {
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+    }
+}
+
+/* line 176, ../sass/local_section.scss */
+.slider-wrapper li {
+  margin: 0;
+  min-height: 150px !important;
+}
+
+/* line 182, ../sass/local_section.scss */
+#small_testimonial_slider .bx-wrapper img,
+#large_testimonial_slider .bx-wrapper img,
+.large_testimonial_slider .bx-wrapper img {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 187, ../sass/local_section.scss */
+#large_testimonial_slider .bx-wrapper img,
+.large_testimonial_slider .bx-wrapper img {
+  padding: 15px 0;
+}
+
+/* line 190, ../sass/local_section.scss */
+.testimonial-quote h3 {
+    font-family: 'NewJuneFine', Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* line 196, ../sass/local_section.scss */
+#large_testimonial_slider .testimonial-quote h3 {
+  padding: 4% 0 0;
+}
+
+/* line 200, ../sass/local_section.scss */
+.testimonial-quote span {
+  display: block;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom:3%;
+}
+
+/* line 206, ../sass/local_section.scss */
+#small_testimonial_slider {
+  margin-left: 45px;
+}
+
+/* line 209, ../sass/local_section.scss */
+ul.bxslider_large {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 215, ../sass/local_section.scss */
+  #small_testimonial_slider {
+    margin: 0 2%;
+    width: 96%;
+  }
+
+  /* line 216, ../sass/local_section.scss */
+  .testimonial-quote h3 {
+    font-size: 16px;
+  }
+
+  /* line 217, ../sass/local_section.scss */
+  .testimonial-quote span {
+    font-size: 12px;
+  }
+
+  /* line 220, ../sass/local_section.scss */
+  #large_testimonial_slider .bx-wrapper img,
+  .large_testimonial_slider .bx-wrapper img img {
+    float: none;
+    margin: 0 auto;
+  }
+}
+/****** Our Approach ****************************/
+/* line 230, ../sass/local_section.scss */
+.our_approach {
+  margin: 0 auto;
+  padding: 0;
+  background: #008752;  
+  width: 100%;
+  position: relative;
+}
+
+/* line 241, ../sass/local_section.scss */
+.our_approach h2.headline {
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+/* line 246, ../sass/local_section.scss */
+.our_approach h3 span {
+  color: #d3e274;
+}
+
+/* line 250, ../sass/local_section.scss */
+.our_approach ul {
+  padding: 0 0 60px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 257, ../sass/local_section.scss */
+.our_approach ul li {
+  display: inline-block;
+  margin: 0;
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+/* line 263, ../sass/local_section.scss */
+.our_approach a {
+  display: block;
+}
+
+/* line 264, ../sass/local_section.scss 
+.our_approach .service_section {
+  display: block;
+}*/
+
+/****** what_we_offer ****************************/
+/* line 274, ../sass/local_section.scss */
+.what_we_offer {
+  margin: 0 auto;
+  padding: 0;
+  background: #F5F5F5; 
+  width: 100%;
+  position: relative;
+}
+
+/* line 285, ../sass/local_section.scss */
+.what_we_offer h2.headline {
+  color: #000000;
+  padding-top: 20px;
+}
+
+/* line 290, ../sass/local_section.scss */
+.what_we_offer h3 span {
+  color: #d3e274;
+}
+
+/* line 294, ../sass/local_section.scss */
+.what_we_offer_columns {
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+/* line 298, ../sass/local_section.scss */
+.what_we_offer_columns p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 305, ../sass/local_section.scss */
+  .what_we_offer_columns {
+    width: 96%;
+  }
+
+  /* line 306, ../sass/local_section.scss */
+  .what_we_offer_columns p {
+    font-size: 15px;
+  }
+}
+/****** How We Work ****************************/
+/* line 311, ../sass/local_section.scss */
+.how_work_wrapper {
+  background: white !important;
+  height: 695px;
+  padding-top: 90px;
+}
+
+/* line 316, ../sass/local_section.scss */
+.how_work {
+  margin: 0 auto;
+  padding: 0 0 10px;
+  width: 100%;
+}
+
+/* line 322, ../sass/local_section.scss */
+.how_work_wrapper h2.headline {
+  margin: 27px 0 90px;
+  line-height: 0;
+}
+
+/* line 326, ../sass/local_section.scss */
+.how_work_wrapper .grid_10 {
+  width: 46%;
+}
+
+/* line 329, ../sass/local_section.scss */
+.how_work_wrapper .grid_10.how_work_block {
+  margin-left: 40px;
+}
+
+/* line 333, ../sass/local_section.scss */
+.how_work p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 45px;
+}
+
+/* line 339, ../sass/local_section.scss */
+.how_work_block {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  left: 85px;
+}
+
+/* line 347, ../sass/local_section.scss */
+.how_work_block ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 353, ../sass/local_section.scss */
+.how_work_block ul li {
+  display: inline-block;
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+/* line 359, ../sass/local_section.scss */
+.how_work_block .grid_5 {
+  width: 42%;
+}
+
+/* line 363, ../sass/local_section.scss */
+.how_work_div {
+  background: #e6e5e5;
+  width: 237px;
+  height: 234px;
+  display: table;
+}
+
+/* line 370, ../sass/local_section.scss */
+.how_work_content {
+  color: #606060;
+  text-align: center;
+  width: 237px;
+  height: 234px;
+  display: table-cell;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 382, ../sass/local_section.scss */
+  .how_work_block ul {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 50em) {
+  /* line 385, ../sass/local_section.scss */
+  .how_work .grid_12 {
+    width: 98%;
+  }
+
+  /* line 386, ../sass/local_section.scss */
+  .how_work .grid_12.how_work_block {
+    width: 100%;
+  }
+
+  /* line 387, ../sass/local_section.scss */
+  .how_work_block .grid_5 {
+    width: 48%;
+  }
+
+  /* line 388, ../sass/local_section.scss */
+  .how_work h2.headline {
+    margin-bottom: 60px;
+  }
+
+  /* line 389, ../sass/local_section.scss */
+  .how_work p {
+    font-size: 16px;
+    margin: 0 2%;
+    width: 96%;
+  }
+
+  /* line 391, ../sass/local_section.scss */
+  .how_work_block {
+    left: 0;
+  }
+
+  /* line 393, ../sass/local_section.scss */
+  .how_work_div {
+    height: auto;
+    width: 100%;
+  }
+
+  /* line 394, ../sass/local_section.scss */
+  .how_work_content {
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  /* line 395, ../sass/local_section.scss */
+  .how_work_content h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 50.063em) and (max-width: 59.938em) {
+  /* line 398, ../sass/local_section.scss */
+  .how_work_wrapper h2.headline {
+    margin-bottom: 60px;
+  }
+
+  /* line 399, ../sass/local_section.scss */
+  .how_work_block .grid_5 {
+    width: 48%;
+  }
+
+  /* line 401, ../sass/local_section.scss */
+  .how_work_div {
+    height: auto;
+    width: 100%;
+  }
+
+  /* line 402, ../sass/local_section.scss */
+  .how_work_content {
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  /* line 403, ../sass/local_section.scss */
+  .how_work_content h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 60em) and (max-width: 82.75em) {
+  /* line 407, ../sass/local_section.scss */
+  .how_work_wrapper h2.headline {
+    margin-bottom: 60px;
+  }
+
+  /* line 408, ../sass/local_section.scss */
+  .how_work_block .grid_5 {
+    width: 48%;
+  }
+
+  /* line 410, ../sass/local_section.scss */
+  .how_work_div {
+    height: auto;
+    width: 100%;
+  }
+
+  /* line 411, ../sass/local_section.scss */
+  .how_work_content {
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  /* line 412, ../sass/local_section.scss */
+  .how_work_content h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 40em) {
+  /* line 418, ../sass/local_section.scss */
+  .services_sub_block ol span.left, .services_sub_block ol .experts .square_button span.left, .experts .square_button .services_sub_block ol span.left,
+  .services_sub_block ol span.right,
+  .services_sub_block ol .experts .square_button span.right,
+  .experts .square_button .services_sub_block ol span.right {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 423, ../sass/local_section.scss */
+  .services_sub_block ol li:before {
+    left: -72px;
+  }
+
+  /* line 424, ../sass/local_section.scss */
+  .services_sub_block ol li {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 50em) {
+  /* line 427, ../sass/local_section.scss */
+  .services_sub_block ol {
+    padding-left: 46px;
+  }
+
+  /* line 428, ../sass/local_section.scss */
+  .services_sub_block ol li {
+    font-size: 18px;
+  }
+}
+/*Number block*/
+/* line 435, ../sass/local_section.scss */
+ol.number_block {
+  counter-reset: numList;
+  display: block;
+  list-style: none outside none;
+  overflow: hidden;
+  padding: 0 2% 0;
+  width: 96%;
+}
+
+/* line 444, ../sass/local_section.scss */
+ol.number_block span.left, ol.number_block .experts .square_button span.left, .experts .square_button ol.number_block span.left {
+  display: block;
+  float: left;
+  width: 46%;
+  margin-right: 1%;
+  padding-right: 3%;
+}
+
+/* line 451, ../sass/local_section.scss */
+ol.number_block span.right, ol.number_block .experts .square_button span.right, .experts .square_button ol.number_block span.right {
+  display: block;
+  float: right;
+  width: 46%;
+  margin-left: 1%;
+  padding-left: 3%;
+}
+
+/* line 458, ../sass/local_section.scss */
+ol.number_block li {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-left: 73px;
+}
+
+/* line 465, ../sass/local_section.scss */
+ol.number_block li:before {
+  background: none repeat scroll 0 0 #000000;
+  border-radius: 999px;
+  color: #fff;
+  content: "0" counter(numList,decimal);
+  counter-increment: numList;
+  float: left;
+  font: bold 24px/63px 'NewJuneFine',Arial,Helvetica,sans-serif;
+  height: 63px;
+  left: -72px;
+  position: absolute;
+  text-align: center;
+  width: 63px;
+  behavior: url(/js/PIE.htc);
+}
+
+@media screen and (max-width: 40em) {
+  /* line 482, ../sass/local_section.scss */
+  ol.number_block {
+    width: 96%;
+    margin: 0 2%;
+    padding: 0;
+  }
+
+  /* line 484, ../sass/local_section.scss */
+  ol.number_block span.left, ol.number_block .experts .square_button span.left, .experts .square_button ol.number_block span.left,
+  ol.number_block span.right,
+  ol.number_block .experts .square_button span.right,
+  .experts .square_button ol.number_block span.right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 485, ../sass/local_section.scss */
+  ol.number_block li:before {
+    left: -50px;
+    width: 43px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+  }
+
+  /* line 486, ../sass/local_section.scss */
+  ol.number_block li {
+    margin: 0 0 0 53px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 55em) {
+  /* line 490, ../sass/local_section.scss */
+  ol.number_block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 492, ../sass/local_section.scss */
+  ol.number_block span.left, ol.number_block .experts .square_button span.left, .experts .square_button ol.number_block span.left,
+  ol.number_block span.right,
+  ol.number_block .experts .square_button span.right,
+  .experts .square_button ol.number_block span.right {
+    padding: 0;
+    width: 49%;
+  }
+
+  /* line 493, ../sass/local_section.scss */
+  ol.number_block li:before {
+    left: -50px;
+    width: 43px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+  }
+
+  /* line 494, ../sass/local_section.scss */
+  ol.number_block li {
+    margin: 0 0 0 53px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 55.063em) and (max-width: 65em) {
+  /* line 498, ../sass/local_section.scss */
+  ol.number_block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 500, ../sass/local_section.scss */
+  ol.number_block span.left, ol.number_block .experts .square_button span.left, .experts .square_button ol.number_block span.left,
+  ol.number_block span.right,
+  ol.number_block .experts .square_button span.right,
+  .experts .square_button ol.number_block span.right {
+    padding: 0;
+    width: 49%;
+  }
+
+  /* line 501, ../sass/local_section.scss */
+  ol.number_block li:before {
+    left: -60px;
+    width: 53px;
+    height: 53px;
+    font-size: 20px;
+    line-height: 53px;
+  }
+
+  /* line 502, ../sass/local_section.scss */
+  ol.number_block li {
+    margin: 0 0 0 63px;
+    font-size: 20px;
+  }
+}
+/*Managed IT SERVICES*/
+/****** Strategic Guidance ****************************/
+/* line 511, ../sass/local_section.scss */
+.strategic_guidance {
+  background: none repeat scroll 0 0 transparent;
+    height: 490px;
+    margin-top: -490px;
+    position: relative;
+}
+
+/*key strategies*/
+/* line 519, ../sass/local_section.scss */
+.our_story.national .key_strategies_block {
+  margin-top: 40px;
+}
+
+/* line 524, ../sass/local_section.scss */
+.key_strategies_block ol li {
+  /*National About */
+}
+/* line 528, ../sass/local_section.scss */
+.our_story.national .key_strategies_block ol li {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 533, ../sass/local_section.scss */
+  .our_story.national .key_strategies_block {
+    margin-top: 20px;
+  }
+
+  /* line 534, ../sass/local_section.scss */
+  .our_story.national .key_strategies_block ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 535, ../sass/local_section.scss */
+  .our_story.national .key_strategies_block ol li {
+    width: 90%;
+  }
+}
+/****** Certified Technicians ****************************/
+/* line 543, ../sass/local_section.scss */
+.certified_technicians_wrapper {
+  background: transparent;
+  position: relative;
+  margin-top: -550px;
+  height: 550px;
+}
+
+/* line 550, ../sass/local_section.scss */
+.certified_technicians {
+  padding-top: 230px;
+  position: relative;
+  margin-top: -600px;
+  height: 390px;
+}
+
+/****** Full Service Help Desk ****************************/
+/* line 560, ../sass/local_section.scss */
+.full_service_wrapper {
+  background: transparent;
+  position: relative;
+  margin-top: -550px;
+  height: 550px;
+}
+
+/* line 567, ../sass/local_section.scss */
+.full_service {
+  padding-top: 230px;
+  position: relative;
+  margin-top: -600px;
+  height: 390px;
+}
+
+/****** Network Operations Center (NOC) ****************************/
+/* line 579, ../sass/local_section.scss */
+.noc_wrapper {
+  background: transparent;
+  position: relative;
+  margin-top: -550px;
+  height: 550px;
+}
+
+/* line 586, ../sass/local_section.scss */
+.noc {
+  padding-top: 100px;
+  position: relative;
+  margin-top: -550px;
+  height: 480px;
+}
+
+/*All Managed IT Services*/
+@media screen and (max-width: 40em) {
+  /* line 595, ../sass/local_section.scss */
+  .how_work_wrapper {
+    padding-top: 40px;
+  }
+
+  /* line 596, ../sass/local_section.scss */
+  .it_service {
+    margin-top: -320px !important;
+    height: 320px !important;
+    padding: 0;
+  }
+
+  /* line 597, ../sass/local_section.scss */
+  .it_service .caption {
+    margin-top: 20px;
+  }
+
+  /* line 600, ../sass/local_section.scss */
+  .services_sub_content .it_service {
+    margin-top: 0 !important;
+    height: auto !important;
+  }
+}
+/****** How Can We Help You ****************************/
+/* line 609, ../sass/local_section.scss */
+.how_we_can_help_wrapper {
+  background: transparent;
+  position: relative;
+  margin-top: -550px;
+  height: 550px;
+}
+
+/* line 616, ../sass/local_section.scss */
+.how_we_can_help {
+  position: relative;
+  margin-top: -447px;
+  height: 447px;
+}
+
+/* line 622, ../sass/local_section.scss */
+.how_we_can_help_content {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* line 627, ../sass/local_section.scss */
+html.ie8 .how_we_can_help_content {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left repeat;
+  line-height: 1.65em;
+}
+
+/* line 631, ../sass/local_section.scss */
+html.ie9 .how_we_can_help_content {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left repeat;
+  line-height: 1.65em;
+}
+
+/* line 635, ../sass/local_section.scss */
+.how_we_can_help_content h2 {
+  color: #ffffff;
+  margin: 0 0;
+  padding: 10px;
+  width: 20%;
+  font-size: 4em;
+  text-transform: uppercase;
+  display: inline;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  line-height: 146%;
+}
+
+/* line 647, ../sass/local_section.scss */
+.how_we_can_help span.green {
+  color: #8BC83F;
+}
+
+/* line 651, ../sass/local_section.scss */
+.how_we_can_help p {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 2em;
+  padding: 10px;
+  font-family: 'NewJuneFine', Arial, Helvetica, sans-serif;
+  line-height: 110%;
+  margin: 3px 0 58px;
+  width: 43%;
+}
+
+/*Bottom header*/
+/* line 664, ../sass/local_section.scss */
+.how_we_can_help .bottom_header {
+  background: transparent;
+  border-top: none;
+  border-bottom: 6px solid transparent;
+  margin-top: 4px;
+}
+
+/* line 671, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12 {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  min-height: 140px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'NewJuneFine', Arial, Helvetica, sans-serif;
+  width: 49.65%;
+}
+
+/* line 683, ../sass/local_section.scss */
+html.ie8 .how_we_can_help .bottom_header .grid_12,
+html.ie9 .how_we_can_help .bottom_header .grid_12 {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left repeat;
+}
+
+/* line 687, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12.left_choice {
+  border-right: 4px solid transparent;
+  float: left;
+}
+
+/* line 692, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12.right_choice {
+  margin-left: 4px;
+  float: right;
+}
+
+/* line 697, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12 a {
+  font-size: 2em;
+  line-height: 120%;
+  font-weight: bold;
+  display: block;
+  margin-left: 50px;
+}
+
+/* line 705, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12 a img {
+  float: left;
+  margin-right: 20px;
+  width: 25%;
+}
+
+/* line 711, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12 a span {
+  width: 60%;
+  float: left;
+  margin-top: 40px;
+  color: #fff;
+}
+
+/* line 718, ../sass/local_section.scss */
+.how_we_can_help .bottom_header .grid_12 a:hover span {
+  text-decoration: underline;
+}
+
+/*styles for 640px*/
+@media screen and (max-width: 40em) {
+  /* line 724, ../sass/local_section.scss */
+  .how_we_can_help {
+    margin-top: -300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 40em) {
+  /* line 732, ../sass/local_section.scss */
+  .how_we_can_help_content {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  /* line 733, ../sass/local_section.scss */
+  .how_we_can_help_content h2 {
+    font-size: 18px;
+    padding: 0;
+    line-height: 200%;
+  }
+
+  /* line 735, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12.left_choice,
+  .how_we_can_help .bottom_header .grid_12.right_choice {
+    width: 98% !important;
+    margin: 0 1% 1%;
+    border: none;
+    padding: 15px 0;
+    min-height: inherit;
+  }
+
+  /* line 742, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a span {
+    margin-top: 20px;
+  }
+
+  /* line 743, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a img {
+    width: 15% !important;
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 750, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a span {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+}
+/*641px to 959px*/
+@media screen and (min-width: 40.063em) and (max-width: 59.938em) {
+  /* line 757, ../sass/local_section.scss */
+  .slider.managedit,
+  .slider.managedit .flexslider {
+    height: 800px !important;
+  }
+
+  /* line 758, ../sass/local_section.scss */
+  .flex-caption h2 {
+    font-size: 2.5em;
+    line-height: 175%;
+  }
+
+  /* line 759, ../sass/local_section.scss */
+  .slides figure.layered_image img {
+    width: 20%;
+    top: 205px;
+    right: 28%;
+  }
+
+  /* line 760, ../sass/local_section.scss */
+  .flex-caption {
+    left: 20px;
+    top: 22%;
+    width: 60%;
+  }
+
+  /* line 761, ../sass/local_section.scss */
+  .flex-caption p {
+    width: 65%;
+    font-size: 1.5em;
+  }
+
+  /* line 763, ../sass/local_section.scss */
+  .our_approach ul li {
+    width: 26%;
+  }
+
+  /* line 766, ../sass/local_section.scss */
+  #small_testimonial_slider,
+  .how_work p {
+    margin-left: 0;
+  }
+
+  /* line 772, ../sass/local_section.scss */
+  .certified_technicians_content p,
+  .full_service_content p,
+  .strategic_guidance_content p {
+    width: 50%;
+  }
+
+  /* line 773, ../sass/local_section.scss */
+  .noc_content p {
+    width: 55%;
+  }
+
+  /* line 775, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 {
+    width: 49.25%;
+  }
+
+  /* line 776, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a span {
+    margin-top: 4%;
+  }
+
+  /* line 777, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a {
+    line-height: 130%;
+    font-size: 1.5em;
+  }
+
+  /* line 779, ../sass/local_section.scss */
+  .how_work_wrapper {
+    top: -260px;
+    padding: 70px 0;
+    height: auto;
+  }
+
+  /* line 780, ../sass/local_section.scss */
+  .how_work_wrapper .grid_12 {
+    width: 55%;
+    left: 0px;
+  }
+
+  /* line 781, ../sass/local_section.scss */
+  .how_work_wrapper .grid_12.how_work_block {
+    width: 43%;
+  }
+
+  	/*.how_work_block .grid_5 {width:48%;}
+  	.how_work_div:nth-child(odd) {border-right:5px solid #fff;}
+  	.how_work_div {width:auto;}
+  	.how_work_div h3, .testimonial-quote h3, .how_work p  {font-size:16px;}
+  */
+  /* line 787, ../sass/local_section.scss */
+  .noc_content {
+    top: -80px;
+    position: relative;
+  }
+
+  /* line 789, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a img {
+    width: 20% !important;
+  }
+
+  /*.our_approach_wrapper {top:-260px;position:relative;}*/
+}
+@media screen and (min-width: 40.063em) and (max-width: 65em) {
+  /* line 796, ../sass/local_section.scss */
+  .how_we_can_help {
+    margin-top: -430px;
+    height: 430px;
+  }
+
+  /* line 797, ../sass/local_section.scss */
+  .how_we_can_help_content {
+    margin-top: 50px;
+  }
+}
+/*960px to 1079px*/
+@media screen and (min-width: 60em) and (max-width: 67.438em) {
+  /* line 803, ../sass/local_section.scss */
+  .slider.managedit {
+    height: 700px !important;
+  }
+
+  /* line 804, ../sass/local_section.scss */
+  .slides figure.layered_image img {
+    width: 30%;
+    top: 195px;
+    right: 21%;
+  }
+
+  /*.flex-caption {left:20%!important;}*/
+  /* line 806, ../sass/local_section.scss */
+  .national .slider .flex-caption {
+    left: 30px !important;
+    top: 22%;
+    width: 60%;
+  }
+
+  /* line 807, ../sass/local_section.scss */
+  .flex-caption p {
+    width: 80%;
+  }
+
+  /* line 810, ../sass/local_section.scss */
+  #small_testimonial_slider,
+  .how_work p {
+    margin-left: 0;
+  }
+
+  /* line 814, ../sass/local_section.scss */
+  .certified_technicians_content p,
+  .full_service_content p,
+  .strategic_guidance_content p {
+    width: 50%;
+  }
+
+  /* line 815, ../sass/local_section.scss */
+  .noc_content p {
+    width: 55%;
+  }
+
+  /* line 817, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 {
+    width: 49.5%;
+  }
+
+  /* line 818, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a span {
+    margin-top: 4%;
+  }
+
+  /* line 819, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a {
+    line-height: 130%;
+    font-size: 1.75em;
+  }
+
+  /* line 822, ../sass/local_section.scss */
+  .how_work_wrapper .grid_12 {
+    width: 45%;
+    left: 70px;
+  }
+
+  /*.how_work_block .grid_5 {width:48%;}
+  .how_work_div:nth-child(odd) {border-right:5px solid #fff;}
+  .how_work_div {width:auto;}*/
+  /*.our_approach_wrapper {position:relative; top:-300px;}*/
+  /* line 829, ../sass/local_section.scss */
+  .noc_content {
+    top: -80px;
+    position: relative;
+  }
+
+  /* line 831, ../sass/local_section.scss */
+  key_strategies_wrapper.local {
+    position: relative;
+    top: -490px;
+    height: 490px !important;
+  }
+}
+/*one with pixels too! */
+/* NOTE - if the user were to increase his browser font size to 20px (chrome: Large), 
+			the above (68.75em) media query will be incorrectly ignored!!!
+			
+			Assuming 20px browser setting, we would expect to see this progression:
+			yellow > green > red > blue > NAVY > orange
+			
+			However, the orange never kicks in... which seems like a browser bug!
+			Here's the math (assuming 20px browser setting):
+			1200/20 = 60em     <     68.75em
+*/
+/*1080px to 1324px*/
+@media screen and (min-width: 67.5em) and (max-width: 82.75em) {
+  /* line 848, ../sass/local_section.scss */
+  .slides figure.layered_image img {
+    width: 40%;
+    top: 195px;
+    right: 160px;
+  }
+
+  /*.flex-caption {left: 150px;}*/
+  /* line 851, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 {
+    width: 49.5%;
+  }
+
+  /* line 853, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a span {
+    margin-top: 4%;
+  }
+
+  /* line 854, ../sass/local_section.scss */
+  .how_we_can_help .bottom_header .grid_12 a {
+    line-height: 130%;
+  }
+
+  /* line 856, ../sass/local_section.scss */
+  .how_work_wrapper .grid_12 {
+    width: 45%;
+    left: 70px;
+  }
+
+  /*.how_work_block .grid_5 {width:48%;}
+  .how_work_div:nth-child(odd) {border-right:5px solid #fff;}
+  .how_work_div {width:auto;}*/
+}
+/*min 1325px*/
+/*IT SOLUTIONS
+*************************************/
+/* line 871, ../sass/local_section.scss */
+.our_solutions_wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* line 873, ../sass/local_section.scss */
+.solutions_details_content_nonparallax {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* line 875, ../sass/local_section.scss */
+.it_solutions {
+  background: transparent;
+  position: relative;
+  margin-top: -440px;
+  height: 434px;
+}
+
+/* line 882, ../sass/local_section.scss */
+.it_solutions_content p {
+  width: 375px;
+}
+
+/*How We Work*/
+/* line 886, ../sass/local_section.scss */
+.it_how_work_wrapper {
+  background: #008752;
+  color: #fff;
+}
+
+/* line 891, ../sass/local_section.scss */
+.it_how_we_work {
+  padding: 40px 0 70px;
+}
+
+/* line 895, ../sass/local_section.scss */
+.it_how_work_wrapper .container_24 .push_1 {
+  left: 3.167%;
+}
+
+/* line 900, ../sass/local_section.scss */
+.it_how_work_wrapper .grid_10,
+.it_how_work_wrapper .grid_11 {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+/* line 906, ../sass/local_section.scss */
+.it_how_work_wrapper .grid_11 strong {
+  font-weight: 700;
+}
+
+/* line 910, ../sass/local_section.scss */
+.it_how_we_work ol {
+  margin: 20px 0 0;
+  padding: 0 0 20px;
+  list-style: none;
+}
+
+/* line 916, ../sass/local_section.scss */
+.it_how_we_work ol li {
+  padding: 0 0 40px 90px;
+  margin-left: 0;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 922, ../sass/local_section.scss */
+.it_how_we_work ol li.one {
+  background: url(../images/ol_list_01_white.png) top left no-repeat;
+}
+
+/* line 925, ../sass/local_section.scss */
+.it_how_we_work ol li.two {
+  background: url(../images/ol_list_02_white.png) top left no-repeat;
+}
+
+/*Our Solutions*/
+/* line 929, ../sass/local_section.scss */
+.it_our_solutions {
+  background: #fff;
+  padding: 40px 0 90px;
+}
+
+/* line 933, ../sass/local_section.scss */
+.it_our_solutions p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 937, ../sass/local_section.scss */
+.it_our_solutions img {
+  max-width: 480px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 944, ../sass/local_section.scss */
+.it_our_solutions .solutions_details_header img {
+  max-width: none;
+  width: auto;
+  margin: 0;
+  display: inline;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 951, ../sass/local_section.scss */
+  .our_solutions_wrapper .container_24 .grid_24 {
+    width: 96% !important;
+    margin: 0 2%;
+    padding: 0;
+  }
+
+  /* line 952, ../sass/local_section.scss */
+  .our_solutions_wrapper .container_24 .grid_24 .grid_10 {
+    padding: 0;    
+    margin: 10px 0;
+    width:100%;
+  }
+
+  /* line 954, ../sass/local_section.scss */
+  .it_how_we_work .grid_12 {
+    width: 96% !important; 
+    padding: 0 2% !important;
+  }
+
+  /* line 956, ../sass/local_section.scss */
+  it_how_we_work.it_our_solutions .row .grid_10 {
+    width: 96% !important;
+    margin: 0 2% 20px !important;
+    padding: 0 !important;
+  }
+
+  /* line 962, ../sass/local_section.scss */
+  .it_our_solutions p,
+  .it_how_we_work ol li {
+    font-size: 16px;
+  }
+
+  /* line 963, ../sass/local_section.scss */
+  .it_our_solutions .sub_headline {
+    font-size: 24px;
+  }
+
+  /* line 964, ../sass/local_section.scss */
+  .divider.full_width {
+    display: none;
+  }
+
+  /* line 966, ../sass/local_section.scss */
+  .it_solutions_content p {
+    width: auto;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 60em) {
+  /* line 972, ../sass/local_section.scss */
+  .it_our_solutions .row .grid_10 {
+    width: 47%;
+    margin: 0 1%;
+    padding: 0;
+  }
+
+  /* line 973, ../sass/local_section.scss */
+  .it_our_solutions .row .grid_10.suffix_2 {
+    padding-right: 1%;
+  }
+
+  /* line 974, ../sass/local_section.scss */
+  .it_our_solutions .row .grid_10.prefix_2 {
+    padding-left: 1%;
+  }
+
+  /* line 976, ../sass/local_section.scss */
+  .it_our_solutions .sub_headline {
+    font-size: 24px;
+  }
+
+  /* line 977, ../sass/local_section.scss */
+  .it_our_solutions p {
+    font-size: 18px;
+  }
+}
+/*Complete Solutions*/
+/* line 982, ../sass/local_section.scss */
+.it_complete_solutions {
+  background: #f0f0f0;
+  padding: 40px 0 90px;
+}
+
+/* line 987, ../sass/local_section.scss */
+.it_complete_solutions p {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.it_complete_solutions .complete_grid .grid_6 {
+    background: #000 none repeat scroll 0 0;
+    display: table;
+    height: 292px;
+    margin: 0 0.25% 0.25% 0;
+    max-width: 271px;
+    padding: 0 10px;
+    text-align: center;
+	width:23%;
+	float:left;
+	position:relative;
+	 -webkit-transition: all 0.2s ease-in-out; 
+    -moz-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+.it_complete_solutions .complete_grid .grid_6:hover{ 
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scaled(1.1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand')";
+	
+	background:#ffffff;
+	z-index:100;
+}
+
+
+.complete_solutions_content {
+	display: table-cell;
+	vertical-align: middle;
+}
+.complete_solutions_content img {
+	position: relative;
+	top:-10px;
+}
+.it_complete_solutions .complete_grid .grid_6:hover .complete_solutions_content img{
+	display:none;
+}
+
+.complete_solutions_content span {
+	color:#fff;
+	text-transform: uppercase;
+	font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+	width:165px;
+	text-align: center;
+	display: block;
+	margin: 5px auto 10px;
+	font-size: 18px;
+}
+.complete_grid .grid_6:hover .complete_solutions_content span{
+	 font-size:18px;
+	 color:#000;
+}
+
+.complete_grid{margin:0 auto;display:block;float:left;width:100%;}
+
+
+.complete_solutions_content p,
+.complete_solutions_content .square_button{
+	display:none;
+	font-size:14px;
+	padding:0 10px;
+}
+
+.complete_grid .grid_6:hover .complete_solutions_content p,
+.complete_grid .grid_6:hover .complete_solutions_content .square_button{
+	display:block;
+}
+
+
+.complete_solutions_content .square_button{
+	background:none;
+}
+.complete_solutions_content .square_button a{
+	background: #008752 none repeat scroll 0 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 14px 16px ;
+}
+.complete_solutions_content .square_button a:hover{
+	background: #00643d none repeat scroll 0 0;
+}
+
+
+@media screen and (max-width: 30em) {
+  /* line 1035, ../sass/local_section.scss */
+  .complete_grid {
+    margin: 0 2%;
+    display: block;
+    float: left;
+    width: 96%;
+  }
+
+  /* line 1036, ../sass/local_section.scss */
+  .it_complete_solutions .complete_grid .grid_6 {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2% 0;
+    max-width: none;
+    height: 272px;
+  }
+
+  /* line 1038, ../sass/local_section.scss */
+  .it_our_solutions {
+    padding: 0 0 20px;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 50em) {
+  /* line 1042, ../sass/local_section.scss */
+  .complete_grid {
+    margin: 0 1%;
+    display: block;
+    float: left;
+    width: 98%;
+  }
+
+  /* line 1043, ../sass/local_section.scss */
+  .it_complete_solutions .complete_grid .grid_6 {
+    width: 48%;
+    padding: 0;
+    margin: 0 1% 2%;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 50.063em) and (max-width: 59.963em) {
+  /* line 1046, ../sass/local_section.scss */
+  .complete_grid {
+    margin: 0 0.25%;
+    display: block;
+    float: left;
+    width: 99.5%;
+  }
+
+  /* line 1047, ../sass/local_section.scss */
+  .it_complete_solutions .complete_grid .grid_6 {
+    width: 24.5%;
+    padding: 0;
+    margin: 0 0.25% 0.5%;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 60em) and (max-width: 73.75em) {
+  /* line 1050, ../sass/local_section.scss */
+  .complete_grid {
+    margin: 0 0.25%;
+    display: block;
+    float: left;
+    width: 99.5%;
+  }
+
+  /* line 1051, ../sass/local_section.scss */
+  .it_complete_solutions .complete_grid .grid_6 {
+    width: 24.5%;
+    padding: 0;
+    margin: 0 0.25% 0.5%;
+    max-width: none;
+  }
+}
+/*Let's Connect*/
+/* line 1057, ../sass/local_section.scss */
+.request_call_container {
+  display: table;
+  position: relative;
+  background: transparent;
+  height: 370px;
+  margin-top: 55px;
+}
+
+/* line 1064, ../sass/local_section.scss */
+.request_call_content {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 1071, ../sass/local_section.scss */
+.request_call_content a.square_button {
+  margin-bottom: 30px;
+}
+
+/* line 1074, ../sass/local_section.scss */
+.request_call_content .headline {
+  font-family: 'NewJuneFine', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+/* line 1081, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav {
+  width: 100%;
+}
+
+/* line 1085, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav li a {
+  padding: 28px 15px !important;
+}
+
+/* line 1089, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav li#more_drop {
+  background: url(../images/more_drop_down.png) no-repeat scroll 100% 48.5%;
+  padding-right: 15px;
+  margin-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 1097, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav li#more_drop a:hover {
+  background: transparent;
+  color: #018754;
+}
+
+/* line 1102, ../sass/local_section.scss */
+ul.more_dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* dropdown left or right */
+  z-index: 100;
+  display: none;
+  min-width: 150px;
+  width: auto !important;
+  list-style: none;
+  padding: 0 0 10px;
+  margin: 0;
+  text-align: left;
+  background: #f1f1f1;
+}
+
+/* line 1117, ../sass/local_section.scss */
+ul.more_dropdown li {
+  padding: 0;
+}
+
+/* line 1121, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav ul.more_dropdown li {
+  padding: 0 !important;
+  line-height: 20px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/* line 1127, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav ul.more_dropdown li a {
+  line-height: 20px !important;
+  padding: 0 !important;
+  font-size: 16px;
+}
+
+/*sub menu*/
+/* line 1134, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav li ul.more_dropdown {
+  display: none;
+}
+
+/* line 1137, ../sass/local_section.scss */
+.bottom_subnav ul.it_solutions_subnav li#more_drop:hover ul.more_dropdown {
+  /*display:block;*/
+}
+
+@media screen and (max-width: 59.938em) {
+  /* line 1142, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li#more_drop {
+    background-image: none;
+  }
+
+  /* line 1143, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li ul.more_dropdown {
+    width: 100% !important;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* line 1150, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav ul.more_dropdown li {
+    border-bottom: none;
+  }
+
+  /* line 1153, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav ul.more_dropdown li a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 60em) and (max-width: 70em) {
+  /* line 1157, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 1158, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none;
+  }
+
+  /* line 1159, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li a {
+    padding: 28px 12px !important;
+  }
+
+  /* line 1160, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li#more_drop {
+    margin-left: 0;
+  }
+
+  /* line 1161, ../sass/local_section.scss */
+  .bottom_subnav ul.it_solutions_subnav li ul.more_dropdown {
+    left: auto;
+    right: 0;
+  }
+}
+/* IT SOLUTIONS DETAILS*/
+/* line 1169, ../sass/local_section.scss */
+.request_call {
+  margin-top: 50px;
+}
+
+/* line 1173, ../sass/local_section.scss */
+.request_call img {
+  position: relative;
+  left: -10px;
+}
+
+/* line 1178, ../sass/local_section.scss */
+.solutions_details_content h2.headline {
+  font-size: 50px;
+  line-height: 65px;
+  margin-top: 0;
+}
+
+/* line 1184, ../sass/local_section.scss */
+.solutions_details_content h2.sub_headline {
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* line 1190, ../sass/local_section.scss */
+.solutions_details_content p {
+  font-size: 18px;
+}
+
+/* line 1193, ../sass/local_section.scss */
+.solutions_details_content {
+  padding: 32px 0;
+}
+
+/* line 1196, ../sass/local_section.scss */
+.solutions_details_content img {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* line 1200, ../sass/local_section.scss */
+.solutions_details_header .grid_10 .square_button {
+  margin: 50px 1% 20px;
+}
+
+/* line 1202, ../sass/local_section.scss */
+.solutions_details_content_parallax {
+  background: #f5f5f5;
+  position: relative;
+  margin-top: -590px;
+  height: 850px;
+  padding: 48px 0 22px;
+}
+
+/* line 1210, ../sass/local_section.scss */
+.solutions_related_case_studies {
+  position: relative;
+  background: #fff;
+  height: 530px;
+  margin: 0 0 115px 0;
+}
+
+@media screen and (max-width: 45em) {
+  /* line 1219, ../sass/local_section.scss */
+  .solutions_details_header {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  /* line 1220, ../sass/local_section.scss */
+  .solutions_details_header .grid_10 {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* line 1221, ../sass/local_section.scss */
+  .solutions_details_header .grid_10 .square_button {
+    margin: 25px 1% 20px;
+  }
+
+  /* line 1222, ../sass/local_section.scss */
+  .solutions_details_header .grid_10 .square_button a {
+    font-size: 16px;
+    padding: 17px 18px;
+  }
+
+  /* line 1225, ../sass/local_section.scss */
+  .solutions_details_content_parallax,
+  .solutions_details_content_nonparallax {
+    padding-top: 0;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+
+  /* line 1228, ../sass/local_section.scss */
+  .solutions-parallax-div {
+    height: auto !important;
+  }
+
+  /* line 1230, ../sass/local_section.scss */
+  .solutions_details_content {
+    display: block;
+    float: left;
+    margin: 0 2%;
+    padding: 0;
+    width: 96%;
+  }
+
+  /* line 1238, ../sass/local_section.scss */
+  .solutions_details_content .grid_10,
+  .solutions_details_content .grid_12 {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 1240, ../sass/local_section.scss */
+  .solutions_details_content img {
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+
+  /* line 1242, ../sass/local_section.scss */
+  .solutions_details_content h2.headline {
+    font-size: 30px;
+    line-height: normal;
+    padding: 0;
+  }
+
+  /* line 1247, ../sass/local_section.scss */
+  .solutions_details_content h2.sub_headline {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  /* line 1248, ../sass/local_section.scss */
+  .solutions_details_content p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 45.063em) and (max-width: 65em) {
+  /* line 1252, ../sass/local_section.scss */
+  .solutions_details_header .grid_10 .square_button {
+    margin: 25px 1% 20px;
+  }
+
+  .solutions_details_content_parallax,
+  .solutions_details_content_nonparallax {
+        padding-top: 0;
+        height: 100%;
+        display: block;
+        float: left;
+        padding: 20px 0;
+        margin-top: 0;
+    }
+
+  /* line 1253, ../sass/local_section.scss */
+  .solutions_details_header .grid_10 .square_button a {
+    font-size: 16px;
+    padding: 17px 18px;
+  }
+
+  .solutions_related_case_studies {
+      margin-bottom:15px;
+  } 
+
+  /* line 1255, ../sass/local_section.scss */
+  .solutions_details_content h2.headline {
+    font-size: 35px;
+    line-height: normal;
+    padding: 0;
+  }
+}
+/* line 1261, ../sass/local_section.scss */
+.case_studies_block .bx-wrapper img {
+  vertical-align: middle;
+  width: 64px;
+  max-width: 64px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 1270, ../sass/local_section.scss */
+.case_studies_block #slider-prev a,
+.case_studies_block #slider-next a {
+  color: #000;
+}
+
+.solutions_related_case_studies {    
+    margin-bottom:15px;
+} 
+
+/* line 1274, ../sass/local_section.scss */
+.case_studies_block .bx-wrapper .bx-controls-direction a {
+  width: 65px;
+  height: 65px;
+  margin-top: -32px;
+}
+
+/* line 1280, ../sass/local_section.scss */
+.case_studies_block .bx-wrapper .bx-prev {
+  left: -80px;
+  background: url(/images/controls_green.png) no-repeat 0 -65px;
+}
+
+/* line 1285, ../sass/local_section.scss */
+.case_studies_block .bx-wrapper .bx-next {
+  right: -80px;
+  background: url(/images/controls_green.png) no-repeat -65px -65px;
+}
+
+@media screen and (max-width: 64em) {
+
+.case_studies_block .bx-wrapper .bx-prev
+{ left: 0px; top: 340px; }
+
+.case_studies_block .bx-wrapper .bx-next
+{ right: 0; top: 340px; }
+
+}
+
+/* line 1290, ../sass/local_section.scss */
+.case_studies_block .bx-wrapper .bx-pager.bx-default-pager a:hover, .case_studies_block .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #008752 !important;
+}
+
+/*CASE STUDIES INDEX
+*************************************/
+/* line 1296, ../sass/local_section.scss */
+.case_studies_index {
+  position: relative;
+  background: transparent;
+  margin-top: -475px;
+  height: 475px;
+}
+
+/* line 1304, ../sass/local_section.scss */
+.case_studies_index .caption p,
+.case_studies_details .caption p {
+  width: 30%;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 1309, ../sass/local_section.scss */
+  .case_studies_index .caption p, .case_studies_details .caption p {
+    width: 90%;
+  }
+}
+/*JOBS INDEX
+*************************************/
+/* line 1314, ../sass/local_section.scss */
+#job_apply_form {
+  display: none;
+}
+
+/* line 1317, ../sass/local_section.scss */
+.jobs_index {
+  background: transparent;
+  position: relative;
+  margin-top: -445px;
+  height: 445px;
+}
+
+/* line 1324, ../sass/local_section.scss */
+.jobs_index_content.caption p {
+  width: 461px;
+}
+
+/* line 1328, ../sass/local_section.scss */
+.jobs_join_us {
+  background: #202326;
+  padding: 70px 0 100px;
+  margin-top: -5px;
+}
+
+/* line 1334, ../sass/local_section.scss */
+.jobs_join_us p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 35px;
+}
+
+/* line 1341, ../sass/local_section.scss */
+.jobs_join_us .box_block {
+  margin-top: 115px;
+}
+
+/* line 1348, ../sass/local_section.scss */
+.search_careers_box,
+.view_profiles_box {
+  display: block;
+  /*background: #008752;
+  width:237px;
+  height: 235px;*/
+  color: #fff;
+  float: left;
+  padding: 0;
+  width: 46%;
+  margin: 0 2%;
+}
+
+/* line 1360, ../sass/local_section.scss */
+.search_careers_box {
+  /*margin-right: 8px;*/
+}
+
+/* line 1365, ../sass/local_section.scss */
+.search_careers_box .headline,
+.view_profiles_box .headline {
+  color: #fff;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 1373, ../sass/local_section.scss */
+.search_careers_box .centered,
+.view_profiles_box .centered {
+  /*display: table-cell;
+  vertical-align: middle;
+  text-align: center;*/
+}
+
+/* line 1379, ../sass/local_section.scss */
+.search_careers_box .centered a,
+.view_profiles_box .centered a {
+  padding: 50px 0;
+  background: #008752;
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 1389, ../sass/local_section.scss */
+.search_careers_box .centered a:hover,
+.view_profiles_box .centered a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 50em) and (max-width: 67.5em) {
+  /* line 1394, ../sass/local_section.scss */
+  .search_careers_box .headline, .view_profiles_box .headline {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 47.5em) {
+  /* line 1399, ../sass/local_section.scss */
+  .jobs_join_us .grid_12,
+  .jobs_join_us .box_block {
+    width: 98%;
+    left: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 1403, ../sass/local_section.scss */
+  .search_careers_box .headline, .view_profiles_box .headline {
+    font-size: 13px;
+  }
+}
+/*SEARCH*/
+/* line 1407, ../sass/local_section.scss */
+.search_careers {
+  background: #f1f1f1;
+  padding: 5px 0 8px;
+  /*padding: 75px 0 80px;*/
+  border-bottom: 8px solid #fff;
+}
+
+/* line 1413, ../sass/local_section.scss */
+.job_search {
+  background: #fff;
+}
+
+/* Form wrapper styling */
+/* line 1417, ../sass/local_section.scss */
+#job_search_form {
+  width: 100%;
+}
+
+/* line 1421, ../sass/local_section.scss */
+#job_search_form .key_word,
+#job_search_form .location {
+  width: 33.5%;
+  position: relative;
+  float: left;
+}
+
+/*#job_search_form fieldset{width:auto;}*/
+/* line 1428, ../sass/local_section.scss */
+#job_search_form .key_word {
+  margin-right: 50px;
+}
+
+/* Form text input */
+/* line 1435, ../sass/local_section.scss */
+#job_search_form .key_word input,
+#job_search_form .location input {
+  height: 20px;
+  border: 0;
+  background: #fff;
+  padding: 3% 4%;
+  width: 90.5%;
+  border: 3px solid #000;
+  outline: none;
+}
+
+/* Form submit button */
+/* line 1448, ../sass/local_section.scss */
+#job_search_form button.button_keyword,
+#job_search_form button.button_location {
+  overflow: visible;
+  position: absolute;
+  background: url(../images/search_magnify.png) right center no-repeat transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 27px;
+  width: 40px;
+  right: 3%;
+  top: 15%;
+  float: right;
+  outline: none;
+}
+
+/* line 1462, ../sass/local_section.scss */
+#job_search_form button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+
+/* line 1467, ../sass/local_section.scss */
+#job_search_form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 1473, ../sass/local_section.scss */
+#job_search_form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 1479, ../sass/local_section.scss */
+#job_search_form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 1485, ../sass/local_section.scss */
+#job_search_form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/*JOB LISTINGS*/
+/* line 1493, ../sass/local_section.scss */
+.jobs_table {
+  width: 100%;
+}
+
+/* line 1494, ../sass/local_section.scss */
+.jobs_table thead {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 1499, ../sass/local_section.scss */
+.jobs_table thead tr {
+  padding: 0;
+  display: table-row;
+}
+
+/* line 1500, ../sass/local_section.scss */
+.jobs_table thead th {
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: left;
+  padding: 2% 0;
+  display: table-cell;
+}
+
+/* line 1510, ../sass/local_section.scss */
+.jobs_table thead th h3 {
+  border-left: 1px solid #e5e5e5;
+  padding: 10px 0 10px 20px;
+  margin: 0;
+}
+
+/* line 1516, ../sass/local_section.scss */
+.jobs_table thead th:first-child {
+  padding-left: 20px;
+  width: 40%;
+}
+
+/* line 1517, ../sass/local_section.scss */
+.jobs_table thead th.job_field {
+  width: 20%;
+}
+
+/* line 1518, ../sass/local_section.scss */
+.jobs_table thead th:first-child h3 {
+  border-left: 0;
+  padding-left: 0;
+}
+
+/* line 1519, ../sass/local_section.scss */
+.jobs_table thead th.active {
+  color: #008752;
+}
+
+/*tbody*/
+/* line 1525, ../sass/local_section.scss */
+.jobs_table tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 1526, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content:hover {
+  cursor: pointer;
+  color: #008752;
+}
+
+/* line 1527, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content td {
+  padding: 1.5%;
+  min-height: 30px;
+  line-height: 200%;
+  font-size: 17px;
+}
+
+/* line 1533, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content td:first-child {
+  font-size: 18px;
+}
+
+/* line 1534, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content td:first-child span.jobs-arrow {
+  background: url("../images/arrowleftarrowdown.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+  display: block;
+  float: left;
+  height: 30px;
+  margin: 5px 10px 5px 0;
+  width: 30px;
+}
+
+/*Expanded*/
+/* line 1544, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content.expanded {
+  border-bottom: 0;
+}
+
+/* line 1545, ../sass/local_section.scss */
+.jobs_table tbody tr.expanded {
+  background: #F1F1F1;
+}
+
+/* line 1546, ../sass/local_section.scss */
+.jobs_table tbody tr.expanded td:first-child span.jobs-arrow {
+  background-position: 0 -30px;
+}
+
+/* line 1550, ../sass/local_section.scss */
+.jobs_table tbody tr.acc_content.expanded td {
+  color: green;
+}
+
+/* line 1552, ../sass/local_section.scss */
+.jobs_table .acc_content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+/* line 1557, ../sass/local_section.scss */
+.jobs_table tr td.job_details_content {
+  width: 60%;
+  padding: 0 2% 50px;
+  vertical-align: top;
+}
+
+/* line 1562, ../sass/local_section.scss */
+.jobs_table tr td.job_details_content h3 {
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 1569, ../sass/local_section.scss */
+.jobs_table tr td.job_details_content p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 1573, ../sass/local_section.scss */
+.jobs_table tr td.job_details_content ul {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+/* line 1574, ../sass/local_section.scss */
+.jobs_table tr td.job_details_content ul li {
+  font-size: 18px;
+}
+
+/* line 1576, ../sass/local_section.scss */
+.jobs_table tr td.details_meta {
+  width: 40%;
+  vertical-align: top;
+  padding: 30px 0 0;
+}
+
+/* line 1577, ../sass/local_section.scss */
+.jobs_table tr td.details_meta img {
+  border: 5px solid #ffffff;
+  width: 97%;
+  max-width: 312px;
+}
+
+/* line 1578, ../sass/local_section.scss */
+.jobs_table tr td.details_meta h3 {
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 1585, ../sass/local_section.scss */
+.jobs_table tr td.details_meta p,
+.jobs_table tr td.details_meta ul {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 1589, ../sass/local_section.scss */
+.jobs_table tr td.details_meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1594, ../sass/local_section.scss */
+.jobs_table tr td.details_meta ul li {
+  margin: 0;
+}
+
+/* line 1598, ../sass/local_section.scss */
+.jobs_table tbody tr.expanded li.telephone {
+  background: transparent url(../images/small_black_phone_icon.png) left center no-repeat;
+  padding-left: 15px;
+}
+
+/* line 1603, ../sass/local_section.scss */
+.jobs_table tbody tr.expanded li.mobile {
+  background: transparent url(../images/small_black_mobile_icon.png) left center no-repeat;
+  padding-left: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 1612, ../sass/local_section.scss */
+.job_search .pagination {
+  /*margin: 85px auto;*/ /* changed as part of the TL enhancements- May 2015 */
+  margin: 15px auto;
+  width: 100%;
+  display: table;
+}
+
+/* line 1618, ../sass/local_section.scss */
+.job_search .pagination .previous {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 1626, ../sass/local_section.scss */
+.job_search .pagination .next {
+  float: right;
+  vertical-align: middle;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 1635, ../sass/local_section.scss */
+.job_search .pagination .page_numbers {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 1641, ../sass/local_section.scss */
+.job_search .pagination .page_number {
+  font-size: 23px;
+  font-family: 'NewJuneFine', Arial, Helvetica, sans-serif;
+}
+
+/* line 1647, ../sass/local_section.scss */
+.job_search .pagination .page_number a {
+  background: transparent;
+  color: #000;
+  width: 33px;
+  border-radius: 33px;
+  border: 13px solid transparent;
+  text-decoration: none;
+}
+
+/* line 1656, ../sass/local_section.scss */
+.job_search .pagination .page_number a:hover {
+  background: #008752;
+  color: #fff;
+  width: 33px;
+  border-radius: 33px;
+  border: 13px solid #008752;
+  text-decoration: none;
+}
+
+/* line 1665, ../sass/local_section.scss */
+.job_search .pagination .current {
+  background: #008752;
+  color: #fff;
+  width: 33px;
+  border-radius: 33px;
+  border: 13px solid #008752;
+  margin-right: 13px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 1676, ../sass/local_section.scss */
+  .jobs_join_us {
+    margin-top: 0;
+    padding: 0 0 30px;
+  }
+
+  /* line 1677, ../sass/local_section.scss */
+  .jobs_join_us .box_block {
+    margin-top: 0;
+  }
+
+  /* line 1679, ../sass/local_section.scss */
+  .search_careers {
+    padding: 0 0 50px;
+  }
+
+  /* line 1682, ../sass/local_section.scss */
+  #job_search_form .key_word,
+  #job_search_form .location {
+    width: 96%;
+    padding: 0 2%;
+    margin: 0;
+  }
+
+  /*job search results table*/
+  /* line 1688, ../sass/local_section.scss */
+  .job_search table {
+    float: left;
+  }
+
+  /* line 1695, ../sass/local_section.scss */
+  .job_search table,
+  .job_search thead,
+  .job_search tbody,
+  .job_search th,
+  .job_search td,
+  .job_search tr {
+    display: block;
+    box-shadow: none;
+  }
+
+  /* line 1699, ../sass/local_section.scss */
+  .job_search table thead {
+    border: none;
+  }
+
+  /* line 1701, ../sass/local_section.scss */
+  .job_search table thead tr {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+
+  /* line 1708, ../sass/local_section.scss */
+  .job_search table tr {
+    /* border: 1px solid #CCCCCC;*/
+  }
+
+  /* line 1712, ../sass/local_section.scss */
+  .job_search table td,
+  .job_search table th {
+    padding: 10px 0px;
+  }
+
+  /* line 1716, ../sass/local_section.scss */
+  .jobs_table tbody tr.acc_content td,
+  .jobs_table tbody tr.acc_content td:first-child {
+    font-size: 16px;
+  }
+
+  /* line 1720, ../sass/local_section.scss */
+  .jobs_table tbody tr.acc_content td:first-child span.jobs-arrow {
+    display: none;
+  }
+
+  /* line 1721, ../sass/local_section.scss */
+  .job_search table td {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    border: none;
+    padding-left: 40% !important;
+    padding-right: 5%;
+    position: relative;
+  }
+
+  /* line 1736, ../sass/local_section.scss */
+  .job_search table td:before {
+    left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    white-space: nowrap;
+    width: 45%;
+  }
+
+  /* line 1744, ../sass/local_section.scss */
+  .job_search table tr.acc_content td:nth-of-type(1):before,
+  .job_search table tr.acc_content.expanded td:nth-of-type(1):before {
+    content: "Position";
+  }
+
+  /* line 1748, ../sass/local_section.scss */
+  .job_search table tr.acc_content td:nth-of-type(2):before,
+  .job_search table tr.acc_content.expanded td:nth-of-type(2):before {
+    content: "Job Field";
+  }
+
+  /* line 1752, ../sass/local_section.scss */
+  .job_search table tr.acc_content td:nth-of-type(3):before,
+  .job_search table tr.acc_content.expanded td:nth-of-type(3):before {
+    content: "Location";
+  }
+
+  /* line 1756, ../sass/local_section.scss */
+  .job_search table tr.acc_content td:nth-of-type(4):before,
+  .job_search table tr.acc_content.expanded td:nth-of-type(4):before {
+    content: "Posted";
+  }
+
+  /* line 1760, ../sass/local_section.scss */
+  .job_search table tr.expanded td:nth-of-type(1):before,
+  .job_search table tr.expanded td:nth-of-type(2):before {
+    content: "";
+  }
+
+  /* line 1764, ../sass/local_section.scss */
+  .job_search table td.job_details_content,
+  .job_search table td.details_meta {
+    width: 96%;
+    padding: 2% !important;
+  }
+
+  /* line 1769, ../sass/local_section.scss */
+  .job_search table td.job_details_content p,
+  .job_search table td.job_details_content ul li {
+    font-size: 16px;
+  }
+
+  /* line 1773, ../sass/local_section.scss */
+  #job_search_form input[type="search"] {
+    width: 96%;
+    margin: 10px auto 0;
+    float: left;
+  }
+
+  /* line 1775, ../sass/local_section.scss */
+  #job_search_type ul {
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 1776, ../sass/local_section.scss */
+  #job_search_type ul li {
+    float: left;
+  }
+
+  /* line 1778, ../sass/local_section.scss */
+  .job_search .pagination {
+    margin: 0 auto 20px;
+  }
+
+  /* line 1779, ../sass/local_section.scss */
+  .job_search .pagination .page_numbers {
+    display: none;
+  }
+
+  /* line 1780, ../sass/local_section.scss */
+  .job_search .pagination .previous {
+    margin-left: 10px;
+  }
+
+  /* line 1781, ../sass/local_section.scss */
+  .job_search .pagination .next {
+    margin-right: 10px;
+  }
+
+  /* line 1783, ../sass/local_section.scss */
+  .job_profiles_wrapper {
+    padding: 50px 0 0 !important;
+  }
+
+  /* line 1784, ../sass/local_section.scss */
+  .square_button a, form input[type="submit"] a {
+    font-size: 14px;
+    padding: 18px 20px;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 60em) {
+  /* line 1790, ../sass/local_section.scss */
+  #job_search_form .key_word, #job_search_form .location {
+    width: 43.5%;
+  }
+
+  /* line 1791, ../sass/local_section.scss */
+  .jobs_table thead th h3 {
+    font-size: 18px;
+  }
+
+  /* line 1793, ../sass/local_section.scss */
+  .jobs_table tbody tr.acc_content td,
+  .jobs_table tbody tr.acc_content td:first-child {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+/*JOB PROFILES*/
+/* line 1797, ../sass/local_section.scss */
+.job_profiles_wrapper {
+  padding: 100px 0 110px;
+  background: #F1F1F1;
+}
+
+/* line 1801, ../sass/local_section.scss */
+.job_profiles_wrapper .headline {
+  margin: 0;
+}
+
+/* line 1804, ../sass/local_section.scss */
+.job_profiles p {
+  /*font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left:30px;*/
+}
+
+/* line 1810, ../sass/local_section.scss */
+.job_profiles_box {
+  display: table;
+  float: left;
+  width: 31%;
+  /*height:188px;*/
+  background: #000;
+  margin: 1%;
+}
+
+/* line 1820, ../sass/local_section.scss */
+.job_profiles_grid .centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+}
+
+/* line 1827, ../sass/local_section.scss */
+.container_24 .job_profiles_box .centered h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* line 1831, ../sass/local_section.scss */
+.job_profiles_grid a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 25% 0;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 1838, ../sass/local_section.scss */
+  .job_profiles_box {
+    width: 46%;
+    margin: 2%;
+  }
+
+  /* line 1839, ../sass/local_section.scss */
+  .container_24 .job_profiles_box .centered h3 {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 53.75em) {
+  /* line 1844, ../sass/local_section.scss */
+  .container_24 .grid_8.job_profiles,
+  .container_24 .grid_15.job_profiles_grid {
+    width: 96%;
+    margin: 2%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 60em) {
+  /* line 1850, ../sass/local_section.scss */
+  .job_profiles_box {
+    width: 48%;
+  }
+}
+/*JOB PROFILES SECTIONS*/
+/* line 1855, ../sass/local_section.scss */
+.img_holder_wrapper > div {
+  /*overflow:hidden;*/
+  /*max-height: 472px;*/
+}
+
+/* line 1860, ../sass/local_section.scss */
+.profile_wrapper {
+  background: transparent;
+  position: relative;
+  height: 475px !important;
+  margin-top: -472px;
+}
+
+/* line 1866, ../sass/local_section.scss */
+#technician_wrapper .profile_wrapper {
+  margin-top: -430px;
+}
+
+/* line 1867, ../sass/local_section.scss */
+.profile_wrapper .graphic img {
+  position: relative;
+  /*top:-40px;*/
+  margin-top: -40px;
+  border: 5px solid #ffffff;
+  max-width: 100%;
+  width: 97%;
+}
+
+/* line 1875, ../sass/local_section.scss */
+.profile_wrapper .profile_content {
+  height: 322px;
+  padding: 100px 0 50px;
+}
+
+/* line 1879, ../sass/local_section.scss */
+#technician_wrapper .profile_wrapper .profile_content {
+  height: 280px;
+  padding: 100px 0 50px;
+}
+
+/* line 1883, ../sass/local_section.scss */
+.profile_wrapper .roles {
+  background: transparent;
+  position: relative;
+  /*margin-top: 95px;*/
+  /*margin-top: 50px;*/
+  height: 580px;
+}
+
+/* line 1892, ../sass/local_section.scss */
+.profile_wrapper .roles ol li {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+/* line 1899, ../sass/local_section.scss */
+.tab_down {
+  margin: 0 auto;
+  width: 57px;
+}
+
+@media screen and (max-width: 45em) {
+  /* line 1905, ../sass/local_section.scss */
+  .profile_wrapper .grid_12 {
+    width: 96% !important;
+    margin: 0 2%;
+    left: 0;
+    top: -30px;
+  }
+
+  /* line 1906, ../sass/local_section.scss */
+  .profile_wrapper .caption {
+    margin-left: 3%;
+  }
+
+  /* line 1907, ../sass/local_section.scss */
+  .profile_wrapper .caption h2 {
+    font-size: 28px;
+  }
+
+  /* line 1908, ../sass/local_section.scss */
+  .profile_wrapper .graphic img {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 3%;
+  }
+
+  /* line 1910, ../sass/local_section.scss */
+  .profile_wrapper .profile_content {
+    margin-bottom: 50px;
+  }
+
+  /* line 1911, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper .profile_content {
+    margin-bottom: 30px;
+  }
+
+  /* line 1912, ../sass/local_section.scss */
+  .profile_wrapper .roles {
+    margin-top: 0;
+    height: auto;
+  }
+
+  /* line 1913, ../sass/local_section.scss */
+  .profile_wrapper .roles ol {
+    margin: 0 2%;
+    padding-left: 0;
+    width: 96%;
+    float: left;
+    display: block;
+  }
+
+  /* line 1920, ../sass/local_section.scss */
+  .profile_wrapper .roles ol li {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 1927, ../sass/local_section.scss */
+  .profile_wrapper .graphic img {
+    width: 86%;
+    margin-top: 20px;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 1931, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper {
+    margin-top: -330px;
+  }
+
+  /* line 1932, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper .profile_content {
+    height: 210px;
+    padding: 70px 0 20px;
+  }
+
+  /* line 1937, ../sass/local_section.scss */
+  .profile_wrapper {
+    margin-top: -330px;
+    height: 335px !important;
+  }
+
+  /* line 1938, ../sass/local_section.scss */
+  .profile_wrapper .profile_content {
+    height: 232px;
+    padding: 80px 0 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 25.063em) and (max-width: 42.5em) {
+  /* line 1942, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper {
+    margin-top: -330px;
+  }
+
+  /* line 1943, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper .profile_content {
+    height: 210px;
+    padding: 70px 0 20px;
+  }
+
+  /* line 1948, ../sass/local_section.scss */
+  .profile_wrapper {
+    margin-top: -330px;
+    height: 335px !important;
+  }
+
+  /* line 1949, ../sass/local_section.scss */
+  .profile_wrapper .profile_content {
+    height: 232px;
+    padding: 80px 0 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 45.063em) and (max-width: 53.75em) {
+  /* line 1954, ../sass/local_section.scss */
+  #technician_wrapper .profile_wrapper {
+    margin-top: -470px;
+  }
+
+  /* line 1955, ../sass/local_section.scss */
+  .profile_wrapper .profile_content {
+    height: 320px !important;
+    padding: 100px 0 50px;
+  }
+
+  /* line 1960, ../sass/local_section.scss */
+  .profile_wrapper .grid_12 {
+    width: 96%;
+    margin: 0 2%;
+    left: 0;
+    top: -30px;
+  }
+
+  /* line 1961, ../sass/local_section.scss */
+  .profile_wrapper .caption {
+    margin-left: 3%;
+  }
+
+  /* line 1962, ../sass/local_section.scss */
+  .profile_wrapper .caption h2 {
+    font-size: 40px;
+  }
+
+  /* line 1963, ../sass/local_section.scss */
+  .profile_wrapper .graphic img {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 3%;
+  }
+
+  /*.profile_wrapper .graphic img {width:90%;}*/
+  /* line 1965, ../sass/local_section.scss */
+  .profile_wrapper .roles ol li {
+    width: auto;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 53.813em) and (max-width: 60em) {
+  /* line 1968, ../sass/local_section.scss */
+  .profile_wrapper .caption h2 {
+    font-size: 45px;
+  }
+
+  /* line 1969, ../sass/local_section.scss */
+  .profile_wrapper .roles ol li {
+    width: auto;
+  }
+}
+@media screen and (min-width: 60.063em) and (max-width: 67.5em) {
+  /* line 1972, ../sass/local_section.scss */
+  .profile_wrapper .caption h2 {
+    font-size: 45px;
+  }
+}
+/*JOB APPLICATION
+*************************************/
+/* line 1977, ../sass/local_section.scss */
+.job_app_wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+/* line 1981, ../sass/local_section.scss */
+.job_app_wrapper h3 {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 1988, ../sass/local_section.scss */
+.job_app_wrapper h3 span {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 0;
+  font-weight: 400;
+  display: block;
+  text-transform: capitalize;
+}
+/* line 1998, ../sass/local_section.scss */
+.job_app_wrapper h4 {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  color: #008752;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 2;
+  font-weight: 400;
+  margin: 40px 0 10px;
+}
+/* line 2007, ../sass/local_section.scss */
+.job_app_wrapper h4 span {
+  font-family: "GothamBook", Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+/* line 2014, ../sass/local_section.scss */
+.job_app_wrapper .wrapper-dropdown-2 {
+  width: 100%;
+  padding: 10px 10px 11px;
+}
+/* line 2023, ../sass/local_section.scss */
+.job_app_wrapper form input,
+.job_app_wrapper .form input,
+.job_app_wrapper form textarea,
+.job_app_wrapper .form textarea,
+.job_app_wrapper form select,
+.job_app_wrapper .form select {
+  padding: 17px 5%;
+}
+/* line 2027, ../sass/local_section.scss */
+.job_app_wrapper textarea {
+  height: 165px;
+}
+/* line 2030, ../sass/local_section.scss */
+.job_app_wrapper .upload p {
+  padding: 0 15px;
+}
+/* line 2033, ../sass/local_section.scss */
+.job_app_wrapper .upload p a {
+  color: #008752;
+}
+
+/* line 2040, ../sass/local_section.scss */
+.application_state .transformSelect {
+  width: 98.5%;
+  margin-bottom: 14px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 2045, ../sass/local_section.scss */
+  .job_app_wrapper {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  /* line 2049, ../sass/local_section.scss */
+  .job_app_wrapper .container_24 > .grid_20 {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 2050, ../sass/local_section.scss */
+  .job_app_wrapper form {
+    width: 100%;
+  }
+
+  /* line 2051, ../sass/local_section.scss */
+  .job_app_wrapper form > div {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 50em) {
+  /* line 2054, ../sass/local_section.scss */
+  .job_app_wrapper {
+    width: 96% !important;
+    margin: 0 2%;
+  }
+
+  /* line 2058, ../sass/local_section.scss */
+  .job_app_wrapper form {
+    width: 100%;
+  }
+
+  /* line 2059, ../sass/local_section.scss */
+  .job_app_wrapper form > div {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* line 2061, ../sass/local_section.scss */
+  .job_app_wrapper .transformSelect li {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 59.963em) {
+  /* line 2065, ../sass/local_section.scss */
+  .job_app_wrapper .container_24 > .grid_20 {
+    width: 96%;
+    padding: 0;
+    margin: 0 2%;
+  }
+
+  /* line 2066, ../sass/local_section.scss */
+  .job_app_wrapper form > div {
+    margin-left: 0;
+  }
+}
+/*PROJECT EXPERTS INDEX
+*************************************/
+/* line 2071, ../sass/local_section.scss */
+.caption.right h2, .experts .square_button .caption.right h2 {
+  float: right;
+}
+
+/* line 2075, ../sass/local_section.scss */
+.current_projects_wrapper {
+  padding: 40px 0;
+}
+
+/* line 2079, ../sass/local_section.scss */
+.current_projects .grid_24 {
+  margin: 0 1%;
+}
+
+/* line 2087, ../sass/local_section.scss */
+.current_projects_content {
+  margin-bottom: 110px;
+}
+
+/* line 2091, ../sass/local_section.scss */
+.current_projects_content p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  margin-left: 35px;
+}
+
+/* line 2097, ../sass/local_section.scss */
+.current_projects_content h2.headline {
+  margin-top: 0;
+}
+
+/* line 2101, ../sass/local_section.scss */
+.current_projects .current_project_sections .grid_12 {
+  margin-left: 1% !important;
+}
+
+/* line 2106, ../sass/local_section.scss */
+.current_project_sections .grid_4 {
+  background: #000000;
+  height: 188px;
+  margin: 0 3px 3px 0;
+  width: 32.5%;
+}
+/* line 2112, ../sass/local_section.scss */
+.current_project_sections .grid_4 a {
+  color: #FFFFFF;
+}
+/* line 2116, ../sass/local_section.scss */
+.current_project_sections .grid_4 .centered {
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 2121, ../sass/local_section.scss */
+.current_project_sections .grid_4 span {
+  display: block;
+  height: 65px;
+  margin: 34px auto 0;
+  position: relative;
+  text-align: center;
+  width: 55px;
+}
+/* line 2130, ../sass/local_section.scss */
+.current_project_sections .grid_4 img {
+  bottom: 0;
+  display: block;
+  position: absolute;
+}
+/* line 2136, ../sass/local_section.scss */
+.current_project_sections .grid_4 h3 {
+  color: #FFFFFF;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 2150, ../sass/local_section.scss */
+  .current_projects .grid_24 {
+    width: 98% !important;
+  }
+
+  /* line 2151, ../sass/local_section.scss */
+  .current_project_sections {
+    width: 97% !important;
+    margin: 0 1.5%;
+  }
+
+  /* line 2153, ../sass/local_section.scss */
+  .current_projects_content {
+    margin-bottom: 0;
+  }
+
+  /* line 2154, ../sass/local_section.scss */
+  .current_project_sections .grid_4 {
+    clear: none !important;
+    width: 49% !important;
+    margin: 0.5%;
+    height: 160px;
+  }
+
+  /* line 2155, ../sass/local_section.scss */
+  .current_project_sections .grid_4 h3 {
+    font-size: 13px;
+  }
+
+  /* line 2156, ../sass/local_section.scss */
+  .current_project_sections .grid_4 span {
+    width: 40px;
+    margin-top: 14px;
+  }
+
+  /* line 2157, ../sass/local_section.scss */
+  .current_project_sections .grid_4 span img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 40em) {
+  /* line 2161, ../sass/local_section.scss */
+  .current_projects_content {
+    margin-bottom: 40px;
+  }
+
+  /* line 2162, ../sass/local_section.scss */
+  .current_projects_content .grid_12 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 2163, ../sass/local_section.scss */
+  .current_projects_content .grid_12.current_project_sections {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  /* line 2167, ../sass/local_section.scss */
+  .current_projects_content .grid_4 {
+    margin: 1%;
+    width: 31.33%;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 55em) {
+  /* line 2177, ../sass/local_section.scss */
+  .current_projects_content .grid_4 {
+    margin: 1%;
+    width: 48%;
+  }
+}
+/* line 2188, ../sass/local_section.scss */
+.current_project_sections .grid_4 .centered a {
+  color: #fff;
+  display: block;
+  vertical-align: middle;
+}
+
+/* line 2194, ../sass/local_section.scss */
+.current_project_sections .grid_4 .centered a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* line 2204, ../sass/local_section.scss */
+.network_design_wrapper,
+.upgrades_migrations_wrapper,
+.management_consulting_wrapper,
+.relocation_services_wrapper,
+.proactive_management_wrapper,
+.hardwaresoftware_solutions_wrapper {
+  background: transparent;
+  height: 892px !important;
+  margin-top: -892px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* line 2213, ../sass/local_section.scss */
+.experts {
+  margin-top: 170px;
+}
+/* line 2216, ../sass/local_section.scss */
+.experts .square_button {
+  margin-top: 40px;
+}
+
+/* line 2230, ../sass/local_section.scss */
+.experts .caption {
+  margin: 0;
+  float: left;
+}
+
+/* line 2231, ../sass/local_section.scss */
+.experts.experts_right .caption {
+  float: right;
+  text-align: right;
+}
+
+/* line 2233, ../sass/local_section.scss */
+.experts .description {
+  background: transparent url(../images/ie8-transparent-bkg.png) top left repeat;
+  padding: 2% 3%;
+  width: 42%;
+  position: relative;
+  /*margin-top: -270px;*/
+  float: right;
+}
+
+/* line 2241, ../sass/local_section.scss */
+.experts.experts_right .description {
+  float: left;
+  left: 0;
+}
+
+/* line 2243, ../sass/local_section.scss */
+.experts .description h2 {
+  letter-spacing: -1px;
+  margin-top: 0;
+  line-height: 1.25em;
+  font-size: 50px;
+}
+
+/* line 2249, ../sass/local_section.scss */
+.experts .description h3.sub_headline {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* line 2257, ../sass/local_section.scss */
+.experts .description p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 2263, ../sass/local_section.scss */
+.upgradesmigrations_content {
+  margin-top: -160px;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 2267, ../sass/local_section.scss */
+  .experts {
+    margin-top: 50px;
+  }
+
+  /* line 2268, ../sass/local_section.scss */
+  .experts .caption {
+    width: 96% !important;
+    margin: 0 2% 5%;
+  }
+
+  /* line 2269, ../sass/local_section.scss */
+  .experts .description {
+    width: 86% !important;
+    margin: 0 2% !important;
+    padding: 5% !important;
+    left: 0;
+  }
+
+  /* line 2270, ../sass/local_section.scss */
+  .experts .description h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  /* line 2271, ../sass/local_section.scss */
+  .experts .description h3.sub_headline {
+    font-size: 22px;
+  }
+
+  /* line 2272, ../sass/local_section.scss */
+  .experts .description p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 40em) {
+  /* line 2277, ../sass/local_section.scss */
+  .experts .caption {
+    width: 96%;
+    margin: 0 2% 5%;
+  }
+
+  /* line 2278, ../sass/local_section.scss */
+  .experts .description {
+    width: 86%;
+    margin: 0 2% !important;
+    padding: 5% !important;
+    left: 0;
+  }
+
+  /* line 2279, ../sass/local_section.scss */
+  .experts .description h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  /* line 2280, ../sass/local_section.scss */
+  .experts .description h3.sub_headline {
+    font-size: 22px;
+  }
+
+  /* line 2281, ../sass/local_section.scss */
+  .experts .description p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 65em) {
+  /* line 2285, ../sass/local_section.scss */
+  .experts {
+    margin-top: 270px;
+  }
+
+  /* line 2286, ../sass/local_section.scss */
+  .experts .caption {
+    width: 36%;
+    margin: 0 2% 5%;
+  }
+
+  /* line 2287, ../sass/local_section.scss */
+  .experts .caption h2 {
+    font-size: 26px;
+  }
+
+  /* line 2288, ../sass/local_section.scss */
+  .experts .description {
+    width: 46%;
+    margin: 0 2% !important;
+    padding: 5% !important;
+    left: 0;
+  }
+
+  /* line 2289, ../sass/local_section.scss */
+  .experts .description h2 {
+    font-size: 38px;
+    padding: 0;
+  }
+
+  /* line 2290, ../sass/local_section.scss */
+  .experts .description h3.sub_headline {
+    font-size: 22px;
+  }
+
+  /* line 2291, ../sass/local_section.scss */
+  .experts .description p {
+    font-size: 16px;
+  }
+}
+/*PROJECT EXPERTS DETAILS
+*************************************/
+/* line 2297, ../sass/local_section.scss */
+.slider_content {
+  background: transparent;
+  position: relative;
+  height: 435px !important;
+  margin-top: -435px;
+}
+
+/* line 2303, ../sass/local_section.scss */
+.expert_detail_header p {
+  width: 30%;
+}
+
+/* line 2307, ../sass/local_section.scss */
+.expert_detail_wrapper .grid_12 p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 2313, ../sass/local_section.scss */
+.expert_testimonials .bx-pager-link {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 2318, ../sass/local_section.scss */
+  .expert_detail_wrapper #topic_slider .grid_12 {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 50em) {
+  /* line 2322, ../sass/local_section.scss */
+  .expert_detail_wrapper #topic_slider .grid_12 {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* line 2329, ../sass/local_section.scss */
+.briefs_whitepapers_index {
+  background: transparent;
+  position: relative;
+  height: 435px !important;
+  margin-top: -435px;
+}
+
+/* line 2336, ../sass/local_section.scss */
+.briefs_whitepapers_index .caption p {
+  width: 425px;
+}
+
+/* line 2340, ../sass/local_section.scss */
+.bwindex_content_wrapper .divider {
+  width: 100%;
+  border-bottom: 1px solid #d1d1d1;
+  background: #fff;
+  padding: 75px 0 90px;
+}
+
+/* line 2347, ../sass/local_section.scss */
+.bwindex_content_wrapper .divider:last-child {
+  border-bottom: none;
+}
+
+/* line 2352, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief h2.headline,
+.bwdetails_content_wrapper .brief h2.headline {
+  text-transform: none;
+  line-height: 1.25em;
+  font-size: 50px;
+}
+
+/* line 2358, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief .thumbnail img {
+  border: 1px solid #d1d1d1;
+  width: 99%;
+}
+
+/* line 2364, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief p,
+.bwdetails_content_wrapper .brief p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 2370, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief .bw_meta ul,
+.bwdetails_content_wrapper .brief .bw_meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2377, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief .bw_meta,
+.bwdetails_content_wrapper .brief .bw_meta {
+  margin-top: 50px;
+}
+
+/* line 2381, ../sass/local_section.scss */
+.bwindex_content_wrapper .brief .bw_meta ul li,
+.bwdetails_content_wrapper .brief .bw_meta ul li {
+  display: inline-block;
+  float: left;
+  margin-left: 0;
+}
+
+/* line 2387, ../sass/local_section.scss */
+.bw_meta li.read_more {
+  margin-right: 70px;
+}
+
+/* line 2391, ../sass/local_section.scss */
+.bw_meta li.news_print, .bw_meta li.news_email, .bw_meta li.news_share {
+  line-height: 55px;
+  height: 54px;
+  margin-right: 15px;
+}
+
+/* line 2397, ../sass/local_section.scss */
+.bw_meta li.news_print a, .bw_meta li.news_email a, .bw_meta li.news_share a {
+  height: 54px;
+}
+
+/* line 2401, ../sass/local_section.scss */
+.bw_meta li.news_share {
+  clear: none;
+}
+
+/* line 2405, ../sass/local_section.scss */
+.brief h3.sub_headline {
+  font-size: 25px;
+  color: #000;
+  font-family: 'Source Sans Pro Bold', sans-serif;
+  text-transform: none;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+/* line 2414, ../sass/local_section.scss */
+.bwdetails_content_wrapper {
+  background: #fff;
+  padding-bottom: 95px;
+}
+
+/* line 2418, ../sass/local_section.scss */
+.bwdetails_content_wrapper .brief .thumbnail img {
+  border: 1px solid #000;
+  width: 100% !important;
+  max-width: 277px;
+}
+
+/* line 2423, ../sass/local_section.scss */
+.bwdetails_content_wrapper .brief_details_content ul {
+  list-style: disc inside;
+  margin: 0 0;
+  padding: 0;
+}
+
+/* line 2428, ../sass/local_section.scss */
+.bwdetails_content_wrapper .brief_details_content ul li {
+  margin-left: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+/* line 2434, ../sass/local_section.scss */
+.bwdetails_content_wrapper h4.sidebar_title {
+  background: #000;
+  padding: 30px 0px;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'GothamBold', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 2447, ../sass/local_section.scss */
+.bwdetails_content_wrapper .free_guide_form form {
+  background: #f1f1f1;
+  padding: 35px 5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 2452, ../sass/local_section.scss */
+.bwdetails_content_wrapper .free_guide_form form fieldset {
+  margin-bottom: 25px;
+}
+
+/* line 2457, ../sass/local_section.scss */
+.bwdetails_content_wrapper .free_guide_form form input[type=text],
+.bwdetails_content_wrapper .free_guide_form form input[type=email],
+.bwdetails_content_wrapper .free_guide_form form input[type=url] {
+  display: block;
+  width: 89%;
+  border: 3px solid #000;
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+/* line 2464, ../sass/local_section.scss */
+.bwdetails_content_wrapper .free_guide_form form input[type=checkbox] {
+  margin-right: 5px;
+  width: auto;
+  border: none;
+}
+
+/* line 2469, ../sass/local_section.scss */
+.free_guide_form form textarea {
+  width: 93%;
+  height: 150px;
+  padding: 8px;
+  border: 3px solid #000;
+}
+
+/* line 2475, ../sass/local_section.scss */
+.free_guide_form form label {
+  background: transparent;
+  font-size: 16px;
+}
+
+/* line 2479, ../sass/local_section.scss */
+.free_guide_form button {
+  border: none;
+}
+
+/* line 2483, ../sass/local_section.scss */
+.free_guide_form ::-webkit-input-placeholder {
+  color: #000;
+}
+
+/* line 2487, ../sass/local_section.scss */
+.free_guide_form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+/* line 2491, ../sass/local_section.scss */
+.free_guide_form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+/* line 2495, ../sass/local_section.scss */
+.free_guide_form :-ms-input-placeholder {
+  color: #000;
+}
+
+/* line 2499, ../sass/local_section.scss */
+.free_guide_form .wrapper-dropdown-2 {
+  width: 88%;
+}
+
+/* line 2503, ../sass/local_section.scss */
+.free_guide_form .wrapper-dropdown-2:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 16px;
+  top: 21%;
+  margin-top: -3px;
+  background: transparent url(../images/green_dropdown_arrow.png) center right no-repeat;
+  border: none;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 2516, ../sass/local_section.scss */
+  .bwdetails_content_wrapper {
+    padding-bottom: 0;
+  }
+
+  /* line 2517, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider {
+    padding-top: 0;
+  }
+
+  /* line 2518, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider .brief .grid_24 > div {
+    width: 98%;
+    left: 0;
+  }
+
+  /* line 2519, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief h2.headline, .bwdetails_content_wrapper .brief h2.headline {
+    font-size: 30px;
+  }
+
+  /* line 2523, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief p, .bwdetails_content_wrapper .brief p,
+  .brief ul {
+    width: 96%;
+    margin: 0 2% !important;
+    font-size: 18px;
+  }
+
+  /* line 2524, ../sass/local_section.scss */
+  .bwdetails_content_wrapper .brief_details_content ul li {
+    font-size: 16px;
+  }
+
+  /* line 2525, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief .bw_meta, .bwdetails_content_wrapper .brief .bw_meta {
+    margin: 30px 2%;
+    display: block;
+    float: left;
+    width: 96%;
+  }
+
+  /* line 2532, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief .thumbnail img,
+  .bwdetails_content_wrapper .brief .thumbnail img {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  /* line 2534, ../sass/local_section.scss */
+  .brief h3.sub_headline {
+    width: 96%;
+    margin: 0 2%;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 30.063em) and (max-width: 40em) {
+  /* line 2537, ../sass/local_section.scss */
+  .bwdetails_content_wrapper {
+    padding-bottom: 0;
+  }
+
+  /* line 2538, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider {
+    padding-top: 0;
+  }
+
+  /* line 2540, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider .brief .grid_24 > div,
+  .bwdetails_content_wrapper .brief .grid_24 > div {
+    width: 98%;
+    left: 0;
+  }
+
+  /* line 2541, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief h2.headline, .bwdetails_content_wrapper .brief h2.headline {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  /* line 2546, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief p, .bwdetails_content_wrapper .brief p,
+  .brief ul {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  /* line 2547, ../sass/local_section.scss */
+  .bwdetails_content_wrapper .brief_details_content ul li {
+    font-size: 18px;
+  }
+
+  /* line 2548, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief .bw_meta, .bwdetails_content_wrapper .brief .bw_meta {
+    margin: 30px 2%;
+    display: block;
+    float: left;
+    width: 96%;
+  }
+
+  /* line 2554, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief .thumbnail img {
+    width: 50%;
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 60em) {
+  /* line 2559, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider {
+    padding-top: 0;
+  }
+
+  /* line 2560, ../sass/local_section.scss */
+  .bwindex_content_wrapper .brief h2.headline, .bwdetails_content_wrapper .brief h2.headline {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  /* line 2561, ../sass/local_section.scss */
+  .bwindex_content_wrapper .divider .thumbnail {
+    margin-top: 20px;
+  }
+
+  /*.bwdetails_content_wrapper .grid_24 .grid_15 .brief_details_content,
+  .bwdetails_content_wrapper .grid_24 .grid_15 .thumbnail{width:100%;}*/
+}
+@media screen and (min-width: 40.063em) and (max-width: 53.75em) {
+  /* line 2568, ../sass/local_section.scss */
+  .bwdetails_content_wrapper .brief .grid_24 > div {
+    width: 98%;
+    left: 0;
+  }
+}
+.expert_detail_wrapper > .container_24 > .grid_24 > .bx-wrapper > .bx-viewport{ 
+height:auto !important; 
+} 

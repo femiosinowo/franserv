@@ -1,0 +1,107 @@
+div.CBEdit
+{
+	font: inherit;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-size: 12px !important;
+	min-width: 750px;
+	width: auto !important;
+	width: 750px;
+	background-color: #fff;	
+	border: 1px solid #ccc;
+	line-height: 1.5;
+}
+
+div.CBEdit input[type=text] {
+    font: inherit;
+    background-image: none;
+    background-repeat: no-repeat;
+	margin: 0;
+	line-height: 1.5;
+	height: auto;
+}
+
+div.CBEdit .CBEditControls
+{
+	text-align: right;
+	margin: .5em 0 1em;
+}
+
+/* Clearfix */
+div.CBEdit .clearfix:after {content:" ";display:block;height:0;clear:both;visibility:hidden;}
+div.CBEdit .clearfix {display:block;}
+div.CBEdit .clearfix { *display:inline-block;}
+
+div.CBEdit .responsiveImageWidget-info {
+	min-width: 400px;
+}
+
+div.CBEdit .responsiveImageWidget-Fields {
+	width: 83%;
+	padding: 1%;
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.CBEdit .responsiveImageWidget-label {
+	display: block;
+	float: left;
+	width: 10%;
+	clear: both;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: .5em .5em .25em 0;
+	text-align: right;
+	color: #333;
+	white-space: nowrap;
+	line-height: 1.5;
+	font: inherit;
+}
+
+div.CBEdit .responsiveImageWidget-Fields input[type="text"], div.CBEdit .responsiveImageWidget-Fields .responsiveImageWidget-imageSource {
+	width: 90%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .5em .25em .25em; 
+	margin: 0 0 .5em 0;
+	float: left;
+	color: #444;
+	text-align: left;
+}
+
+.responsiveImageWidget-Fields .responsiveImageWidget-imageSource {
+	display: block;
+	height: 1.25em;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+div.CBEdit .responsiveImageWidget-mediaManager {
+	height: 400px; 
+	width: 100%;
+	display: none;
+}
+
+div.CBEdit .responsiveImageWidget-thumbWrapper {
+	width: 13%;
+	text-align: center;
+	padding: 1em 1%;
+	float: left;
+}
+
+div.CBEdit .responsiveImageWidget-thumb {
+	width: 100%;
+	max-width: 100%;
+}
+
+div.CBEdit .responsiveImageWidget-noThumb {
+	background: #676767;
+	border-radius: 4px;
+	padding: 1em;
+	color: #fff;
+}

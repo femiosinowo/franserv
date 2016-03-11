@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="AdminTool_admin" %>
+
+<%@ Register Src="~/Admintool/UserControls/SuperAdminLeftNavigation.ascx" TagPrefix="ux" TagName="SuperAdminLeftNav" %>
+<%@ Register Src="~/Admintool/UserControls/LocalAdminLeftNavigation.ascx" TagPrefix="ux" TagName="LocalAdminLeftNav" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Tool: Pip</title>
+    <link href="/AdminTool/css/admin.css" rel="stylesheet" />
+    <style type="text/css">
+        .mw {
+            color: #000000;
+            font-family: Verdana,Arial,Helvetica;
+            font-weight: bold;
+            font-size: xx-small;
+            text-decoration: none;
+        }
+
+        a.mw:link {
+            color: #000000;
+            font-family: Verdana,Arial,Helvetica;
+            font-weight: bold;
+            font-size: xx-small;
+            text-decoration: none;
+        }
+
+        a.mw:visited {
+            color: #000000;
+            font-family: Verdana,Arial,Helvetica;
+            font-weight: bold;
+            font-size: xx-small;
+            text-decoration: none;
+        }
+
+        a.mw:hover {
+            color: #0000FF;
+            font-family: Verdana,Arial,Helvetica;
+            font-weight: bold;
+            font-size: xx-small;
+            text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="admin-body">
+            <div class="clearfix" id="header">
+                <a href="/admintool/index.aspx" id="brand">
+                    <img id="logo" alt="PIP logo" src="/admintool/images/PIP_MktgSignsPrint.jpg" />
+                </a>
+                <span id="brandTitle">Management Console</span>
+            </div>
+            <div id="headerBottom">&nbsp;</div>
+            <div id="wrapper">
+                <div class="clearfix" id="wrapper1">
+                    <div id="leftNav">
+                        <ux:SuperAdminLeftNav ID="uxSuperAdminLeftNav" Visible="false" runat="server" />
+                        <ux:LocalAdminLeftNav ID="uxLocalAdminLeftNav" Visible="false" runat="server" />
+                    </div>
+                    <div class="hasLayout" id="content">
+                        <asp:ContentPlaceHolder ID="mainCPH" runat="server" />
+                    </div>
+                </div>
+            </div>
+            <div id="footer">&nbsp;</div>
+        </div>
+    </form>
+</body>
+</html>

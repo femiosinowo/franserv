@@ -1,0 +1,712 @@
+/* find_locations.css */
+
+.main_find_location_wrapper{
+	
+}
+.main_find_location{
+	min-height:353px;
+}
+.main_find_location .headline-block{
+	background:#1A9EFF;
+	min-height:269px;
+}
+.main_find_location .headline-content{
+	display:block;
+	float:left;
+	padding:23.65% 0;
+}
+
+.main_find_location_content{
+	background:url(../images/find_location_content_bg.jpg) no-repeat 70% center #0f84da;
+	width: 72.15% !important;
+	min-height:353px;
+	/*padding:6.65% 0 3%;*/
+	padding:0;
+  	margin: 0 auto;
+  	float:left;
+  	display:block;
+}
+
+form#main_find_location_form{
+	display:block;
+	float:left;
+	/*top: 32%;*/
+    width: 87%;
+	padding:9% 5% 0 8%;
+	position:relative;
+}
+
+form#main_find_location_form input,
+form#main_find_location_form ul.transformSelect{
+	display:inline-block;
+	float:left;
+}
+form#main_find_location_form input#location{
+	margin-right:3.5%;
+	min-width: 180px;
+}
+form#main_find_location_form ul.transformSelect li{
+	width:330px;
+}
+.find_united_kingdom{
+	margin-top:5%;
+	/*top:50%;*/
+	padding-left:8%;
+	display:inline-block;
+	position:relative;
+	
+}
+.find_united_kingdom a{
+	color:#ffffff;
+	font-size:18px;
+}
+
+.find_united_kingdom a:hover{
+	text-decoration:none;
+	opacity:0.8;
+}
+.find_united_kingdom img{
+	width:64px;
+	height:95px;
+}
+@media screen and (max-width: 40em) {
+	.main_find_location .headline-block{border-bottom:4px solid #ffffff;min-height:inherit;}
+	.main_find_location_content{width:100% !important;background-size:100% auto;}
+	
+	/*form#main_find_location_form{padding-left:9%;}*/
+	form#main_find_location_form input,
+	form#main_find_location_form ul.transformSelect{clear:both;}
+	form#main_find_location_form input#location,
+	form#main_find_location_form ul.transformSelect > li{width:240px;margin-bottom:20px;}
+	input.orange_btn[type="submit"]{font-size:14px;}
+	.find_united_kingdom{
+		position:absolute;
+		left:8%;
+		bottom:10px;
+		margin:0;
+		padding:0;
+	}
+	.find_united_kingdom img{width:50px;height:auto;}
+	.find_united_kingdom a{font-size:14px;}
+	
+}
+
+@media screen and (min-width: 40.063em) and (max-width:47.5em) {
+	.main_find_location .headline-block{border-bottom:4px solid #ffffff;min-height:inherit;}
+	.main_find_location_content{width:100% !important;background-size:100% auto;}
+	
+	form#main_find_location_form{
+		width:88%;
+		padding:19% 3% 0 9%;
+	}
+	
+	form#main_find_location_form input{clear:both;}
+	form#main_find_location_form input#location,
+	form#main_find_location_form ul.transformSelect > li{width:240px;margin-bottom:20px;}
+	input.orange_btn[type="submit"]{font-size:14px;}
+	.find_united_kingdom{
+		position:absolute;
+		left:8%;
+		bottom:10px;
+		margin:0;
+		padding:0;
+	}
+	.find_united_kingdom img{width:50px;height:auto;}
+	.find_united_kingdom a{font-size:14px;}
+	
+}
+@media screen and (min-width: 47.563em) and (max-width: 54.938em)   {
+	.main_find_location .grid_21 {padding-left: 5%;width: 59.15% !important;}
+	form#main_find_location_form {
+    padding: 9% 0 0;
+	width:100%;
+	}
+	form#main_find_location_form input,
+	form#main_find_location_form ul.transformSelect{
+		margin-bottom: 3%;
+		
+	}
+	form#main_find_location_form input#location{width:246px;}
+	form#main_find_location_form ul.transformSelect li {width: 256px;}
+	.find_united_kingdom {
+		padding-left:0;
+       margin-top: 3%;
+	}
+}
+@media screen and (min-width: 55em) and (max-width: 62.5em)   {
+	.main_find_location .grid_21 {padding-left: 5%;width: 59.15% !important;}
+}
+@media screen and (min-width: 55em) and (max-width:63.438em) {
+	form#main_find_location_form {
+    	padding: 6% 27% 0 8%;
+    	width: 65%;
+    }
+	form#main_find_location_form input,
+	form#main_find_location_form ul.transformSelect{
+		margin-bottom: 3%;
+	}
+	form#main_find_location_form input#location{width:326px;}
+	.find_united_kingdom {
+       margin-top: 3%;
+	}
+}
+@media screen and (min-width: 63.5em) and (max-width:89.375em) {
+	/*.main_find_location .headline-block{border-bottom:4px solid #ffffff;min-height:inherit;}
+	.main_find_location_content{width:100% !important;background-size:100% auto;}*/
+	
+	form#main_find_location_form{
+		width:88%;
+		padding:9% 3% 0 9%;
+	}
+	form#main_find_location_form input#location,
+	form#main_find_location_form .transformSelect span {
+       font-size:15px;
+	}
+	form#main_find_location_form ul.transformSelect li{width:230px;}
+	
+	form#main_find_location_form .transformSelect span{
+	    padding-top:15px;
+		padding-bottom:15px;	
+	}
+	form#main_find_location_form input#location,
+	form#main_find_location_form ul.transformSelect li,
+	form#main_find_location_form input.orange_btn[type="submit"]{
+		height:50px;
+		padding-top:0;
+		padding-bottom:0;	
+	}
+	
+	/*form#main_find_location_form input{clear:both;}
+	form#main_find_location_form input#location,
+	form#main_find_location_form ul.transformSelect > li{width:240px;margin-bottom:20px;}
+	input.orange_btn[type="submit"]{font-size:14px;}
+	.find_united_kingdom{
+		position:absolute;
+		left:8%;
+		bottom:10px;
+		margin:0;
+		padding:0;
+	}
+	.find_united_kingdom img{width:50px;height:auto;}
+	.find_united_kingdom a{font-size:14px;}*/
+	
+}
+
+/* ==========================================================================
+   Local Location
+   ========================================================================== */
+.our_location_wrapper{
+	border-top: 5px solid #FFFFFF;
+	background-color:#ffffff;
+}
+
+.our_location{
+	
+}
+
+.our_location .headline-block{
+	background:#1084DB;
+	color:#ffffff;
+	
+}
+.local .our_location .headline-block{
+	background:#333333;
+}
+
+.our_location .headline-block h2.headline{
+   margin-bottom:10px;	
+}
+.our_location .headline-block ul{
+	list-style:none;
+	margin:0 0 20px 0;
+	padding:0;
+	font-size:16px;
+	font-weight:600;
+}
+.our_location .headline-block ul.location_address,
+.our_location .headline-block ul.location_hours{
+	text-transform:uppercase;
+	clear:both;
+}
+.our_location .headline-block ul.location_address{
+	font-size:18px;
+}
+.our_location .headline-block ul.location_hours li:first-child{
+	font-weight:800;
+}
+.our_location .headline-block ul li{
+	margin:0;
+	padding:0;
+}
+
+.our_location .headline-block .cta-button-wrap{
+	clear:both;
+	width:auto;
+	margin-bottom:20px;
+	font-size:12px;
+	padding:10px 15px;
+}
+
+.our_location .headline-block .cta-button-wrap a.cta-button-text{
+	font-size:11px;
+}
+.our_location .headline-block .location_social_media{
+    clear:both;
+	display:block;
+	float:left;
+	width:100%;
+}
+
+.our_location_content{
+	background: none repeat scroll 0 0 #f5f5f5;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    min-height: 353px;
+    padding: 0;
+    width: 72.15% !important;
+}
+@media screen and (max-width: 47.5em) {
+   #company-info .our_location_content,
+   .local#home .our_location_content{width:100% !important;height:350px;}
+}
+@media screen and (min-width: 47.563em) and (max-width: 55em)   {
+   .our_location .container_24 .grid_6.headline-block{width:27.55% !important;padding: 0 3% 0 5% !important;margin: 0 0.3% 0 0 !important;}
+   .our_location .headline-content-outer {padding: 8% 0;}
+   
+   #company-info .our_location_content,
+   .local#home .our_location_content{width: 64.15% !important;}
+}
+@media screen and (min-width: 55.063em) and (max-width: 62.5em)   {
+	.our_location_content{width: 72.15% !important;}
+	
+	#company-info .our_location_content,
+   .local#home .our_location_content{width: 72.15% !important;}
+
+	
+}
+
+/*Corp Location*/
+#corp_location .headline-block{
+	background:#333333;
+	color:#ffffff;
+	
+}
+
+
+/* ==========================================================================
+   Sub Find Location
+   ========================================================================== */
+.sub_find_location .headline-block{
+	background:#1A9EFF;
+}
+
+.sub_find_location .content-block {
+	background:url(../images/sub_find_location_bg.jpg) no-repeat #0E75C2;
+	display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0 0;
+    /*width: 72.15%;*/
+}
+.sub_find_location_content{
+	display:block;
+	float:left;
+}
+
+.sub_find_location_content h2{
+	color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 6% 0 0 14%;
+    width: 50%;
+	float:left;
+}
+.sub_find_location_content .cta-button-wrap{
+	font-size: 18px;
+    padding: 16px 20px;
+	margin-top:8.25%;
+	margin-left:3%;
+}
+@media screen and (max-width: 40.375em) {
+   .sub_find_location_content h2{
+		font-size:30px;
+		margin:6% 0;
+		width:100%;
+	}
+	.sub_find_location_content .cta-button-wrap{margin:0 0 6% 0;}
+}
+@media screen and (min-width: 40.438em) and (max-width: 55em) {
+   .sub_find_location_content h2{
+		font-size:30px;
+		margin:6% 0 6% 4%;
+		width:65%;
+	}
+}
+@media screen and (min-width: 55.063em) and (max-width: 75em) {
+   .sub_find_location_content h2{
+		font-size:30px;
+		margin:6% 0 6% 4%;
+		width:60%;
+	}
+}
+@media screen and (min-width: 75.063em) and (max-width: 85em) {
+   .sub_find_location_content h2{
+		font-size:34px;
+		margin:6% 0 6% 7%;
+		width:60%;
+	}
+}
+@media screen and (min-width: 85.063em) and (max-width: 95em) {
+   .sub_find_location_content h2{
+		font-size:38px;
+		margin:6% 0 6% 9%;
+		width:60%;
+	}
+}
+
+/*google map*/
+#location_map {
+    bottom: 0;
+    clear: both;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#location_map_wrapper {
+    height: 100%;
+}
+.maps-wrapper {
+    /*height: 350px;*/
+    width: 100%;
+	display:block;
+}
+.maps-inner {
+  	margin: 0 auto;
+   	/*width: 92%;
+     color: #820106;*/
+	 max-width:1200px;
+	 text-align:center;
+}
+.maps-inner h2 {
+    /*font-size: 32px;
+    padding: 0px 0 5px;
+    text-align: center;
+    text-transform: uppercase;*/
+    color: #820106;
+}
+.maps-inner ul {
+  margin: 0 auto 20px;
+  padding: 0;
+  text-align:center;
+  /*min-height:220px;*/
+  display:block;
+}
+.maps-inner ul li {
+    border: 1px solid #820208;
+    border-width: 0 0 0 1px;
+    /*float: left;*/
+	display:inline-block;
+    list-style: none;
+    text-align: center;
+    width: 16%;
+    margin-left: 0;
+    padding: 0 20px;
+    box-shadow: 1px 0 #FF000B inset;
+}
+.maps-inner ul li:first-child {
+    border-left: none;
+   padding-left: 0;
+    margin: 0;
+    box-shadow:  none;
+}
+.maps-inner ul li:last-child {
+  padding-right: 0;
+}
+.maps-inner ul li a {
+    color: #490003;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  	display:block;
+  	margin: 0 auto;
+}
+.location-figure {
+   display:block;
+   width: 100%;
+   /*max-width: 155px;*/
+   margin: 0 auto;
+}
+.location-name {
+	display:block;
+	height: 33px;
+	position: relative;
+	/*margin-top: -17px;*/
+	margin-top: 0;
+}
+.location-name span {
+ 	bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+	font-size: 11px;
+}
+.location-figure div {
+	padding-top: 83.33%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;  /* Firefox 3.6 */
+ 	background-position: center;  /* Internet Explorer 7/8 */
+}
+
+
+@media screen and (max-width: 40em) {
+/*	#locations-wrapper {border-top:5px solid yellow;} */
+	
+	
+
+}
+
+/*641 to 799px*/
+@media screen and (min-width: 40.063em) and (max-width: 49.938em){
+  .maps-wrapper {
+    /*height: 265px;*/
+  }
+	
+	.maps-inner ul li .location-name {
+	  margin-top: 0;
+	  height: 50px;
+	}
+	.maps-inner ul {
+    padding: 0;    
+  }
+  
+  .maps-inner ul{text-align:center;}
+  
+  .maps-inner ul li {
+	  width: 14%; 
+	  display:inline-block;
+	  float:none;
+    }
+  .maps-inner ul li:first-child {
+    padding-left: 0px;
+  }
+  
+	.statement-text p {
+    width:95%;
+	line-height:130%;
+    font-size: 26px;
+  }
+  
+}
+
+
+@media screen and (min-width: 50em) and (max-width: 68.688em) {
+	.location-name {
+	  margin-top: -15px;
+	  margin-top: 5px;
+	}
+	.maps-inner ul li {
+	  width: 14.6%; 
+	 }
+   
+	.statement-text p {
+		 width:95%;
+	line-height:130%;
+    font-size: 30px;
+	}
+	
+		
+}
+/* ==========================================================================
+   Find Location Page
+   ========================================================================== */
+   
+.find_location_search_wrapper,
+.find_location_map_page_wrapper{
+	background:#f5f5f5 !important;
+}
+
+.find_location_search_wrapper .grid_8,
+.find_location_search_wrapper .grid_15{
+   padding-top:2%;	
+}
+.find_location_search_wrapper h2.headline{margin-top:20px;}
+
+/*Find location Search Form*/
+form#find_location_search_form{
+	display:block;
+	float:right;
+	width:100%;
+	padding-top: 6%;
+}
+form#find_location_search_form input,
+form#find_location_search_form .transformSelect{
+    display:block;
+	float:left;
+	margin-right:3.5%;
+	
+}
+form#find_location_search_form input,
+form#find_location_search_form .transformSelect li{
+	background:#ffffff;
+	
+}
+
+form#find_location_search_form ul.transformSelectDropdown li span{
+	background:none;
+}
+form#find_location_search_form .search-location-btn{
+	color:#000000;
+	border:3px solid #000000;
+	font-weight:700;
+	text-transform:uppercase;
+	padding-right:3%;
+	padding-left:3%;
+}
+
+form#find_location_search_form .cta-button-text{
+	display:block;
+	float:left;
+	font-weight:400;
+	font-size:14px;
+	line-height:150%;
+	padding:15px 0;
+}
+form#find_location_search_form .cta-button-text:hover{
+	color:#1084DB;
+}
+
+/*Find location Map Area*/
+.find_location_map_wrapper{
+    min-height:462px;
+}
+
+/*Locations List*/
+.locations_list_subheader{
+	background:#333333;
+}
+
+.locations_list_subheader h3{
+	color:#ffffff;
+	text-transform:uppercase;
+	font-weight:400;
+	font-size:47px;
+	margin:30px 0;
+	line-height:normal;
+}
+
+.locations_list_subheader .find_united_kingdom{
+	margin-top:20px;
+	float:right;
+}
+.locations_list_subheader .find_united_kingdom span{
+	display:inline;
+}
+#locations_columns {
+    margin: 40px 0 65px;
+}
+.locations_list_content h4 {
+    font-size: 18px;
+    font-weight: 800;
+	color:#000000;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.locations_list_content .location_list{
+	list-style:none;
+	margin-top:0;
+	margin-bottom:20px;
+}
+.locations_list_content .location_list li {
+    margin-left: 0;
+}
+.locations_list_content .location_list li span{
+    color:#0D85DB;
+}
+
+@media screen and (max-width: 40em){
+	.find_location_search_wrapper .grid_8{padding: 9% 3.5% 0 !important;width: 93% !important;margin:0;}
+	.find_location_search form#find_location_search_form{padding: 5% 4% !important;width: 92% !important;}
+	
+	form#find_location_search_form input,
+	form#find_location_search_form ul.transformSelect{
+	  clear: both;
+	}
+	form#find_location_search_form input#find_location_city,
+	form#find_location_search_form .transformSelect > li{
+		width:240px;
+		margin-bottom: 20px;
+	}
+	form#find_location_search_form .search-location-btn{
+	   padding: 11px 5%;
+	}
+}
+@media screen and (min-width:40.063em) and (max-width: 55em){
+	.find_location_search_wrapper .grid_8{
+    padding: 5% 0 5% 4%;
+    }
+	.find_location_search_wrapper .grid_14 {
+		 padding: 5% 4% 5% 0;
+	}
+	form#find_location_search_form{padding:0;}
+	form#find_location_search_form input#find_location_city,
+	form#find_location_search_form .transformSelect{margin-bottom:20px;}
+	form#find_location_search_form input#find_location_city,
+	form#find_location_search_form .transformSelect > li{
+		width:92%;
+		padding-right:4%;
+		padding-left:4%;
+		margin-right:0;
+	}
+	form#find_location_search_form .transformSelect{width:100%;margin-right:0;}
+	.transformSelect span, .transformSelect input[type="text"]{padding:11px 0;background-position:100% 50%;}
+	form#find_location_search_form .cta-button-text{float:right;}
+}
+
+@media screen and (min-width:55.063em) and (max-width: 85em){
+	.find_location_search_wrapper .grid_24{
+    padding: 5% 0;
+	margin:0;
+	width:100%;
+    }
+	form#find_location_search_form{padding:0;}
+	form#find_location_search_form input#find_location_city,
+	form#find_location_search_form .transformSelect{margin-bottom:20px;width:48%;margin-right:0;}
+	form#find_location_search_form input#find_location_city,
+	form#find_location_search_form .transformSelect > li{
+		padding-right:4%;
+		padding-left:4%;
+		margin-right:0;
+	}
+	form#find_location_search_form input#find_location_city{margin-right:3.5%;width:40%;}
+	form#find_location_search_form .transformSelect > li{width:92%;}
+	.transformSelect span, .transformSelect input[type="text"]{padding:11px 0;background-position:100% 50%;}
+	form#find_location_search_form .cta-button-text{float:right;}
+}
+
+@media screen and (max-width: 55em){
+	
+	.locations_list_subheader{
+		padding: 0 3.5%;
+       width: 93%;
+		
+	}
+	.locations_list_subheader .grid_24 > div{
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	.locations_list_subheader .find_united_kingdom{
+		position:relative;
+		float:left;
+		bottom:0;
+		left:0;
+		margin-bottom:20px;
+		margin-top:0;
+	}
+	#locations_columns {padding:0 3.5%;width:93%;}
+}
+

@@ -1,0 +1,60 @@
+﻿@charset "UTF-8";
+/* UX Utility Classes
+----------------------------------*/
+
+/* Layout Helpers
+----------------------------------*/
+.ektron-ux .ux-textLeft {text-align:left; }
+.ektron-ux .ux-textRight {text-align:right; }
+.ektron-ux .ux-textCenter {text-align:center; }
+.ektron-ux .ux-verticalAlignTop {vertical-align: top; }
+.ektron-ux .ux-verticalAlignBottom {vertical-align: bottom; }
+.ektron-ux .ux-verticalAlignMiddle {vertical-align: middle; }
+.ektron-ux .ux-floatLeft {float:left; }
+.ektron-ux .ux-floatRight {float:right; }
+.ektron-ux .ux-floatNone {float:none; }
+.ektron-ux .ux-clearLeft {clear: left; }
+.ektron-ux .ux-clearRight {clear: right; }
+.ektron-ux .ux-clearBoth {clear: both; }
+
+/* Typography Helpers
+----------------------------------*/
+.ektron-ux .ux-uppercase {text-transform:uppercase; }
+.ektron-ux .ux-lowercase {text-transform:lowercase; }
+.ektron-ux .ux-smallCaps {font-variant:small-caps; }
+.ektron-ux .ux-noTextTransform {text-transform:none; }
+.ektron-ux .ux-noTextDecoration {text-decoration:none; }
+.ektron-ux .ux-forceWrap {
+	/*ignore jslint start*/
+	-ms-word-wrap: break-word; 
+	/*ignore jslint end*/
+	word-wrap: break-word;
+}
+.ektron-ux .ux-forceWrap:active, .ektron-ux .ux-forceWrap:focus{outline: none; } /* fixes scrollbars appearing when focus and active status is brought to the element in mozilla */
+
+/* Block Element Style Helpers
+----------------------------------*/
+.ektron-ux .ux-noise {
+	position: relative;
+}
+
+.ektron-ux .ux-noise:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+	/*ignore jslint start*/
+    background-image: url("data:image/png;base64,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");
+	/*ignore jslint end*/
+}
+
+/* Clearfix
+----------------------------------*/
+.ektron-ux .ux-clearfix:after, .ektron-ux .ux-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

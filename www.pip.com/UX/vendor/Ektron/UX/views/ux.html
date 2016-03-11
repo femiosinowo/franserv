@@ -1,0 +1,23 @@
+﻿<div data-bind="css: { showOverlay: isOverlayVisible(), showLauncher: isLauncherVisible(), showAppWindow: isAppWindowVisible() }" class="ektron-ux-reset ektron-ux ektron-ux-UITheme">
+    <div class="toolbarWrapper ux-clearfix">
+        <div class="launcher"></div>
+        <div class="tray">
+            <ul>
+                <li data-bind="visible: 'undefined' !== (Ektron.PathData.logoutPath + '') && (Ektron.PathData.logoutPath + '').length > 0">
+                    <a data-bind="attr: { href: Ektron.PathData.logoutPath, title: labels.logout }, text: labels.logout"></a>
+                </li>
+                <li data-bind="visible: 'undefined' !== (Ektron.PathData.logoutPath + '') && (Ektron.PathData.workareaPath + '').length > 0">
+                    <a data-bind="attr: { href: Ektron.PathData.workareaPath, title: labels.workarea }, text: labels.workarea" onclick="window.open(this.href);return false;"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="applicationToolbar">
+            <ul data-bind="visible: !(isLauncherVisible()), foreach: toolbar.controls" class="applicationControls ux-clearfix">
+                <li data-bind="template: template()"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="appOverlay"></div>
+    <div class="ux-appWindow"></div>
+</div>
+<div class="ektron-ux-placeholder"></div>

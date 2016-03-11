@@ -1,0 +1,204 @@
+/* Convert RGBA for IE */
+/* line 4, ../sass/partials/_shared.scss */
+.content_ul ul {
+  padding-left: 15px;
+}
+/* line 7, ../sass/partials/_shared.scss */
+.content_ul ul li {
+  margin-left: 0;
+  padding-bottom: 7px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+/* line 3, ../sass/in_the_media.scss */
+.in_the_media {
+  background: transparent;
+  position: relative;
+  margin-top: -360px;
+  height: 354px;
+}
+
+/* line 12, ../sass/in_the_media.scss */
+.media_wrapper {
+  padding: 60px 0 0px;
+  background: #fff;
+}
+
+.media_wrapper  .bx-wrapper .bx-viewport 
+{/* height:100% !important;*/ } 
+
+/* line 17, ../sass/in_the_media.scss */
+.media_col.grid_6.alpha {
+  margin-left: 0;
+}
+
+/* line 21, ../sass/in_the_media.scss */
+.media_col.grid_6 {
+  margin: 0 1.3%;
+}
+
+/* line 25, ../sass/in_the_media.scss */
+.mosaicflow__column {
+  float: left;
+}
+
+/* line 26, ../sass/in_the_media.scss */
+.mosaicflow__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 29, ../sass/in_the_media.scss */
+.media_article_wrapper {
+  background: #f1f1f1;
+  margin: 0 2.5% 25px;
+}
+
+/* line 34, ../sass/in_the_media.scss */
+.media_article_wrapper .media_article {
+  padding: 35px;
+  font-family: "NewJuneRegular", "NewJuneFine", Arial, Helvetica, sans-serif;
+}
+
+/* line 39, ../sass/in_the_media.scss */
+.media_article .date {
+  text-align: center;
+  padding: 15px;
+}
+
+/* line 45, ../sass/in_the_media.scss */
+.media_article h2 {
+  height: 132px;
+  width: 132px;
+  background: #000;
+  color: #fff;
+  font-size: 65px;
+  line-height: 45px;
+  margin: 0 auto 15px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
+  border-radius: 75px;
+  font-weight: normal;
+  behavior: url(/js/PIE.htc);
+  position: relative;
+  z-index: 1;
+}
+
+/* line 60, ../sass/in_the_media.scss */
+.media_article h2 span {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  padding-top: 15px;
+}
+
+/* line 68, ../sass/in_the_media.scss */
+.media_article .date span.year {
+  color: #adadad;
+  font-size: 20px;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+}
+
+/* line 74, ../sass/in_the_media.scss */
+.media_article h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #008752;
+}
+
+/* line 83, ../sass/in_the_media.scss */
+.media_article p {
+  color: #000;
+  line-height: 32px;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: "NewJuneRegular", "NewJuneFine", Arial, Helvetica, sans-serif;
+}
+
+/* line 92, ../sass/in_the_media.scss */
+.media_article p:before {
+  content: " / ";
+}
+
+/*Buttons*/
+/* line 99, ../sass/in_the_media.scss */
+.share_button a,
+.read_more_button a {
+  font-family: "GothamBold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  display: block;
+}
+
+/* line 108, ../sass/in_the_media.scss */
+.share_button {
+  background: #e6e5e5;
+  float: left;
+  width: 30%;
+}
+
+/* line 115, ../sass/in_the_media.scss */
+.read_more_button {
+  background: #008752;
+  float: right;
+  width: 45%;
+}
+
+/* line 124, ../sass/in_the_media.scss */
+.read_more_button a:hover,
+.share_button a:hover {
+  text-decoration: none;
+}
+
+/* line 128, ../sass/in_the_media.scss */
+.read_more_button a, .read_more_button a:visited {
+  color: #fff;
+}
+
+/* line 132, ../sass/in_the_media.scss */
+.share_button a, .share_button a:visited {
+  color: #000;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 141, ../sass/in_the_media.scss */
+  .media_wrapper {
+    padding: 0;
+  }
+
+  /* line 143, ../sass/in_the_media.scss */
+  .media_article h2 {
+    height: 100px;
+    width: 100px;
+    font-size: 45px;
+    line-height: 31px;
+  }
+
+  /* line 144, ../sass/in_the_media.scss */
+  .media_article p {
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  /* line 147, ../sass/in_the_media.scss */
+  .share_button a,
+  .read_more_button a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 40.063em) and (max-width: 65em) {
+  /* line 150, ../sass/in_the_media.scss */
+  .media_wrapper {
+    padding: 0 0 20px;
+  }
+}
